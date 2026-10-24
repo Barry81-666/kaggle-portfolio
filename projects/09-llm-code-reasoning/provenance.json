@@ -1,0 +1,61 @@
+{
+  "project": "09-llm-code-reasoning",
+  "title": "AIMO1_20th基础学习资料注释版",
+  "curated_title": "Mathematical Reasoning · Annotated Notebook",
+  "area": "机器学习 / 数学推理",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/aimo1-20th",
+  "kernel_id": 77391717,
+  "version_id": 224999934,
+  "version_date": "2025-02-28T14:40:13.247Z",
+  "notebook_medal": "NONE",
+  "votes_at_snapshot": 3,
+  "archived_file": "projects/09-llm-code-reasoning/notebook.ipynb",
+  "original_download_sha256": "51b9d15ef71b962c9d01c288cda3d2c54e4669eea75f5e20f4924a49234ad962",
+  "archived_sha256": "8fb254b8fba64f7d8d8c1af68efb58fce3b0044f722b901d292f0f4b26ba7433",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": true,
+    "kernel_id": 55042215,
+    "author": "AbdurRafae",
+    "url": "https://www.kaggle.com/code/abdurrafae/improved-code-interpretation"
+  },
+  "data_sources": [
+    {
+      "name": "open-math-mistral",
+      "url": "https://www.kaggle.com/datasets/olyatsimboy/open-math-mistral",
+      "private": false
+    },
+    {
+      "name": "deepseek-math",
+      "url": "https://www.kaggle.com/datasets/olyatsimboy/deepseek-math",
+      "private": false
+    },
+    {
+      "name": "accelerate wheel/whl",
+      "url": "https://www.kaggle.com/datasets/pshikk/accelerate-wheelwhl",
+      "private": false
+    },
+    {
+      "name": "AI Mathematical Olympiad - Progress Prize 1",
+      "url": "https://www.kaggle.com/competitions/ai-mathematical-olympiad-prize",
+      "private": false
+    },
+    {
+      "name": "Gemma",
+      "url": "https://www.kaggle.com/models/google/gemma/Transformers/2b-it/1",
+      "private": false
+    },
+    {
+      "name": "Gemma",
+      "url": "https://www.kaggle.com/models/google/gemma/Transformers/7b-it/1",
+      "private": false
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+  ],
+  "validation": "Static checks only; training and inference not executed.",
+  "limitations": "名称中的 20th 不作为 handudu 获得第 20 名的证明。基于 AbdurRafae 的公开 Notebook 修改。原代码会执行模型生成的 Python；本次仅静态归档，没有执行生成代码。依赖历史模型和 GPU 环境。"
+}

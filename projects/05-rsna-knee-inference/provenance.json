@@ -1,0 +1,41 @@
+{
+  "project": "05-rsna-knee-inference",
+  "title": "rsna-knee-teacher-probs-exp017-v1-infer",
+  "curated_title": "RSNA Knee MRI Inference",
+  "area": "医学影像 / 分类推理",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
+  "kernel_id": 138542102,
+  "version_id": 358098927,
+  "version_date": "2026-10-13T19:03:54.023Z",
+  "notebook_medal": "NONE",
+  "votes_at_snapshot": 0,
+  "archived_file": "projects/05-rsna-knee-inference/inference.py",
+  "original_download_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
+  "archived_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": false,
+    "kernel_id": null,
+    "author": null,
+    "url": null
+  },
+  "data_sources": [
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "RSNA Knee Abnormality Detection",
+      "url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection",
+      "private": false
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Original script unchanged; embedded source package also unpacked under source/ without executing it."
+  ],
+  "validation": "Static checks only; training and inference not executed.",
+  "limitations": "原公开脚本内嵌 gzip/base64 源码包。本仓库另将其安全解包为 source/，仅静态检查，没有运行安装、训练或推理。检查点输入为私有，无法用当前公开材料完整复现。当前比赛结果不作为获奖证明。"
+}

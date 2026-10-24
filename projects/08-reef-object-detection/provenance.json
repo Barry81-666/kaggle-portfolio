@@ -1,0 +1,81 @@
+{
+  "project": "08-reef-object-detection",
+  "title": "yolov5_wbf?",
+  "curated_title": "Great Barrier Reef · YOLOv5 + WBF",
+  "area": "生态图像 / 目标检测",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/yolov5-wbf",
+  "kernel_id": 24646340,
+  "version_id": 87726774,
+  "version_date": "2022-02-13T13:45:06.493Z",
+  "notebook_medal": "BRONZE",
+  "votes_at_snapshot": 6,
+  "archived_file": "projects/08-reef-object-detection/notebook.ipynb",
+  "original_download_sha256": "ad8dc90717ad9e7b63f28b176860499193ebeaa7abb57a9fd480d9adbbfb379e",
+  "archived_sha256": "5944207a97c2be72b65f28fa076631f2356a2a6ab9545fbb8ac8d8fbdc6bbf3c",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": true,
+    "kernel_id": 24646241,
+    "author": null,
+    "url": null
+  },
+  "data_sources": [
+    {
+      "name": "YOLOv5 font",
+      "url": "https://www.kaggle.com/datasets/awsaf49/yolov5-font",
+      "private": false
+    },
+    {
+      "name": "bbox lib ds",
+      "url": "https://www.kaggle.com/datasets/awsaf49/bbox-lib-ds",
+      "private": false
+    },
+    {
+      "name": "reef_baseline_fold12",
+      "url": "https://www.kaggle.com/datasets/steamedsheep/reef-baseline-fold12",
+      "private": false
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "yolov5s6",
+      "url": "https://www.kaggle.com/datasets/freshair1996/yolov5s6",
+      "private": false
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "YOLOv5 lib ds",
+      "url": "https://www.kaggle.com/datasets/awsaf49/yolov5-lib-ds",
+      "private": false
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "ensemble_boxes",
+      "url": "https://www.kaggle.com/datasets/ccvipchenbin/ensemble-boxes",
+      "private": false
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+  ],
+  "validation": "Static checks only; training and inference not executed.",
+  "limitations": "使用历史 greatbarrierreef 推理环境及外部模型，4 个输入源为私有。原 Notebook 的上游父项当前未公开显示作者，已记录父 Notebook ID；不宣称独立原创。"
+}

@@ -1,0 +1,36 @@
+{
+  "project": "10-tabular-fraud-catboost",
+  "title": "tianchi_finance",
+  "curated_title": "Tabular Fraud Classification · CatBoost",
+  "area": "数据科学 / 表格分类",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/tianchi-finance",
+  "kernel_id": 34102124,
+  "version_id": 116279535,
+  "version_date": "2023-01-13T16:25:30.013Z",
+  "notebook_medal": "NONE",
+  "votes_at_snapshot": 3,
+  "archived_file": "projects/10-tabular-fraud-catboost/notebook.ipynb",
+  "original_download_sha256": "d7a64f5074c0a5f1e5e5ebb8c615c127ece753a066738ad4836489e5ef61df9c",
+  "archived_sha256": "9141830ba3f57f474c2d9a9648708f7c061a6076a7f754521803b9d56b4ecf18",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": false,
+    "kernel_id": null,
+    "author": null,
+    "url": null
+  },
+  "data_sources": [
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+  ],
+  "validation": "Static checks only; training and inference not executed.",
+  "limitations": "输入数据为私有，没有归档原始保险数据。原验证 AUC 使用硬分类预测，且编码器拟合于合并的训练/测试表；若扩展为严谨实验，应改用折内预处理和概率 AUC。归档保留原代码，不标注奖牌。"
+}

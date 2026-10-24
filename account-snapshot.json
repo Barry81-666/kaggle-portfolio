@@ -1,0 +1,34 @@
+{
+  "snapshot_date": "2026-10-24",
+  "username": "handudu",
+  "profile_url": "https://www.kaggle.com/handudu",
+  "performance_tier": "EXPERT",
+  "achievement_summaries": [
+    {
+      "tier": "EXPERT",
+      "summaryType": "USER_ACHIEVEMENT_TYPE_COMPETITIONS",
+      "rankPercentage": 0.003637429,
+      "rankOutOf": 221860,
+      "rankCurrent": 807,
+      "rankHighest": 540,
+      "totalSilverMedals": 7,
+      "totalBronzeMedals": 4
+    },
+    {
+      "tier": "CONTRIBUTOR",
+      "summaryType": "USER_ACHIEVEMENT_TYPE_DATASETS",
+      "rankOutOf": 12107
+    },
+    {
+      "tier": "CONTRIBUTOR",
+      "summaryType": "USER_ACHIEVEMENT_TYPE_NOTEBOOKS",
+      "rankOutOf": 59421,
+      "totalSilverMedals": 1,
+      "totalBronzeMedals": 3
+    }
+  ],
+  "public_notebook_count": 20,
+  "note": "Verified team competition results are recorded in competition-results.json. Archived source versions have not yet been matched to selected final submissions.",
+  "authenticated_visible_notebook_count": 756,
+  "authenticated_visible_competition_count": 98
+}

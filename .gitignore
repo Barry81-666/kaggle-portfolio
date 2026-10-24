@@ -1,0 +1,17 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+!.env.example
+kaggle.json
+data/
+datasets/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.parquet
+*.h5
+.DS_Store

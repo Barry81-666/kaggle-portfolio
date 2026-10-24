@@ -1,0 +1,182 @@
+[
+  {
+    "title": "BASE_NOLEAK_VAL-LOCAL",
+    "source_url": "https://www.kaggle.com/code/handudu/base-noleak-val-local",
+    "kernel_id": 101453728,
+    "version_id": 279919839,
+    "notebook_medal": "BRONZE",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "🧬 RNA Folding: PYTHON EDA & Submission",
+    "source_url": "https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission",
+    "kernel_id": 78016514,
+    "version_id": 226091843,
+    "notebook_medal": "SILVER",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "AIMO1-20_FIX2",
+    "source_url": "https://www.kaggle.com/code/handudu/aimo1-20-fix2",
+    "kernel_id": 77864924,
+    "version_id": 225702535,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "与入选注释版本重复，且原导出含执行错误输出。"
+  },
+  {
+    "title": "AIMO1_20th基础学习资料注释版",
+    "source_url": "https://www.kaggle.com/code/handudu/aimo1-20th",
+    "kernel_id": 77391717,
+    "version_id": 224999934,
+    "notebook_medal": "NONE",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "tez swin-ference韩嘟嘟 ",
+    "source_url": "https://www.kaggle.com/code/handudu/tez-swin-ference",
+    "kernel_id": 25206064,
+    "version_id": 89637429,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "保留在完整清单中；相对已入选项目，主题优先级较低。"
+  },
+  {
+    "title": "rsna-knee-teacher-probs-exp017-v1-infer",
+    "source_url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
+    "kernel_id": 138542102,
+    "version_id": 358098927,
+    "notebook_medal": "NONE",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "1_Nemotron SFT LoRA with CoT",
+    "source_url": "https://www.kaggle.com/code/handudu/1-nemotron-sft-lora-with-cot",
+    "kernel_id": 125738884,
+    "version_id": 332263618,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "当前公开下载返回空文件，不能归档为有效代码。"
+  },
+  {
+    "title": "CoT generation for Nemotron challenge",
+    "source_url": "https://www.kaggle.com/code/handudu/cot-generation-for-nemotron-challenge",
+    "kernel_id": 125489802,
+    "version_id": 332061917,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "公开代码含硬编码 API 凭据；不进入发布包，工作副本中的凭据已替换。"
+  },
+  {
+    "title": "1_train_BASELINE(demo)",
+    "source_url": "https://www.kaggle.com/code/handudu/1-train-baseline-demo",
+    "kernel_id": 99940883,
+    "version_id": 277387301,
+    "notebook_medal": "NONE",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "P1_1_0.65 74d43e",
+    "source_url": "https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e",
+    "kernel_id": 84374697,
+    "version_id": 243588125,
+    "notebook_medal": "NONE",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "gemma-2-9b_LOCAL_VERSION",
+    "source_url": "https://www.kaggle.com/code/handudu/gemma-2-9b-local-version",
+    "kernel_id": 75324953,
+    "version_id": 219562002,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "与已入选的铜牌 Gemma / PEFT Notebook 主题重复。"
+  },
+  {
+    "title": "LMSYS_peft0.14.0",
+    "source_url": "https://www.kaggle.com/code/handudu/lmsys-peft0-14-0",
+    "kernel_id": 74432152,
+    "version_id": 217218292,
+    "notebook_medal": "BRONZE",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "JaneS_INFER_ERROR",
+    "source_url": "https://www.kaggle.com/code/handudu/janes-infer-error",
+    "kernel_id": 74031118,
+    "version_id": 216365488,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "调试性质版本，标题与注释均提示接口问题；优先保留 Hull 时间序列项目。"
+  },
+  {
+    "title": "cifar100",
+    "source_url": "https://www.kaggle.com/code/handudu/cifar100",
+    "kernel_id": 34512574,
+    "version_id": 117521763,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "通用入门图像分类，优先保留更贴近生物与获奖方向的项目。"
+  },
+  {
+    "title": "tianchi_finance",
+    "source_url": "https://www.kaggle.com/code/handudu/tianchi-finance",
+    "kernel_id": 34102124,
+    "version_id": 116279535,
+    "notebook_medal": "NONE",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "PPPMnotebook",
+    "source_url": "https://www.kaggle.com/code/handudu/pppmnotebook",
+    "kernel_id": 28214019,
+    "version_id": 100014799,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "当前公开下载返回空文件，不能归档为有效代码。"
+  },
+  {
+    "title": "yolov5_wbf?",
+    "source_url": "https://www.kaggle.com/code/handudu/yolov5-wbf",
+    "kernel_id": 24646340,
+    "version_id": 87726774,
+    "notebook_medal": "BRONZE",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "6866686",
+    "source_url": "https://www.kaggle.com/code/handudu/6866686",
+    "kernel_id": 24637897,
+    "version_id": 87808626,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "与已入选的铜牌 YOLOv5 / WBF Notebook 重复。"
+  },
+  {
+    "title": "how to use mmdectetion",
+    "source_url": "https://www.kaggle.com/code/handudu/how-to-use-mmdectetion",
+    "kernel_id": 23442240,
+    "version_id": 83951341,
+    "notebook_medal": "NONE",
+    "selected": true,
+    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+  },
+  {
+    "title": "muriltuiduan",
+    "source_url": "https://www.kaggle.com/code/handudu/muriltuiduan",
+    "kernel_id": 21823475,
+    "version_id": 79169029,
+    "notebook_medal": "NONE",
+    "selected": false,
+    "reason": "旧版多语言问答推理，优先保留当前已入选大模型项目。"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "project": "06-time-series-validation",
+  "title": "BASE_NOLEAK_VAL-LOCAL",
+  "curated_title": "Hull Tactical · Time Series Validation",
+  "area": "数据科学 / 时间序列",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/base-noleak-val-local",
+  "kernel_id": 101453728,
+  "version_id": 279919839,
+  "version_date": "2025-11-19T12:05:27.757Z",
+  "notebook_medal": "BRONZE",
+  "votes_at_snapshot": 10,
+  "archived_file": "projects/06-time-series-validation/notebook.ipynb",
+  "original_download_sha256": "27cd18c920504cfcced550bc3ef627ada48b0d9888e8c55f283ff2e704865346",
+  "archived_sha256": "8e59f616b17c93962db666d7882464790a15985740e73fe3b524d92f5c8559e4",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": false,
+    "kernel_id": null,
+    "author": null,
+    "url": null
+  },
+  "data_sources": [
+    {
+      "name": "Hull Tactical - Market Prediction",
+      "url": "https://www.kaggle.com/competitions/hull-tactical-market-prediction",
+      "private": false
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+  ],
+  "validation": "Static checks only; training and inference not executed.",
+  "limitations": "标题含 NOLEAK 不代表已完成泄漏审计。仓库保留原实验代码，没有重算指标或验证投资表现。"
+}

@@ -1,0 +1,66 @@
+{
+  "project": "04-cell-instance-segmentation",
+  "title": "how to use mmdectetion",
+  "curated_title": "Cell Instance Segmentation with MMDetection",
+  "area": "生物医学图像 / 实例分割",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/how-to-use-mmdectetion",
+  "kernel_id": 23442240,
+  "version_id": 83951341,
+  "version_date": "2021-12-30T14:50:03.363Z",
+  "notebook_medal": "NONE",
+  "votes_at_snapshot": 10,
+  "archived_file": "projects/04-cell-instance-segmentation/notebook.ipynb",
+  "original_download_sha256": "917e2e47a3c1b207f62343642e3e85289c6306d9aa7dd0e7198d9e4f80dc7654",
+  "archived_sha256": "283cdefa00b162d1db7d2ca55bc51d0840bc03c640834bdb1f39a32b8a94ef0b",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": true,
+    "kernel_id": 23363385,
+    "author": "KUGAI CHEN",
+    "url": "https://www.kaggle.com/code/kugaichen/how-to-use-mmdectetion"
+  },
+  "data_sources": [
+    {
+      "name": "PyTorch 1.7.0 + Cuda Toolkit 11.0.221",
+      "url": "https://www.kaggle.com/datasets/sreevishnudamodaran/pytorch-170-cuda-toolkit-110221",
+      "private": false
+    },
+    {
+      "name": "MMDetection v2.14.0 ",
+      "url": "https://www.kaggle.com/datasets/sreevishnudamodaran/mmdetectionv2140",
+      "private": false
+    },
+    {
+      "name": "mmdetection_new",
+      "url": "https://www.kaggle.com/datasets/kugaichen/mmdetection-new",
+      "private": false
+    },
+    {
+      "name": "timtim",
+      "url": "https://www.kaggle.com/datasets/kugaichen/timtim",
+      "private": false
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "Sartorius - Cell Instance Segmentation",
+      "url": "https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation",
+      "private": false
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+  ],
+  "validation": "Static checks only; training and inference not executed.",
+  "limitations": "保留 2021 年环境与原安装单元：PyTorch 1.7 / CUDA 11.0、MMCV 和本地 wheel。需要原模型检查点；2 个输入源为私有。运行前需逐格检查旧环境安装和清理命令。"
+}

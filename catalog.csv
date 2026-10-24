@@ -1,0 +1,11 @@
+project,title,area,notebook_medal,source_url,version_id,archived_file
+01-rna-folding,🧬 RNA Folding: PYTHON EDA & Submission,计算生物学 / 探索性分析,SILVER,https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission,226091843,projects/01-rna-folding/notebook.ipynb
+02-bacterial-motor-detection,P1_1_0.65 74d43e,计算生物学 / 三维目标定位,NONE,https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e,243588125,projects/02-bacterial-motor-detection/notebook.ipynb
+03-image2biomass,1_train_BASELINE(demo),生物与农业 / 回归建模,NONE,https://www.kaggle.com/code/handudu/1-train-baseline-demo,277387301,projects/03-image2biomass/notebook.ipynb
+04-cell-instance-segmentation,how to use mmdectetion,生物医学图像 / 实例分割,NONE,https://www.kaggle.com/code/handudu/how-to-use-mmdectetion,83951341,projects/04-cell-instance-segmentation/notebook.ipynb
+05-rsna-knee-inference,rsna-knee-teacher-probs-exp017-v1-infer,医学影像 / 分类推理,NONE,https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer,358098927,projects/05-rsna-knee-inference/inference.py
+06-time-series-validation,BASE_NOLEAK_VAL-LOCAL,数据科学 / 时间序列,BRONZE,https://www.kaggle.com/code/handudu/base-noleak-val-local,279919839,projects/06-time-series-validation/notebook.ipynb
+07-chatbot-preference-lora,LMSYS_peft0.14.0,机器学习 / 大模型推理,BRONZE,https://www.kaggle.com/code/handudu/lmsys-peft0-14-0,217218292,projects/07-chatbot-preference-lora/notebook.ipynb
+08-reef-object-detection,yolov5_wbf?,生态图像 / 目标检测,BRONZE,https://www.kaggle.com/code/handudu/yolov5-wbf,87726774,projects/08-reef-object-detection/notebook.ipynb
+09-llm-code-reasoning,AIMO1_20th基础学习资料注释版,机器学习 / 数学推理,NONE,https://www.kaggle.com/code/handudu/aimo1-20th,224999934,projects/09-llm-code-reasoning/notebook.ipynb
+10-tabular-fraud-catboost,tianchi_finance,数据科学 / 表格分类,NONE,https://www.kaggle.com/code/handudu/tianchi-finance,116279535,projects/10-tabular-fraud-catboost/notebook.ipynb

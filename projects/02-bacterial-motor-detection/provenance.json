@@ -1,0 +1,61 @@
+{
+  "project": "02-bacterial-motor-detection",
+  "title": "P1_1_0.65 74d43e",
+  "curated_title": "Bacterial Flagellar Motor Detection",
+  "area": "计算生物学 / 三维目标定位",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e",
+  "kernel_id": 84374697,
+  "version_id": 243588125,
+  "version_date": "2025-06-04T02:38:40.553Z",
+  "notebook_medal": "NONE",
+  "votes_at_snapshot": 0,
+  "archived_file": "projects/02-bacterial-motor-detection/notebook.ipynb",
+  "original_download_sha256": "2fca7f8f68c51585f5186b7c94593bc130a6963561378792ffcbb005b54c0b98",
+  "archived_sha256": "62bdd24699754e9c7fdd6c80984146c8abb6120ba4475e99ddb4a2fec79d98ee",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": true,
+    "kernel_id": 84148436,
+    "author": null,
+    "url": null
+  },
+  "data_sources": [
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "mahf_yolo_train",
+      "url": "https://www.kaggle.com/datasets/playwithme/mahf-yolo-train",
+      "private": false
+    },
+    {
+      "name": "BYU - Locating Bacterial Flagellar Motors 2025",
+      "url": "https://www.kaggle.com/competitions/byu-locating-bacterial-flagellar-motors-2025",
+      "private": false
+    },
+    {
+      "name": "MHAFYOLO",
+      "url": "https://www.kaggle.com/models/yyyy0201/mhafyolo/PyTorch/default/1",
+      "private": false
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+  ],
+  "validation": "Static checks only; training and inference not executed.",
+  "limitations": "需要原 Notebook 挂载的多个模型权重；3 个输入源当前标记为私有。标题里的数值和第三方排行榜记录不作为本仓库的获奖或最终排名证明。"
+}

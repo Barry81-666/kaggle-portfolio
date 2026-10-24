@@ -1,0 +1,81 @@
+{
+  "project": "07-chatbot-preference-lora",
+  "title": "LMSYS_peft0.14.0",
+  "curated_title": "Multilingual Chatbot Preference · LoRA",
+  "area": "机器学习 / 大模型推理",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/lmsys-peft0-14-0",
+  "kernel_id": 74432152,
+  "version_id": 217218292,
+  "version_date": "2025-01-12T07:39:42.693Z",
+  "notebook_medal": "BRONZE",
+  "votes_at_snapshot": 9,
+  "archived_file": "projects/07-chatbot-preference-lora/notebook.ipynb",
+  "original_download_sha256": "5c1329f719d3e3864e485889c152a15b91a036c6e2db222df26eaef04a47e00e",
+  "archived_sha256": "93503ec1203d2a72c373501aafbac1fceb3e5926c25ca445bbde55755ffe7387",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": false,
+    "kernel_id": null,
+    "author": null,
+    "url": null
+  },
+  "data_sources": [
+    {
+      "name": "LMSYS wheel files",
+      "url": "https://www.kaggle.com/datasets/emiz6413/lmsys-wheel-files",
+      "private": false
+    },
+    {
+      "name": "Gemma-2 9b Instruct 4bit L=16/42",
+      "url": "https://www.kaggle.com/datasets/emiz6413/73zap2gx",
+      "private": false
+    },
+    {
+      "name": "peft-0.14.0",
+      "url": "https://www.kaggle.com/datasets/tonyxu/peft-0-14-0",
+      "private": false
+    },
+    {
+      "name": "peft n friends",
+      "url": "https://www.kaggle.com/datasets/kevinwang1434/peft-n-friends",
+      "private": false
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "hf-libraries",
+      "url": "https://www.kaggle.com/datasets/nbroad/hf-libraries",
+      "private": false
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    },
+    {
+      "name": "WSDM Cup - Multilingual Chatbot Arena",
+      "url": "https://www.kaggle.com/competitions/wsdm-cup-multilingual-chatbot-arena",
+      "private": false
+    },
+    {
+      "name": "gemma-2",
+      "url": "https://www.kaggle.com/models/emiz6413/gemma-2/Transformers/gemma-2-9b-it-4bit/1",
+      "private": false
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+  ],
+  "validation": "Static checks only; training and inference not executed.",
+  "limitations": "依赖特定离线 wheel、基础模型和 LoRA 检查点；3 个输入源为私有。尚未验证依赖兼容性、模型加载或推理指标。"
+}
