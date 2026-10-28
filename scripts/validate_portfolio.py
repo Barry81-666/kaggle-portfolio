@@ -222,6 +222,11 @@ def main():
         'results/rsna-knee-public/T7_dgm.csv': ['n', 'rho', 'replicates', 'realized_prevalence', 'realized_sensitivity', 'realized_specificity', 'correction_factor', 'max_bias_mcse', 'target_mcse_met'],
         'results/rsna-knee-public/T7_ordering.csv': ['n', 'rho', 'method', 'attempted', 'valid', 'correct_order', 'correct_order_mcse', 'tie_rate', 'reversed_order', 'superiority_rate', 'intervals_valid', 'tie_mcse', 'reversal_mcse', 'superiority_mcse'],
         'results/rsna-knee-public/T7_simulation.csv': ['n', 'rho', 'method', 'estimand', 'replicates_attempted', 'estimates_valid', 'intervals_valid', 'truth', 'mean_estimate', 'bias', 'bias_mcse', 'empirical_sd', 'sd_mcse', 'rmse', 'rmse_mcse', 'coverage', 'coverage_mcse', 'mean_interval_width', 'width_mcse', 'failure_rate', 'failure_mcse', 'interval_failure_rate', 'interval_failure_mcse', 'out_of_range', 'out_of_range_mcse'],
+        'results/rsna-knee-public/T5_clusters.csv': ['variant', 'source_a', 'source_b', 'mean_or_median_kappa', 'same_cluster_k2', 'bootstrap_same_cluster', 'bootstrap_replicates'],
+        'results/rsna-knee-public/T5_membership.csv': ['variant', 'source', 'cluster_k2'],
+        'results/rsna-knee-public/T5_focus.csv': ['finding', 'source_a', 'source_b', 'kappa', 'lower', 'upper', 'pair_known_n'],
+        'results/rsna-knee-public/T8_interval_sensitivity.csv': ['method', 'n', 'prevalence', 'true_auc', 'replicates', 'intervals_valid', 'coverage', 'coverage_mcse', 'successful_coverage', 'successful_coverage_mcse', 'interval_failure_rate', 'failure_mcse', 'mean_width', 'width_mcse', 'paired_success_difference', 'paired_difference_mcse'],
+        'results/rsna-knee-public/T8_sample_diagnostics.csv': ['replicates', 'n', 'mean_positives', 'positive_q025', 'positive_median', 'positive_q975', 'fewer_than_two_positives', 'boundary_auc', 'zero_delong_variance', 'mean_auc', 'bias', 'bias_mcse'],
         'results/rsna-knee-public/source_files.csv': ['dataset', 'filename', 'version', 'license', 'source_url', 'sha256', 'bytes'],
     })
     forbidden = {'.pth', '.pt', '.ckpt', '.safetensors', '.parquet', '.dcm', '.npy', '.npz', '.zip', '.tar', '.gz', '.rds', '.RData', '.duckdb', '.wal', '.part'}

@@ -18,17 +18,19 @@ options(knitr.kable.NA="—")
 
 ## What this study establishes
 
-Five public report-extraction label sources can be aligned on **4,349 studies**, but agreement is strongly finding-dependent. The conditional-independence latent model fails to reproduce their response patterns; one finding also fails convergence. Consequently, this study does **not** endorse its sensitivity or specificity estimates as diagnostic accuracy.
+1. **Five sources form two stable similarity groups.** Across 4,349 studies, Steven/Pilkwang/Lixin cluster together and Dread/Yunus form the other group. Effusion separates them especially clearly: within-group kappa 0.894–0.989, between-group 0.311–0.377. Different published severity/mention conventions are plausible contributors; agreement alone does not prove copying or conditional dependence. This clustering is **post-hoc**.
+2. **Checking the measurement model changes what can be claimed about accuracy.** All 11 converged primary latent fits fail to reproduce the observed response patterns; synovitis also fails convergence. This challenges the combined common-binary-target and conditional-independence assumptions. The fitted sensitivity/specificity values cannot be treated as established diagnostic accuracy.
+3. **More data can make a misspecified correction more precisely wrong.** In the prespecified score-dependent scenario, known-parameter AUC correction at n=977 has bias +0.1274 and 95% interval coverage of 12.4%. With score-independent errors it removes most bias. These are synthetic mechanisms, not measured RSNA performance.
 
-A separate simulation shows why this matters for evaluation: with score-independent errors, the known-parameter AUC correction removes most bias; with score-dependent errors, it overcorrects. Increasing sample size then produces more precise estimates around the wrong target. These are synthetic results under stated assumptions, not performance measurements of any RSNA model.
+A separate post-hoc interval study shows that bootstrap count explains little of the small-sample undercoverage: 399 versus 1,999 resamples gives 86.1% versus 86.5% coverage, while a logit interval reaches 92.6% among valid intervals. Failures and Monte Carlo uncertainty accompany every comparison below.
 
 ## Design and provenance
 
-The [SAP v1.2](SAP.md) was frozen at commit `968c2a9cdb3be5978bbeed5128bad8ba843985f9` before B/C outcomes. [DECISIONS.md](DECISIONS.md) records the approved change in emphasis. Empirical leaderboard analysis was discontinued; its already completed synthetic reference appears only in the supplement.
+The [SAP v1.2](SAP.md) was frozen at commit `968c2a9cdb3be5978bbeed5128bad8ba843985f9` before B/C outcomes. [DECISIONS.md](DECISIONS.md) records the approved change in emphasis. The v1.3 clustering and interval sensitivity were specified after all primary results were seen. Their exploratory status is retained throughout.
 
 Inputs are Dread v3, Steven v6's original full/v1 file, Pilkwang v1, Yunus v3 and Lixin v1. Each publisher lists CC0. See the [source audit](SOURCE_AUDIT.md) and [file hashes](../../results/rsna-knee-public/source_files.csv). All five primary files cover the Dread-anchored intersection. This is a cohort of study identifiers, not a confirmed count of unique patients.
 
-No original reports, MRI images, official Gold58 annotations, personal model predictions, submission histories or rule-gated files were used. We cannot verify individual copied expert labels or exclude undisclosed panel tuning. Derived releases with known shared ancestry or expert-panel development were not counted as independent sources.
+No original reports, MRI images, official Gold58 annotations, personal model predictions, submission histories or rule-gated files were used. We cannot verify individual copied expert labels or exclude undisclosed panel tuning. Known later blends were excluded from the primary cohort. Several publishers describe expert-panel benchmarking; undocumented copying or tuning cannot be ruled out for the selected files. We do not assert that the five primary sources are independent.
 
 ## B: agreement and missingness
 
@@ -52,7 +54,28 @@ For example, fracture agreement is high, while synovitis has much lower agreemen
 
 [Prespecified sensitivities](../../results/rsna-knee-public/T4_sensitivity.csv) vary score thresholds to 0.3/0.7 and treat documented unknowns as negative/positive. These change the definition and analyzed population; none was selected to maximize agreement.
 
-## B: what the latent model could not resolve
+## B: source similarity structure (post-hoc)
+
+After inspecting F5, we clustered sources using [average linkage](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/hclust.html) and `1 - mean(Cohen kappa)` across the 12 equally weighted findings. The two-cluster cut was chosen after viewing the heatmap, rather than selected by an independence test. A median-kappa sensitivity and a mean-kappa analysis restricted to the same five-source-complete cases for each finding yield the same groups. All 1,000 joint study-bootstrap samples retain the two-cluster partition. This describes stability **within this cohort and these harmonization rules**, not certainty about another population or a latent truth.
+
+![Post-hoc source clustering](../../figures/rsna-knee-public/F5c_source_clusters.png)
+
+The 12-finding mean pairwise kappas are 0.955 for Steven/Pilkwang, 0.881 for Steven/Lixin, 0.865 for Pilkwang/Lixin, and 0.793 for Dread/Yunus. Kappa reaches at least 0.9 in 10, 9 and 7 of 12 findings for the three pairs in the first group, respectively. It is not uniformly near-perfect agreement across all findings.
+
+```{r cluster-focus, echo=FALSE, results='asis'}
+t<-fread(file.path(out,"T5_focus.csv"))
+kable(t[,.(Finding=finding,Pair=paste(source_a,source_b,sep=" / "),`Paired known`=pair_known_n,Kappa=sprintf("%.3f",kappa),`95% bootstrap interval`=sprintf("%.3f to %.3f",lower,upper))],format="pipe")
+```
+
+Effusion within-group kappa is 0.894–0.989, versus 0.311–0.377 between groups. Synovitis is less cleanly separated: Dread/Yunus kappa is 0.736 and Yunus/Lixin reaches 0.507. Steven/Pilkwang kappa=1 concerns **605 paired-known, thresholded binary labels**, not complete-file identity, unknown codes or continuous scores. Its [1,1] empirical bootstrap interval reflects zero observed discordance; it does not establish perfect population agreement.
+
+The [post-hoc provenance review](SOURCE_AUDIT.md#post-hoc-provenance-review-2026-10-29) identifies a concrete definition difference: Pilkwang's YES verdict denotes an asserted finding, whereas Yunus's mild/trace score of 0.25 falls below the primary 0.5 threshold. Steven's later v4 file explicitly blends with Lixin, but **the selected Steven file is original v1**, so that relationship cannot establish copying among these primary files. Lixin's empty description leaves important provenance unknown.
+
+**Effective independent source count is not identified.** Two descriptive clusters are not two independent tests. Shared true states can produce high marginal agreement even under conditional independence; conversely, differing targets and shared extraction errors can both cause model misfit. The clusters motivate these explanations without distinguishing them. Thus five agreeing labels should not automatically be treated as five independent confirmations.
+
+[T5 pair summaries](../../results/rsna-knee-public/T5_clusters.csv), [memberships](../../results/rsna-knee-public/T5_membership.csv) and [finding-specific denominators](../../results/rsna-knee-public/T5_focus.csv) provide the aggregate record. Bootstrap co-membership frequencies are descriptive stability measures, not posterior probabilities or independence counts.
+
+## B: model checking before interpreting accuracy
 
 The model has two latent report-state classes and five conditionally independent Bernoulli indicators. Beta(2,2) accuracy priors and Beta(1,1) prevalence priors are constrained to a positive average Youden index to orient the classes. Four chains start with 6,000 iterations and 2,000 warmup, with one prespecified extension to 12,000/4,000. The [posterior package diagnostics](https://mc-stan.org/posterior/reference/diagnostics.html) use rank-normalized R-hat and bulk/tail ESS. Accuracy-prior sensitivities are Beta(1,1) and Beta(4,2).
 
@@ -93,11 +116,30 @@ At rho=0, strict correct ordering of the 0.90/0.91 models rises from **53.65%** 
 
 ![Synthetic model-ordering probabilities](../../figures/rsna-knee-public/F7b_model_ordering.png)
 
+## C: small expert-sample interval sensitivity (post-hoc)
+
+The original simulations used 399 percentile-bootstrap resamples. To separate bootstrap Monte Carlo resolution from interval-method limitations, we generated **4,000 additional, perfectly labeled synthetic samples**, each n=58, prevalence 0.15 and true AUC 0.90. Every method sees the same samples; the first 399 bootstrap draws are nested within 1,999 draws. Error dependence rho is irrelevant to this perfectly labeled experiment. The original four-cell correction analysis and its outputs are unchanged.
+
+DeLong variance is calculated from case/control placements and checked against [pROC](https://cran.r-project.org/web/packages/pROC/refman/pROC.html). Normal intervals are clipped to [0,1]; logit-delta intervals transform using the same variance. These are asymptotic intervals, not exact finite-sample procedures. At least two observations in each class are required for DeLong; AUC at a boundary or zero variance makes the logit interval undefined, without an invented continuity correction. Bootstrap intervals still require 80% valid resamples.
+
+```{r interval-table, echo=FALSE, results='asis'}
+t<-fread(file.path(out,"T8_interval_sensitivity.csv"))
+kable(t[,.(Method=method,`Valid intervals`=intervals_valid,`Coverage (valid)`=sprintf("%.2f%%",100*coverage),`Coverage MCSE (pp)`=sprintf("%.2f",100*coverage_mcse),`Successful coverage (all)`=sprintf("%.2f%%",100*successful_coverage),`Failure rate`=sprintf("%.3f%%",100*interval_failure_rate),`Mean width`=sprintf("%.3f",mean_width))],format="pipe")
+```
+
+![Post-hoc interval sensitivity](../../figures/rsna-knee-public/F8_interval_sensitivity.png)
+
+Increasing bootstrap draws changes successful coverage over all attempts by **+0.40 percentage points** (paired MCSE 0.19 pp). Logit intervals improve it by **+6.05 pp** (paired MCSE 0.48 pp), but remain below nominal coverage: 92.63% among valid intervals, **92.05% across all attempts**. Ordinary DeLong reaches only 83.16% among valid intervals. A method called DeLong is not automatically better in this sparse setting.
+
+The samples average 8.74 positives (central 95% range 4–14). There are 4 samples with fewer than two positives and 21 with boundary AUC/zero DeLong variance. The logit method therefore fails in 25/4,000 attempts; other methods fail in 4/4,000. Undefined intervals count as unsuccessful in the all-attempt measure rather than disappearing from the denominator. Conditional coverage alone would hide this tradeoff.
+
+These comparisons show that a larger bootstrap count alone explains little of the deficit. They do not identify the fraction attributable to discreteness, sparse positive counts, skewness or the generating distribution, and they do not validate any method for real Gold58. The [T8 results](../../results/rsna-knee-public/T8_interval_sensitivity.csv) include paired MCSEs and width; [sample diagnostics](../../results/rsna-knee-public/T8_sample_diagnostics.csv) record class counts and boundary cases.
+
 ## Boundaries and next analysis
 
 The main deliverable is complete: public-source agreement, independent latent-model diagnostics, and the four baseline misclassification scenarios. Secondary derivative-source analyses, alternate prevalence priors/orientations, a dependent latent model, B-derived extraction-error-only simulations, uncertain-parameter correction, and the large stress grid were not run. The failed independence fit prevents credible calibration from B; no favorable posterior was selected as a substitute.
 
-The next useful extension is a prespecified dependence-aware report-state model with explicit anchors and prior-predictive checks, followed by comparison of predictive fit and parameter stability. It still requires an externally justified target definition before any diagnostic-accuracy interpretation. A broader C grid can examine differential score dependence and uncertain calibration parameters. No additional personal competition materials are needed for these methodological extensions.
+The next useful extension is to specify a common target (any mention versus severity threshold), reconcile source conventions, and then prespecify a dependence-aware report-state model with explicit anchors and prior-predictive checks, followed by comparison of predictive fit and parameter stability. It still requires an externally justified target definition before any diagnostic-accuracy interpretation. A broader C grid can examine differential score dependence and uncertain calibration parameters. No additional personal competition materials are needed for these methodological extensions.
 
 ## Supplement: completed sampling reference
 
@@ -105,4 +147,6 @@ Before the B/C focus, an A-only synthetic benchmark covered 16 scenarios with 2,
 
 ## Reproduction and references
 
-See the [R execution guide](README.md), [checks](CHECKS.md), and [SAP references](SAP.md#references). B descriptive computation took 0.11 minutes, latent fitting 1.07 minutes, and C 1.76 minutes on this machine; with the earlier A run, recorded analyses total about 4.22 minutes, within the 120-minute cap. Software tests and rendering are reported separately. Raw/aligned labels, study IDs and sampler/Monte Carlo draws stay outside the repository. Published tables and figures contain aggregates only.
+See the [R execution guide](README.md), [checks](CHECKS.md), and [SAP references](SAP.md#references). B descriptive computation took 0.11 minutes, latent fitting 1.07 minutes, and C 1.76 minutes on this machine; with the earlier A run, the original analyses total about 4.22 minutes. Post-hoc clustering took 0.02 minutes and the interval comparison 0.31 minutes, bringing recorded analyses to about 4.55 minutes, within the 120-minute cap. Software tests and rendering are reported separately. Raw/aligned labels, study IDs and sampler/Monte Carlo draws stay outside the repository. Published tables and figures contain aggregates only.
+
+I designed and ran this analysis with AI coding assistance. Upstream dataset authors supplied the public label extractions; their versions and attribution are preserved in the source audit.

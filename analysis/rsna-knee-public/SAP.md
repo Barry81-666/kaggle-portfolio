@@ -2,6 +2,8 @@
 
 **Version 1.2 · 2026-10-28 · Status: owner-authorized shift to labels and misclassification**
 
+**Post-hoc addendum:** v1.3 (2026-10-29) is specified in [DECISIONS.md](DECISIONS.md#v13-post-hoc-interpretation-and-interval-sensitivity-2026-10-29). Clustering and interval-method comparisons were added after all primary results were seen; the v1.2 primary plan below is unchanged.
+
 **Study title:** Assessing Knee Diagnostic Labels Extracted from Radiology Reports Without a Gold Standard: Agreement, Latent Report States and AUC Misclassification Bias.
 
 This is a new methodological study. It uses no portfolio owner's competition code, predictions, submission history or personal experience. It does not use competition images, reports, `train.csv`, official Gold58 labels, or files requiring acceptance of competition rules. The earlier personal-model and Gold58-comparison plans are superseded. At the v1.1 freeze, no empirical outcome analysis under this plan had been run. Pre-plan work is limited to public source discovery, licensing, file schemas and coverage checks; synthetic software tests are separate.

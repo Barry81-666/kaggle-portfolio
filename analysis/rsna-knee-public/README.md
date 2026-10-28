@@ -1,6 +1,6 @@
 # Reproduce the public-label study
 
-Start with the [results report](report.md), [project page](../../projects/11-rsna-knee-leaderboard-reliability/) and [SAP](SAP.md). The primary analyses are **B: report-label agreement and latent-model diagnostics** and **C: AUC misclassification simulation**. SAP v1.2 was frozen at `968c2a9cdb3be5978bbeed5128bad8ba843985f9` before B/C outcomes. No further personal competition materials or Meta Kaggle extract are needed.
+Start with the [results report](report.md), [project page](../../projects/11-knee-report-label-accuracy/) and [SAP](SAP.md). The primary analyses are **B: report-label agreement and latent-model diagnostics** and **C: AUC misclassification simulation**. SAP v1.2 was frozen at `968c2a9cdb3be5978bbeed5128bad8ba843985f9` before B/C outcomes. [v1.3](DECISIONS.md#v13-post-hoc-interpretation-and-interval-sensitivity-2026-10-29) records the post-hoc clustering and interval-method sensitivity. No further personal competition materials or Meta Kaggle extract are needed.
 
 ## Environment and acquisition
 
@@ -41,10 +41,15 @@ source("tests/test-foundation.R")
 source("tests/test-label-patterns.R")
 source("tests/test-latent.R")
 source("tests/test-paired.R")
+source("tests/test-intervals.R")
 source("R/21_label_analysis.R")
 source("R/23_fit_labels.R")
 source("R/32_run_simulation.R")
 source("R/40_figures.R")
+# Post-hoc v1.3 additions, explicitly separate from the frozen primary plan.
+source("R/24_source_clusters.R")
+source("R/34_interval_sensitivity.R")
+source("R/41_review_figures.R")
 knitr::knit("report.qmd", output="report.md", quiet=TRUE)
 ```
 
@@ -55,7 +60,8 @@ The checked Markdown report was generated with **knitr**, not a Quarto CLI insta
 | B descriptive | Joint bootstrap; known/unknown denominators; Cohen/Fleiss kappa, PABAK; majority-disagreement summaries; prespecified threshold/unknown sensitivities |
 | B latent | Native-R constrained Gibbs sampler; 12 findings × 3 accuracy priors × 4 chains; convergence and posterior predictive diagnostics |
 | C | Four baseline scenarios; naive, oracle-corrected and independent expert-n58 estimates; paired bootstrap intervals; bias, RMSE, coverage, ordering, failures and MCSE |
-| Reporting | Aggregate tables, five B/C figures and rendered English report |
+| Post-hoc v1.3 | Source clustering and 1,000 joint-bootstrap stability checks; 4,000 expert-sample interval comparisons, with up to 1,999 bootstrap draws |
+| Reporting | Aggregate tables, seven B/C figures and rendered English report |
 
 The model code is in [R/22_latent_model.R](R/22_latent_model.R); its positive-average-Youden orientation is an assumption, not independent validation. All latent outputs are diagnostic because predictive fit fails. The C script uses a fixed, prespecified parameter grid rather than fitting its simulation inputs to these failed models.
 
