@@ -1,0 +1,160 @@
+[
+  {
+    "repository": "homeshwarnelakurthi/RSNA-Knee-Abnormality-Detection",
+    "url": "https://github.com/homeshwarnelakurthi/RSNA-Knee-Abnormality-Detection",
+    "commit": "a6040355cfc5d03688846ad6afd8aac4b30bbb92",
+    "license": "not declared",
+    "files_reviewed": [
+      "README.md",
+      "eda/01_labels_reports.py"
+    ]
+  },
+  {
+    "repository": "SathishKumarAI/rsna-knee-2026",
+    "url": "https://github.com/SathishKumarAI/rsna-knee-2026",
+    "commit": "c5e882073d570cdfd377d36c17b30584dfde3246",
+    "license": "not declared",
+    "files_reviewed": [
+      "README.md",
+      "src/metric.py"
+    ]
+  },
+  {
+    "repository": "Sibusiso-K/RSNA-Knee-Abnormality-Detection",
+    "url": "https://github.com/Sibusiso-K/RSNA-Knee-Abnormality-Detection",
+    "commit": "e68ba6bcbf174b4b3327a73b94ca5a794d0e225e",
+    "license": "not declared",
+    "files_reviewed": [
+      "README.md",
+      "kaggle/evaluate-fresh24/evaluate.py"
+    ]
+  },
+  {
+    "repository": "Tomashcv/RSNAKnee2026-Showcase",
+    "url": "https://github.com/Tomashcv/RSNAKnee2026-Showcase",
+    "commit": "bb57074b098a9646c05f3e29802c219dbfabc143",
+    "license": "not declared",
+    "files_reviewed": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "NTejas-1/RSNA-Knee-Abnormality-Detection",
+    "url": "https://github.com/NTejas-1/RSNA-Knee-Abnormality-Detection",
+    "commit": "1c386ac71385ba7683f550b87a465386ba6c36a8",
+    "license": "MIT for author-owned components; third-party exclusions",
+    "files_reviewed": [
+      "README.md",
+      "LICENSE",
+      "tools/eval_oof.py",
+      "tools/validate_gold.py"
+    ]
+  },
+  {
+    "repository": "AhmadEnan/RSNA-Knee-Abnormality-Detection",
+    "url": "https://github.com/AhmadEnan/RSNA-Knee-Abnormality-Detection",
+    "commit": "b9327f58e17a03fd442cbeb4910be32ac5534332",
+    "license": "MIT",
+    "files_reviewed": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "liamd-schneider/RSNA-Knee-Abnormality-Detection",
+    "url": "https://github.com/liamd-schneider/RSNA-Knee-Abnormality-Detection",
+    "commit": "a0c20aaf4dab696288c44ad8a2b8e8d7235de58f",
+    "license": "MIT",
+    "files_reviewed": [
+      "README.md",
+      "src/dicom_utils.py"
+    ]
+  },
+  {
+    "repository": "switzloco/creaky",
+    "url": "https://github.com/switzloco/creaky",
+    "commit": "f14f3dba883e12909a5fb2bc3b1a2f32ebb62447",
+    "license": "Apache-2.0",
+    "files_reviewed": [
+      "README.md",
+      "scripts/eval_2fold_c384_oof_and_gold.py",
+      "scripts/label_mining/audit_jev_vs_gold.py"
+    ]
+  },
+  {
+    "repository": "trungdo1810/RSNA2026-Knee",
+    "url": "https://github.com/trungdo1810/RSNA2026-Knee",
+    "commit": "fd62ba0a2b26e79a23cdd6dea1b49225d224dc3d",
+    "license": "not declared",
+    "files_reviewed": [
+      "README.md",
+      "scripts/make_folds.py"
+    ]
+  },
+  {
+    "repository": "Evan2001ok/rsna-knee-abnormality-detection",
+    "url": "https://github.com/Evan2001ok/rsna-knee-abnormality-detection",
+    "commit": "32a89014d40f0244623b43118ea89d6855814e48",
+    "license": "not declared",
+    "files_reviewed": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "yu4u/kaggle-rsna2024-4th",
+    "url": "https://github.com/yu4u/kaggle-rsna2024-4th",
+    "commit": "fe7bd995e8ff61b63d035337c9dac8b6a732bc38",
+    "license": "MIT",
+    "files_reviewed": [
+      "README.md",
+      "axial_cls_src/datamodule.py"
+    ]
+  },
+  {
+    "repository": "lhwcv/solution-rsna-2024-lumbar-spine",
+    "url": "https://github.com/lhwcv/solution-rsna-2024-lumbar-spine",
+    "commit": "f466285646a2ca4047cf794c4be6fe34afd9ecbf",
+    "license": "MIT",
+    "files_reviewed": [
+      "README.md",
+      "src/utils/dicom.py"
+    ]
+  },
+  {
+    "repository": "hengck23/solution-rsna-2024-lumbar-spine",
+    "url": "https://github.com/hengck23/solution-rsna-2024-lumbar-spine",
+    "commit": "8587dae47ff9ba0a3f3ab1d120cc2a8f5cc54f25",
+    "license": "MIT",
+    "files_reviewed": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "siwooyong/RSNA-2024-Lumbar-Spine-Degenerative-Classification",
+    "url": "https://github.com/siwooyong/RSNA-2024-Lumbar-Spine-Degenerative-Classification",
+    "commit": "2b88d91aa7a4bcf570fbdc08743275b4d27e3e07",
+    "license": "not declared",
+    "files_reviewed": [
+      "README.md"
+    ]
+  },
+  {
+    "repository": "TheoViel/kaggle_rsna_lumbar_spine",
+    "url": "https://github.com/TheoViel/kaggle_rsna_lumbar_spine",
+    "commit": "0e4dbea8ce16249792ec64cefa4cd5510eda7cdb",
+    "license": "Apache-2.0",
+    "files_reviewed": [
+      "README.md",
+      "src/util/metrics.py"
+    ]
+  },
+  {
+    "repository": "phalendj/rsna2024",
+    "url": "https://github.com/phalendj/rsna2024",
+    "commit": "a9cd947297bdccfbef8b1714a8b3e48210a15c8e",
+    "license": "MIT",
+    "files_reviewed": [
+      "README.md",
+      "rsna2024/training/evaluate.py"
+    ]
+  }
+]
