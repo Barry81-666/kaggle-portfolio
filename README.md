@@ -4,7 +4,7 @@ I compete on Kaggle as [handudu](https://www.kaggle.com/handudu). This portfolio
 
 ## Biomedical Competition Results
 
-Kaggle Competitions **Expert**, with **7 silver and 4 bronze** team competition medals; four of the silver medals are in biomedical imaging. Ranks are team ranks as listed on my Kaggle profile (October 2026). [Full competition record](COMPETITION_RESULTS.md)
+Kaggle Competitions **Expert** (ranked 807 of 221,860; highest 540), with **7 silver and 4 bronze** team competition medals; four of the silver medals are in biomedical imaging. Ranks are team ranks as listed on my Kaggle profile (October 2026). [Full competition record](COMPETITION_RESULTS.md)
 
 | Competition | Team rank | Medal | My role | Code |
 | --- | --- | --- | --- | --- |
@@ -18,7 +18,7 @@ The linked notebooks are public notebooks I published during these competitions;
 <details>
 <summary>Seven additional competition results</summary>
 
-| Competition | Team rank / teams | Medal |
+| Competition | Team rank | Medal |
 | --- | --- | --- |
 | [WSDM Cup - Multilingual Chatbot Arena](https://www.kaggle.com/competitions/wsdm-cup-multilingual-chatbot-arena) | 27 / 950 | Silver |
 | [Feedback Prize - Predicting Effective Arguments](https://www.kaggle.com/competitions/feedback-prize-effectiveness) | 42 / 1557 | Silver |

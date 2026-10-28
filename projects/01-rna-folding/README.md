@@ -1,6 +1,6 @@
 # RNA Sequence and Structure Exploration
 
-My published notebook explores RNA sequence lengths, temporal cutoffs, nucleotide composition and coordinate distributions. A genuine figure has been recovered from the original public output; it is useful for inspecting data heterogeneity, not for judging predictive performance.
+My published notebook explores RNA sequence lengths, temporal cutoffs, nucleotide composition and coordinate distributions. The figure below is from the notebook's original output.
 
 ## Historical EDA Output
 
