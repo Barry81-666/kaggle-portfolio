@@ -42,6 +42,8 @@ Kaggle Competitions **Expert**; **7 silver and 4 bronze team competition medals*
 
 Notebook recognition is separate from competition ranking: RNA has one **silver Notebook medal**; time series, multilingual preference and reef detection each have a **bronze Notebook medal** (Kaggle snapshot 2026-10-24).
 
+Research in development: [Medical-Imaging Leaderboard Reliability and Label Uncertainty](projects/11-rsna-knee-leaderboard-reliability/) — a new public-data statistical study, currently at the analysis-plan and software-foundation stage.
+
 Code is archived as published on Kaggle; data and weights are not included.
 
 [Results and figures](results/) · [Sources and attribution](SOURCES.md)

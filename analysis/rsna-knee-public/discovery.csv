@@ -1,0 +1,36 @@
+ref,licenseName,currentVersionNumber,screening_status
+stevenleehans/rsna-knee-llm-report-labels,CC0: Public Domain,6,see datasets.csv
+pilkwang/rsna-knee-llm-labels,CC0: Public Domain,1,see datasets.csv
+goodpjw2008/rsna-knee-2-5d-convnext-reader,Apache 2.0,1,discovery_only_not_approved_for_download
+lixin73/rsna-knee-llm-report-labels-sol56,CC0: Public Domain,1,see datasets.csv
+nartaa/rsna-knee-s6fall-weights,Other (specified in description),5,discovery_only_not_approved_for_download
+dreaddevelopment/raptor-knee-widedense,CC0: Public Domain,2,discovery_only_not_approved_for_download
+laymond/rsna-knee-abnormality-qwen3-8b-weak-labels,CC0: Public Domain,2,see datasets.csv
+nartaa/rsna-knee-hpo-assets,CC0: Public Domain,9,discovery_only_not_approved_for_download
+yehezkielhaganta/psuedo-labeling-knee,MIT,7,discovery_only_not_approved_for_download
+kritikabenjwal/rsna-knee-labels-soft-v2,Other (specified in description),1,discovery_only_not_approved_for_download
+flight0234/rsna-knee-hybrid-report-labels,CC0: Public Domain,1,see datasets.csv
+nartaa/rsna-knee-publication-swa-weights-20261007,Other (specified in description),1,discovery_only_not_approved_for_download
+riadmohamed42/jev-knee-labels,CC0: Public Domain,5,see datasets.csv
+omerzalman/rsna-knee-11-label-evidence-fusion,Attribution-NonCommercial 4.0 International (CC BY-NC 4.0),2,see datasets.csv
+barun2104/rsna-knee-stratified-folds-and-llm-soft-labels,Other (specified in description),1,discovery_only_not_approved_for_download
+dreaddevelopment/raptor-knee-finespacing,CC0: Public Domain,1,discovery_only_not_approved_for_download
+yunusgmsoy/rsna-knee-llm-report-labels,CC0: Public Domain,3,see datasets.csv
+cdeotte/rsna-knee-frontier-llm-hybrid-labels,CC0: Public Domain,1,discovery_only_not_approved_for_download
+songqizhou/rsna-knee-llm-labels,CC BY-NC-SA 4.0,1,discovery_only_not_approved_for_download
+yunusgmsoy/rsna-knee-llm-labels-4-source-merged,CC0: Public Domain,2,see datasets.csv
+dreaddevelopment/rsna-knee-labels,CC0: Public Domain,3,see datasets.csv
+omerzalman/rsna-knee-99-accuracy-11-soft-labels,Attribution-NonCommercial 4.0 International (CC BY-NC 4.0),2,discovery_only_not_approved_for_download
+omerzalman/rsna-knee-98-accuracy-11-soft-labels,Attribution-NonCommercial 4.0 International (CC BY-NC 4.0),2,discovery_only_not_approved_for_download
+karttikjangid05/rsna-knee-public-llm-label-sets-compared,CC0: Public Domain,1,see datasets.csv
+drizlo/rsna-knee-mri-llm-soft-labels,Attribution 4.0 International (CC BY 4.0),1,discovery_only_not_approved_for_download
+shuvokumarbasakbd/knee-x-ray-digital-colorized-images,MIT,1,discovery_only_not_approved_for_download
+abdullahmathar/rsna-knee-argon4-soft-labels,CC0: Public Domain,1,discovery_only_not_approved_for_download
+tonylin1026/rsna-knee-refined-soft-labels,CC0: Public Domain,3,discovery_only_not_approved_for_download
+narisettichaitanya/rsna-knee-teacher-soft-labels,CC0: Public Domain,1,discovery_only_not_approved_for_download
+xhaitanya/rsna-knee-bleg-s1-f01,Other (specified in description),1,discovery_only_not_approved_for_download
+dreaddevelopment/knee-raptor-corpus,CC0: Public Domain,2,discovery_only_not_approved_for_download
+dreaddevelopment/knee-raptor-corpus-ext,CC0: Public Domain,1,discovery_only_not_approved_for_download
+vmohitrao/rsna-knee-report-labels,Attribution-NonCommercial 4.0 International (CC BY-NC 4.0),3,discovery_only_not_approved_for_download
+saisahanas/rsna-knee-radiologist-report-labels,Apache 2.0,1,discovery_only_not_approved_for_download
+abhiroopsarkar/rsna-knee-gemini-report-labels,CC0: Public Domain,6,discovery_only_not_approved_for_download

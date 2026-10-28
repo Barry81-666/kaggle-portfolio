@@ -1,0 +1,28 @@
+---
+title: "Medical-Imaging Leaderboards and Label Uncertainty"
+subtitle: "Public-data RSNA Knee study: preregistered analysis workspace"
+format:
+  gfm:
+    toc: true
+execute:
+  echo: false
+  warning: false
+---
+
+## Study status
+
+The [SAP](SAP.md) is proposed and requires owner approval before empirical analysis. Public data-source metadata and schemas have been audited; synthetic tests verify the software foundation. No leaderboard, diagnostic-accuracy or simulation-performance conclusions have been produced.
+
+## Planned evidence
+
+| Stage | Aggregate tables | Figures |
+| --- | --- | --- |
+| First review | T1 cohort/exclusions; T2 paired agreement; T3 sampling benchmark | F1 score/Bland–Altman; F2 observed-versus-simulated noise |
+| Second review | T4 selection; T5 label agreement; T6 latent model estimates | F3 selection; F4 anonymous rank uncertainty; F5 kappa; F6 model sensitivity |
+| Final report | T7 ADEMP performance with Monte Carlo SE | F7 bias and ordering probability |
+
+Unavailable analyses will be identified explicitly. No table is populated from external write-ups as if it were this study's result.
+
+## Reproducibility and interpretation
+
+See [sources](SOURCE_AUDIT.md), [external parameter provenance](parameters.csv), [execution guide](README.md) and [decisions](DECISIONS.md). Only aggregate outputs will be linked here after generation and review. Observed agreement, latent accuracy estimates and simulated uncertainty will be reported separately.

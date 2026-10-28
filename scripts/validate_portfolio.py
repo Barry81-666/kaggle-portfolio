@@ -8,6 +8,7 @@ This script performs static checks only; it never executes archived source.
 import argparse
 import ast
 import base64
+import csv
 import gzip
 import hashlib
 import io
@@ -202,7 +203,12 @@ def main():
             except (ValueError, OSError, EOFError):
                 continue
 
-    forbidden = {'.pth', '.pt', '.ckpt', '.safetensors', '.parquet', '.dcm', '.npy', '.npz', '.zip', '.tar', '.gz'}
+    public_manifest_schemas = {
+        'analysis/rsna-knee-public/datasets.csv': 'dataset,filename,cohort_role,ancestry,half_is_unknown,version,license,metadata_url,source_url,checked_date,schema_rows,schema_columns,schema_checked,download_allowed'.split(','),
+        'analysis/rsna-knee-public/discovery.csv': 'ref,licenseName,currentVersionNumber,screening_status'.split(','),
+        'analysis/rsna-knee-public/parameters.csv': 'parameter,value,unit,source_url,source_location,source_date,accessed_date,status,use'.split(','),
+    }
+    forbidden = {'.pth', '.pt', '.ckpt', '.safetensors', '.parquet', '.dcm', '.npy', '.npz', '.zip', '.tar', '.gz', '.rds', '.RData', '.duckdb', '.wal', '.part'}
     for p in sorted(ROOT.rglob('*')):
         if not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts:
             continue
@@ -210,8 +216,14 @@ def main():
         if p.suffix in forbidden or p.name in {'kaggle.json', '.env', 'access_token'}:
             errors.append(f'Data/model/credential file in package: {rel}')
         if p.suffix == '.csv' and rel != 'meta/catalog.csv':
-            errors.append(f'Unexpected CSV: {rel}')
-        if p.suffix in ('.md', '.json', '.py', '.ipynb', '.csv', '.txt'):
+            if rel not in public_manifest_schemas:
+                errors.append(f'Unexpected CSV: {rel}')
+            else:
+                with p.open(newline='') as stream:
+                    rows = list(csv.reader(stream))
+                if not rows or rows[0] != public_manifest_schemas[rel] or any(len(r) != len(rows[0]) for r in rows):
+                    errors.append(f'Invalid public source-manifest schema: {rel}')
+        if p.suffix in ('.md', '.json', '.py', '.ipynb', '.csv', '.txt', '.R', '.qmd', '.lock'):
             text = p.read_text()
             if rel != 'meta/validation.json':
                 scan(rel, p.read_bytes())
@@ -219,7 +231,7 @@ def main():
                 json.loads(text)
             if p.suffix == '.py':
                 ast.parse(text)
-            md_parts = [text] if p.suffix == '.md' else [source(c) for c in json.loads(text)['cells'] if c['cell_type'] == 'markdown'] if p.suffix == '.ipynb' else []
+            md_parts = [text] if p.suffix in ('.md', '.qmd') else [source(c) for c in json.loads(text)['cells'] if c['cell_type'] == 'markdown'] if p.suffix == '.ipynb' else []
             for md in md_parts:
                 if CJK.search(md):
                     errors.append(f'Chinese reader-facing Markdown: {rel}')

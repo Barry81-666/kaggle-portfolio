@@ -1,0 +1,149 @@
+# Statistical analysis plan: public leaderboard and label uncertainty
+
+**Version 1.0 · 2026-10-28 · Status: proposed, owner approval required before analysis**
+
+**Study title:** How Much Can We Trust a Medical-Imaging Leaderboard? Reliability, Selection and Label Uncertainty in the RSNA 2026 Knee MRI Challenge, Using Public Data Only.
+
+This is a new methodological study. It uses no portfolio owner's competition code, predictions, submission history or personal experience. It does not use competition images, reports, `train.csv`, official Gold58 labels, or files requiring acceptance of competition rules. The earlier personal-model and Gold58-comparison plans are superseded. No empirical outcome analysis under this plan has been run. Pre-plan work is limited to public source discovery, licensing, file schemas and coverage checks; synthetic software tests are separate.
+
+## 1. Objectives and estimands
+
+**A, primary:** characterize public/private score agreement, compare observed score differences with a prespecified sampling-noise model, and quantify selection and rank uncertainty when identifiable from public metadata.
+
+**B, secondary:** describe agreement and dependence among publicly released report-derived label sources. Estimate sensitivity, specificity and prevalence only as latent-model quantities under explicit assumptions, not as validated diagnostic accuracy.
+
+**C, methodological:** simulate the bias and precision of AUC and paired AUC differences under label misclassification, score-dependent errors and finite validation samples.
+
+Public/private differences cannot identify how much is caused by adaptive overfitting, population shift, submission selection or noise. The study will not claim a causal decomposition. It will not evaluate or name individual teams, infer misconduct, establish clinical utility, or treat agreement as accuracy.
+
+## 2. Sources, feasibility and frozen inputs
+
+### D1: official Meta Kaggle
+
+Source: [Meta Kaggle](https://www.kaggle.com/datasets/kaggle/meta-kaggle), Apache 2.0, metadata version **2370**, checked 2026-10-28. The publisher explicitly states that rows and columns are filtered/transformed; completeness is not guaranteed. File headers were read directly from this version:
+
+| Table | Verified relevant columns | Consequence |
+| --- | --- | --- |
+| Competitions | Id, Slug, DeadlineDate (plus other metadata) | Slug-to-ID and deadline must be checked before assembly. |
+| Teams | Id, CompetitionId, PublicLeaderboardSubmissionId, PrivateLeaderboardSubmissionId, IsBenchmark, Medal, PublicLeaderboardRank, PrivateLeaderboardRank, ScoreFirstSubmittedDate, LastSubmissionDate | Public/private leaderboard entries may refer to different submissions. |
+| Submissions | Id, TeamId, SubmissionDate, ScoreDate, IsAfterDeadline, IsSelected, PublicScoreLeaderboardDisplay, PublicScoreFullPrecision, PrivateScoreLeaderboardDisplay, PrivateScoreFullPrecision | The schema supports paired scores and selection history; actual nonmissing coverage for this competition is not yet established. |
+
+The competition's inclusion and row coverage remain **unverified**: only headers and partial byte ranges have been retrieved. A full table request timed out. Files are approximately 179 MB (Competitions), 794 MB (Teams), and 2.72 GB (Submissions), uncompressed. Submissions has **no CompetitionId**: filter Teams by CompetitionId, then semi-join Submissions on TeamId with DuckDB. Do not read the entire submissions table into an R data frame. Memberships is optional and unnecessary for the primary analysis.
+
+Before inference, archive the version, retrieval date, checksums and schema locally; publish only a source manifest and aggregate coverage/exclusion counts. Confirm the competition row, deadline, selected-flag meaning, both-score availability, score precision, and agreement with a same-date public leaderboard snapshot. Schema presence alone does not establish field meaning or completeness.
+
+**Fallback:** if the competition or paired scores are absent, use publicly accessible public/private leaderboard downloads, with retrieval dates and matching rules. No rule-gated files or personal credentials are required by this study. If no accessible leaderboard data exist, A remains unavailable; publish no surrogate leaderboard findings. Submission analyses are omitted when selection or paired submission scores are unavailable. Do not substitute other participants' personal submission ledgers for population data.
+
+### D2: public label tables
+
+See [source audit](SOURCE_AUDIT.md) and [dataset manifest](datasets.csv). Six requested datasets and additional public candidates have been screened. Acquisition is a **file allowlist**, not a whole-dataset download. Exclude report text, expert-label files, image-derived predictions, weights and study metadata. Read IDs only to align label tables locally; never publish them.
+
+Primary candidates are original report extractions from distinct source families: Dread, Steven's original full labels, Pilkwang, Yunus and Lixin, subject to the recorded schema/ancestry checks. JEV, Steven v2/v4 and flight are derived or Gold-informed sources and are secondary comparisons, not independent replications. The 11-label evidence-fusion release includes MRI readers and lacks Synovitis; exclude it from the report-only primary analysis. Sources with unclear licenses are not used. Additional sources are exploratory until a pre-outcome manifest amendment records eligibility.
+
+Do not obtain Gold58 or reconstruct its identifiers. The Dread publisher describes its 4,349 rows as excluding Gold58; a **Dread-anchored intersection** is the primary cohort for comparisons containing Dread. This uses a published label-table cohort, not a reconstructed expert-label file. Other pairwise intersections are secondary. We cannot independently verify the exclusion, identify copied rows, or guarantee absence of Gold-informed tuning. Known directly copied or image-based releases are excluded as whole sources where public documentation establishes this. Remaining possible contamination is reported and explored at 0%, 1.3% and 2% in simulation.
+
+For every retained file check unique study IDs, allowed column names, numeric range [0,1], missingness, number of findings and source version. Do not fill a missing finding with zeros. Confidence columns are not additional raters. Keep one prespecified version per family in primary comparisons; show derivative versions separately.
+
+### D3: external aggregate reports
+
+[parameters.csv](parameters.csv) records value, unit, source URL, source location, source date, access date, evidence status and intended use. External numbers are not this study's results. The draft brief used preliminary counts (6,425 teams; silver boundary rank 321); an updated public write-up reports 6,300 and 315. Neither is substituted for D1 verification. Approximate test sizes 390/910, 58/4,349 study counts and external accuracy summaries are scenario inputs with provenance, not directly observed individual data.
+
+An overall agreement such as 81.7% does not identify sensitivity and specificity. If B is unavailable or unstable, use explicit Se/Sp scenario grids rather than deriving them from that percentage. Reported 19 sites conflicts with an official announcement describing 16 sites; do not silently resolve different source scopes.
+
+## 3. Analysis A: leaderboard reliability
+
+### 3.0 Cohorts and exclusions
+
+Primary unit: a team with the **same selected final submission's** public/private score pair. Prefer the submission referenced by PrivateLeaderboardSubmissionId, joined to its own two scores, after verifying that it is eligible and selected. This defines a private-selected-final estimand and may carry private selection effects when multiple finals were allowed. Compare public-selected and latest eligible selected submissions as sensitivity analyses when data permit. Team-level public-best versus private-best scores are a separate, explicitly unmatched descriptive analysis.
+
+Exclude benchmark teams, nonfinite/out-of-range scores, error/unscored submissions, and after-deadline records; reconcile IsAfterDeadline with timestamps and record conflicts. Missing status is unknown, not successful. Threshold public AUC >=0.60 is primary; repeat at no threshold and >=0.50, >=0.70. Count all exclusions sequentially and report missingness of each required field. Do not silently drop teams with missing private scores. Deduplicate by submission ID; conflicting duplicates halt assembly. No team names, user IDs or write-up identifiers enter exported tables.
+
+### 3.1 Agreement (T1, T2, F1)
+
+Report Spearman rho and Kendall tau-b for all eligible teams and public top-100/top-500 strata. Define strata by score rank including all ties at the boundary, and report actual n. Top strata are selected on the noisy public score; restricted range and selection affect correlations.
+
+Bland–Altman difference is **private minus public**. Report mean difference, SD, mean +/-1.96 SD limits of agreement and empirical 2.5/97.5 percentiles; these are distribution summaries, not independent replications of test-set sampling. Use 2,000 team bootstrap replicates for descriptive intervals, explicitly conditional on the observed leaderboard. Shared checkpoints and common test cases invalidate an interpretation as fully independent team samples.
+
+Deming regression uses y=private, x=public and lambda=Var(private error)/Var(public error) supplied by 3.2; report lambda sensitivity (0.25, 0.5, 1, 2, 4). Two score vectors alone cannot identify a reliability ratio. If reported, reliability is a scenario-derived variance decomposition, labeled model-based. Inspect curvature and heteroscedasticity; no single slope is proof of generalization.
+
+### 3.2 Sampling benchmark (T3, F2)
+
+Simulate 12 binary findings and continuous model scores under an equal-variance binormal model. Baseline AUC=0.95, prevalence=0.15, public n=390 and private n=910. Vary prevalence across 0.05/0.15/0.30/0.50, AUC across 0.94/0.95/0.96, latent cross-finding correlation across 0/0.3/0.6, and each sample size multiplier across 0.8/1/1.2. Report both the latent correlation setting and realized correlation; they are not interchangeable. Examine heterogeneous per-finding AUC and prevalence vectors from B only as explicitly model-dependent sensitivity analyses.
+
+Use independent public/private samples under the null of identical source populations. A macro AUC exists only when all 12 finding-specific AUCs exist; record failed replicates, especially at low prevalence. Do not impute undefined AUCs. Compare Var(private-public) with simulated variance within prespecified private-score bands [0.90,0.94), [0.94,0.95), [0.95,0.96), [0.96,1], pooling no bands post hoc. Conditioning on private score itself affects variance and must be reproduced in a selection-aware sensitivity simulation.
+
+The excess-variance ratio is observed/simulated variance. Bootstrap teams for the numerator and independent simulation batches for denominator uncertainty. Ratios are descriptive and scenario-dependent: values above one are compatible with several mechanisms; values near one are not proof that noise explains all changes or that overfitting is absent. Without case-level predictions, between-team correlations in sampling errors are unknown; simulate shared-error correlations 0/0.5/0.9 and distinguish the across-team contrast variance from one-model repeated-test variance.
+
+### 3.3 Selection (T4, F3), conditional on coverage
+
+Separate **observed selected finals** from an explicitly reconstructed **maximum-public-score rule**. Compare each team's public-max candidate with the average public-private gap across its eligible candidates (equivalent to an expectation over uniformly drawn candidates). Include all public-max ties with equal weights; repeat with first/last tie selection. Bootstrap teams. Do not call this a randomized or causal experiment.
+
+Fit submission-level `(public-private) ~ log(N_team) + days_before_deadline + (1|team)` using lme4, after checking support and residual structure. Report observational associations, team-bootstrap intervals, singular fits and missingness. N_team is the count of eligible scored candidates; repeat using all recorded predeadline candidates. Omitted failed/private-missing candidates can induce selection bias. A temporal learning curve and a public-best selection simulation provide context; neither identifies adaptive reuse from scores alone.
+
+### 3.4 Ranking (aggregate supplement)
+
+Fit a working normal empirical-Bayes score model with error variance from 3.2. Estimate latent variance as a nonnegative variance component and disclose truncation at zero; compare with no shrinkage. Parametric bootstrap (2,000 replicates) generates latent-score and repeated-test ranks under shared-error correlations 0/0.5/0.9. Refit hyperparameters within bootstrap for uncertainty; do not present conditional posterior ranks as frequentist coverage guarantees.
+
+Use D1-confirmed medal boundaries and rules, not a rounded score cutoff alone. Publish distributions of rank-interval widths and medal retention probabilities, and randomly ordered anonymous examples near a boundary; no raw team-row exports. Ties at display precision are intervals of possible underlying scores. Compare exact scores with rounded-score ranks; if only rounded scores exist, use interval-censored/sensitivity analyses, not invented hidden ranks. Overlapping intervals do not prove equivalence. challengeR's case-resampling procedures cannot be applied as if case-level losses were available.
+
+## 4. Analysis B: label uncertainty
+
+### 4.1 Agreement (T5, F5)
+
+Authors' explicit binary/verdict conventions take precedence. For continuous scores use >0.5 as positive; exactly 0.5 means unknown when documented by its author and is missing in the primary analysis. For sources without an unknown convention use >=0.5. Sensitivity: thresholds 0.3/0.7, and alternate treatment of documented unknowns (negative/positive). These are score thresholds, not assertions of probability calibration. Do not optimize cutoffs on agreement.
+
+Report apparent prevalence, known/unknown counts, paired denominators, Cohen kappa and PABAK (=2*observed agreement-1). Fleiss kappa uses complete studies with the same prespecified raters, separately for primary families and derived sources; it is descriptive for these fixed sources. Study bootstrap (2,000 replicates) resamples all labels jointly. If IDs identify exams rather than patients, possible repeat exams may make intervals too narrow. Constant margins produce undefined kappa; report NA and frequency rather than zero.
+
+For dependence, use leave-one-source-out majority votes, ties missing. The resulting residual disagreement indicators are **not errors against truth**. Show their correlations and joint disagreement rates with denominators. Shared majority definitions can induce dependence; also present direct pairwise response-pattern summaries and ancestry information.
+
+### 4.2 Latent models (T6, F6)
+
+Per finding, use at least three distinct extraction families with adequate nondegenerate response patterns. Model 1 is a single-population, multiple-indicator, two-class model with conditionally independent Bernoulli labels. It is related to the Hui–Walter literature but is **not** the original two-tests/two-populations identifiable design. Disease-class orientation is imposed by requiring the average source Youden index to be positive; assess alternate orientations/anchors.
+
+Model 2 adds a shared study-level normal random effect to probit label responses, with separate loadings by latent disease class. Report **marginal**, random-effect-integrated Se/Sp. Sensitivity adds source-family effects only where estimable. Priors: prevalence Beta(1,1); marginal accuracies initially Beta(2,2) subject to class orientation; positive dependence scales half-normal(0,0.5). Repeat prevalence Beta(0.5,0.5)/Beta(2,2), accuracy Beta(1,1)/Beta(4,2), and dependence scales 0.25/1. Priors and parameter transformations must be checked by prior-predictive simulation before real-data fitting.
+
+Use a Bayesian R interface (nimble, or rjags if system JAGS is available), four chains and prespecified initial separation. Aim for rank-normalized R-hat<1.01 and bulk/tail ESS>=400 for reported parameters; extend sampling at most once before reporting nonconvergence. Compare posterior predictive pairwise agreement and response-pattern frequencies. These diagnostics do not establish identifiability. Report multimodality, boundary solutions and prior sensitivity. If estimates remain weakly identified, report that result and propagate broad scenarios to C instead of selecting a convenient model.
+
+External published Gold58 agreement numbers are qualitative context only; differing cohorts, definitions and panel reuse preclude direct validation. No Gold58 labels are acquired, and no empirical sensitivity/specificity against Gold58 is computed.
+
+## 5. Analysis C: ADEMP simulation (T7, F7)
+
+**Aims/estimands:** bias and precision for AUC_A, AUC_B and paired delta; probability of correctly ordering truly unequal models. At delta=0 report false superiority and tie rates, not a probability of a nonexistent correct ordering.
+
+**Data generation:** n=58/977/4349, prevalence baseline 0.15 with 0.05/0.30/0.50 sensitivities; AUC_A=0.85/0.90/0.95; AUC_B=AUC_A+delta for delta=0/0.005/0.01/0.02 (exclude AUC>=1). Scores have equal-variance Gaussian class distributions, mean difference sqrt(2)*qnorm(AUC), and paired-model residual correlation 0.8 (sensitivity 0.5/0.95). Misclassification has baseline Se=Sp=0.85 and sensitivity grids Se/Sp=0.7/0.85/0.95 unless stable B posteriors justify additional scenarios. Agreement alone is insufficient to infer these parameters.
+
+Use a Gaussian-copula label-error variable correlated with model residuals conditional on true class, rho=0/0.2/0.4; fix thresholds to maintain the intended marginal Se/Sp and verify the realized rates. Include asymmetric dependence on the two models. Common dependence can compress differences; differential dependence can reverse ordering. The one-factor-at-a-time baseline comes first; a small prespecified joint stress grid follows. B posterior uncertainty is drawn jointly, not by combining incompatible marginal interval endpoints.
+
+**Methods:** naive AUC against the imperfect label, analytic correction with known Se/Sp/prevalence (oracle benchmark), correction with uncertain parameters (draws from B, explicitly scenario-based), and an independent synthetic expert-labeled n=58 sample. This is **simulated Gold58-sized data**, never the actual Gold58 dataset. Add dependence-aware latent-posterior multiple-imputation estimates only as a separately documented extension; no claim that the independence correction remains valid under dependence.
+
+**Correction derivation:** Let a=PPV=P(Y=1|L=1), b=NPV=P(Y=0|L=0), and A=P(S_1>S_0)+0.5P(S_1=S_0). Under S independent of L conditional on Y, comparisons between two same-class scores give 0.5 and reversed-class comparisons give 1-A. Thus
+
+`A_naive = ab*A + (1-a)(1-b)*(1-A) + [a(1-b)+(1-a)b]/2 = 0.5+(a+b-1)*(A-0.5)`.
+
+Use Bayes' rule to obtain PPV/NPV from prevalence and Se/Sp. Report instability when abs(a+b-1)<0.1; do not clip corrected estimates to [0,1] in bias/RMSE calculations. Report out-of-range frequency. The identity fails in general under score-dependent misclassification.
+
+**Intervals/performance:** study-paired bootstrap intervals for naive/delta estimates; propagate calibration-parameter uncertainty for the non-oracle correction. Known-parameter intervals transform bootstrap endpoints, respecting denominator sign. Record undefined estimates and interval failures. Report bias, empirical SD, RMSE, coverage, average interval length, correct ordering and failures, each with Monte Carlo uncertainty. Bias MCSE=SD(error)/sqrt(R); proportion MCSE=sqrt(p(1-p)/R); batch/delta-method MCSE for SD/RMSE. Start at 2,000 valid replicates, increase in independent batches to max 20,000 until bias MCSE<0.005 in each primary cell; disclose cells that fail the target. Freeze random seeds and record actual total/valid replicate counts. Verify the known-answer rho=0 identity before real scenario runs.
+
+Link A and C by comparing the scale of simulated model differences and sampling SDs, not by equating different validation populations. A public/private rank-reversal probability is a simulation conditional on chosen true deltas and cross-model error correlations, not an observed probability for any named team.
+
+## 6. Software, release and checkpoints
+
+All acquisition, assembly and statistical analysis code is R. Use renv, a Quarto report rendered to GFM, and seeds stored with each aggregate output. Dependencies are locked in phases; a foundation lock is not a claim that Bayesian or full data pipelines have run. Raw inputs, aligned labels, submission-level data, model draws and logs containing IDs remain in an external directory selected by `RSNA_PUBLIC_DATA`. The downloader rejects a data directory inside the checkout.
+
+Only aggregate CSVs and figures enter `results/rsna-knee-public/` and `figures/rsna-knee-public/`. Datasets/parameter manifests may name source authors for attribution; statistical reports do not name or rank teams. Pre-publication scans check forbidden schemas, identifiers, credentials, original reports and binary assets. Data audit results and statistical results are kept separate.
+
+1. Commit SAP, parameters and source audit; obtain owner approval. Record the approved commit and date in `DECISIONS.md`. No analysis gate may be bypassed by a time-out.
+2. Complete D1 coverage checks and run A3.1/A3.2; review T1–T3 and F1/F2 with the owner.
+3. Complete eligible A3.3/A3.4 and B; review T4–T6 and F5/F6. Unavailable analyses are explicitly omitted, not filled with invented values.
+4. Run C; render report, write evidence-linked conclusions and update the project page; open/complete the PR. Merge only after owner approval.
+
+Every amendment records date, old/new choice, reason and whether relevant outcomes had been seen. Existing portfolio projects, achievements and archived source files remain outside this study.
+
+## References
+
+- [Roelofs et al. (2019), A Meta-Analysis of Overfitting in Machine Learning](https://papers.nips.cc/paper_files/paper/2019/hash/ee39e503b6bedf0c98c388b7e8589aca-Abstract.html).
+- [Maier-Hein et al. (2018), Why rankings of biomedical image analysis competitions should be interpreted with care](https://doi.org/10.1038/s41467-018-07619-7).
+- [Hui & Walter (1980), Estimating the error rates of diagnostic tests](https://doi.org/10.2307/2530508).
+- [Dendukuri & Joseph (2001), Bayesian approaches to modeling conditional dependence](https://doi.org/10.1111/j.0006-341X.2001.00158.x).
+- [Albert & Dodd (2004), A cautionary note on latent class models](https://pubmed.ncbi.nlm.nih.gov/15180668/).
+- [Morris, White & Crowther (2019), Using simulation studies to evaluate statistical methods](https://doi.org/10.1002/sim.8086).
