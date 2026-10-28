@@ -1,6 +1,6 @@
 # Results and Figures
 
-These artifacts come from historical public Kaggle outputs checked on 2026-10-28. All nine retained original source downloads matched the hashes already recorded in the repository. This revision did not rerun training or inference.
+These artifacts come from historical public Kaggle outputs checked on 2026-10-28. All nine retained original source downloads matched the hashes already recorded in the repository. I did not rerun training or inference while preparing this archive.
 
 | Artifact | What it shows | Evidence boundary |
 | --- | --- | --- |
