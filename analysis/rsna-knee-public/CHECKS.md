@@ -12,4 +12,6 @@ Executed 2026-10-28 with R 4.5.1 and the foundation versions in renv.lock.
 - A score-dependent-error synthetic case does not satisfy the independence identity.
 - Schema validation rejects report-text columns. Nine selected label-table schemas passed the final allowlist check; counts/columns only were inspected.
 
-The DuckDB full-table scan, empirical inference, Bayesian fitting and Quarto rendering have not run. No SAP approval or study result is implied by these tests. See the PR for repository link and publication-scan checks.
+Repository validation passed 97 local links/anchors with no credential flags. The nine retained archived notebooks (148 code cells) passed the existing token-equivalence checks, including the previously documented display-string exceptions. The publication scan permits only the three exact new source-manifest CSV schemas and rejects raw data/model/database formats; it also scans R, Quarto and lock files.
+
+The DuckDB full-table scan, empirical inference, Bayesian fitting and Quarto rendering have not run. No SAP approval or study result is implied by these tests.
