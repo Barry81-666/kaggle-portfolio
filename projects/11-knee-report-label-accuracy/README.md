@@ -4,6 +4,8 @@
 
 How should we evaluate diagnoses extracted from radiology reports without an independent reference standard? This R study compares five public label sources on **4,349 knee studies and 12 findings**, then simulates how label errors affect AUC evaluation.
 
+Medical AI is increasingly trained and evaluated on labels extracted from radiology reports by language models; this study shows that apparent agreement among such labels can be misleading.
+
 ## Three findings
 
 **1. The sources form two stable similarity groups.** Steven/Pilkwang/Lixin cluster together, and Dread/Yunus form the other group. This post-hoc grouping persists across three agreement summaries and 1,000 study-bootstrap resamples. For effusion, within-group Cohen kappa is **0.894–0.989**, versus **0.311–0.377** between groups. Steven and Pilkwang agree perfectly on the **605 paired-known, binary synovitis labels**. Across all sources, fracture has high agreement (Fleiss kappa **0.868**).
