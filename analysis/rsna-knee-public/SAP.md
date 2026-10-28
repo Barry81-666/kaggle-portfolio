@@ -1,10 +1,24 @@
 # Statistical analysis plan: public leaderboard and label uncertainty
 
-**Version 1.1 · 2026-10-28 · Status: owner approved with the four amendments recorded below**
+**Version 1.2 · 2026-10-28 · Status: owner-authorized shift to labels and misclassification**
 
-**Study title:** How Much Can We Trust a Medical-Imaging Leaderboard? Reliability, Selection and Label Uncertainty in the RSNA 2026 Knee MRI Challenge, Using Public Data Only.
+**Study title:** Assessing Knee Diagnostic Labels Extracted from Radiology Reports Without a Gold Standard: Agreement, Latent Report States and AUC Misclassification Bias.
 
 This is a new methodological study. It uses no portfolio owner's competition code, predictions, submission history or personal experience. It does not use competition images, reports, `train.csv`, official Gold58 labels, or files requiring acceptance of competition rules. The earlier personal-model and Gold58-comparison plans are superseded. At the v1.1 freeze, no empirical outcome analysis under this plan had been run. Pre-plan work is limited to public source discovery, licensing, file schemas and coverage checks; synthetic software tests are separate.
+
+## v1.2 scope amendment, before B/C outcomes
+
+The owner redirected this project to **B and C as the main study**. Empirical leaderboard acquisition, selection models and ranking analyses (A) are discontinued. The already completed synthetic sampling reference is a supplement only; no Meta Kaggle extract is required from the owner. The A text below is retained as historical planned methodology, not a current delivery commitment.
+
+Primary delivery is B4.1, the conditionally independent report-state model in B4.2 (subject to identifiability/diagnostics), and C's four minimum cells (n=58/977 by rho=0/0.2). The dependent latent model and larger joint grids remain optional within the existing total 120-minute computation cap. The 1.29 minutes already used for A count against that cap; remaining time is allocated to B/C rather than leaderboard ingestion.
+
+**Label conventions, fixed before B outcomes:** use the five primary extraction families in the manifest: Dread, Steven full/v1, Pilkwang, Yunus and Lixin. Cohort is their ID intersection anchored on Dread. For Pilkwang, the published YES/NO/UNK verdicts map to 1/0/missing; score-threshold versions are sensitivity analyses. Steven's exact 0.5 is unmentioned and missing. Yunus's 0.05 (unmentioned) and 0.5 (uncertain) are missing. For Dread and Lixin no undocumented unknown convention is invented; use score >=0.5. Repeat score thresholds 0.3/0.7, and documented-unknown-as-negative/positive variants. Different severity/mention conventions may prevent a fully common target construct; absent reports and image labels, this cannot be resolved by relabeling the data.
+
+**Latent model population and computation:** primary model 1 uses complete observations across all five sources for each finding. It describes this selected, fully asserted subset, not the entire study population; missingness may be informative. Require n>=100 and at least five positive and five negative labels for each source. Otherwise omit that finding's latent estimates. A native-R conjugate Gibbs sampler operates on aggregate binary response patterns, with truncated Beta parameter updates enforcing sum(Se+Sp)>K. This is a computational implementation of the specified Bayesian model, not a switch to empirical diagnostic accuracy. Run four chains, initially 6,000 iterations (2,000 warmup); extend once to 12,000 (4,000 warmup) if required. Use posterior's rank-normalized R-hat/bulk/tail ESS when available, and do not claim converged inference if the diagnostics cannot be computed. Primary prior is Se/Sp Beta(2,2), prevalence Beta(1,1); sensitivity fits use Beta(1,1) and Beta(4,2) accuracies, plus prevalence Beta(0.5,0.5)/Beta(2,2) if needed and budget permits. The truncation is an identifying assumption and is included in each full conditional. No independent Gold58 validation is implied.
+
+**C minimum implementation:** AUC_A=0.90, AUC_B=0.91, prevalence=0.15, Se=Sp=0.85, paired-score residual correlation=0.8. A common residual factor makes the label-error latent variable correlate equally with both model residuals at rho=0/0.2. Use 2,000 replicates per cell initially and 399 paired study-bootstrap resamples for percentile intervals; require at least 80% valid bootstrap resamples for an interval and report failures. Compare naive AUC, known-parameter analytic correction (an oracle benchmark), and an independent synthetic expert-labeled n=58 sample. Report AUC_A and delta metrics, MCSEs and correct ordering. Positive common analytic scaling cannot change the sign of the paired delta; do not claim it improves ordering by itself. Parameter-estimation uncertainty and B-derived extraction-only simulations are extensions, not implied by the oracle benchmark. All undefined and out-of-range estimates are counted; corrected values are not clipped.
+
+**Exposure at this amendment:** source descriptions/schemas and the A synthetic reference have been seen. No B empirical agreement/latent estimates or C performance outputs have been inspected. The owner's scope instruction authorizes this amendment; no further SAP confirmation is required.
 
 ## 1. Objectives and estimands
 
