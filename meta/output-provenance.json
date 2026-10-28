@@ -1,0 +1,31 @@
+{
+  "retrieved_date": "2026-10-28",
+  "outputs": [
+    {
+      "path": "figures/rna-sequence-length.png",
+      "source_url": "https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission",
+      "version_id": 226091843,
+      "original_download_sha256": "7666019ff229d4ce0e1dceca5ae91387de8757101acedacaadcaa96dc3030922",
+      "cell_index": 9,
+      "output_index": 0,
+      "sha256": "9a8f835ca4ad9f2a005c6fef5e55c318bcc3c974e53d348dbff0e187285ffe68",
+      "processing": "Original PNG bytes decoded from image/png; no visual changes.",
+      "evidence_kind": "Descriptive EDA of train_sequences; not model validation."
+    },
+    {
+      "path": "results/image2biomass.json",
+      "source_url": "https://www.kaggle.com/code/handudu/1-train-baseline-demo",
+      "version_id": 277387301,
+      "original_download_sha256": "032d6713463e7c0088ade4923bf21ec781c6b2b4cda14435c1094592387a26fa",
+      "processing": "Selected aggregate fold metrics and epoch numbers copied from public output.",
+      "evidence_kind": "historical public output; no recomputation"
+    },
+    {
+      "path": "results/rsna-knee-public-score.json",
+      "source_url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
+      "version_id": 358098927,
+      "processing": "Selected public metadata fields from the 2026-10-24 snapshot, rechecked via public KernelsService/ListKernels on 2026-10-28.",
+      "evidence_kind": "Historical notebook-associated best public score; not local CV, gold evaluation or final private standings."
+    }
+  ]
+}

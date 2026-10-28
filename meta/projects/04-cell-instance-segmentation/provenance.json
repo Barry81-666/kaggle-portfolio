@@ -2,7 +2,7 @@
   "project": "04-cell-instance-segmentation",
   "title": "how to use mmdectetion",
   "curated_title": "Cell Instance Segmentation with MMDetection",
-  "area": "生物医学图像 / 实例分割",
+  "area": "Biomedical imaging / instance segmentation",
   "author": "handudu",
   "source_url": "https://www.kaggle.com/code/handudu/how-to-use-mmdectetion",
   "kernel_id": 23442240,
@@ -61,6 +61,14 @@
   "changes": [
     "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
   ],
-  "validation": "Static checks only; training and inference not executed.",
-  "limitations": "保留 2021 年环境与原安装单元：PyTorch 1.7 / CUDA 11.0、MMCV 和本地 wheel。需要原模型检查点；2 个输入源为私有。运行前需逐格检查旧环境安装和清理命令。"
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "The notebook uses a 2021 PyTorch 1.7 / CUDA 11 environment, MMDetection/CBNetV2, local wheels and private model inputs. Review installation and cleanup cells before running. The archived fork is not verified as the final competition submission.",
+  "original": {
+    "kaggle_version_id": 83951341,
+    "download_sha256": "917e2e47a3c1b207f62343642e3e85289c6306d9aa7dd0e7198d9e4f80dc7654",
+    "archived_sha256": "283cdefa00b162d1db7d2ca55bc51d0840bc03c640834bdb1f39a32b8a94ef0b",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "283cdefa00b162d1db7d2ca55bc51d0840bc03c640834bdb1f39a32b8a94ef0b",
+  "provenance_file": "meta/projects/04-cell-instance-segmentation/provenance.json"
 }

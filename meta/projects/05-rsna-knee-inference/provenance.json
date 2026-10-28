@@ -1,8 +1,8 @@
 {
   "project": "05-rsna-knee-inference",
   "title": "rsna-knee-teacher-probs-exp017-v1-infer",
-  "curated_title": "RSNA Knee MRI Inference",
-  "area": "医学影像 / 分类推理",
+  "curated_title": "Knee MRI Classification: Weak Labels and Grouped Validation",
+  "area": "Medical imaging / validation design",
   "author": "handudu",
   "source_url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
   "kernel_id": 138542102,
@@ -36,6 +36,14 @@
   "changes": [
     "Original script unchanged; embedded source package also unpacked under source/ without executing it."
   ],
-  "validation": "Static checks only; training and inference not executed.",
-  "limitations": "原公开脚本内嵌 gzip/base64 源码包。本仓库另将其安全解包为 source/，仅静态检查，没有运行安装、训练或推理。检查点输入为私有，无法用当前公开材料完整复现。当前比赛结果不作为获奖证明。"
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "The inference wrapper and 22 modules are preserved byte for byte. Private checkpoints, complete experiment configurations and evaluation records are unavailable. Implemented safeguards do not establish that a particular experiment passed them.",
+  "original": {
+    "kaggle_version_id": 358098927,
+    "download_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
+    "archived_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
+  "provenance_file": "meta/projects/05-rsna-knee-inference/provenance.json"
 }

@@ -1,0 +1,45 @@
+{
+  "project": "10-tabular-fraud-catboost",
+  "title": "tianchi_finance",
+  "curated_title": "Tabular Fraud Classification with CatBoost",
+  "area": "Data science / tabular classification",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/tianchi-finance",
+  "kernel_id": 34102124,
+  "version_id": 116279535,
+  "version_date": "2023-01-13T16:25:30.013Z",
+  "notebook_medal": "NONE",
+  "votes_at_snapshot": 3,
+  "archived_file": "projects/10-tabular-fraud-catboost/notebook.ipynb",
+  "original_download_sha256": "d7a64f5074c0a5f1e5e5ebb8c615c127ece753a066738ad4836489e5ef61df9c",
+  "archived_sha256": "cbfa2e36d519369031682ff3a6b44f28ab81db4fe7a0d4a1d09f6fa0a0f45451",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": false,
+    "kernel_id": null,
+    "author": null,
+    "url": null
+  },
+  "data_sources": [
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+    "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
+  ],
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "The data are private. The code fits an encoder on combined training/test tables and calculates validation AUC from hard class predictions. A new analysis should use fold-specific preprocessing and predicted probabilities; this source is preserved unchanged apart from language edits.",
+  "original": {
+    "kaggle_version_id": 116279535,
+    "download_sha256": "d7a64f5074c0a5f1e5e5ebb8c615c127ece753a066738ad4836489e5ef61df9c",
+    "archived_sha256": "9141830ba3f57f474c2d9a9648708f7c061a6076a7f754521803b9d56b4ecf18",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "cbfa2e36d519369031682ff3a6b44f28ab81db4fe7a0d4a1d09f6fa0a0f45451",
+  "provenance_file": "meta/projects/10-tabular-fraud-catboost/provenance.json"
+}

@@ -1,0 +1,50 @@
+{
+  "project": "03-image2biomass",
+  "title": "1_train_BASELINE(demo)",
+  "curated_title": "Image2Biomass: Validation Across Split Designs",
+  "area": "Biological and agricultural imaging / regression",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/1-train-baseline-demo",
+  "kernel_id": 99940883,
+  "version_id": 277387301,
+  "version_date": "2025-11-13T16:59:13.497Z",
+  "notebook_medal": "NONE",
+  "votes_at_snapshot": 0,
+  "archived_file": "projects/03-image2biomass/notebook.ipynb",
+  "original_download_sha256": "032d6713463e7c0088ade4923bf21ec781c6b2b4cda14435c1094592387a26fa",
+  "archived_sha256": "501507b021f0179b413cecf52f9214d00cd921641d3b94774fc323ec21f02e0e",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": true,
+    "kernel_id": 99732107,
+    "author": null,
+    "url": null
+  },
+  "data_sources": [
+    {
+      "name": "CSIRO - Image2Biomass Prediction",
+      "url": "https://www.kaggle.com/competitions/csiro-biomass",
+      "private": false
+    },
+    {
+      "name": "[Private Datasource]",
+      "url": null,
+      "private": true
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+    "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
+  ],
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "The four sets of fold assignments come from a private input. Historical logs are available, but split membership, grouped independence and generalization cannot be independently verified. Best epochs were selected on the reported validation folds.",
+  "original": {
+    "kaggle_version_id": 277387301,
+    "download_sha256": "032d6713463e7c0088ade4923bf21ec781c6b2b4cda14435c1094592387a26fa",
+    "archived_sha256": "33a118dcdd369d90c9c62b1b802227e17a593b0a8b7d8b26035f5d979353eaeb",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "501507b021f0179b413cecf52f9214d00cd921641d3b94774fc323ec21f02e0e",
+  "provenance_file": "meta/projects/03-image2biomass/provenance.json"
+}

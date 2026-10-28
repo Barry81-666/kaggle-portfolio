@@ -1,0 +1,24 @@
+[random] Fold 0 Best R2: 0.7329 at epoch 20
+[random] Fold 1 Best R2: 0.5653 at epoch 18
+[random] Fold 2 Best R2: 0.6499 at epoch 7
+[random] Fold 3 Best R2: 0.7865 at epoch 19
+[random] Fold 4 Best R2: 0.6751 at epoch 15
+⭐ Average R2 (random): 0.6820
+[NDVI] Fold 0 Best R2: 0.6827 at epoch 11
+[NDVI] Fold 1 Best R2: 0.6226 at epoch 9
+[NDVI] Fold 2 Best R2: 0.7179 at epoch 13
+[NDVI] Fold 3 Best R2: 0.6334 at epoch 10
+[NDVI] Fold 4 Best R2: 0.6919 at epoch 12
+⭐ Average R2 (NDVI): 0.6697
+[Date] Fold 0 Best R2: 0.6696 at epoch 18
+[Date] Fold 1 Best R2: 0.4645 at epoch 8
+[Date] Fold 2 Best R2: 0.6651 at epoch 17
+[Date] Fold 3 Best R2: 0.4763 at epoch 3
+[Date] Fold 4 Best R2: 0.6115 at epoch 10
+⭐ Average R2 (Date): 0.5774
+[Species] Fold 0 Best R2: 0.5344 at epoch 10
+[Species] Fold 1 Best R2: 0.4750 at epoch 4
+[Species] Fold 2 Best R2: 0.7025 at epoch 18
+[Species] Fold 3 Best R2: 0.5363 at epoch 5
+[Species] Fold 4 Best R2: 0.1926 at epoch 2
+⭐ Average R2 (Species): 0.4881

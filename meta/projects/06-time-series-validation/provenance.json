@@ -1,0 +1,45 @@
+{
+  "project": "06-time-series-validation",
+  "title": "BASE_NOLEAK_VAL-LOCAL",
+  "curated_title": "Time Series Validation for Tactical Allocation",
+  "area": "Data science / time series",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/base-noleak-val-local",
+  "kernel_id": 101453728,
+  "version_id": 279919839,
+  "version_date": "2025-11-19T12:05:27.757Z",
+  "notebook_medal": "BRONZE",
+  "votes_at_snapshot": 10,
+  "archived_file": "projects/06-time-series-validation/notebook.ipynb",
+  "original_download_sha256": "27cd18c920504cfcced550bc3ef627ada48b0d9888e8c55f283ff2e704865346",
+  "archived_sha256": "f55305bc87c566564c9d20b288100d9d259d971dbeab8b1f5f454606299fce08",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": false,
+    "kernel_id": null,
+    "author": null,
+    "url": null
+  },
+  "data_sources": [
+    {
+      "name": "Hull Tactical - Market Prediction",
+      "url": "https://www.kaggle.com/competitions/hull-tactical-market-prediction",
+      "private": false
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+    "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
+  ],
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "The source contains a commented-out pipeline followed by an active version. Window length and allocation multiplier are selected using the same validation grid; the reported maximum is not an independent test estimate or evidence of investment performance.",
+  "original": {
+    "kaggle_version_id": 279919839,
+    "download_sha256": "27cd18c920504cfcced550bc3ef627ada48b0d9888e8c55f283ff2e704865346",
+    "archived_sha256": "8e59f616b17c93962db666d7882464790a15985740e73fe3b524d92f5c8559e4",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "f55305bc87c566564c9d20b288100d9d259d971dbeab8b1f5f454606299fce08",
+  "provenance_file": "meta/projects/06-time-series-validation/provenance.json"
+}

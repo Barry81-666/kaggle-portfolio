@@ -1,0 +1,218 @@
+{
+  "source_url": "https://www.kaggle.com/code/handudu/1-train-baseline-demo",
+  "version_id": 277387301,
+  "original_download_sha256": "032d6713463e7c0088ade4923bf21ec781c6b2b4cda14435c1094592387a26fa",
+  "retrieved_date": "2026-10-28",
+  "indexing": "zero-based notebook cell/output indices",
+  "evidence_kind": "historical public output; no recomputation",
+  "metric": "weighted R2 on original-scale biomass targets; best validation epoch selected per fold",
+  "fold_membership": "private input; not independently verified",
+  "fold_results": [
+    {
+      "setting": "random",
+      "fold": 0,
+      "best_weighted_r2": 0.7329,
+      "selected_epoch": 20,
+      "cell_index": 5,
+      "output_index": 57,
+      "verbatim_log_line": "[random] Fold 0 Best R2: 0.7329 at epoch 20"
+    },
+    {
+      "setting": "random",
+      "fold": 1,
+      "best_weighted_r2": 0.5653,
+      "selected_epoch": 18,
+      "cell_index": 5,
+      "output_index": 111,
+      "verbatim_log_line": "[random] Fold 1 Best R2: 0.5653 at epoch 18"
+    },
+    {
+      "setting": "random",
+      "fold": 2,
+      "best_weighted_r2": 0.6499,
+      "selected_epoch": 7,
+      "cell_index": 5,
+      "output_index": 143,
+      "verbatim_log_line": "[random] Fold 2 Best R2: 0.6499 at epoch 7"
+    },
+    {
+      "setting": "random",
+      "fold": 3,
+      "best_weighted_r2": 0.7865,
+      "selected_epoch": 19,
+      "cell_index": 5,
+      "output_index": 203,
+      "verbatim_log_line": "[random] Fold 3 Best R2: 0.7865 at epoch 19"
+    },
+    {
+      "setting": "random",
+      "fold": 4,
+      "best_weighted_r2": 0.6751,
+      "selected_epoch": 15,
+      "cell_index": 5,
+      "output_index": 263,
+      "verbatim_log_line": "[random] Fold 4 Best R2: 0.6751 at epoch 15"
+    },
+    {
+      "setting": "NDVI",
+      "fold": 0,
+      "best_weighted_r2": 0.6827,
+      "selected_epoch": 11,
+      "cell_index": 5,
+      "output_index": 307,
+      "verbatim_log_line": "[NDVI] Fold 0 Best R2: 0.6827 at epoch 11"
+    },
+    {
+      "setting": "NDVI",
+      "fold": 1,
+      "best_weighted_r2": 0.6226,
+      "selected_epoch": 9,
+      "cell_index": 5,
+      "output_index": 349,
+      "verbatim_log_line": "[NDVI] Fold 1 Best R2: 0.6226 at epoch 9"
+    },
+    {
+      "setting": "NDVI",
+      "fold": 2,
+      "best_weighted_r2": 0.7179,
+      "selected_epoch": 13,
+      "cell_index": 5,
+      "output_index": 401,
+      "verbatim_log_line": "[NDVI] Fold 2 Best R2: 0.7179 at epoch 13"
+    },
+    {
+      "setting": "NDVI",
+      "fold": 3,
+      "best_weighted_r2": 0.6334,
+      "selected_epoch": 10,
+      "cell_index": 5,
+      "output_index": 439,
+      "verbatim_log_line": "[NDVI] Fold 3 Best R2: 0.6334 at epoch 10"
+    },
+    {
+      "setting": "NDVI",
+      "fold": 4,
+      "best_weighted_r2": 0.6919,
+      "selected_epoch": 12,
+      "cell_index": 5,
+      "output_index": 487,
+      "verbatim_log_line": "[NDVI] Fold 4 Best R2: 0.6919 at epoch 12"
+    },
+    {
+      "setting": "Date",
+      "fold": 0,
+      "best_weighted_r2": 0.6696,
+      "selected_epoch": 18,
+      "cell_index": 5,
+      "output_index": 543,
+      "verbatim_log_line": "[Date] Fold 0 Best R2: 0.6696 at epoch 18"
+    },
+    {
+      "setting": "Date",
+      "fold": 1,
+      "best_weighted_r2": 0.4645,
+      "selected_epoch": 8,
+      "cell_index": 5,
+      "output_index": 579,
+      "verbatim_log_line": "[Date] Fold 1 Best R2: 0.4645 at epoch 8"
+    },
+    {
+      "setting": "Date",
+      "fold": 2,
+      "best_weighted_r2": 0.6651,
+      "selected_epoch": 17,
+      "cell_index": 5,
+      "output_index": 637,
+      "verbatim_log_line": "[Date] Fold 2 Best R2: 0.6651 at epoch 17"
+    },
+    {
+      "setting": "Date",
+      "fold": 3,
+      "best_weighted_r2": 0.4763,
+      "selected_epoch": 3,
+      "cell_index": 5,
+      "output_index": 657,
+      "verbatim_log_line": "[Date] Fold 3 Best R2: 0.4763 at epoch 3"
+    },
+    {
+      "setting": "Date",
+      "fold": 4,
+      "best_weighted_r2": 0.6115,
+      "selected_epoch": 10,
+      "cell_index": 5,
+      "output_index": 697,
+      "verbatim_log_line": "[Date] Fold 4 Best R2: 0.6115 at epoch 10"
+    },
+    {
+      "setting": "Species",
+      "fold": 0,
+      "best_weighted_r2": 0.5344,
+      "selected_epoch": 10,
+      "cell_index": 5,
+      "output_index": 743,
+      "verbatim_log_line": "[Species] Fold 0 Best R2: 0.5344 at epoch 10"
+    },
+    {
+      "setting": "Species",
+      "fold": 1,
+      "best_weighted_r2": 0.475,
+      "selected_epoch": 4,
+      "cell_index": 5,
+      "output_index": 767,
+      "verbatim_log_line": "[Species] Fold 1 Best R2: 0.4750 at epoch 4"
+    },
+    {
+      "setting": "Species",
+      "fold": 2,
+      "best_weighted_r2": 0.7025,
+      "selected_epoch": 18,
+      "cell_index": 5,
+      "output_index": 821,
+      "verbatim_log_line": "[Species] Fold 2 Best R2: 0.7025 at epoch 18"
+    },
+    {
+      "setting": "Species",
+      "fold": 3,
+      "best_weighted_r2": 0.5363,
+      "selected_epoch": 5,
+      "cell_index": 5,
+      "output_index": 851,
+      "verbatim_log_line": "[Species] Fold 3 Best R2: 0.5363 at epoch 5"
+    },
+    {
+      "setting": "Species",
+      "fold": 4,
+      "best_weighted_r2": 0.1926,
+      "selected_epoch": 2,
+      "cell_index": 5,
+      "output_index": 869,
+      "verbatim_log_line": "[Species] Fold 4 Best R2: 0.1926 at epoch 2"
+    }
+  ],
+  "reported_means": [
+    {
+      "setting": "random",
+      "reported_mean": 0.682,
+      "cell_index": 5,
+      "output_index": 265
+    },
+    {
+      "setting": "NDVI",
+      "reported_mean": 0.6697,
+      "cell_index": 5,
+      "output_index": 489
+    },
+    {
+      "setting": "Date",
+      "reported_mean": 0.5774,
+      "cell_index": 5,
+      "output_index": 699
+    },
+    {
+      "setting": "Species",
+      "reported_mean": 0.4881,
+      "cell_index": 5,
+      "output_index": 871
+    }
+  ]
+}

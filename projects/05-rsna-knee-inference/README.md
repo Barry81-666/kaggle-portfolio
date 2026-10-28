@@ -1,42 +1,51 @@
-# RSNA Knee MRI Inference
+# Knee MRI Classification: Weak Labels and Grouped Validation
 
-较新的膝关节 MRI 推理脚本，内含可独立阅读的 22 个 rsna Python 模块。
+A validation-focused case study of 12-label knee MRI classification, with a recorded historical Kaggle public score of **0.942** and an inspectable inference package.
 
-| 项目 | 记录 |
-| --- | --- |
-| 领域 | 医学影像 / 分类推理 |
-| Kaggle 来源 | [rsna-knee-teacher-probs-exp017-v1-infer](https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer) |
-| 来源作者 | handudu |
-| 归档版本 ID | `358098927` |
-| 原版本时间 | 2026-10-13T19:03:54.023Z |
-| Notebook 奖牌 | 未显示 Notebook 奖牌 |
-| 截至归档日票数 | 0 |
+## Research Question
 
-## 技术内容
+How should a classifier trained on radiology-report targets be evaluated when expert annotations are scarce and patients may have repeated examinations? The implementation separates weak-label agreement, expert-label discrimination and examination grouping.
 
-模型构建、DICOM 处理、折分、训练、评估、推理与提交格式验证。
+## Data and Labels
 
-## 来源与贡献范围
+The [RSNA competition](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection) targets 12 knee findings. Report-derived probabilities provide weak (“silver”) supervision; official expert (“gold”) labels define a reserved evaluation set. Any study with an official target enters the gold reservation; gold evaluation requires complete labels. Optional teacher probabilities affect training rows only.
 
-公开列表未标记为 fork；这不等同于完整原创性审计。 这里只记录公开 Notebook 的归属和衍生关系，不将团队比赛成绩或上游作者成绩归为个人成绩。
+DICOM preprocessing creates spatially normalized views and missing-input masks. Missing images are not negative labels. The public inference configuration packages one fold-0 model with anatomical left/right augmentation; its checkpoint is a private dependency.
 
-## 使用与复现边界
+## My Contribution
 
-原公开脚本内嵌 gzip/base64 源码包。本仓库另将其安全解包为 source/，仅静态检查，没有运行安装、训练或推理。检查点输入为私有，无法用当前公开材料完整复现。当前比赛结果不作为获奖证明。
+I published [this inference version as handudu](https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer), version ID `358098927`. This case study explains its implementation; source-level credits identify upstream model and augmentation work.
 
-推荐从上面的 Kaggle 原页面查看 Input 和原环境，再决定是否运行。比赛数据需从原比赛自行取得并遵守其访问条件。本仓库没有打包数据、模型权重或离线安装包。
+## Validation Design
 
-`source/rsna/` 是从原脚本内嵌源码包解出的可阅读源码；`inference.py` 保持原样。
+| Decision | Implementation and purpose | Boundary |
+| --- | --- | --- |
+| Group related examinations | [Audit](source/rsna/audit.py) identifies duplicate volumes and patient associations; [union-find](source/rsna/folds.py) merges associations before five-fold multilabel stratification. | Missing/incomplete patient IDs cause fallback to study/duplicate groups; patient independence is then uncertain. |
+| Reserve expert labels | Exclude gold studies and linked weak-label studies from training folds; freeze fold hashes. | Protection covers detected relationships. |
+| Freeze before gold evaluation | Require a checkpoint-matched recipe-freeze receipt and no training-study overlap. | A receipt cannot establish absence of earlier gold-set inspection. |
+| Use simple comparators | Estimate class priors from the training fold; compare with constant 0.5 probabilities. | Priors describe training targets, not clinical prevalence. |
+| Separate selection and assessment | Select checkpoints by minimum weak-label validation BCE. | The selected minimum is optimistic; smoke/overfit modes are diagnostics. |
 
-本次检查仅确认文件结构、源码保真和静态可读性；没有运行模型训练、下载依赖或执行 Notebook。Notebook 输出已清理，代码及原有注释保留。具体变更和 SHA-256 见 [provenance.json](provenance.json)。
+**BCE** assesses probabilistic disagreement; **Brier score** measures squared probability error, without alone establishing calibration. Weak-label **AUC** thresholds targets at 0.5; gold AUC uses expert labels. Full macro AUC requires all **12 classes** to be computable; the separately named available-class average is not equivalent.
 
-## 原输入源
+Gold evaluation uses **2,000 bootstrap replicates**, seed 42, and percentile 95% bounds by default. Sampling is by **study**, so repeated patients may produce narrow intervals. Replicates lacking any class AUC are excluded; the retained count must accompany the interval.
 
-- 私有或已不可见的输入源（未归档）
-- [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)
+## Evaluation and Results
 
-输入源清单是 Kaggle 当前公开列表中的挂载记录，可能不包含代码中手写的所有路径。私有依赖的内容和访问权限均未导出。
+| Recorded result | Value | Interpretation |
+| --- | --- | --- |
+| Notebook-associated best public score | **0.942** | Official Kaggle `bestPublicScore`, recorded 2026-10-24 and checked again 2026-10-28; not a local CV or final private score. |
 
-## 许可
+The [score record](../../results/rsna-knee-public-score.json) preserves the source fields and version identity. Local fold/baseline metrics and final private standings were not available in the inspected records. Embedded reference predictions test inference parity, not outcome discrimination. The competition closed on 2026-10-22.
 
-本次公开元数据未提供可核实的 Notebook 许可证；不推断为 MIT、Apache 或其他许可，不为上游代码重新授权。保留原来源及 Notebook 内已有版权说明。
+## Limitations
+
+Report noise, incomplete patient identities and study-level resampling limit interpretation. The public score does not establish external-site generalization, calibration or clinical utility. Private checkpoints and complete experiment configurations are absent; source remains unchanged.
+
+## Reproduction Instructions
+
+Use the original Kaggle inputs and exact checkpoint. Record data/configuration hashes, review patient/duplicate audits and freeze folds before evaluation. From `source/`, the evaluation interface is `python -m rsna.evaluate --checkpoint PATH --split silver --output PATH`; gold evaluation requires `--split gold --recipe-freeze PATH`. These interfaces require assets beyond this archive. See [archive notes](../../docs/ARCHIVE_NOTES.md).
+
+## Sources
+
+[Provenance](../../meta/projects/05-rsna-knee-inference/provenance.json) and the [22-module manifest](../../meta/projects/05-rsna-knee-inference/unpacked-files.json) identify the source. [Model code](source/rsna/model.py) credits Dread Development and Heliosli; [augmentation code](source/rsna/augmentation.py) credits goodpjw2008 and nartaa. Their reported scores are not attributed to this project.

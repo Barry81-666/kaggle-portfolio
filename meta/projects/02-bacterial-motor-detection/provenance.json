@@ -1,8 +1,8 @@
 {
   "project": "02-bacterial-motor-detection",
   "title": "P1_1_0.65 74d43e",
-  "curated_title": "Bacterial Flagellar Motor Detection",
-  "area": "计算生物学 / 三维目标定位",
+  "curated_title": "Bacterial Flagellar Motor Localization",
+  "area": "Computational biology / 3D localization",
   "author": "handudu",
   "source_url": "https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e",
   "kernel_id": 84374697,
@@ -12,7 +12,7 @@
   "votes_at_snapshot": 0,
   "archived_file": "projects/02-bacterial-motor-detection/notebook.ipynb",
   "original_download_sha256": "2fca7f8f68c51585f5186b7c94593bc130a6963561378792ffcbb005b54c0b98",
-  "archived_sha256": "62bdd24699754e9c7fdd6c80984146c8abb6120ba4475e99ddb4a2fec79d98ee",
+  "archived_sha256": "d84233169e9519c83e945e47ae37c26383bde343cac5e10ac9a672def0b95319",
   "retrieved_date": "2026-10-24",
   "upstream": {
     "is_fork": true,
@@ -54,8 +54,17 @@
   ],
   "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
   "changes": [
-    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+    "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
   ],
-  "validation": "Static checks only; training and inference not executed.",
-  "limitations": "需要原 Notebook 挂载的多个模型权重；3 个输入源当前标记为私有。标题里的数值和第三方排行榜记录不作为本仓库的获奖或最终排名证明。"
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "Inference requires multiple model checkpoints and three inputs marked private in the source snapshot. The archived fork has not been matched to the selected final competition submission.",
+  "original": {
+    "kaggle_version_id": 243588125,
+    "download_sha256": "2fca7f8f68c51585f5186b7c94593bc130a6963561378792ffcbb005b54c0b98",
+    "archived_sha256": "62bdd24699754e9c7fdd6c80984146c8abb6120ba4475e99ddb4a2fec79d98ee",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "d84233169e9519c83e945e47ae37c26383bde343cac5e10ac9a672def0b95319",
+  "provenance_file": "meta/projects/02-bacterial-motor-detection/provenance.json"
 }

@@ -1,8 +1,8 @@
 {
   "project": "08-reef-object-detection",
   "title": "yolov5_wbf?",
-  "curated_title": "Great Barrier Reef · YOLOv5 + WBF",
-  "area": "生态图像 / 目标检测",
+  "curated_title": "Coral Reef Object Detection with YOLOv5 and WBF",
+  "area": "Ecological imaging / object detection",
   "author": "handudu",
   "source_url": "https://www.kaggle.com/code/handudu/yolov5-wbf",
   "kernel_id": 24646340,
@@ -76,6 +76,14 @@
   "changes": [
     "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
   ],
-  "validation": "Static checks only; training and inference not executed.",
-  "limitations": "使用历史 greatbarrierreef 推理环境及外部模型，4 个输入源为私有。原 Notebook 的上游父项当前未公开显示作者，已记录父 Notebook ID；不宣称独立原创。"
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "The notebook requires the historical Great Barrier Reef competition API and model inputs, four of which were private. The parent author is unavailable in the snapshot; the parent kernel ID remains recorded.",
+  "original": {
+    "kaggle_version_id": 87726774,
+    "download_sha256": "ad8dc90717ad9e7b63f28b176860499193ebeaa7abb57a9fd480d9adbbfb379e",
+    "archived_sha256": "5944207a97c2be72b65f28fa076631f2356a2a6ab9545fbb8ac8d8fbdc6bbf3c",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "5944207a97c2be72b65f28fa076631f2356a2a6ab9545fbb8ac8d8fbdc6bbf3c",
+  "provenance_file": "meta/projects/08-reef-object-detection/provenance.json"
 }
