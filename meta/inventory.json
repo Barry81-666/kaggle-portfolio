@@ -45,15 +45,6 @@
     "reason": "Retained in the inventory; lower topical priority than the selected projects."
   },
   {
-    "title": "rsna-knee-teacher-probs-exp017-v1-infer",
-    "source_url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
-    "kernel_id": 138542102,
-    "version_id": 358098927,
-    "notebook_medal": "NONE",
-    "selected": true,
-    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
-  },
-  {
     "title": "1_Nemotron SFT LoRA with CoT",
     "source_url": "https://www.kaggle.com/code/handudu/1-nemotron-sft-lora-with-cot",
     "kernel_id": 125738884,

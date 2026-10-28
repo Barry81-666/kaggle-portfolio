@@ -27,10 +27,10 @@ These 11 results are the ranks and medals recorded for teams associated with [ha
 
 These are team ranks, not individual contribution measures or Notebook medals. The archived motor and cell inference notebooks are related code, not verified final submissions. The four personal-role descriptions were supplied by Barry Wang on 2026-10-28; they describe competition work, while source provenance identifies the specific archived notebooks.
 
-The [account snapshot](meta/account-snapshot.json) records Competitions Expert and raw account rank **807 / 221,860 on 2026-10-24**. The snapshot is historical, not a current rank. The logged-in inventory previously showed 756 notebooks/scripts; the [public inventory](meta/inventory.json) covers 20 and this repository contains 10. It does not represent an inspection of all private work.
+The [account snapshot](meta/account-snapshot.json) records Competitions Expert and raw account rank **807 / 221,860 on 2026-10-24**. The snapshot is historical, not a current rank. The logged-in inventory previously showed 756 notebooks/scripts; this repository retains 9 projects from the public collection, with other candidates recorded in the [inventory](meta/inventory.json). It does not represent an inspection of all private work.
 
-## RSNA Knee Abnormality Detection
+## Other Recorded Competition Performance
 
-The competition closed on **2026-10-22**. Kaggle's public notebook metadata records a **best public score of 0.942** for `rsna-knee-teacher-probs-exp017-v1-infer` in the 2026-10-24 snapshot. This is a historical notebook-associated public score, not a final private result or a verified final-team rank. See the [score record](results/rsna-knee-public-score.json) and [case study](projects/05-rsna-knee-inference/).
+[RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection): historical notebook-associated **best public score 0.942**, recorded in official Kaggle metadata on 2026-10-24 and rechecked on 2026-10-28. This is not a final private score or team rank.
 
 [Structured team results](meta/competition-results.json)

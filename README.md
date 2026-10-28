@@ -1,6 +1,6 @@
 # Barry Wang · Biomedical Data Science & Kaggle Portfolio
 
-I publish on Kaggle as [handudu](https://www.kaggle.com/handudu). This portfolio brings together biomedical competition experience, a detailed knee MRI validation case study, and selected projects in computational biology and machine learning. The case studies connect modeling choices to validation design and measured performance.
+I publish on Kaggle as [handudu](https://www.kaggle.com/handudu). This portfolio brings together biomedical competition achievements and selected projects in computational biology, medical imaging and machine learning. Project pages explain modeling choices and present historical results with their evaluation settings.
 
 ## Biomedical Team Competition Results
 
@@ -28,15 +28,7 @@ Kaggle Competitions **Expert**; **7 silver and 4 bronze team competition medals*
 
 </details>
 
-## Featured Case Study
-
-### [Knee MRI Classification: Weak Labels and Grouped Validation](projects/05-rsna-knee-inference/)
-
-How should an MRI classifier be evaluated when training targets come from radiology reports and expert annotations are limited? This case study explains the archived implementation's patient/duplicate grouping, separation of weak and expert labels, training-fold prior baselines, and study-level bootstrap evaluation.
-
-Explore patient-aware folds, training-only baselines and study-level bootstrap uncertainty alongside the [recorded historical public score of 0.942](projects/05-rsna-knee-inference/#evaluation-and-results).
-
-## Additional Projects
+## Selected Projects
 
 | Project | Method / evidence to inspect |
 | --- | --- |

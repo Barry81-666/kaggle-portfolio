@@ -708,24 +708,6 @@
   ],
   "preserved_operational_literals": [
     {
-      "text": "r'bilateral|both knees|both knee|beide knie|deux genoux|双膝'",
-      "uses": [
-        {
-          "path": "projects/05-rsna-knee-inference/source/rsna/visual_audit.py",
-          "cell": null,
-          "start": [
-            29,
-            27
-          ],
-          "end": [
-            29,
-            86
-          ]
-        }
-      ],
-      "reason": "Operational regular expression: matches Chinese report text; translating it would change sample selection."
-    },
-    {
       "text": "'金融2预测.csv'",
       "uses": [
         {

@@ -73,8 +73,10 @@ def main():
     errors = report['errors']
     ledger = json.loads((ROOT/'meta/translation-exceptions.json').read_text())['literal_changes']
     used = Counter()
+    catalog = json.loads((ROOT/'meta/catalog.json').read_text())['projects']
+    retained_projects = {item['project'] for item in catalog}
     for p in sorted((original/'projects').rglob('*')):
-        if p.suffix not in ('.py', '.ipynb'):
+        if p.suffix not in ('.py', '.ipynb') or p.relative_to(original).parts[1] not in retained_projects:
             continue
         rel = str(p.relative_to(original))
         current = ROOT/rel
@@ -83,7 +85,7 @@ def main():
         if p.suffix == '.py':
             ast.parse(new)
             if p.read_bytes() != current.read_bytes():
-                errors.append(f'RSNA Python changed: {rel}')
+                errors.append(f'Archived Python changed: {rel}')
             report['files'].append({'path': rel, 'byte_identical': p.read_bytes() == current.read_bytes()})
             continue
         a, b = json.loads(old), json.loads(new)
@@ -155,7 +157,6 @@ def main():
     if set(used) != set(range(len(ledger))) or any(n != 1 for n in used.values()):
         errors.append('Literal ledger does not match actual changes exactly once per occurrence')
     report['verified_literal_exceptions'] = sum(used.values())
-    catalog = json.loads((ROOT/'meta/catalog.json').read_text())['projects']
     old_catalog = {p['project']: p for p in json.loads((original/'catalog.json').read_text())['projects']}
     for p in catalog:
         if digest(ROOT/p['archived_file']) != p['translated_sha256'] or p['archived_sha256'] != p['translated_sha256']:
@@ -167,9 +168,6 @@ def main():
             errors.append(f'Baseline hash mismatch: {p["project"]}')
         if json.loads((ROOT/p['provenance_file']).read_text()) != p:
             errors.append(f'Catalog/provenance mismatch: {p["project"]}')
-    for item in json.loads((ROOT/'meta/projects/05-rsna-knee-inference/unpacked-files.json').read_text()):
-        if digest(ROOT/'projects/05-rsna-knee-inference/source'/item['path']) != item['sha256']:
-            errors.append(f'Unpacked source hash mismatch: {item["path"]}')
     for item in json.loads((ROOT/'meta/output-provenance.json').read_text())['outputs']:
         if 'sha256' in item and digest(ROOT/item['path']) != item['sha256']:
             errors.append(f'Figure hash mismatch: {item["path"]}')

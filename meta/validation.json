@@ -35,98 +35,6 @@
       "non_python_lexable_cells_source_identical": 2
     },
     {
-      "path": "projects/05-rsna-knee-inference/inference.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/__init__.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/audit.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/augmentation.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/common.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/dicom.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/evaluate.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/fold_profile.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/folds.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/geometry_views.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/infer.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/inputs.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/metrics.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/model.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/patient_audit.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/pipeline.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/preprocess.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/provenance.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/runtime.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/train.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/training_labels.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/visual_audit.py",
-      "byte_identical": true
-    },
-    {
-      "path": "projects/05-rsna-knee-inference/source/rsna/windows.py",
-      "byte_identical": true
-    },
-    {
       "path": "projects/06-time-series-validation/notebook.ipynb",
       "code_cells": 4,
       "strict_noncomment_token_equality_cells": 3,
@@ -167,12 +75,12 @@
       "non_python_lexable_cells_source_identical": 0
     }
   ],
-  "local_links_checked": 87,
+  "local_links_checked": 73,
   "credential_flags": [],
-  "decoded_embedded_items_scanned": 1,
+  "decoded_embedded_items_scanned": 0,
   "verified_literal_exceptions": 88,
   "notebooks": 9,
-  "archived_python_files": 23,
+  "archived_python_files": 0,
   "code_cells": 148,
   "strict_noncomment_token_equality_cells": 136,
   "token_equality_with_exact_literal_exceptions_cells": 146,
