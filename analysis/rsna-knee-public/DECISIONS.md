@@ -39,3 +39,7 @@ The SAP records source-specific abstention rules (including Yunus's unmentioned 
 - C completed four baseline cells × 2,000 replicates, with 399 paired bootstrap resamples per interval (1.76 minutes). Every cell met bias MCSE <0.005. Parameters remain the prespecified grid, independent of B's failed model.
 - With the earlier 1.29-minute A supplement, recorded substantive analyses total 4.22 minutes. Software tests and rendering were separate and well within the remaining 120-minute budget. Optional extensions were not needed for the revised minimum delivery; their omission is documented in the report.
 - After outcomes: added source names to T6, MCSE columns for ordering/ties/reversals, and presentation labels. These are deterministic summaries of saved draws, not new selection rules or changed analyses. Removed unused empirical A acquisition/assembly from the active pipeline. Made figure backgrounds white for legibility. No main merge is authorized.
+
+## Concurrent documentation update
+
+On 2026-10-29 (Asia/Shanghai), the release check detected a separate main-branch commit `b1c9fe20cec14d51927a7a1e6b326278fe356046` refining the existing portfolio copy. Its text changes and deleted comparison page were preserved in the research branch. The homepage conflict was resolved by adding only the new research row to the updated Selected Projects table. Statistical code, inputs and results were unchanged. Main was not modified by this synchronization.

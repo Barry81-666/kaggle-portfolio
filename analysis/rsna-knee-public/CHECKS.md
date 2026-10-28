@@ -23,7 +23,7 @@ Executed 2026-10-28 using R 4.5.1 and the versions pinned in `renv.lock`.
 
 ## Repository and source checks
 
-The repository validator passes 166 local links/anchors, exact aggregate-table schemas and credential/file-type checks. Nine archived notebooks (148 code cells) still pass the original token-equivalence checks, including 88 previously documented display-string exceptions; two non-Python cells remain source-identical. The new study does not change archived project code.
+The repository validator passes 162 local links/anchors after synchronization with the concurrent main documentation update, exact aggregate-table schemas and credential/file-type checks. Nine archived notebooks (148 code cells) still pass the original token-equivalence checks, including 88 previously documented display-string exceptions; two non-Python cells remain source-identical. The new study does not change archived project code.
 
 The five primary inputs passed ID uniqueness, column allowlist and score-range checks. Published source hashes identify the selected files. A release scan found no primary-cohort study identifier in 45 new textual artifacts. Four of five primary public metadata APIs were rechecked successfully at release and matched pinned versions/licenses. Dread's live metadata refresh was unresolved; its public dataset page resolves, and the earlier audited v3 metadata remains the version/license evidence. These checks verify accessible source records, not every scientific claim or archive file. Existing unchanged Kaggle links retain their previous recorded checks; authenticated or generic-shell links are not described as newly verified.
 

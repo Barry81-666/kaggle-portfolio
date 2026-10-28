@@ -1,6 +1,6 @@
 # Image2Biomass: Historical Validation Results
 
-Source: [handudu's public notebook](https://www.kaggle.com/code/handudu/1-train-baseline-demo), version ID **277387301**. The retrieved file matches original SHA-256 `032d6713463e7c0088ade4923bf21ec781c6b2b4cda14435c1094592387a26fa`. Values below are copied from its existing output, not newly computed. Cell and output indices are zero-based.
+Source: [my public notebook](https://www.kaggle.com/code/handudu/1-train-baseline-demo), version ID **277387301**. The retrieved file matches original SHA-256 `032d6713463e7c0088ade4923bf21ec781c6b2b4cda14435c1094592387a26fa`. Values below are copied from its existing output, not newly computed. Cell and output indices are zero-based.
 
 The notebook uses `eva02_base_patch14_448`, 448-pixel images, batch size 8, initial learning rate 0.0001 and up to 20 epochs with early stopping. Five biomass targets are log1p-transformed for training; validation weighted R² is calculated after transforming predictions back to the original scale. The weights are 0.1 / 0.1 / 0.1 / 0.2 / 0.5 in the notebook's target order. An EMA class is defined, but the main loop shown here trains the base model.
 
