@@ -1,0 +1,12 @@
+{
+  "sap_commit": "968c2a9cdb3be5978bbeed5128bad8ba843985f9",
+  "cohort_n": 4349,
+  "sources": 5,
+  "findings": 12,
+  "seed": 2026102802,
+  "bootstrap_replicates": 2000,
+  "elapsed_minutes": 0.1118,
+  "completed_utc": "2026-10-28 15:16:57 UTC",
+  "unit": "study; patient clustering unavailable",
+  "missing_rule": "SAP v1.2; source-specific undocumented codes not invented"
+}

@@ -1,0 +1,13 @@
+finding,complete_case_n,eligible,reason
+ACL,3873,TRUE,eligible
+MCL,3863,TRUE,eligible
+Medial Meniscus,3987,TRUE,eligible
+Lateral Meniscus,3808,TRUE,eligible
+Medial OA,3020,TRUE,eligible
+Lateral OA,2665,TRUE,eligible
+PF OA,3329,TRUE,eligible
+Effusion,3856,TRUE,eligible
+Synovitis,573,TRUE,eligible
+Baker's,2164,TRUE,eligible
+Contusion,2453,TRUE,eligible
+Fracture,1306,TRUE,eligible

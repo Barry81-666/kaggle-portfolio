@@ -8,6 +8,7 @@ This script performs static checks only; it never executes archived source.
 import argparse
 import ast
 import base64
+import csv
 import gzip
 import hashlib
 import io
@@ -202,7 +203,33 @@ def main():
             except (ValueError, OSError, EOFError):
                 continue
 
-    forbidden = {'.pth', '.pt', '.ckpt', '.safetensors', '.parquet', '.dcm', '.npy', '.npz', '.zip', '.tar', '.gz'}
+    public_manifest_schemas = {
+        'analysis/rsna-knee-public/datasets.csv': 'dataset,filename,cohort_role,ancestry,half_is_unknown,version,license,metadata_url,source_url,checked_date,schema_rows,schema_columns,schema_checked,download_allowed'.split(','),
+        'analysis/rsna-knee-public/discovery.csv': 'ref,licenseName,currentVersionNumber,screening_status'.split(','),
+        'analysis/rsna-knee-public/parameters.csv': 'parameter,value,unit,source_url,source_location,source_date,accessed_date,status,use'.split(','),
+    }
+    # Exact aggregate result schemas; individual-level files are not accepted.
+    public_manifest_schemas.update({
+        'results/rsna-knee-public/T3_sampling_benchmark.csv': ['scenario', 'prevalence', 'auc', 'latent_rho', 'public_multiplier', 'private_multiplier', 'n_public', 'n_private', 'replicates_attempted', 'replicates_valid', 'undefined_macro', 'mean_public', 'mean_private', 'mean_difference', 'mean_difference_mcse', 'sd_public', 'sd_private', 'sd_difference', 'sd_difference_mcse', 'variance_difference', 'variance_mcse', 'variance_mc_lower', 'variance_mc_upper', 'realized_label_correlation', 'cor_weighted_mean_difference', 'difference_q025', 'difference_q975', 'evidence_type', 'observed_variance', 'excess_variance_ratio'],
+        'results/rsna-knee-public/T4_agreement.csv': ['finding', 'metric', 'source_a', 'source_b', 'estimate', 'lower', 'upper', 'bootstrap_valid', 'bootstrap_attempted'],
+        'results/rsna-knee-public/T4_denominators.csv': ['finding', 'source', 'cohort_n', 'known_n', 'positive_n', 'complete_case_n', 'majority_comparable_n', 'majority_disagreements'],
+        'results/rsna-knee-public/T4_pair_denominators.csv': ['finding', 'source_a', 'source_b', 'pair_known_n', 'disagreement_pair_n'],
+        'results/rsna-knee-public/T4_sensitivity.csv': ['variant', 'finding', 'statistic', 'estimate'],
+        'results/rsna-knee-public/T6_eligibility.csv': ['finding', 'complete_case_n', 'eligible', 'reason'],
+        'results/rsna-knee-public/T6_latent_parameters.csv': ['parameter', 'median', 'lower', 'upper', 'rhat', 'ess_bulk', 'ess_tail', 'boundary_fraction', 'finding', 'prior', 'complete_case_n', 'extended', 'source', 'diagnostics_pass'],
+        'results/rsna-knee-public/T6_pattern_checks.csv': ['finding', 'pattern', 'observed_count', 'expected_proportion', 'predictive_lower', 'predictive_upper'],
+        'results/rsna-knee-public/T6_predictive_checks.csv': ['finding', 'complete_case_n', 'discrepancy', 'posterior_predictive_p', 'draws', 'observed_discrepancy_median', 'replicated_discrepancy_median'],
+        'results/rsna-knee-public/T7_dgm.csv': ['n', 'rho', 'replicates', 'realized_prevalence', 'realized_sensitivity', 'realized_specificity', 'correction_factor', 'max_bias_mcse', 'target_mcse_met'],
+        'results/rsna-knee-public/T7_ordering.csv': ['n', 'rho', 'method', 'attempted', 'valid', 'correct_order', 'correct_order_mcse', 'tie_rate', 'reversed_order', 'superiority_rate', 'intervals_valid', 'tie_mcse', 'reversal_mcse', 'superiority_mcse'],
+        'results/rsna-knee-public/T7_simulation.csv': ['n', 'rho', 'method', 'estimand', 'replicates_attempted', 'estimates_valid', 'intervals_valid', 'truth', 'mean_estimate', 'bias', 'bias_mcse', 'empirical_sd', 'sd_mcse', 'rmse', 'rmse_mcse', 'coverage', 'coverage_mcse', 'mean_interval_width', 'width_mcse', 'failure_rate', 'failure_mcse', 'interval_failure_rate', 'interval_failure_mcse', 'out_of_range', 'out_of_range_mcse'],
+        'results/rsna-knee-public/T5_clusters.csv': ['variant', 'source_a', 'source_b', 'mean_or_median_kappa', 'same_cluster_k2', 'bootstrap_same_cluster', 'bootstrap_replicates'],
+        'results/rsna-knee-public/T5_membership.csv': ['variant', 'source', 'cluster_k2'],
+        'results/rsna-knee-public/T5_focus.csv': ['finding', 'source_a', 'source_b', 'kappa', 'lower', 'upper', 'pair_known_n'],
+        'results/rsna-knee-public/T8_interval_sensitivity.csv': ['method', 'n', 'prevalence', 'true_auc', 'replicates', 'intervals_valid', 'coverage', 'coverage_mcse', 'successful_coverage', 'successful_coverage_mcse', 'interval_failure_rate', 'failure_mcse', 'mean_width', 'width_mcse', 'paired_success_difference', 'paired_difference_mcse'],
+        'results/rsna-knee-public/T8_sample_diagnostics.csv': ['replicates', 'n', 'mean_positives', 'positive_q025', 'positive_median', 'positive_q975', 'fewer_than_two_positives', 'boundary_auc', 'zero_delong_variance', 'mean_auc', 'bias', 'bias_mcse'],
+        'results/rsna-knee-public/source_files.csv': ['dataset', 'filename', 'version', 'license', 'source_url', 'sha256', 'bytes'],
+    })
+    forbidden = {'.pth', '.pt', '.ckpt', '.safetensors', '.parquet', '.dcm', '.npy', '.npz', '.zip', '.tar', '.gz', '.rds', '.RData', '.duckdb', '.wal', '.part'}
     for p in sorted(ROOT.rglob('*')):
         if not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts:
             continue
@@ -210,8 +237,14 @@ def main():
         if p.suffix in forbidden or p.name in {'kaggle.json', '.env', 'access_token'}:
             errors.append(f'Data/model/credential file in package: {rel}')
         if p.suffix == '.csv' and rel != 'meta/catalog.csv':
-            errors.append(f'Unexpected CSV: {rel}')
-        if p.suffix in ('.md', '.json', '.py', '.ipynb', '.csv', '.txt'):
+            if rel not in public_manifest_schemas:
+                errors.append(f'Unexpected CSV: {rel}')
+            else:
+                with p.open(newline='') as stream:
+                    rows = list(csv.reader(stream))
+                if not rows or rows[0] != public_manifest_schemas[rel] or any(len(r) != len(rows[0]) for r in rows):
+                    errors.append(f'Invalid public source-manifest schema: {rel}')
+        if p.suffix in ('.md', '.json', '.py', '.ipynb', '.csv', '.txt', '.R', '.qmd', '.lock'):
             text = p.read_text()
             if rel != 'meta/validation.json':
                 scan(rel, p.read_bytes())
@@ -219,7 +252,7 @@ def main():
                 json.loads(text)
             if p.suffix == '.py':
                 ast.parse(text)
-            md_parts = [text] if p.suffix == '.md' else [source(c) for c in json.loads(text)['cells'] if c['cell_type'] == 'markdown'] if p.suffix == '.ipynb' else []
+            md_parts = [text] if p.suffix in ('.md', '.qmd') else [source(c) for c in json.loads(text)['cells'] if c['cell_type'] == 'markdown'] if p.suffix == '.ipynb' else []
             for md in md_parts:
                 if CJK.search(md):
                     errors.append(f'Chinese reader-facing Markdown: {rel}')

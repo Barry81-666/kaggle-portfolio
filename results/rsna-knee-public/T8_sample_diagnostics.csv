@@ -1,0 +1,2 @@
+replicates,n,mean_positives,positive_q025,positive_median,positive_q975,fewer_than_two_positives,boundary_auc,zero_delong_variance,mean_auc,bias,bias_mcse
+4000,58,8.74375,4,9,14,4,21,21,0.899884122173625,-0.000115877826375136,0.000945147939846124

@@ -1,0 +1,11 @@
+{
+  "analysis": "post-hoc v1.3",
+  "primary_sap_commit": "968c2a9cdb3be5978bbeed5128bad8ba843985f9",
+  "seed": 2026102901,
+  "bootstrap_replicates": 1000,
+  "linkage": "average",
+  "dissimilarity": "1 - equal-finding mean Cohen kappa",
+  "cut_k": 2,
+  "elapsed_minutes": 0.0195,
+  "executed_on": "2026-10-29"
+}

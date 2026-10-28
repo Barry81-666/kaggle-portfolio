@@ -1,0 +1,16 @@
+variant,source,cluster_k2
+mean_paired,Dread,1
+mean_paired,Steven,2
+mean_paired,Pilkwang,2
+mean_paired,Yunus,1
+mean_paired,Lixin,2
+median_paired,Dread,1
+median_paired,Steven,2
+median_paired,Pilkwang,2
+median_paired,Yunus,1
+median_paired,Lixin,2
+mean_complete,Dread,1
+mean_complete,Steven,2
+mean_complete,Pilkwang,2
+mean_complete,Yunus,1
+mean_complete,Lixin,2

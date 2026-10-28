@@ -1,0 +1,181 @@
+---
+title: "Knee Diagnostic Labels Without a Gold Standard"
+subtitle: "Report-source agreement, latent-model checks and AUC misclassification bias"
+format: gfm
+---
+
+
+
+## What this study establishes
+
+1. **Five sources form two stable similarity groups.** Across 4,349 studies, Steven/Pilkwang/Lixin cluster together and Dread/Yunus form the other group. Effusion separates them especially clearly: within-group kappa 0.894–0.989, between-group 0.311–0.377. Different published severity/mention conventions are plausible contributors; agreement alone does not prove copying or conditional dependence. This clustering is **post-hoc**.
+2. **Checking the measurement model changes what can be claimed about accuracy.** All 11 converged primary latent fits fail to reproduce the observed response patterns; synovitis also fails convergence. This challenges the combined common-binary-target and conditional-independence assumptions. The fitted sensitivity/specificity values cannot be treated as established diagnostic accuracy.
+3. **More data can make a misspecified correction more precisely wrong.** In the prespecified score-dependent scenario, known-parameter AUC correction at n=977 has bias +0.1274 and 95% interval coverage of 12.4%. With score-independent errors it removes most bias. These are synthetic mechanisms, not measured RSNA performance.
+
+A separate post-hoc interval study shows that bootstrap count explains little of the small-sample undercoverage: 399 versus 1,999 resamples gives 86.1% versus 86.5% coverage, while a logit interval reaches 92.6% among valid intervals. Failures and Monte Carlo uncertainty accompany every comparison below.
+
+## Design and provenance
+
+The [SAP v1.2](SAP.md) was frozen at commit `968c2a9cdb3be5978bbeed5128bad8ba843985f9` before B/C outcomes. [DECISIONS.md](DECISIONS.md) records the approved change in emphasis. The v1.3 clustering and interval sensitivity were specified after all primary results were seen. Their exploratory status is retained throughout.
+
+Inputs are Dread v3, Steven v6's original full/v1 file, Pilkwang v1, Yunus v3 and Lixin v1. Each publisher lists CC0. See the [source audit](SOURCE_AUDIT.md) and [file hashes](../../results/rsna-knee-public/source_files.csv). All five primary files cover the Dread-anchored intersection. This is a cohort of study identifiers, not a confirmed count of unique patients.
+
+No original reports, MRI images, official Gold58 annotations, personal model predictions, submission histories or rule-gated files were used. We cannot verify individual copied expert labels or exclude undisclosed panel tuning. Known later blends were excluded from the primary cohort. Several publishers describe expert-panel benchmarking; undocumented copying or tuning cannot be ruled out for the selected files. We do not assert that the five primary sources are independent.
+
+## B: agreement and missingness
+
+Pilkwang YES/NO/UNK verdicts map to positive/negative/missing. Steven's documented 0.5 and Yunus's 0.05/0.5 are missing. Dread and Lixin use a 0.5 score threshold because no special unknown convention is documented. Different thresholds for severity and mention can encode different target constructs. Scores are not assumed calibrated probabilities.
+
+Pairwise analyses use paired known observations; Fleiss kappa and the latent model use studies known in all five sources for each finding. Study bootstrap intervals use 2,000 joint resamples. Repeated examinations cannot be clustered by patient because patient identifiers are unavailable. The intervals may therefore be too narrow. Complete-case selection may be informative.
+
+
+|Finding          | Complete studies|Fleiss kappa |95% bootstrap interval |
+|:----------------|----------------:|:------------|:----------------------|
+|ACL              |             3873|0.794        |0.779 to 0.810         |
+|MCL              |             3863|0.660        |0.638 to 0.682         |
+|Medial Meniscus  |             3987|0.795        |0.781 to 0.807         |
+|Lateral Meniscus |             3808|0.758        |0.740 to 0.776         |
+|Medial OA        |             3020|0.761        |0.744 to 0.777         |
+|Lateral OA       |             2665|0.733        |0.714 to 0.751         |
+|PF OA            |             3329|0.764        |0.749 to 0.781         |
+|Effusion         |             3856|0.517        |0.499 to 0.535         |
+|Synovitis        |              573|0.390        |0.325 to 0.453         |
+|Baker's          |             2164|0.708        |0.689 to 0.729         |
+|Contusion        |             2453|0.605        |0.583 to 0.626         |
+|Fracture         |             1306|0.868        |0.845 to 0.889         |
+
+For example, fracture agreement is high, while synovitis has much lower agreement and only 573 complete studies. These are not comparisons of disease prevalence or imaging accuracy. A high kappa can reflect a shared extraction rule; PABAK and apparent positive fractions are also descriptive.
+
+![Pairwise Cohen kappa](../../figures/rsna-knee-public/F5_label_agreement.png)
+
+![Unknown label proportions](../../figures/rsna-knee-public/F5b_unknown_labels.png)
+
+[T4](../../results/rsna-knee-public/T4_agreement.csv) includes Cohen kappa, PABAK, apparent positive/unknown fractions, Fleiss kappa, and joint/phi correlations of leave-one-source-out majority disagreements. [Source denominators](../../results/rsna-knee-public/T4_denominators.csv) and [paired denominators](../../results/rsna-knee-public/T4_pair_denominators.csv) accompany them. Majority disagreements are **not errors against truth**; shared majority definitions can themselves induce correlation. These summaries do not identify conditional error dependence.
+
+[Prespecified sensitivities](../../results/rsna-knee-public/T4_sensitivity.csv) vary score thresholds to 0.3/0.7 and treat documented unknowns as negative/positive. These change the definition and analyzed population; none was selected to maximize agreement.
+
+## B: source similarity structure (post-hoc)
+
+After inspecting F5, we clustered sources using [average linkage](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/hclust.html) and `1 - mean(Cohen kappa)` across the 12 equally weighted findings. The two-cluster cut was chosen after viewing the heatmap, rather than selected by an independence test. A median-kappa sensitivity and a mean-kappa analysis restricted to the same five-source-complete cases for each finding yield the same groups. All 1,000 joint study-bootstrap samples retain the two-cluster partition. This describes stability **within this cohort and these harmonization rules**, not certainty about another population or a latent truth.
+
+![Post-hoc source clustering](../../figures/rsna-knee-public/F5c_source_clusters.png)
+
+The 12-finding mean pairwise kappas are 0.955 for Steven/Pilkwang, 0.881 for Steven/Lixin, 0.865 for Pilkwang/Lixin, and 0.793 for Dread/Yunus. Kappa reaches at least 0.9 in 10, 9 and 7 of 12 findings for the three pairs in the first group, respectively. It is not uniformly near-perfect agreement across all findings.
+
+
+|Finding   |Pair              | Paired known|Kappa |95% bootstrap interval |
+|:---------|:-----------------|------------:|:-----|:----------------------|
+|Effusion  |Dread / Lixin     |         4349|0.377 |0.358 to 0.398         |
+|Effusion  |Dread / Pilkwang  |         3917|0.325 |0.307 to 0.345         |
+|Effusion  |Dread / Steven    |         3919|0.330 |0.311 to 0.349         |
+|Effusion  |Dread / Yunus     |         3874|0.894 |0.878 to 0.910         |
+|Effusion  |Pilkwang / Lixin  |         3917|0.970 |0.962 to 0.978         |
+|Effusion  |Pilkwang / Yunus  |         3858|0.311 |0.292 to 0.330         |
+|Effusion  |Steven / Lixin    |         3919|0.973 |0.966 to 0.980         |
+|Effusion  |Steven / Pilkwang |         3913|0.989 |0.983 to 0.993         |
+|Effusion  |Steven / Yunus    |         3861|0.315 |0.296 to 0.334         |
+|Effusion  |Yunus / Lixin     |         3874|0.321 |0.302 to 0.341         |
+|Synovitis |Dread / Lixin     |         4349|0.304 |0.272 to 0.338         |
+|Synovitis |Dread / Pilkwang  |          678|0.309 |0.254 to 0.365         |
+|Synovitis |Dread / Steven    |          701|0.391 |0.337 to 0.448         |
+|Synovitis |Dread / Yunus     |          839|0.736 |0.687 to 0.781         |
+|Synovitis |Pilkwang / Lixin  |          678|0.866 |0.815 to 0.912         |
+|Synovitis |Pilkwang / Yunus  |          599|0.252 |0.195 to 0.309         |
+|Synovitis |Steven / Lixin    |          701|0.931 |0.896 to 0.962         |
+|Synovitis |Steven / Pilkwang |          605|1.000 |1.000 to 1.000         |
+|Synovitis |Steven / Yunus    |          589|0.275 |0.217 to 0.335         |
+|Synovitis |Yunus / Lixin     |          839|0.507 |0.454 to 0.561         |
+
+Effusion within-group kappa is 0.894–0.989, versus 0.311–0.377 between groups. Synovitis is less cleanly separated: Dread/Yunus kappa is 0.736 and Yunus/Lixin reaches 0.507. Steven/Pilkwang kappa=1 concerns **605 paired-known, thresholded binary labels**, not complete-file identity, unknown codes or continuous scores. Its [1,1] empirical bootstrap interval reflects zero observed discordance; it does not establish perfect population agreement.
+
+The [post-hoc provenance review](SOURCE_AUDIT.md#post-hoc-provenance-review-2026-10-29) identifies a concrete definition difference: Pilkwang's YES verdict denotes an asserted finding, whereas Yunus's mild/trace score of 0.25 falls below the primary 0.5 threshold. Steven's later v4 file explicitly blends with Lixin, but **the selected Steven file is original v1**, so that relationship cannot establish copying among these primary files. Lixin's empty description leaves important provenance unknown.
+
+**Effective independent source count is not identified.** Two descriptive clusters are not two independent tests. Shared true states can produce high marginal agreement even under conditional independence; conversely, differing targets and shared extraction errors can both cause model misfit. The clusters motivate these explanations without distinguishing them. Thus five agreeing labels should not automatically be treated as five independent confirmations.
+
+[T5 pair summaries](../../results/rsna-knee-public/T5_clusters.csv), [memberships](../../results/rsna-knee-public/T5_membership.csv) and [finding-specific denominators](../../results/rsna-knee-public/T5_focus.csv) provide the aggregate record. Bootstrap co-membership frequencies are descriptive stability measures, not posterior probabilities or independence counts.
+
+## B: model checking before interpreting accuracy
+
+The model has two latent report-state classes and five conditionally independent Bernoulli indicators. Beta(2,2) accuracy priors and Beta(1,1) prevalence priors are constrained to a positive average Youden index to orient the classes. Four chains start with 6,000 iterations and 2,000 warmup, with one prespecified extension to 12,000/4,000. The [posterior package diagnostics](https://mc-stan.org/posterior/reference/diagnostics.html) use rank-normalized R-hat and bulk/tail ESS. Accuracy-prior sensitivities are Beta(1,1) and Beta(4,2).
+
+Of 12 primary fits, **11 pass** R-hat <1.01 and bulk/tail ESS >=400. Synovitis still fails after extension (maximum R-hat 1.528, minimum bulk ESS 7.1). Its pooled quantiles are saved for diagnostics only and are not valid credible intervals. A more optimistic prior yields converged synovitis chains, which does not justify switching to that prior after observing the failure.
+
+For each of the 11 converged primary fits, **none of 2,000 posterior predictive replicates** reached the observed response-pattern discrepancy. This is a simulation count, not an exact zero probability. The discrepancy is a Pearson-type pattern statistic with expected count +0.5 in the denominator. Many parameters approach their boundaries. Good chain diagnostics cannot establish model fit or identifiability.
+
+![Posterior predictive misfit](../../figures/rsna-knee-public/F6_model_misfit.png)
+
+The data challenge the combined assumptions of a common binary construct and conditional independence. They do not identify which mechanism explains the mismatch. Shared text, shared extraction conventions and residual source dependence are plausible explanations, not separately estimated causes.
+
+The [parameter-draw summaries](../../results/rsna-knee-public/T6_latent_parameters.csv), [predictive checks](../../results/rsna-knee-public/T6_predictive_checks.csv), and [response-pattern summaries](../../results/rsna-knee-public/T6_pattern_checks.csv) are diagnostic outputs. **No source is declared most accurate, and these posteriors are not used to calibrate C.** A dependent latent model remains an optional extension; it was not fitted. Even a better-fitting report model could not identify the shared discrepancy between reports and imaging truth without additional evidence.
+
+## C: bias, precision and model ordering
+
+This is a prespecified four-cell simulation: n=58/977 and label-error dependence rho=0/0.2. True AUCs are 0.90 and 0.91, prevalence 0.15, Se=Sp=0.85, and paired-score residual correlation 0.8. Rho denotes the latent Gaussian correlation between each score residual and the label-generating residual, conditional on the true class. It is not correlation between diagnostic sources in B. Sample sizes are scenario choices; n=977 is not asserted to be an official test-set count.
+
+Each cell has 2,000 replicates and 399 paired bootstrap resamples per interval. An interval requires at least 80% valid resamples. All cells meet bias MCSE <0.005 for the implemented estimands and methods. [DGM checks](../../results/rsna-knee-public/T7_dgm.csv) report realized marginal parameters.
+
+Under score-independent misclassification,
+
+`AUC_imperfect = 0.5 + (PPV + NPV - 1) × (AUC_true - 0.5)`.
+
+The oracle correction uses the true Se, Sp and prevalence; its scale factor is 0.4698 in this scenario. It does not include uncertainty from estimating these parameters. Corrected AUCs are deliberately not clipped to [0,1]. The expert comparator is a separately generated, perfectly labeled sample of size 58—not actual Gold58.
+
+
+|   n| rho|Method            |Bias    |Bias MCSE |Empirical SD |95% CI coverage |Out of range |
+|---:|---:|:-----------------|:-------|:---------|:------------|:---------------|:------------|
+|  58| 0.0|Naive             |-0.2115 |0.0020    |0.0885       |23.8%           |0.0%         |
+|  58| 0.0|Oracle correction |0.0012  |0.0042    |0.1885       |92.9%           |30.0%        |
+|  58| 0.2|Naive             |-0.1513 |0.0018    |0.0796       |48.1%           |0.0%         |
+|  58| 0.2|Oracle correction |0.1294  |0.0038    |0.1695       |84.4%           |59.2%        |
+| 977| 0.0|Naive             |-0.2124 |0.0005    |0.0210       |0.0%            |0.0%         |
+| 977| 0.0|Oracle correction |-0.0006 |0.0010    |0.0447       |94.5%           |1.2%         |
+| 977| 0.2|Naive             |-0.1522 |0.0004    |0.0183       |0.0%            |0.0%         |
+| 977| 0.2|Oracle correction |0.1274  |0.0009    |0.0391       |12.4%           |75.7%        |
+
+At rho=0, increasing n from 58 to 977 reduces the corrected estimator's SD from **0.1885 to 0.0447**, with little remaining bias. At rho=0.2 and n=977, the same formula has bias **+0.1274** (MCSE 0.0009), only **12.4%** coverage (MCSE 0.74 percentage points), and **75.7%** of corrected AUCs exceed the allowed range. This illustrates model failure, not evidence of an AUC above one.
+
+![AUC bias under two error mechanisms](../../figures/rsna-knee-public/F7_auc_bias.png)
+
+The independent expert n=58 estimator has little mean bias here, but its percentile-bootstrap coverage is only **84.9–86.5%**, below the nominal 95%. Small positive counts and occasional undefined/failed intervals are part of the result. An unbiased point estimate does not ensure a reliable interval. Full AUC_A, AUC_B and paired-difference bias, RMSE, precision, coverage, failures and MCSEs are in [T7](../../results/rsna-knee-public/T7_simulation.csv); coverage is conditional on a valid interval, and interval failures are reported separately.
+
+At rho=0, strict correct ordering of the 0.90/0.91 models rises from **53.65%** at n=58 to **66.05%** at n=977 (MCSE approximately 1.1 percentage points). Multiplying both estimates by the same positive correction factor cannot change their order; it only rescales the paired difference. [Ordering outputs](../../results/rsna-knee-public/T7_ordering.csv) include ties and reversals. These are two-model simulation probabilities, not actual public/private leaderboard rank-reversal probabilities.
+
+![Synthetic model-ordering probabilities](../../figures/rsna-knee-public/F7b_model_ordering.png)
+
+## C: small expert-sample interval sensitivity (post-hoc)
+
+The original simulations used 399 percentile-bootstrap resamples. To separate bootstrap Monte Carlo resolution from interval-method limitations, we generated **4,000 additional, perfectly labeled synthetic samples**, each n=58, prevalence 0.15 and true AUC 0.90. Every method sees the same samples; the first 399 bootstrap draws are nested within 1,999 draws. Error dependence rho is irrelevant to this perfectly labeled experiment. The original four-cell correction analysis and its outputs are unchanged.
+
+DeLong variance is calculated from case/control placements and checked against [pROC](https://cran.r-project.org/web/packages/pROC/refman/pROC.html). Normal intervals are clipped to [0,1]; logit-delta intervals transform using the same variance. These are asymptotic intervals, not exact finite-sample procedures. At least two observations in each class are required for DeLong; AUC at a boundary or zero variance makes the logit interval undefined, without an invented continuity correction. Bootstrap intervals still require 80% valid resamples.
+
+
+|Method         | Valid intervals|Coverage (valid) |Coverage MCSE (pp) |Successful coverage (all) |Failure rate |Mean width |
+|:--------------|---------------:|:----------------|:------------------|:-------------------------|:------------|:----------|
+|bootstrap_399  |            3996|86.09%           |0.55               |86.00%                    |0.100%       |0.203      |
+|bootstrap_1999 |            3996|86.49%           |0.54               |86.40%                    |0.100%       |0.204      |
+|delong_normal  |            3996|83.16%           |0.59               |83.08%                    |0.100%       |0.194      |
+|delong_logit   |            3975|92.63%           |0.41               |92.05%                    |0.625%       |0.228      |
+
+![Post-hoc interval sensitivity](../../figures/rsna-knee-public/F8_interval_sensitivity.png)
+
+Increasing bootstrap draws changes successful coverage over all attempts by **+0.40 percentage points** (paired MCSE 0.19 pp). Logit intervals improve it by **+6.05 pp** (paired MCSE 0.48 pp), but remain below nominal coverage: 92.63% among valid intervals, **92.05% across all attempts**. Ordinary DeLong reaches only 83.16% among valid intervals. A method called DeLong is not automatically better in this sparse setting.
+
+The samples average 8.74 positives (central 95% range 4–14). There are 4 samples with fewer than two positives and 21 with boundary AUC/zero DeLong variance. The logit method therefore fails in 25/4,000 attempts; other methods fail in 4/4,000. Undefined intervals count as unsuccessful in the all-attempt measure rather than disappearing from the denominator. Conditional coverage alone would hide this tradeoff.
+
+These comparisons show that a larger bootstrap count alone explains little of the deficit. They do not identify the fraction attributable to discreteness, sparse positive counts, skewness or the generating distribution, and they do not validate any method for real Gold58. The [T8 results](../../results/rsna-knee-public/T8_interval_sensitivity.csv) include paired MCSEs and width; [sample diagnostics](../../results/rsna-knee-public/T8_sample_diagnostics.csv) record class counts and boundary cases.
+
+## Boundaries and next analysis
+
+The main deliverable is complete: public-source agreement, independent latent-model diagnostics, and the four baseline misclassification scenarios. Secondary derivative-source analyses, alternate prevalence priors/orientations, a dependent latent model, B-derived extraction-error-only simulations, uncertain-parameter correction, and the large stress grid were not run. The failed independence fit prevents credible calibration from B; no favorable posterior was selected as a substitute.
+
+The next useful extension is to specify a common target (any mention versus severity threshold), reconcile source conventions, and then prespecify a dependence-aware report-state model with explicit anchors and prior-predictive checks, followed by comparison of predictive fit and parameter stability. It still requires an externally justified target definition before any diagnostic-accuracy interpretation. A broader C grid can examine differential score dependence and uncertain calibration parameters. No additional personal competition materials are needed for these methodological extensions.
+
+## Supplement: completed sampling reference
+
+Before the B/C focus, an A-only synthetic benchmark covered 16 scenarios with 2,000 replicates each. Its baseline SD of a simulated public/private macro-AUC difference was 0.00599 (MCSE 0.00011). [T3](../../results/rsna-knee-public/T3_sampling_benchmark.csv) and the [reference figure](../../figures/rsna-knee-public/F2_sampling_reference_only.png) remain supplementary. No empirical leaderboard scores, excess-variance estimate, selection effect or team ranking were analyzed. The Meta Kaggle extract is no longer required.
+
+## Reproduction and references
+
+See the [R execution guide](README.md), [checks](CHECKS.md), and [SAP references](SAP.md#references). B descriptive computation took 0.11 minutes, latent fitting 1.07 minutes, and C 1.76 minutes on this machine; with the earlier A run, the original analyses total about 4.22 minutes. Post-hoc clustering took 0.02 minutes and the interval comparison 0.31 minutes, bringing recorded analyses to about 4.55 minutes, within the 120-minute cap. Software tests and rendering are reported separately. Raw/aligned labels, study IDs and sampler/Monte Carlo draws stay outside the repository. Published tables and figures contain aggregates only.
+
+I designed and ran this analysis with AI coding assistance. Upstream dataset authors supplied the public label extractions; their versions and attribution are preserved in the source audit.

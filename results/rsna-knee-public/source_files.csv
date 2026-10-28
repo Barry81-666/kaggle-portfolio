@@ -1,0 +1,6 @@
+dataset,filename,version,license,source_url,sha256,bytes
+dreaddevelopment/rsna-knee-labels,labels_llm_soft.csv,3,CC0: Public Domain,https://www.kaggle.com/datasets/dreaddevelopment/rsna-knee-labels,8cec477fb555e88bbb4196197fd3f806cbafed8cc2f6b2d48d26a8d49fbd86a1,535909
+stevenleehans/rsna-knee-llm-report-labels,llm_labels_full.csv,6,CC0: Public Domain,https://www.kaggle.com/datasets/stevenleehans/rsna-knee-llm-report-labels,96444cd3c7d396bae4a71454317d9cbe0689759b5278b30939781e04d0774537,534442
+pilkwang/rsna-knee-llm-labels,report_labels_v2.csv,1,CC0: Public Domain,https://www.kaggle.com/datasets/pilkwang/rsna-knee-llm-labels,6f704a7bdb2f894cc49445b19ba7c4378c3f548d3449e00361e10044bee40920,1004839
+yunusgmsoy/rsna-knee-llm-report-labels,yunus_llm_labels.csv,3,CC0: Public Domain,https://www.kaggle.com/datasets/yunusgmsoy/rsna-knee-llm-report-labels,77a8d8fd093f3648f34b561610ced424363c25fd3d8b667c5347a353f0310642,522625
+lixin73/rsna-knee-llm-report-labels-sol56,labels_llm_gpt56sol.csv,1,CC0: Public Domain,https://www.kaggle.com/datasets/lixin73/rsna-knee-llm-report-labels-sol56,a79b05e609336811d51c97f9a48f00ea8004244a1a80fe886504a62bb39867ae,503354

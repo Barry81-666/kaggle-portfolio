@@ -34,6 +34,7 @@ The linked notebooks are public notebooks I published during these competitions;
 
 | Project | What it shows |
 | --- | --- |
+| [Knee Diagnostic Labels Without a Gold Standard](projects/11-knee-report-label-accuracy/) | Five public label sources form two stable similarity groups; model checks and simulations show why apparent consensus and larger samples can mislead. [Results](analysis/rsna-knee-public/report.md). |
 | [Image2Biomass: Validation Across Split Designs](projects/03-image2biomass/) | Image regression of pasture biomass under four fold designs. Mean weighted R² falls from 0.68 with random folds to 0.58 with sampling-date folds and 0.49 with species folds; [full results](results/image2biomass.md). |
 | [RNA Sequence and Structure Exploration](projects/01-rna-folding/) | Exploratory analysis of RNA sequences and 3D coordinates; silver Notebook medal. |
 | [Coral Reef Object Detection with YOLOv5 and WBF](projects/08-reef-object-detection/) | Ecological image detection with weighted box fusion; bronze Notebook medal. |

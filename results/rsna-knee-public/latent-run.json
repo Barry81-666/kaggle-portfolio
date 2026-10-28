@@ -1,0 +1,14 @@
+{
+  "sap_commit": "968c2a9cdb3be5978bbeed5128bad8ba843985f9",
+  "seed": 2026102803,
+  "chains": 4,
+  "iterations": 6000,
+  "warmup": 2000,
+  "extension_iterations": 12000,
+  "extension_warmup": 4000,
+  "model": "conditional independence; complete cases; positive average Youden orientation",
+  "fits_completed": 36,
+  "elapsed_minutes": 1.0667,
+  "completed_utc": "2026-10-28 15:22:25 UTC",
+  "posterior_version": "1.7.0"
+}
