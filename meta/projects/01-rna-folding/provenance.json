@@ -1,0 +1,45 @@
+{
+  "project": "01-rna-folding",
+  "title": "🧬 RNA Folding: PYTHON EDA & Submission",
+  "curated_title": "RNA Sequence and Structure Exploration",
+  "area": "Computational biology / exploratory analysis",
+  "author": "handudu",
+  "source_url": "https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission",
+  "kernel_id": 78016514,
+  "version_id": 226091843,
+  "version_date": "2025-03-06T10:14:57.297Z",
+  "notebook_medal": "SILVER",
+  "votes_at_snapshot": 79,
+  "archived_file": "projects/01-rna-folding/notebook.ipynb",
+  "original_download_sha256": "7666019ff229d4ce0e1dceca5ae91387de8757101acedacaadcaa96dc3030922",
+  "archived_sha256": "5748fe882241f8e72db6995b97b31c0c52a38c7311881d1ca639c379afb9aac9",
+  "retrieved_date": "2026-10-24",
+  "upstream": {
+    "is_fork": true,
+    "kernel_id": 77689089,
+    "author": "ChrisK321",
+    "url": "https://www.kaggle.com/code/chrisk321/rna-folding-r-eda-submission"
+  },
+  "data_sources": [
+    {
+      "name": "Stanford RNA 3D Folding",
+      "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding",
+      "private": false
+    }
+  ],
+  "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
+  "changes": [
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+    "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
+  ],
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "The Python notebook contains later R/H2O cells and cannot be run end to end in a Python kernel. Upstream first-person narrative is retained; it is not a personal account by Barry Wang. The recovered EDA figure is descriptive, not model validation.",
+  "original": {
+    "kaggle_version_id": 226091843,
+    "download_sha256": "7666019ff229d4ce0e1dceca5ae91387de8757101acedacaadcaa96dc3030922",
+    "archived_sha256": "5c3ff8a20e4ea5a04e3bc1769f885922e8692a56bcd6bb89f877904b9e62818f",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "5748fe882241f8e72db6995b97b31c0c52a38c7311881d1ca639c379afb9aac9",
+  "provenance_file": "meta/projects/01-rna-folding/provenance.json"
+}

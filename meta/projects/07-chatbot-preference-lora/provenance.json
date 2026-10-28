@@ -1,8 +1,8 @@
 {
   "project": "07-chatbot-preference-lora",
   "title": "LMSYS_peft0.14.0",
-  "curated_title": "Multilingual Chatbot Preference · LoRA",
-  "area": "机器学习 / 大模型推理",
+  "curated_title": "Multilingual Preference Prediction with Gemma and LoRA",
+  "area": "Machine learning / language model inference",
   "author": "handudu",
   "source_url": "https://www.kaggle.com/code/handudu/lmsys-peft0-14-0",
   "kernel_id": 74432152,
@@ -12,7 +12,7 @@
   "votes_at_snapshot": 9,
   "archived_file": "projects/07-chatbot-preference-lora/notebook.ipynb",
   "original_download_sha256": "5c1329f719d3e3864e485889c152a15b91a036c6e2db222df26eaef04a47e00e",
-  "archived_sha256": "93503ec1203d2a72c373501aafbac1fceb3e5926c25ca445bbde55755ffe7387",
+  "archived_sha256": "a3a7fdfb57a535b8c91f836fce60d0316ba6ae57db2affab158347d72738d5e8",
   "retrieved_date": "2026-10-24",
   "upstream": {
     "is_fork": false,
@@ -74,8 +74,17 @@
   ],
   "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
   "changes": [
-    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+    "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
   ],
-  "validation": "Static checks only; training and inference not executed.",
-  "limitations": "依赖特定离线 wheel、基础模型和 LoRA 检查点；3 个输入源为私有。尚未验证依赖兼容性、模型加载或推理指标。"
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "The notebook requires specific offline wheels, a base model, two GPUs and LoRA weights; three inputs were private in the source snapshot. Model loading and inference were not rerun.",
+  "original": {
+    "kaggle_version_id": 217218292,
+    "download_sha256": "5c1329f719d3e3864e485889c152a15b91a036c6e2db222df26eaef04a47e00e",
+    "archived_sha256": "93503ec1203d2a72c373501aafbac1fceb3e5926c25ca445bbde55755ffe7387",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "a3a7fdfb57a535b8c91f836fce60d0316ba6ae57db2affab158347d72738d5e8",
+  "provenance_file": "meta/projects/07-chatbot-preference-lora/provenance.json"
 }

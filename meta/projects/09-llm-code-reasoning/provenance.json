@@ -1,8 +1,8 @@
 {
   "project": "09-llm-code-reasoning",
   "title": "AIMO1_20th基础学习资料注释版",
-  "curated_title": "Mathematical Reasoning · Annotated Notebook",
-  "area": "机器学习 / 数学推理",
+  "curated_title": "Mathematical Reasoning with Code Execution",
+  "area": "Machine learning / mathematical reasoning",
   "author": "handudu",
   "source_url": "https://www.kaggle.com/code/handudu/aimo1-20th",
   "kernel_id": 77391717,
@@ -12,7 +12,7 @@
   "votes_at_snapshot": 3,
   "archived_file": "projects/09-llm-code-reasoning/notebook.ipynb",
   "original_download_sha256": "51b9d15ef71b962c9d01c288cda3d2c54e4669eea75f5e20f4924a49234ad962",
-  "archived_sha256": "8fb254b8fba64f7d8d8c1af68efb58fce3b0044f722b901d292f0f4b26ba7433",
+  "archived_sha256": "ffc6c757015fb9438204d1aca1eeaa7e6556b46b248b0d768e4141f92622f989",
   "retrieved_date": "2026-10-24",
   "upstream": {
     "is_fork": true,
@@ -54,8 +54,17 @@
   ],
   "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
   "changes": [
-    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+    "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+    "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
   ],
-  "validation": "Static checks only; training and inference not executed.",
-  "limitations": "名称中的 20th 不作为 handudu 获得第 20 名的证明。基于 AbdurRafae 的公开 Notebook 修改。原代码会执行模型生成的 Python；本次仅静态归档，没有执行生成代码。依赖历史模型和 GPU 环境。"
+  "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+  "limitations": "This annotated fork executes model-generated Python in subprocesses and includes debugging code. The upstream rank in its historical title is not a result attributable to Barry Wang. It requires the historical model and GPU environment.",
+  "original": {
+    "kaggle_version_id": 224999934,
+    "download_sha256": "51b9d15ef71b962c9d01c288cda3d2c54e4669eea75f5e20f4924a49234ad962",
+    "archived_sha256": "8fb254b8fba64f7d8d8c1af68efb58fce3b0044f722b901d292f0f4b26ba7433",
+    "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+  },
+  "translated_sha256": "ffc6c757015fb9438204d1aca1eeaa7e6556b46b248b0d768e4141f92622f989",
+  "provenance_file": "meta/projects/09-llm-code-reasoning/provenance.json"
 }

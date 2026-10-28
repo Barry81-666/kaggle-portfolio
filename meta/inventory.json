@@ -6,7 +6,7 @@
     "version_id": 279919839,
     "notebook_medal": "BRONZE",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "🧬 RNA Folding: PYTHON EDA & Submission",
@@ -15,7 +15,7 @@
     "version_id": 226091843,
     "notebook_medal": "SILVER",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "AIMO1-20_FIX2",
@@ -24,7 +24,7 @@
     "version_id": 225702535,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "与入选注释版本重复，且原导出含执行错误输出。"
+    "reason": "Overlaps the selected annotated version; the original export also contained execution errors."
   },
   {
     "title": "AIMO1_20th基础学习资料注释版",
@@ -33,7 +33,7 @@
     "version_id": 224999934,
     "notebook_medal": "NONE",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "tez swin-ference韩嘟嘟 ",
@@ -42,7 +42,7 @@
     "version_id": 89637429,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "保留在完整清单中；相对已入选项目，主题优先级较低。"
+    "reason": "Retained in the inventory; lower topical priority than the selected projects."
   },
   {
     "title": "rsna-knee-teacher-probs-exp017-v1-infer",
@@ -51,7 +51,7 @@
     "version_id": 358098927,
     "notebook_medal": "NONE",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "1_Nemotron SFT LoRA with CoT",
@@ -60,7 +60,7 @@
     "version_id": 332263618,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "当前公开下载返回空文件，不能归档为有效代码。"
+    "reason": "The download at the original review returned an empty file; no usable source was archived."
   },
   {
     "title": "CoT generation for Nemotron challenge",
@@ -69,7 +69,7 @@
     "version_id": 332061917,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "公开代码含硬编码 API 凭据；不进入发布包，工作副本中的凭据已替换。"
+    "reason": "Excluded at the original review because the public source contained a hard-coded API credential. The source and credential are not included in this repository."
   },
   {
     "title": "1_train_BASELINE(demo)",
@@ -78,7 +78,7 @@
     "version_id": 277387301,
     "notebook_medal": "NONE",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "P1_1_0.65 74d43e",
@@ -87,7 +87,7 @@
     "version_id": 243588125,
     "notebook_medal": "NONE",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "gemma-2-9b_LOCAL_VERSION",
@@ -96,7 +96,7 @@
     "version_id": 219562002,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "与已入选的铜牌 Gemma / PEFT Notebook 主题重复。"
+    "reason": "Overlaps the selected bronze-medal Gemma / PEFT notebook."
   },
   {
     "title": "LMSYS_peft0.14.0",
@@ -105,7 +105,7 @@
     "version_id": 217218292,
     "notebook_medal": "BRONZE",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "JaneS_INFER_ERROR",
@@ -114,7 +114,7 @@
     "version_id": 216365488,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "调试性质版本，标题与注释均提示接口问题；优先保留 Hull 时间序列项目。"
+    "reason": "Debugging version whose title and comments identify interface problems; the Hull time series project was selected instead."
   },
   {
     "title": "cifar100",
@@ -123,7 +123,7 @@
     "version_id": 117521763,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "通用入门图像分类，优先保留更贴近生物与获奖方向的项目。"
+    "reason": "Introductory image classification; other selected projects were more relevant to the original selection."
   },
   {
     "title": "tianchi_finance",
@@ -132,7 +132,7 @@
     "version_id": 116279535,
     "notebook_medal": "NONE",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "PPPMnotebook",
@@ -141,7 +141,7 @@
     "version_id": 100014799,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "当前公开下载返回空文件，不能归档为有效代码。"
+    "reason": "The download at the original review returned an empty file; no usable source was archived."
   },
   {
     "title": "yolov5_wbf?",
@@ -150,7 +150,7 @@
     "version_id": 87726774,
     "notebook_medal": "BRONZE",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "6866686",
@@ -159,7 +159,7 @@
     "version_id": 87808626,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "与已入选的铜牌 YOLOv5 / WBF Notebook 重复。"
+    "reason": "Overlaps the selected bronze-medal YOLOv5 / WBF notebook."
   },
   {
     "title": "how to use mmdectetion",
@@ -168,7 +168,7 @@
     "version_id": 83951341,
     "notebook_medal": "NONE",
     "selected": true,
-    "reason": "已入选：获奖或与生物 / DS / ML 方向相关。"
+    "reason": "Included in the original selection for relevance to biology, data science or machine learning, or a Notebook medal."
   },
   {
     "title": "muriltuiduan",
@@ -177,6 +177,6 @@
     "version_id": 79169029,
     "notebook_medal": "NONE",
     "selected": false,
-    "reason": "旧版多语言问答推理，优先保留当前已入选大模型项目。"
+    "reason": "Older multilingual question-answering inference; overlaps selected language model projects."
   }
 ]

@@ -1,0 +1,812 @@
+{
+  "checked_date": "2026-10-28",
+  "method": "Unauthenticated HTTPS GET; generic Kaggle shells, blocked pages and errors are not counted as verified resources. A specific page title verifies routing, not availability of all inputs or correctness of a claim.",
+  "links": [
+    {
+      "url": "https://www.kaggle.com/code/abdurrafae/improved-code-interpretation",
+      "http_status": 200,
+      "page_title": "Improved Code Interpretation | Kaggle",
+      "final_url": "https://www.kaggle.com/code/abdurrafae/improved-code-interpretation",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.json",
+        "meta/projects/09-llm-code-reasoning/provenance.json",
+        "projects/09-llm-code-reasoning/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/chrisk321/rna-folding-r-eda-submission",
+      "http_status": 200,
+      "page_title": "\ud83e\uddec RNA Folding: R EDA & Submission | Kaggle",
+      "final_url": "https://www.kaggle.com/code/chrisk321/rna-folding-r-eda-submission",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.json",
+        "meta/projects/01-rna-folding/provenance.json",
+        "projects/01-rna-folding/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/1-nemotron-sft-lora-with-cot",
+      "http_status": 200,
+      "page_title": "1_Nemotron SFT LoRA with CoT | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/1-nemotron-sft-lora-with-cot",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/1-train-baseline-demo",
+      "http_status": 200,
+      "page_title": "1_train_BASELINE(demo) | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/1-train-baseline-demo",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/output-provenance.json",
+        "meta/projects/03-image2biomass/provenance.json",
+        "projects/03-image2biomass/README.md",
+        "results/image2biomass.json",
+        "results/image2biomass.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/6866686",
+      "http_status": 200,
+      "page_title": "6866686 | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/6866686",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/aimo1-20-fix2",
+      "http_status": 200,
+      "page_title": "AIMO1-20_FIX2 | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/aimo1-20-fix2",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/aimo1-20th",
+      "http_status": 200,
+      "page_title": "AIMO1_20th\u57fa\u7840\u5b66\u4e60\u8d44\u6599\u6ce8\u91ca\u7248 | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/aimo1-20th",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/projects/09-llm-code-reasoning/provenance.json",
+        "projects/09-llm-code-reasoning/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/base-noleak-val-local",
+      "http_status": 200,
+      "page_title": "BASE_NOLEAK_VAL-LOCAL | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/base-noleak-val-local",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/projects/06-time-series-validation/provenance.json",
+        "projects/06-time-series-validation/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/cifar100",
+      "http_status": 200,
+      "page_title": "cifar100 | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/cifar100",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/cot-generation-for-nemotron-challenge",
+      "http_status": 200,
+      "page_title": "CoT generation for Nemotron challenge | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/cot-generation-for-nemotron-challenge",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/gemma-2-9b-local-version",
+      "http_status": 200,
+      "page_title": "gemma-2-9b_LOCAL_VERSION | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/gemma-2-9b-local-version",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/how-to-use-mmdectetion",
+      "http_status": 200,
+      "page_title": "how to use mmdectetion | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/how-to-use-mmdectetion",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "docs/CELL_UPSTREAM_COMPARISON.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/projects/04-cell-instance-segmentation/provenance.json",
+        "projects/04-cell-instance-segmentation/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/janes-infer-error",
+      "http_status": 200,
+      "page_title": "JaneS_INFER_ERROR | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/janes-infer-error",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/lmsys-peft0-14-0",
+      "http_status": 200,
+      "page_title": "LMSYS_peft0.14.0 | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/lmsys-peft0-14-0",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/projects/07-chatbot-preference-lora/provenance.json",
+        "projects/07-chatbot-preference-lora/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/muriltuiduan",
+      "http_status": 200,
+      "page_title": "muriltuiduan | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/muriltuiduan",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e",
+      "http_status": 200,
+      "page_title": "P1_1_0.65 74d43e | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/projects/02-bacterial-motor-detection/provenance.json",
+        "projects/02-bacterial-motor-detection/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/pppmnotebook",
+      "http_status": 200,
+      "page_title": "PPPMnotebook | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/pppmnotebook",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission",
+      "http_status": 200,
+      "page_title": "\ud83e\uddec RNA Folding: PYTHON EDA & Submission | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/output-provenance.json",
+        "meta/projects/01-rna-folding/provenance.json",
+        "projects/01-rna-folding/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
+      "http_status": 200,
+      "page_title": "rsna-knee-teacher-probs-exp017-v1-infer | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/projects/05-rsna-knee-inference/provenance.json",
+        "projects/05-rsna-knee-inference/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/tez-swin-ference",
+      "http_status": 200,
+      "page_title": "tez swin-ference\u97e9\u561f\u561f  | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/tez-swin-ference",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/inventory.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/tianchi-finance",
+      "http_status": 200,
+      "page_title": "tianchi_finance | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/tianchi-finance",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/projects/10-tabular-fraud-catboost/provenance.json",
+        "projects/10-tabular-fraud-catboost/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/handudu/yolov5-wbf",
+      "http_status": 200,
+      "page_title": "yolov5_wbf? | Kaggle",
+      "final_url": "https://www.kaggle.com/code/handudu/yolov5-wbf",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "meta/catalog.csv",
+        "meta/catalog.json",
+        "meta/inventory.json",
+        "meta/projects/08-reef-object-detection/provenance.json",
+        "projects/08-reef-object-detection/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/code/kugaichen/how-to-use-mmdectetion",
+      "http_status": 200,
+      "page_title": "how to use mmdectetion | Kaggle",
+      "final_url": "https://www.kaggle.com/code/kugaichen/how-to-use-mmdectetion",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "SOURCES.md",
+        "docs/CELL_UPSTREAM_COMPARISON.md",
+        "meta/catalog.json",
+        "meta/projects/04-cell-instance-segmentation/provenance.json",
+        "projects/04-cell-instance-segmentation/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/87793/images/header",
+      "http_status": 200,
+      "page_title": null,
+      "final_url": "https://storage.googleapis.com:443/kaggle-competitions/kaggle/87793/logos/header.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1793217606&Signature=OJWKTjLIuiCplvPHTWepDuGAW3QDRvcp67hAw99330wM3q%2FPOg%2FEfnbFYa6NTYsM5qlQx%2FFBnasFerOlEBB96HQmtcRg3OAIo%2F35XWA3TUMfXvMxa2Ecaxzxxa2DsvC3A3S6b1gEuVm5Geh5Oz%2B%2BiWoHoqAjH6dL8hifG9be%2Bh7LiFgNckyLN87rhdvd9hWyRJrFXb0hRARbfGvlScGknYNzGtL1l5CKc%2BFPAr7u7gePBEy4zTPg1jE0%2B5he3nGlW1oWYbm8r89HA1R77eSRlBPJ5ZtmPLgq%2FLeJSmC0NgcXrN4H6TaaKQieJk7a9lmOxs1n3JjwyZJa62%2BgK6MMzA%3D%3D&t=2025-02-19-21-04-19",
+      "status": "verified_image_resource",
+      "used_in": [
+        "projects/01-rna-folding/notebook.ipynb"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/ai-mathematical-olympiad-prize",
+      "http_status": 200,
+      "page_title": "AI Mathematical Olympiad - Progress Prize 1 | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/ai-mathematical-olympiad-prize",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/09-llm-code-reasoning/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/byu-locating-bacterial-flagellar-motors-2025",
+      "http_status": 200,
+      "page_title": "BYU - Locating Bacterial Flagellar Motors 2025 | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/byu-locating-bacterial-flagellar-motors-2025",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/catalog.json",
+        "meta/competition-results.json",
+        "meta/projects/02-bacterial-motor-detection/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/cmi-detect-behavior-with-sensor-data",
+      "http_status": 200,
+      "page_title": "CMI - Detect Behavior with Sensor Data | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/cmi-detect-behavior-with-sensor-data",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/competition-results.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/csiro-biomass",
+      "http_status": 200,
+      "page_title": "CSIRO - Image2Biomass Prediction | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/csiro-biomass",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/03-image2biomass/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics",
+      "http_status": 200,
+      "page_title": "Eedi - Mining Misconceptions in Mathematics | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/competition-results.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions",
+      "http_status": 200,
+      "page_title": "CIBMTR - Equity in post-HCT Survival Predictions | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "docs/CIBMTR_ANALYSIS_PLAN.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/feedback-prize-2021",
+      "http_status": 200,
+      "page_title": "Feedback Prize - Evaluating Student Writing | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/feedback-prize-2021",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/competition-results.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/feedback-prize-effectiveness",
+      "http_status": 200,
+      "page_title": "Feedback Prize - Predicting Effective Arguments | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/feedback-prize-effectiveness",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/competition-results.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/hull-tactical-market-prediction",
+      "http_status": 200,
+      "page_title": "Hull Tactical - Market Prediction | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/hull-tactical-market-prediction",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/06-time-series-validation/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/image-matching-challenge-2025",
+      "http_status": 200,
+      "page_title": "Image Matching Challenge 2025 | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/image-matching-challenge-2025",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/competition-results.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/petfinder-pawpularity-score",
+      "http_status": 200,
+      "page_title": "PetFinder.my - Pawpularity Contest | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/petfinder-pawpularity-score",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/competition-results.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/rsna-breast-cancer-detection",
+      "http_status": 200,
+      "page_title": "RSNA Screening Mammography Breast Cancer Detection | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/rsna-breast-cancer-detection",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/competition-results.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection",
+      "http_status": 200,
+      "page_title": "RSNA Knee Abnormality Detection | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/05-rsna-knee-inference/provenance.json",
+        "projects/05-rsna-knee-inference/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/overview",
+      "http_status": 200,
+      "page_title": "RSNA Knee Abnormality Detection | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/overview",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "projects/05-rsna-knee-inference/README.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation",
+      "http_status": 200,
+      "page_title": "Sartorius - Cell Instance Segmentation | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/catalog.json",
+        "meta/competition-results.json",
+        "meta/projects/04-cell-instance-segmentation/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding",
+      "http_status": 200,
+      "page_title": "Stanford RNA 3D Folding | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/01-rna-folding/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding/discussion/565746",
+      "http_status": 200,
+      "page_title": "Stanford RNA 3D Folding | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/stanford-rna-3d-folding/discussion/565746",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "projects/01-rna-folding/notebook.ipynb"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation",
+      "http_status": 200,
+      "page_title": "UW-Madison GI Tract Image Segmentation  | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/competition-results.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/wsdm-cup-multilingual-chatbot-arena",
+      "http_status": 200,
+      "page_title": "WSDM Cup - Multilingual Chatbot Arena | Kaggle",
+      "final_url": "https://www.kaggle.com/competitions/wsdm-cup-multilingual-chatbot-arena",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "meta/catalog.json",
+        "meta/competition-results.json",
+        "meta/projects/07-chatbot-preference-lora/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/awsaf49/bbox-lib-ds",
+      "http_status": 200,
+      "page_title": "bbox lib ds | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/awsaf49/bbox-lib-ds",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/08-reef-object-detection/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/awsaf49/yolov5-font",
+      "http_status": 200,
+      "page_title": "YOLOv5 font | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/awsaf49/yolov5-font",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/08-reef-object-detection/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/awsaf49/yolov5-lib-ds",
+      "http_status": 200,
+      "page_title": "YOLOv5 lib ds | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/awsaf49/yolov5-lib-ds",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/08-reef-object-detection/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/ccvipchenbin/ensemble-boxes",
+      "http_status": 200,
+      "page_title": "ensemble_boxes | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/ccvipchenbin/ensemble-boxes",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/08-reef-object-detection/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/emiz6413/73zap2gx",
+      "http_status": 200,
+      "page_title": "Gemma-2 9b Instruct 4bit L=16/42 | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/emiz6413/73zap2gx",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/07-chatbot-preference-lora/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/emiz6413/lmsys-wheel-files",
+      "http_status": 200,
+      "page_title": "LMSYS wheel files | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/emiz6413/lmsys-wheel-files",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/07-chatbot-preference-lora/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/freshair1996/yolov5s6",
+      "http_status": 200,
+      "page_title": "yolov5s6 | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/freshair1996/yolov5s6",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/08-reef-object-detection/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/kevinwang1434/peft-n-friends",
+      "http_status": 200,
+      "page_title": "peft n friends | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/kevinwang1434/peft-n-friends",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/07-chatbot-preference-lora/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/kugaichen/mmdetection-new",
+      "http_status": 200,
+      "page_title": "mmdetection_new | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/kugaichen/mmdetection-new",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/04-cell-instance-segmentation/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/kugaichen/timtim",
+      "http_status": 200,
+      "page_title": "timtim | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/kugaichen/timtim",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/04-cell-instance-segmentation/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/nbroad/hf-libraries",
+      "http_status": 200,
+      "page_title": "hf-libraries | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/nbroad/hf-libraries",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/07-chatbot-preference-lora/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/olyatsimboy/deepseek-math",
+      "http_status": 200,
+      "page_title": "deepseek-math | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/olyatsimboy/deepseek-math",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/09-llm-code-reasoning/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/olyatsimboy/open-math-mistral",
+      "http_status": 200,
+      "page_title": "open-math-mistral | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/olyatsimboy/open-math-mistral",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/09-llm-code-reasoning/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/playwithme/mahf-yolo-train",
+      "http_status": 200,
+      "page_title": "mahf_yolo_train | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/playwithme/mahf-yolo-train",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/02-bacterial-motor-detection/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/pshikk/accelerate-wheelwhl",
+      "http_status": 200,
+      "page_title": "accelerate wheel/whl | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/pshikk/accelerate-wheelwhl",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/09-llm-code-reasoning/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/sreevishnudamodaran/mmdetectionv2140",
+      "http_status": 200,
+      "page_title": "MMDetection v2.14.0  | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/sreevishnudamodaran/mmdetectionv2140",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/04-cell-instance-segmentation/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/sreevishnudamodaran/pytorch-170-cuda-toolkit-110221",
+      "http_status": 200,
+      "page_title": "PyTorch 1.7.0 + Cuda Toolkit 11.0.221 | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/sreevishnudamodaran/pytorch-170-cuda-toolkit-110221",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/04-cell-instance-segmentation/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/steamedsheep/reef-baseline-fold12",
+      "http_status": 200,
+      "page_title": "reef_baseline_fold12 | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/steamedsheep/reef-baseline-fold12",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/08-reef-object-detection/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/tonyxu/peft-0-14-0",
+      "http_status": 200,
+      "page_title": "peft-0.14.0 | Kaggle",
+      "final_url": "https://www.kaggle.com/datasets/tonyxu/peft-0-14-0",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/07-chatbot-preference-lora/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/handudu",
+      "http_status": 200,
+      "page_title": "Handudu | Kaggle",
+      "final_url": "https://www.kaggle.com/handudu",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "COMPETITION_RESULTS.md",
+        "README.md",
+        "SOURCES.md",
+        "meta/account-snapshot.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/kernels/scriptcontent/358098927/download",
+      "http_status": 200,
+      "page_title": null,
+      "final_url": "https://www.kaggle.com/kernels/scriptcontent/358098927/download",
+      "status": "verified_exact_source_download",
+      "used_in": [
+        "docs/KAGGLE_EVIDENCE.md"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/models/emiz6413/gemma-2/Transformers/gemma-2-9b-it-4bit/1",
+      "http_status": 200,
+      "page_title": "Eisuke Mizutani | gemma-2 | Kaggle",
+      "final_url": "https://www.kaggle.com/models/emiz6413/gemma-2/Transformers/gemma-2-9b-it-4bit/1",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/07-chatbot-preference-lora/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/models/google/gemma/Transformers/2b-it/1",
+      "http_status": 200,
+      "page_title": "Google | Gemma | Kaggle",
+      "final_url": "https://www.kaggle.com/models/google/gemma/Transformers/2b-it/1",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/09-llm-code-reasoning/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/models/google/gemma/Transformers/7b-it/1",
+      "http_status": 200,
+      "page_title": "Google | Gemma | Kaggle",
+      "final_url": "https://www.kaggle.com/models/google/gemma/Transformers/7b-it/1",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/09-llm-code-reasoning/provenance.json"
+      ]
+    },
+    {
+      "url": "https://www.kaggle.com/models/yyyy0201/mhafyolo/PyTorch/default/1",
+      "http_status": 200,
+      "page_title": "yyyy0201 | MHAFYOLO | Kaggle",
+      "final_url": "https://www.kaggle.com/models/yyyy0201/mhafyolo/PyTorch/default/1",
+      "status": "resolved_specific_page",
+      "used_in": [
+        "meta/catalog.json",
+        "meta/projects/02-bacterial-motor-detection/provenance.json"
+      ]
+    }
+  ]
+}

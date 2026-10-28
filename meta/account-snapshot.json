@@ -7,7 +7,6 @@
     {
       "tier": "EXPERT",
       "summaryType": "USER_ACHIEVEMENT_TYPE_COMPETITIONS",
-      "rankPercentage": 0.003637429,
       "rankOutOf": 221860,
       "rankCurrent": 807,
       "rankHighest": 540,
@@ -28,7 +27,7 @@
     }
   ],
   "public_notebook_count": 20,
-  "note": "Verified team competition results are recorded in competition-results.json. Archived source versions have not yet been matched to selected final submissions.",
+  "note": "Historical Kaggle snapshot. Team competition results are in meta/competition-results.json. Archived source versions have not been matched to selected final submissions. Rank percentages are omitted.",
   "authenticated_visible_notebook_count": 756,
   "authenticated_visible_competition_count": 98
 }

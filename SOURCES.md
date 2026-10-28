@@ -1,22 +1,22 @@
-# 来源与贡献说明
+# Sources and Attribution
 
-来源账号为 [handudu](https://www.kaggle.com/handudu)，GitHub 目标账号为 Barry81-666。整理仅涉及公开可下载的源文件。
+Barry Wang publishes on Kaggle as [handudu](https://www.kaggle.com/handudu). Project display titles have been clarified for navigation; original titles, authors, fork relationships and immutable version IDs remain in [metadata](meta/catalog.json).
 
-| 原 Notebook / Script | 归档版本 ID | 上游关系 |
+| Project source | Kaggle version ID | Upstream relationship |
 | --- | --- | --- |
-| [🧬 RNA Folding: PYTHON EDA & Submission](https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission) | 226091843 | [ChrisK321](https://www.kaggle.com/code/chrisk321/rna-folding-r-eda-submission) |
-| [P1_1_0.65 74d43e](https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e) | 243588125 | 父 Notebook `84148436`，作者当前不可见 |
-| [1_train_BASELINE(demo)](https://www.kaggle.com/code/handudu/1-train-baseline-demo) | 277387301 | 父 Notebook `99732107`，作者当前不可见 |
-| [how to use mmdectetion](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion) | 83951341 | [KUGAI CHEN](https://www.kaggle.com/code/kugaichen/how-to-use-mmdectetion) |
-| [rsna-knee-teacher-probs-exp017-v1-infer](https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer) | 358098927 | 公开列表未标记 fork |
-| [BASE_NOLEAK_VAL-LOCAL](https://www.kaggle.com/code/handudu/base-noleak-val-local) | 279919839 | 公开列表未标记 fork |
-| [LMSYS_peft0.14.0](https://www.kaggle.com/code/handudu/lmsys-peft0-14-0) | 217218292 | 公开列表未标记 fork |
-| [yolov5_wbf?](https://www.kaggle.com/code/handudu/yolov5-wbf) | 87726774 | 父 Notebook `24646241`，作者当前不可见 |
-| [AIMO1_20th基础学习资料注释版](https://www.kaggle.com/code/handudu/aimo1-20th) | 224999934 | [AbdurRafae](https://www.kaggle.com/code/abdurrafae/improved-code-interpretation) |
-| [tianchi_finance](https://www.kaggle.com/code/handudu/tianchi-finance) | 116279535 | 公开列表未标记 fork |
+| [RNA Sequence and Structure Exploration](https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission) | `226091843` | [ChrisK321](https://www.kaggle.com/code/chrisk321/rna-folding-r-eda-submission) |
+| [Bacterial Flagellar Motor Localization](https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e) | `243588125` | Parent kernel `84148436`; author unavailable |
+| [Image2Biomass: Validation Across Split Designs](https://www.kaggle.com/code/handudu/1-train-baseline-demo) | `277387301` | Parent kernel `99732107`; author unavailable |
+| [Cell Instance Segmentation with MMDetection](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion) | `83951341` | [KUGAI CHEN](https://www.kaggle.com/code/kugaichen/how-to-use-mmdectetion) |
+| [Knee MRI Classification: Weak Labels and Grouped Validation](https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer) | `358098927` | No fork flag exposed; see source-level credits |
+| [Time Series Validation for Tactical Allocation](https://www.kaggle.com/code/handudu/base-noleak-val-local) | `279919839` | No fork flag exposed; see source-level credits |
+| [Multilingual Preference Prediction with Gemma and LoRA](https://www.kaggle.com/code/handudu/lmsys-peft0-14-0) | `217218292` | No fork flag exposed; see source-level credits |
+| [Coral Reef Object Detection with YOLOv5 and WBF](https://www.kaggle.com/code/handudu/yolov5-wbf) | `87726774` | Parent kernel `24646241`; author unavailable |
+| [Mathematical Reasoning with Code Execution](https://www.kaggle.com/code/handudu/aimo1-20th) | `224999934` | [AbdurRafae](https://www.kaggle.com/code/abdurrafae/improved-code-interpretation) |
+| [Tabular Fraud Classification with CatBoost](https://www.kaggle.com/code/handudu/tianchi-finance) | `116279535` | No fork flag exposed; see source-level credits |
 
-Kaggle 的 fork 标记和父项信息保留在每个 `provenance.json` 中。没有 fork 标记也不代表已审核所有原创内容；代码中的引用、依赖与版权说明仍应一并阅读。自定义项目名只用于导航，不改变作者归属。
+The notebook title containing an upstream competition rank is not evidence of Barry Wang's rank. Absence of a fork flag does not establish independent authorship. The RSNA modules include explicit model and augmentation credits, summarized in the [case study](projects/05-rsna-knee-inference/#sources). The [cell comparison](docs/CELL_UPSTREAM_COMPARISON.md) describes differences from a currently available parent, without assigning personal authorship.
 
-Notebook 奖牌、账号竞赛奖牌、团队最终排名和上游作者的成绩是不同事实。Notebook 奖牌和账号汇总来自 Kaggle 公开接口；另已在登录后的 Your Work / Competitions 页面逐项核实 11 项竞赛奖牌及团队排名，见 [竞赛成绩清单](COMPETITION_RESULTS.md)。归档源码与最终计分提交的对应关系尚未核实，不将上游标题中的排名转为个人获奖声明。
+[Team competition records](COMPETITION_RESULTS.md), Notebook medals and personal responsibilities are distinct. The former come from the dated account record; the latter require specific confirmation. No archived version is labeled a medal-winning final solution without a verified submission mapping.
 
-源文件从 Kaggle 官方下载路径 `/kernels/scriptcontent/{version_id}/download` 取得。归档日期、原版本时间和 SHA-256 均在每个项目的元数据中列出。RSNA 的原公开脚本内含一个源码包，另行安全解包以便阅读；没有导出其私有检查点。
+All ten original version downloads were retrieved again on 2026-10-28 and matched the original download hashes. The [selected outputs](results/) come from those exact versions. Archive and translation details are centralized in [ARCHIVE_NOTES.md](docs/ARCHIVE_NOTES.md); hashes and per-file records are in [meta/](meta/).

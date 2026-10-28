@@ -5,8 +5,8 @@
     {
       "project": "01-rna-folding",
       "title": "🧬 RNA Folding: PYTHON EDA & Submission",
-      "curated_title": "RNA 3D Folding · EDA",
-      "area": "计算生物学 / 探索性分析",
+      "curated_title": "RNA Sequence and Structure Exploration",
+      "area": "Computational biology / exploratory analysis",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission",
       "kernel_id": 78016514,
@@ -16,7 +16,7 @@
       "votes_at_snapshot": 79,
       "archived_file": "projects/01-rna-folding/notebook.ipynb",
       "original_download_sha256": "7666019ff229d4ce0e1dceca5ae91387de8757101acedacaadcaa96dc3030922",
-      "archived_sha256": "5c3ff8a20e4ea5a04e3bc1769f885922e8692a56bcd6bb89f877904b9e62818f",
+      "archived_sha256": "5748fe882241f8e72db6995b97b31c0c52a38c7311881d1ca639c379afb9aac9",
       "retrieved_date": "2026-10-24",
       "upstream": {
         "is_fork": true,
@@ -33,16 +33,25 @@
       ],
       "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
       "changes": [
-        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+        "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "Python 内核 Notebook 的后段含 7 个未执行的 R 代码单元（原始索引 43、45、46、48、49、53、55）。原样保留供研究参考，不能在 Python 内核中直接 Run All。公开得分属于该 Notebook 的历史元数据，不是完整训练复现证明。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "The Python notebook contains later R/H2O cells and cannot be run end to end in a Python kernel. Upstream first-person narrative is retained; it is not a personal account by Barry Wang. The recovered EDA figure is descriptive, not model validation.",
+      "original": {
+        "kaggle_version_id": 226091843,
+        "download_sha256": "7666019ff229d4ce0e1dceca5ae91387de8757101acedacaadcaa96dc3030922",
+        "archived_sha256": "5c3ff8a20e4ea5a04e3bc1769f885922e8692a56bcd6bb89f877904b9e62818f",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "5748fe882241f8e72db6995b97b31c0c52a38c7311881d1ca639c379afb9aac9",
+      "provenance_file": "meta/projects/01-rna-folding/provenance.json"
     },
     {
       "project": "02-bacterial-motor-detection",
       "title": "P1_1_0.65 74d43e",
-      "curated_title": "Bacterial Flagellar Motor Detection",
-      "area": "计算生物学 / 三维目标定位",
+      "curated_title": "Bacterial Flagellar Motor Localization",
+      "area": "Computational biology / 3D localization",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e",
       "kernel_id": 84374697,
@@ -52,7 +61,7 @@
       "votes_at_snapshot": 0,
       "archived_file": "projects/02-bacterial-motor-detection/notebook.ipynb",
       "original_download_sha256": "2fca7f8f68c51585f5186b7c94593bc130a6963561378792ffcbb005b54c0b98",
-      "archived_sha256": "62bdd24699754e9c7fdd6c80984146c8abb6120ba4475e99ddb4a2fec79d98ee",
+      "archived_sha256": "d84233169e9519c83e945e47ae37c26383bde343cac5e10ac9a672def0b95319",
       "retrieved_date": "2026-10-24",
       "upstream": {
         "is_fork": true,
@@ -94,16 +103,25 @@
       ],
       "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
       "changes": [
-        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+        "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "需要原 Notebook 挂载的多个模型权重；3 个输入源当前标记为私有。标题里的数值和第三方排行榜记录不作为本仓库的获奖或最终排名证明。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "Inference requires multiple model checkpoints and three inputs marked private in the source snapshot. The archived fork has not been matched to the selected final competition submission.",
+      "original": {
+        "kaggle_version_id": 243588125,
+        "download_sha256": "2fca7f8f68c51585f5186b7c94593bc130a6963561378792ffcbb005b54c0b98",
+        "archived_sha256": "62bdd24699754e9c7fdd6c80984146c8abb6120ba4475e99ddb4a2fec79d98ee",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "d84233169e9519c83e945e47ae37c26383bde343cac5e10ac9a672def0b95319",
+      "provenance_file": "meta/projects/02-bacterial-motor-detection/provenance.json"
     },
     {
       "project": "03-image2biomass",
       "title": "1_train_BASELINE(demo)",
-      "curated_title": "Image2Biomass Training Baseline",
-      "area": "生物与农业 / 回归建模",
+      "curated_title": "Image2Biomass: Validation Across Split Designs",
+      "area": "Biological and agricultural imaging / regression",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/1-train-baseline-demo",
       "kernel_id": 99940883,
@@ -113,7 +131,7 @@
       "votes_at_snapshot": 0,
       "archived_file": "projects/03-image2biomass/notebook.ipynb",
       "original_download_sha256": "032d6713463e7c0088ade4923bf21ec781c6b2b4cda14435c1094592387a26fa",
-      "archived_sha256": "33a118dcdd369d90c9c62b1b802227e17a593b0a8b7d8b26035f5d979353eaeb",
+      "archived_sha256": "501507b021f0179b413cecf52f9214d00cd921641d3b94774fc323ec21f02e0e",
       "retrieved_date": "2026-10-24",
       "upstream": {
         "is_fork": true,
@@ -135,16 +153,25 @@
       ],
       "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
       "changes": [
-        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+        "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "折分文件来自私有输入，原训练日志已清理。当前归档未重训，也未验证泛化性能；该 Notebook 是训练基线演示，不标注奖牌。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "The four sets of fold assignments come from a private input. Historical logs are available, but split membership, grouped independence and generalization cannot be independently verified. Best epochs were selected on the reported validation folds.",
+      "original": {
+        "kaggle_version_id": 277387301,
+        "download_sha256": "032d6713463e7c0088ade4923bf21ec781c6b2b4cda14435c1094592387a26fa",
+        "archived_sha256": "33a118dcdd369d90c9c62b1b802227e17a593b0a8b7d8b26035f5d979353eaeb",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "501507b021f0179b413cecf52f9214d00cd921641d3b94774fc323ec21f02e0e",
+      "provenance_file": "meta/projects/03-image2biomass/provenance.json"
     },
     {
       "project": "04-cell-instance-segmentation",
       "title": "how to use mmdectetion",
       "curated_title": "Cell Instance Segmentation with MMDetection",
-      "area": "生物医学图像 / 实例分割",
+      "area": "Biomedical imaging / instance segmentation",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/how-to-use-mmdectetion",
       "kernel_id": 23442240,
@@ -203,14 +230,22 @@
       "changes": [
         "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "保留 2021 年环境与原安装单元：PyTorch 1.7 / CUDA 11.0、MMCV 和本地 wheel。需要原模型检查点；2 个输入源为私有。运行前需逐格检查旧环境安装和清理命令。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "The notebook uses a 2021 PyTorch 1.7 / CUDA 11 environment, MMDetection/CBNetV2, local wheels and private model inputs. Review installation and cleanup cells before running. The archived fork is not verified as the final competition submission.",
+      "original": {
+        "kaggle_version_id": 83951341,
+        "download_sha256": "917e2e47a3c1b207f62343642e3e85289c6306d9aa7dd0e7198d9e4f80dc7654",
+        "archived_sha256": "283cdefa00b162d1db7d2ca55bc51d0840bc03c640834bdb1f39a32b8a94ef0b",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "283cdefa00b162d1db7d2ca55bc51d0840bc03c640834bdb1f39a32b8a94ef0b",
+      "provenance_file": "meta/projects/04-cell-instance-segmentation/provenance.json"
     },
     {
       "project": "05-rsna-knee-inference",
       "title": "rsna-knee-teacher-probs-exp017-v1-infer",
-      "curated_title": "RSNA Knee MRI Inference",
-      "area": "医学影像 / 分类推理",
+      "curated_title": "Knee MRI Classification: Weak Labels and Grouped Validation",
+      "area": "Medical imaging / validation design",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
       "kernel_id": 138542102,
@@ -244,14 +279,22 @@
       "changes": [
         "Original script unchanged; embedded source package also unpacked under source/ without executing it."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "原公开脚本内嵌 gzip/base64 源码包。本仓库另将其安全解包为 source/，仅静态检查，没有运行安装、训练或推理。检查点输入为私有，无法用当前公开材料完整复现。当前比赛结果不作为获奖证明。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "The inference wrapper and 22 modules are preserved byte for byte. Private checkpoints, complete experiment configurations and evaluation records are unavailable. Implemented safeguards do not establish that a particular experiment passed them.",
+      "original": {
+        "kaggle_version_id": 358098927,
+        "download_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
+        "archived_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
+      "provenance_file": "meta/projects/05-rsna-knee-inference/provenance.json"
     },
     {
       "project": "06-time-series-validation",
       "title": "BASE_NOLEAK_VAL-LOCAL",
-      "curated_title": "Hull Tactical · Time Series Validation",
-      "area": "数据科学 / 时间序列",
+      "curated_title": "Time Series Validation for Tactical Allocation",
+      "area": "Data science / time series",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/base-noleak-val-local",
       "kernel_id": 101453728,
@@ -261,7 +304,7 @@
       "votes_at_snapshot": 10,
       "archived_file": "projects/06-time-series-validation/notebook.ipynb",
       "original_download_sha256": "27cd18c920504cfcced550bc3ef627ada48b0d9888e8c55f283ff2e704865346",
-      "archived_sha256": "8e59f616b17c93962db666d7882464790a15985740e73fe3b524d92f5c8559e4",
+      "archived_sha256": "f55305bc87c566564c9d20b288100d9d259d971dbeab8b1f5f454606299fce08",
       "retrieved_date": "2026-10-24",
       "upstream": {
         "is_fork": false,
@@ -278,16 +321,25 @@
       ],
       "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
       "changes": [
-        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+        "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "标题含 NOLEAK 不代表已完成泄漏审计。仓库保留原实验代码，没有重算指标或验证投资表现。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "The source contains a commented-out pipeline followed by an active version. Window length and allocation multiplier are selected using the same validation grid; the reported maximum is not an independent test estimate or evidence of investment performance.",
+      "original": {
+        "kaggle_version_id": 279919839,
+        "download_sha256": "27cd18c920504cfcced550bc3ef627ada48b0d9888e8c55f283ff2e704865346",
+        "archived_sha256": "8e59f616b17c93962db666d7882464790a15985740e73fe3b524d92f5c8559e4",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "f55305bc87c566564c9d20b288100d9d259d971dbeab8b1f5f454606299fce08",
+      "provenance_file": "meta/projects/06-time-series-validation/provenance.json"
     },
     {
       "project": "07-chatbot-preference-lora",
       "title": "LMSYS_peft0.14.0",
-      "curated_title": "Multilingual Chatbot Preference · LoRA",
-      "area": "机器学习 / 大模型推理",
+      "curated_title": "Multilingual Preference Prediction with Gemma and LoRA",
+      "area": "Machine learning / language model inference",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/lmsys-peft0-14-0",
       "kernel_id": 74432152,
@@ -297,7 +349,7 @@
       "votes_at_snapshot": 9,
       "archived_file": "projects/07-chatbot-preference-lora/notebook.ipynb",
       "original_download_sha256": "5c1329f719d3e3864e485889c152a15b91a036c6e2db222df26eaef04a47e00e",
-      "archived_sha256": "93503ec1203d2a72c373501aafbac1fceb3e5926c25ca445bbde55755ffe7387",
+      "archived_sha256": "a3a7fdfb57a535b8c91f836fce60d0316ba6ae57db2affab158347d72738d5e8",
       "retrieved_date": "2026-10-24",
       "upstream": {
         "is_fork": false,
@@ -359,16 +411,25 @@
       ],
       "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
       "changes": [
-        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+        "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "依赖特定离线 wheel、基础模型和 LoRA 检查点；3 个输入源为私有。尚未验证依赖兼容性、模型加载或推理指标。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "The notebook requires specific offline wheels, a base model, two GPUs and LoRA weights; three inputs were private in the source snapshot. Model loading and inference were not rerun.",
+      "original": {
+        "kaggle_version_id": 217218292,
+        "download_sha256": "5c1329f719d3e3864e485889c152a15b91a036c6e2db222df26eaef04a47e00e",
+        "archived_sha256": "93503ec1203d2a72c373501aafbac1fceb3e5926c25ca445bbde55755ffe7387",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "a3a7fdfb57a535b8c91f836fce60d0316ba6ae57db2affab158347d72738d5e8",
+      "provenance_file": "meta/projects/07-chatbot-preference-lora/provenance.json"
     },
     {
       "project": "08-reef-object-detection",
       "title": "yolov5_wbf?",
-      "curated_title": "Great Barrier Reef · YOLOv5 + WBF",
-      "area": "生态图像 / 目标检测",
+      "curated_title": "Coral Reef Object Detection with YOLOv5 and WBF",
+      "area": "Ecological imaging / object detection",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/yolov5-wbf",
       "kernel_id": 24646340,
@@ -442,14 +503,22 @@
       "changes": [
         "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "使用历史 greatbarrierreef 推理环境及外部模型，4 个输入源为私有。原 Notebook 的上游父项当前未公开显示作者，已记录父 Notebook ID；不宣称独立原创。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "The notebook requires the historical Great Barrier Reef competition API and model inputs, four of which were private. The parent author is unavailable in the snapshot; the parent kernel ID remains recorded.",
+      "original": {
+        "kaggle_version_id": 87726774,
+        "download_sha256": "ad8dc90717ad9e7b63f28b176860499193ebeaa7abb57a9fd480d9adbbfb379e",
+        "archived_sha256": "5944207a97c2be72b65f28fa076631f2356a2a6ab9545fbb8ac8d8fbdc6bbf3c",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "5944207a97c2be72b65f28fa076631f2356a2a6ab9545fbb8ac8d8fbdc6bbf3c",
+      "provenance_file": "meta/projects/08-reef-object-detection/provenance.json"
     },
     {
       "project": "09-llm-code-reasoning",
       "title": "AIMO1_20th基础学习资料注释版",
-      "curated_title": "Mathematical Reasoning · Annotated Notebook",
-      "area": "机器学习 / 数学推理",
+      "curated_title": "Mathematical Reasoning with Code Execution",
+      "area": "Machine learning / mathematical reasoning",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/aimo1-20th",
       "kernel_id": 77391717,
@@ -459,7 +528,7 @@
       "votes_at_snapshot": 3,
       "archived_file": "projects/09-llm-code-reasoning/notebook.ipynb",
       "original_download_sha256": "51b9d15ef71b962c9d01c288cda3d2c54e4669eea75f5e20f4924a49234ad962",
-      "archived_sha256": "8fb254b8fba64f7d8d8c1af68efb58fce3b0044f722b901d292f0f4b26ba7433",
+      "archived_sha256": "ffc6c757015fb9438204d1aca1eeaa7e6556b46b248b0d768e4141f92622f989",
       "retrieved_date": "2026-10-24",
       "upstream": {
         "is_fork": true,
@@ -501,16 +570,25 @@
       ],
       "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
       "changes": [
-        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+        "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "名称中的 20th 不作为 handudu 获得第 20 名的证明。基于 AbdurRafae 的公开 Notebook 修改。原代码会执行模型生成的 Python；本次仅静态归档，没有执行生成代码。依赖历史模型和 GPU 环境。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "This annotated fork executes model-generated Python in subprocesses and includes debugging code. The upstream rank in its historical title is not a result attributable to Barry Wang. It requires the historical model and GPU environment.",
+      "original": {
+        "kaggle_version_id": 224999934,
+        "download_sha256": "51b9d15ef71b962c9d01c288cda3d2c54e4669eea75f5e20f4924a49234ad962",
+        "archived_sha256": "8fb254b8fba64f7d8d8c1af68efb58fce3b0044f722b901d292f0f4b26ba7433",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "ffc6c757015fb9438204d1aca1eeaa7e6556b46b248b0d768e4141f92622f989",
+      "provenance_file": "meta/projects/09-llm-code-reasoning/provenance.json"
     },
     {
       "project": "10-tabular-fraud-catboost",
       "title": "tianchi_finance",
-      "curated_title": "Tabular Fraud Classification · CatBoost",
-      "area": "数据科学 / 表格分类",
+      "curated_title": "Tabular Fraud Classification with CatBoost",
+      "area": "Data science / tabular classification",
       "author": "handudu",
       "source_url": "https://www.kaggle.com/code/handudu/tianchi-finance",
       "kernel_id": 34102124,
@@ -520,7 +598,7 @@
       "votes_at_snapshot": 3,
       "archived_file": "projects/10-tabular-fraud-catboost/notebook.ipynb",
       "original_download_sha256": "d7a64f5074c0a5f1e5e5ebb8c615c127ece753a066738ad4836489e5ef61df9c",
-      "archived_sha256": "9141830ba3f57f474c2d9a9648708f7c061a6076a7f754521803b9d56b4ecf18",
+      "archived_sha256": "cbfa2e36d519369031682ff3a6b44f28ab81db4fe7a0d4a1d09f6fa0a0f45451",
       "retrieved_date": "2026-10-24",
       "upstream": {
         "is_fork": false,
@@ -537,10 +615,19 @@
       ],
       "license_status": "Not exposed in the retrieved public metadata; no new license applied.",
       "changes": [
-        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged."
+        "Cleared code-cell outputs, execution counts, execution metadata and top-level widget state; cell sources unchanged.",
+        "English portfolio edition: comments and Markdown translated; code tokens unchanged for comment-only edits. Documentation/display string substitutions are enumerated in meta/translation-exceptions.json; all other code tokens are identical."
       ],
-      "validation": "Static checks only; training and inference not executed.",
-      "limitations": "输入数据为私有，没有归档原始保险数据。原验证 AUC 使用硬分类预测，且编码器拟合于合并的训练/测试表；若扩展为严谨实验，应改用折内预处理和概率 AUC。归档保留原代码，不标注奖牌。"
+      "validation": "Static source review and translation consistency checks; no training or inference executed during this portfolio revision. Selected historical public outputs are documented separately in results/README.md.",
+      "limitations": "The data are private. The code fits an encoder on combined training/test tables and calculates validation AUC from hard class predictions. A new analysis should use fold-specific preprocessing and predicted probabilities; this source is preserved unchanged apart from language edits.",
+      "original": {
+        "kaggle_version_id": 116279535,
+        "download_sha256": "d7a64f5074c0a5f1e5e5ebb8c615c127ece753a066738ad4836489e5ef61df9c",
+        "archived_sha256": "9141830ba3f57f474c2d9a9648708f7c061a6076a7f754521803b9d56b4ecf18",
+        "archive_base_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620"
+      },
+      "translated_sha256": "cbfa2e36d519369031682ff3a6b44f28ab81db4fe7a0d4a1d09f6fa0a0f45451",
+      "provenance_file": "meta/projects/10-tabular-fraud-catboost/provenance.json"
     }
   ]
 }

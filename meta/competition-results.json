@@ -5,29 +5,7 @@
     "rank": 15,
     "total_teams": 1136,
     "medal": "SILVER",
-    "area": "计算生物学 / 三维目标检测",
-    "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
-    "verified_date": "2026-10-24",
-    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
-  },
-  {
-    "title": "RSNA Screening Mammography Breast Cancer Detection",
-    "url": "https://www.kaggle.com/competitions/rsna-breast-cancer-detection",
-    "rank": 46,
-    "total_teams": 1687,
-    "medal": "SILVER",
-    "area": "医学影像 / 乳腺癌检测",
-    "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
-    "verified_date": "2026-10-24",
-    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
-  },
-  {
-    "title": "UW-Madison GI Tract Image Segmentation",
-    "url": "https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation",
-    "rank": 29,
-    "total_teams": 1548,
-    "medal": "SILVER",
-    "area": "医学影像 / 胃肠道分割",
+    "area": "Computational biology / 3D detection",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
     "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
@@ -38,7 +16,29 @@
     "rank": 26,
     "total_teams": 1505,
     "medal": "SILVER",
-    "area": "生物图像 / 神经元细胞实例分割",
+    "area": "Biological imaging / cell instance segmentation",
+    "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
+    "verified_date": "2026-10-24",
+    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
+  },
+  {
+    "title": "UW-Madison GI Tract Image Segmentation",
+    "url": "https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation",
+    "rank": 29,
+    "total_teams": 1548,
+    "medal": "SILVER",
+    "area": "Medical imaging / gastrointestinal segmentation",
+    "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
+    "verified_date": "2026-10-24",
+    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
+  },
+  {
+    "title": "RSNA Screening Mammography Breast Cancer Detection",
+    "url": "https://www.kaggle.com/competitions/rsna-breast-cancer-detection",
+    "rank": 46,
+    "total_teams": 1687,
+    "medal": "SILVER",
+    "area": "Medical imaging / breast cancer detection",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
     "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
@@ -49,7 +49,7 @@
     "rank": 27,
     "total_teams": 950,
     "medal": "SILVER",
-    "area": "机器学习 / 多语言偏好预测",
+    "area": "Machine learning / multilingual preference prediction",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
     "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
@@ -60,7 +60,7 @@
     "rank": 42,
     "total_teams": 1557,
     "medal": "SILVER",
-    "area": "自然语言处理 / 论证效果分类",
+    "area": "Natural language processing / argument effectiveness",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
     "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
@@ -71,7 +71,7 @@
     "rank": 87,
     "total_teams": 2058,
     "medal": "SILVER",
-    "area": "自然语言处理 / 论证片段识别",
+    "area": "Natural language processing / argument span detection",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
     "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
@@ -82,7 +82,7 @@
     "rank": 160,
     "total_teams": 2657,
     "medal": "BRONZE",
-    "area": "健康数据 / 传感器时序分类",
+    "area": "Health data / sensor time series",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
     "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
@@ -93,7 +93,7 @@
     "rank": 62,
     "total_teams": 943,
     "medal": "BRONZE",
-    "area": "计算机视觉 / 三维重建",
+    "area": "Computer vision / 3D reconstruction",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
     "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
@@ -104,7 +104,7 @@
     "rank": 118,
     "total_teams": 1446,
     "medal": "BRONZE",
-    "area": "机器学习 / 语义检索与排序",
+    "area": "Machine learning / semantic retrieval and ranking",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
     "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
@@ -115,7 +115,7 @@
     "rank": 253,
     "total_teams": 3537,
     "medal": "BRONZE",
-    "area": "计算机视觉 / 图像回归",
+    "area": "Computer vision / image regression",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
     "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."

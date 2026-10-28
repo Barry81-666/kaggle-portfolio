@@ -1,0 +1,747 @@
+{
+  "explanation": "Comment-only edits preserve all non-comment code tokens. The exact documentation/display string substitutions below are the only permitted additional token changes; f-string expressions, identifiers, paths and keys remain unchanged.",
+  "literal_changes": [
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 4,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    融合多个模型的预测结果 (DataFrames列表)。\n    每个 DataFrame 应包含 'tomo_id' 和 'cof' (置信度) 以及坐标列。\n    \"\"\"",
+      "after": "\"\"\"\n    Combine prediction results from multiple models (a list of DataFrames).\n    Each DataFrame should contain tomo_id, cof (confidence), and coordinate columns.\n    \"\"\""
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 9,
+      "kind": "display_text",
+      "before": "\"错误: 没有提供DataFrame进行融合。\"",
+      "after": "\"Error: no DataFrames were provided for merging.\""
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 62,
+      "kind": "display_text",
+      "before": "融合了 ",
+      "after": "A submission combining "
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 62,
+      "kind": "display_text",
+      "before": " 个模型的提交文件已保存至: ",
+      "after": " models has been saved to: "
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 67,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    读取多个CSV文件，调用通用融合函数，并返回最终的DataFrame。\n    \"\"\"",
+      "after": "\"\"\"\n    Read multiple CSV files, call the general merging function, and return the final DataFrame.\n    \"\"\""
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 70,
+      "kind": "display_text",
+      "before": "\\n开始融合以下 ",
+      "after": "\\nMerging the following "
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 70,
+      "kind": "display_text",
+      "before": " 个CSV文件: ",
+      "after": " CSV files: "
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 80,
+      "kind": "display_text",
+      "before": "警告: 文件 ",
+      "after": "Warning: file "
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 88,
+      "kind": "display_text",
+      "before": "警告: 文件 ",
+      "after": "Warning: file "
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 80,
+      "kind": "display_text",
+      "before": " 中缺少 'cof' 列，将添加默认值0。",
+      "after": " is missing 'cof'; adding the default value 0."
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 88,
+      "kind": "display_text",
+      "before": " 中缺少 '",
+      "after": " is missing '"
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 88,
+      "kind": "display_text",
+      "before": "' 列，将添加默认值-1。",
+      "after": "'; adding the default value -1."
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 95,
+      "kind": "display_text",
+      "before": "\"错误:未能加载任何CSV文件进行融合。\"",
+      "after": "\"Error: no CSV files could be loaded for merging.\""
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 103,
+      "kind": "display_text",
+      "before": "错误: 无法找到一个或多个CSV文件进行融合: ",
+      "after": "Error: unable to find one or more CSV files for merging: "
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 7,
+      "line": 106,
+      "kind": "display_text",
+      "before": "融合过程中发生未知错误: ",
+      "after": "Unexpected error while merging: "
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 8,
+      "line": 22,
+      "kind": "display_text",
+      "before": "\\n--- 开始为模型1生成预测 (",
+      "after": "\\n--- Generating predictions for model 1 ("
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 8,
+      "line": 30,
+      "kind": "display_text",
+      "before": "\\n--- 开始为模型2生成预测 (",
+      "after": "\\n--- Generating predictions for model 2 ("
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 8,
+      "line": 37,
+      "kind": "display_text",
+      "before": "\\n--- 开始为模型3生成预测 (",
+      "after": "\\n--- Generating predictions for model 3 ("
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 8,
+      "line": 44,
+      "kind": "display_text",
+      "before": "\\n--- 开始为模型4生成预测 (",
+      "after": "\\n--- Generating predictions for model 4 ("
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "cell_index": 8,
+      "line": 53,
+      "kind": "display_text",
+      "before": "\"\\n--- 开始融合四个模型的预测结果 ---\"",
+      "after": "\"\\n--- Merging predictions from the four models ---\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 0,
+      "line": 27,
+      "kind": "display_text",
+      "before": "'读取分折好的数据'",
+      "after": "'Reading data with assigned folds'"
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 1,
+      "line": 3,
+      "kind": "documentation_string",
+      "before": "\"\"\"训练阶段的数据增强（可自行修改）\"\"\"",
+      "after": "\"\"\"Training data augmentation (customize as needed).\"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 1,
+      "line": 23,
+      "kind": "documentation_string",
+      "before": "\"\"\"验证阶段的数据预处理（不做随机增强）\"\"\"",
+      "after": "\"\"\"Validation preprocessing without random augmentation.\"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 2,
+      "line": 5,
+      "kind": "documentation_string",
+      "before": "\"\"\"对多目标回归按列加权的 MSE loss，适配本题 5 个 target\"\"\"",
+      "after": "\"\"\"Column-weighted MSE for multi-target regression with the 5 targets in this task.\"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 2,
+      "line": 13,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n        preds, targets: [batch_size, num_targets]，这里是在 log 空间\n        \"\"\"",
+      "after": "\"\"\"\n        preds, targets: [batch_size, num_targets], in log space.\n        \"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 2,
+      "line": 33,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    训练数据集：\n    - 输入：单流图像\n    - 输出：log1p 变换后的 5 个目标值\n    \"\"\"",
+      "after": "\"\"\"\n    Training dataset:\n    - Input: a single image stream.\n    - Output: 5 log1p-transformed target values.\n    \"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 2,
+      "line": 39,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n        df: 宽表，每行一个 image_path + 多个 target 列\n        image_dir: 图像所在文件夹路径\n        target_cols: 目标列名列表\n        transform: Albumentations 数据增强\n        \"\"\"",
+      "after": "\"\"\"\n        df: wide table with one image_path and multiple target columns per row.\n        image_dir: directory containing the images.\n        target_cols: list of target column names.\n        transform: Albumentations augmentation.\n        \"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 2,
+      "line": 58,
+      "kind": "documentation_string",
+      "before": "\"\"\"返回数据集大小\"\"\"",
+      "after": "\"\"\"Return the dataset size.\"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 2,
+      "line": 62,
+      "kind": "documentation_string",
+      "before": "\"\"\"返回单个样本：图像张量 + log1p 后的目标张量\"\"\"",
+      "after": "\"\"\"Return one sample: image tensor and log1p-transformed target tensor.\"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 2,
+      "line": 91,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    单流图像回归模型：\n    - 使用 timm backbone 提取图像特征\n    - 使用全连接回归头输出 5 个标签的 log 空间预测\n    \"\"\"",
+      "after": "\"\"\"\n    Single-stream image regression model:\n    - Extract image features with a timm backbone.\n    - Use a fully connected regression head for 5 predictions in log space.\n    \"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 2,
+      "line": 119,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n        前向传播：\n        x: 输入图像张量 [B, C, H, W]\n        返回：log 空间的预测值 [B, num_targets]\n        \"\"\"",
+      "after": "\"\"\"\n        Forward pass:\n        x: input image tensor [B, C, H, W].\n        Returns: predictions in log space [B, num_targets].\n        \"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 3,
+      "line": 3,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    单个 epoch 的训练循环，返回平均 loss（log 空间，加权 MSE）\n\n    参数:\n    - model: 当前训练的模型\n    - loader: 训练集 DataLoader\n    - optimizer: 优化器\n    - device: 运行设备（CPU/GPU）\n    - ema: 可选的 ModelEMA 实例；如果传入，则在每个 step 后更新 EMA 模型参数\n    \"\"\"",
+      "after": "\"\"\"\n    Train for one epoch and return mean weighted MSE loss in log space.\n\n    Parameters:\n    - model: model being trained.\n    - loader: training DataLoader.\n    - optimizer: optimizer.\n    - device: execution device (CPU/GPU).\n    - ema: optional ModelEMA instance, updated after each step when supplied.\n    \"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 3,
+      "line": 49,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    验证循环，返回：\n    - avg_loss: 原始空间的加权 MSELoss（自定义监控用）\n    - weighted_r2: 原始空间的加权 R²（严格按官方公式）\n    \"\"\"",
+      "after": "\"\"\"\n    Validation loop returning:\n    - avg_loss: weighted MSE in the original scale for custom monitoring.\n    - weighted_r2: weighted R-squared in the original scale using the official formula.\n    \"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 3,
+      "line": 99,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    y_true, y_pred: [N, T] 的 numpy 数组，T=5\n    weights_per_target: 长度为 T 的 1D 数组，例如 [0.1, 0.1, 0.1, 0.2, 0.5]\n    按照官方公式计算全局加权 R²。\n\n    数学形式：\n        R_w^2 = 1 - sum_j w_j (y_j - ŷ_j)^2 / sum_j w_j (y_j - ȳ_w)^2\n        其中 ȳ_w = sum_j w_j y_j / sum_j w_j\n    \"\"\"",
+      "after": "\"\"\"\n    y_true, y_pred: numpy arrays of shape [N, T], with T=5.\n    weights_per_target: a 1D array of length T, e.g. [0.1, 0.1, 0.1, 0.2, 0.5].\n    Calculate global weighted R-squared using the official formula.\n\n    Mathematical form:\n        R_w^2 = 1 - sum_j w_j (y_j - ŷ_j)^2 / sum_j w_j (y_j - ȳ_w)^2\n        where ȳ_w = sum_j w_j y_j / sum_j w_j\n    \"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 3,
+      "line": 140,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    简单稳定的 EMA（指数滑动平均），适配任意 PyTorch 模型\n\n    用法示例：\n        ema = ModelEMA(model, decay=0.999)\n        ...\n        # 每个 step 后\n        ema.update(model)\n        ...\n        # 验证时使用 ema.ema_model\n        valid_loss, valid_r2 = validate(ema.ema_model, valid_loader, device)\n    \"\"\"",
+      "after": "\"\"\"\n    Simple exponential moving average (EMA) for any PyTorch model.\n\n    Example:\n        ema = ModelEMA(model, decay=0.999)\n        ...\n        # After each step\n        ema.update(model)\n        ...\n        # Use ema.ema_model for validation\n        valid_loss, valid_r2 = validate(ema.ema_model, valid_loader, device)\n    \"\"\""
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "cell_index": 3,
+      "line": 166,
+      "kind": "documentation_string",
+      "before": "\"\"\"EMA 参数更新：ema = decay * ema + (1 - decay) * model\"\"\"",
+      "after": "\"\"\"EMA update: ema = decay * ema + (1 - decay) * model.\"\"\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 39,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    计算带惩罚项的 Sharpe-like 得分：\n    - solution：真实数据，包含 forward_returns, risk_free_rate\n    - submission：预测仓位，列名 prediction，范围 [0,2]\n    \"\"\"",
+      "after": "\"\"\"\n    Calculate a penalized Sharpe-like score:\n    - solution: observed data with forward_returns and risk_free_rate.\n    - submission: predicted positions in the prediction column, in [0,2].\n    \"\"\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 47,
+      "kind": "display_text",
+      "before": "\"solution 与 submission 长度不一致\"",
+      "after": "\"solution and submission have different lengths\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 53,
+      "kind": "display_text",
+      "before": "仓位超过上限 ",
+      "after": "Position exceeds the upper bound "
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 55,
+      "kind": "display_text",
+      "before": "仓位低于下限 ",
+      "after": "Position is below the lower bound "
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 103,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    根据价格序列计算 RSI 指标：\n    - 先计算涨跌\n    - 使用 EWM 平滑\n    \"\"\"",
+      "after": "\"\"\"\n    Calculate RSI from a price series:\n    - Calculate price gains and losses.\n    - Apply EWM smoothing.\n    \"\"\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 120,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    对传入的 df 进行统一处理：\n    - 按 date_id 排序\n    - 去掉 market_forward_excess_returns（泄漏）\n    - 构造 U1, U2\n    - 数值列做 EWM 填补（只用过去数据）\n    - 基于 lagged_forward_returns 构造一系列时序指标\n      注意：这里不直接用 forward_returns，只用其滞后版本和技术指标\n    \"\"\"",
+      "after": "\"\"\"\n    Apply the same preprocessing to the supplied df:\n    - Sort by date_id.\n    - Drop market_forward_excess_returns to avoid leakage.\n    - Construct U1 and U2.\n    - Impute numeric columns with EWM using past data only.\n    - Construct time-series indicators from lagged_forward_returns.\n      Do not use forward_returns directly; use lagged returns and technical indicators.\n    \"\"\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 154,
+      "kind": "display_text",
+      "before": "\"df 中缺少 lagged_forward_returns，必须先构造或来自 test.csv\"",
+      "after": "\"df lacks lagged_forward_returns; construct it first or load it from test.csv\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 218,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    使用 LightGBM 做时间序列滚动交叉验证：\n    - 自动调用 preprocess_and_make_features\n    - 切分方式：先丢掉前 skip_initial 条，然后窗口滚动：\n        train : [i : i+train_len)\n        val   : [i+train_len : i+train_len+val_len)\n    - 每折打印：索引范围、date_id 范围、R²、Sharpe\n    - signal_multiplier：仓位映射时的放大倍数（如果为 None 则使用全局 SIGNAL_MULTIPLIER）\n    \"\"\"",
+      "after": "\"\"\"\n    Rolling time-series cross-validation with LightGBM:\n    - Automatically call preprocess_and_make_features.\n    - Discard the first skip_initial rows, then roll the windows:\n        train : [i : i+train_len)\n        val   : [i+train_len : i+train_len+val_len)\n    - Print index ranges, date_id ranges, R-squared, and Sharpe for each fold.\n    - signal_multiplier: position scaling factor; use global SIGNAL_MULTIPLIER if None.\n    \"\"\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 233,
+      "kind": "display_text",
+      "before": "\"特征工程完成，shape:\"",
+      "after": "\"Feature engineering complete, shape:\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 255,
+      "kind": "display_text",
+      "before": "\"CV 使用数据 shape:\"",
+      "after": "\"Data shape used for CV:\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 352,
+      "kind": "display_text",
+      "before": "\"原始训练集 shape:\"",
+      "after": "\"Original training data shape:\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 370,
+      "kind": "display_text",
+      "before": "\\n=== 开始 CV：train_len=",
+      "after": "\\n=== Starting CV: train_len="
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 386,
+      "kind": "display_text",
+      "before": "参数组合 train_len=",
+      "after": "Parameter combination train_len="
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 386,
+      "kind": "display_text",
+      "before": " 的平均 Sharpe=",
+      "after": " has mean Sharpe="
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 393,
+      "kind": "display_text",
+      "before": "*** 发现新的最优组合：train_len=",
+      "after": "*** New best combination: train_len="
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 396,
+      "kind": "display_text",
+      "before": "\"网格搜索完成！\"",
+      "after": "\"Grid search complete!\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 397,
+      "kind": "display_text",
+      "before": "最优参数组合：train_len=",
+      "after": "Best parameter combination: train_len="
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 423,
+      "kind": "display_text",
+      "before": "\"最终训练模型使用的数据 shape:\"",
+      "after": "\"Data shape for final model training:\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 424,
+      "kind": "display_text",
+      "before": "最终训练使用的窗口长度（实际样本数）: ",
+      "after": "Final training window length (actual sample count): "
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 424,
+      "kind": "display_text",
+      "before": "，来自候选 train_len=",
+      "after": ", from candidate train_len="
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 451,
+      "kind": "display_text",
+      "before": "\"最终 LightGBM 模型训练完成，特征数:\"",
+      "after": "\"Final LightGBM model trained; feature count:\""
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 452,
+      "kind": "display_text",
+      "before": "最终使用的 SIGNAL_MULTIPLIER=",
+      "after": "Final SIGNAL_MULTIPLIER="
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "cell_index": 1,
+      "line": 463,
+      "kind": "documentation_string",
+      "before": "\"\"\"\n    Kaggle default_inference_server 调用的 predict 函数：\n    - 输入：Polars DataFrame（通常按时间顺序一行一行进来）\n    - 输出：当前最新一行的仓位 allocation ∈ [0, 2]\n\n    关键点：\n    - 使用和训练相同的 preprocess_and_make_features\n    - 通过全局 test_history_df 累积所有 test 行，保证 rolling / EWM 只用过去\n    - 仓位映射使用网格搜索得到的最优 SIGNAL_MULTIPLIER\n    \"\"\"",
+      "after": "\"\"\"\n    Prediction function called by Kaggle default_inference_server:\n    - Input: a Polars DataFrame, usually one row at a time in chronological order.\n    - Output: allocation for the latest row, in [0, 2].\n\n    Key points:\n    - Use the same preprocess_and_make_features as training.\n    - Accumulate test rows in test_history_df so rolling/EWM operations use past data only.\n    - Map positions using the best SIGNAL_MULTIPLIER from grid search.\n    \"\"\""
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 9,
+      "kind": "display_text",
+      "before": "**\\n\\n\\nQUESTION 第",
+      "after": "**\\n\\n\\nQUESTION round "
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 9,
+      "kind": "display_text",
+      "before": "轮，第",
+      "after": ", question "
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 9,
+      "kind": "display_text",
+      "before": "个问题 - 目前为止耗时 : ",
+      "after": " - elapsed so far: "
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 31,
+      "kind": "display_text",
+      "before": "'**使用循环五次进行显存清除'",
+      "after": "'**Clear GPU memory in five iterations'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 37,
+      "kind": "display_text",
+      "before": "'###################################下面进行问题的预准备部分#################################'",
+      "after": "'###################################Prepare the problem#################################'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 40,
+      "kind": "display_text",
+      "before": "'¥¥¥¥¥¥¥¥¥¥¥¥¥此处进入try¥¥¥¥¥¥¥¥¥¥¥¥¥¥'",
+      "after": "'¥¥¥¥¥¥¥¥¥¥¥¥¥Entering try block¥¥¥¥¥¥¥¥¥¥¥¥¥¥'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 56,
+      "kind": "display_text",
+      "before": "############################1——将具体问题填充到提示词模板后的内容########################:",
+      "after": "############################1--Prompt template with the specific problem########################:"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 63,
+      "kind": "display_text",
+      "before": "**文本编码后input_ids的长度：           ",
+      "after": "**Tokenized input_ids length:           "
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 64,
+      "kind": "display_text",
+      "before": "'###################################2——下面进行model产生回答的部分#################################'",
+      "after": "'###################################2--Generate the model response#################################'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 80,
+      "kind": "display_text",
+      "before": "'**大模型生成的回答解码后的内容：'",
+      "after": "'**Decoded model response:'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 82,
+      "kind": "display_text",
+      "before": "'**解码后裁剪出来的内容(删除原始的问题，只保留了新生成的回答)'",
+      "after": "'**Decoded continuation after removing the original question'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 86,
+      "kind": "display_text",
+      "before": "**打印目前生成的回答:",
+      "after": "**Current generated response length:"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 90,
+      "kind": "display_text",
+      "before": "'**检测生成的文本最后是否有终止词'",
+      "after": "'**Check whether the generated text ends with a stop word'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 91,
+      "kind": "display_text",
+      "before": "**生成的文本的最后部分：",
+      "after": "**End of generated text:"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 95,
+      "kind": "display_text",
+      "before": "**是否满足终止词条件:",
+      "after": "**Stop-word condition satisfied:"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 97,
+      "kind": "display_text",
+      "before": "'###########3--当生成的内容符合要求（句子完整）并且生成的长度还没有超过规定的最大长度时############'",
+      "after": "'###########3--Continue while the output meets the condition and remains within the length limit############'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 113,
+      "kind": "display_text",
+      "before": "'**代码累计开始的标志点'",
+      "after": "'**Start accumulating code'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 114,
+      "kind": "display_text",
+      "before": "**打印现在已经累计的代码：",
+      "after": "**Code accumulated so far:"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 115,
+      "kind": "display_text",
+      "before": "**新生成的代码：",
+      "after": "**Newly generated code:"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 153,
+      "kind": "display_text",
+      "before": "'此处跳出循环'",
+      "after": "'Leaving the loop here'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 154,
+      "kind": "display_text",
+      "before": "'########################4--此处开始生成第二次调用大模型的代码########################'",
+      "after": "'########################4--Start the second model generation call########################'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 180,
+      "kind": "display_text",
+      "before": "'**这里根据指导的思路打印生成的代码'",
+      "after": "'**Print generated code following the proposed approach'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 199,
+      "kind": "display_text",
+      "before": "'**此处已经跳出代码的生成循环，不再使用大模型生成python代码，做一些后处理相关内容'",
+      "after": "'**Code generation has ended; proceed to postprocessing without further model-generated Python'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 23,
+      "line": 252,
+      "kind": "display_text",
+      "before": "'代码运行完成'",
+      "after": "'Code execution complete'"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 37,
+      "line": 5,
+      "kind": "display_text",
+      "before": "repl处理之前的Code：",
+      "after": "Code before repl processing:"
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "cell_index": 37,
+      "line": 13,
+      "kind": "display_text",
+      "before": "处理后Code：",
+      "after": "Code after processing:"
+    },
+    {
+      "path": "projects/10-tabular-fraud-catboost/notebook.ipynb",
+      "cell_index": 3,
+      "line": 18,
+      "kind": "display_text",
+      "before": "\"数据预处理完成!\"",
+      "after": "\"Data preprocessing complete!\""
+    },
+    {
+      "path": "projects/10-tabular-fraud-catboost/notebook.ipynb",
+      "cell_index": 3,
+      "line": 54,
+      "kind": "display_text",
+      "before": "'cat验证的auc:{}'",
+      "after": "'CatBoost validation AUC:{}'"
+    },
+    {
+      "path": "projects/10-tabular-fraud-catboost/notebook.ipynb",
+      "cell_index": 3,
+      "line": 58,
+      "kind": "display_text",
+      "before": "'10折平均Auc:{}'",
+      "after": "'10-fold mean AUC:{}'"
+    }
+  ],
+  "preserved_operational_literals": [
+    {
+      "text": "r'bilateral|both knees|both knee|beide knie|deux genoux|双膝'",
+      "uses": [
+        {
+          "path": "projects/05-rsna-knee-inference/source/rsna/visual_audit.py",
+          "cell": null,
+          "start": [
+            29,
+            27
+          ],
+          "end": [
+            29,
+            86
+          ]
+        }
+      ],
+      "reason": "Operational regular expression: matches Chinese report text; translating it would change sample selection."
+    },
+    {
+      "text": "'金融2预测.csv'",
+      "uses": [
+        {
+          "path": "projects/10-tabular-fraud-catboost/notebook.ipynb",
+          "cell": 3,
+          "start": [
+            61,
+            11
+          ],
+          "end": [
+            61,
+            22
+          ]
+        }
+      ],
+      "reason": "Output filename: retained to avoid changing file paths."
+    }
+  ]
+}

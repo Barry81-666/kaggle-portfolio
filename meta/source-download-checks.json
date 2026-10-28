@@ -1,0 +1,66 @@
+{
+  "retrieved_date": "2026-10-28",
+  "retrieval": "Kaggle public /kernels/scriptcontent/{version_id}/download",
+  "source_hash_matches": [
+    {
+      "project": "01-rna-folding",
+      "version_id": 226091843,
+      "download_sha256": "7666019ff229d4ce0e1dceca5ae91387de8757101acedacaadcaa96dc3030922",
+      "matched_original_record": true
+    },
+    {
+      "project": "02-bacterial-motor-detection",
+      "version_id": 243588125,
+      "download_sha256": "2fca7f8f68c51585f5186b7c94593bc130a6963561378792ffcbb005b54c0b98",
+      "matched_original_record": true
+    },
+    {
+      "project": "03-image2biomass",
+      "version_id": 277387301,
+      "download_sha256": "032d6713463e7c0088ade4923bf21ec781c6b2b4cda14435c1094592387a26fa",
+      "matched_original_record": true
+    },
+    {
+      "project": "04-cell-instance-segmentation",
+      "version_id": 83951341,
+      "download_sha256": "917e2e47a3c1b207f62343642e3e85289c6306d9aa7dd0e7198d9e4f80dc7654",
+      "matched_original_record": true
+    },
+    {
+      "project": "05-rsna-knee-inference",
+      "version_id": 358098927,
+      "download_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
+      "matched_original_record": true
+    },
+    {
+      "project": "06-time-series-validation",
+      "version_id": 279919839,
+      "download_sha256": "27cd18c920504cfcced550bc3ef627ada48b0d9888e8c55f283ff2e704865346",
+      "matched_original_record": true
+    },
+    {
+      "project": "07-chatbot-preference-lora",
+      "version_id": 217218292,
+      "download_sha256": "5c1329f719d3e3864e485889c152a15b91a036c6e2db222df26eaef04a47e00e",
+      "matched_original_record": true
+    },
+    {
+      "project": "08-reef-object-detection",
+      "version_id": 87726774,
+      "download_sha256": "ad8dc90717ad9e7b63f28b176860499193ebeaa7abb57a9fd480d9adbbfb379e",
+      "matched_original_record": true
+    },
+    {
+      "project": "09-llm-code-reasoning",
+      "version_id": 224999934,
+      "download_sha256": "51b9d15ef71b962c9d01c288cda3d2c54e4669eea75f5e20f4924a49234ad962",
+      "matched_original_record": true
+    },
+    {
+      "project": "10-tabular-fraud-catboost",
+      "version_id": 116279535,
+      "download_sha256": "d7a64f5074c0a5f1e5e5ebb8c615c127ece753a066738ad4836489e5ef61df9c",
+      "matched_original_record": true
+    }
+  ]
+}
