@@ -18,4 +18,4 @@ No model training, inference, generated-code execution or installation cell was 
 
 Most notebooks depend on Kaggle competition data, historical packages or private model inputs. Use the original page and exact version to inspect dependencies. The RSNA archive also lacks complete experiment configs and referenced training assets. Successful static checks are not a runnable-environment guarantee.
 
-[Read-only retrieval instructions](KAGGLE_EVIDENCE.md) · [Validation](../VALIDATION.md) · [Evidence to complete](CONTRIBUTIONS_AND_EVIDENCE.md)
+[Validation](../VALIDATION.md)

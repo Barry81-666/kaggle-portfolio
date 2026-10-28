@@ -8,7 +8,9 @@ The archive adds concrete config/checkpoint paths, inference and submission cell
 
 ## Source and Contribution
 
-[Original Kaggle notebook](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion), version ID `83951341`. Fork of [KUGAI CHEN](https://www.kaggle.com/code/kugaichen/how-to-use-mmdectetion). Personal modifications and the relationship to the final team submission remain to be confirmed.
+[Original Kaggle notebook](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion), version ID `83951341`. Fork of [KUGAI CHEN](https://www.kaggle.com/code/kugaichen/how-to-use-mmdectetion). 
+
+**My role in the competition:** Trained MMDetection instance segmentation models and tuned class-specific score thresholds, minimum mask sizes and overlap removal. The archived inference fork's relationship to the selected final submission remains separate from this contribution statement.
 
 ## Running and Interpreting the Archive
 

@@ -1,19 +1,17 @@
 # Barry Wang · Biomedical Data Science & Kaggle Portfolio
 
-I publish on Kaggle as [handudu](https://www.kaggle.com/handudu). This portfolio brings together biomedical competition experience, a detailed knee MRI validation case study, and selected projects in computational biology and machine learning. The project pages explain method choices and distinguish source code, historical execution evidence and measured results.
+I publish on Kaggle as [handudu](https://www.kaggle.com/handudu). This portfolio brings together biomedical competition experience, a detailed knee MRI validation case study, and selected projects in computational biology and machine learning. The case studies connect modeling choices to validation design and measured performance.
 
 ## Biomedical Team Competition Results
 
 Kaggle Competitions **Expert**; **7 silver and 4 bronze team competition medals** in the recorded account history. The four biomedical silver medals below are **team competition results**. Source: the repository's authenticated Kaggle **Your Work → Competitions** record, verified **2026-10-24**; [full record and evidence scope](COMPETITION_RESULTS.md).
 
-| Competition | Team rank / teams | Medal | Related code |
-| --- | --- | --- | --- |
-| [BYU - Locating Bacterial Flagellar Motors 2025](https://www.kaggle.com/competitions/byu-locating-bacterial-flagellar-motors-2025) | 15 / 1136 | Silver | [Related code (forked inference notebook)](projects/02-bacterial-motor-detection/) |
-| [Sartorius - Cell Instance Segmentation](https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation) | 26 / 1505 | Silver | [Related code (forked inference notebook)](projects/04-cell-instance-segmentation/) |
-| [UW-Madison GI Tract Image Segmentation](https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation) | 29 / 1548 | Silver | — |
-| [RSNA Screening Mammography Breast Cancer Detection](https://www.kaggle.com/competitions/rsna-breast-cancer-detection) | 46 / 1687 | Silver | — |
-
-The linked inference forks have not been matched to the selected final submissions. Personal responsibilities are awaiting confirmation in the [contribution checklist](docs/CONTRIBUTIONS_AND_EVIDENCE.md).
+| Competition | Team rank / teams | Medal | My role | Related code |
+| --- | --- | --- | --- | --- |
+| [BYU - Locating Bacterial Flagellar Motors 2025](https://www.kaggle.com/competitions/byu-locating-bacterial-flagellar-motors-2025) | 15 / 1136 | Silver | Prepared slice-level training data and local validation, trained YOLO-family detectors, and built multi-model fusion with 3D non-maximum suppression. | [Related code (forked inference notebook)](projects/02-bacterial-motor-detection/) |
+| [Sartorius - Cell Instance Segmentation](https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation) | 26 / 1505 | Silver | Trained MMDetection instance segmentation models and tuned class-specific score thresholds, minimum mask sizes and overlap removal. | [Related code (forked inference notebook)](projects/04-cell-instance-segmentation/) |
+| [UW-Madison GI Tract Image Segmentation](https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation) | 29 / 1548 | Silver | Built slice-stacking preprocessing and case-grouped validation folds, trained segmentation models, and ensembled them with post-processing. | — |
+| [RSNA Screening Mammography Breast Cancer Detection](https://www.kaggle.com/competitions/rsna-breast-cancer-detection) | 46 / 1687 | Silver | Built DICOM preprocessing and ROI cropping, trained image classifiers, and ensembled models with decision-threshold selection for the probabilistic F1 metric. | — |
 
 <details>
 <summary>Seven additional team competition results</summary>
@@ -36,7 +34,7 @@ The linked inference forks have not been matched to the selected final submissio
 
 How should an MRI classifier be evaluated when training targets come from radiology reports and expert annotations are limited? This case study explains the archived implementation's patient/duplicate grouping, separation of weak and expert labels, training-fold prior baselines, and study-level bootstrap evaluation.
 
-**Read for:** the reasoning behind the validation design and its limitations. **Evidence available:** the public inference wrapper and 22 readable Python modules. Local CV, gold-set metrics and final leaderboard results remain unverified; the [results table](projects/05-rsna-knee-inference/#evaluation-and-results) identifies exactly what is needed.
+Explore patient-aware folds, training-only baselines and study-level bootstrap uncertainty alongside the [recorded historical public score of 0.942](projects/05-rsna-knee-inference/#evaluation-and-results).
 
 ## Additional Projects
 
@@ -52,8 +50,6 @@ How should an MRI classifier be evaluated when training targets come from radiol
 
 Notebook recognition is separate from competition ranking: RNA has one **silver Notebook medal**; time series, multilingual preference and reef detection each have a **bronze Notebook medal** (Kaggle snapshot 2026-10-24).
 
-## Running the Projects and Reading the Evidence
+Code is archived as published on Kaggle; data and weights are not included.
 
-Start with each project's README and original Kaggle inputs. This revision did not run model training or inference. Selected historical outputs were recovered from hash-matched public versions; data and model weights are not included.
-
-[Results and figures](results/) · [Sources and attribution](SOURCES.md) · [Reproduction and archive notes](docs/ARCHIVE_NOTES.md) · [Validation checks](VALIDATION.md) · [Project metadata](meta/catalog.json)
+[Results and figures](results/) · [Sources and attribution](SOURCES.md)

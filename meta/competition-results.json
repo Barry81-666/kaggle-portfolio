@@ -8,7 +8,9 @@
     "area": "Computational biology / 3D detection",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
-    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
+    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image.",
+    "my_role": "Prepared slice-level training data and local validation, trained YOLO-family detectors, and built multi-model fusion with 3D non-maximum suppression.",
+    "role_source": "Supplied by Barry Wang in the portfolio review on 2026-10-28; describes competition work, not a source-by-source authorship audit."
   },
   {
     "title": "Sartorius - Cell Instance Segmentation",
@@ -19,7 +21,9 @@
     "area": "Biological imaging / cell instance segmentation",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
-    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
+    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image.",
+    "my_role": "Trained MMDetection instance segmentation models and tuned class-specific score thresholds, minimum mask sizes and overlap removal.",
+    "role_source": "Supplied by Barry Wang in the portfolio review on 2026-10-28; describes competition work, not a source-by-source authorship audit."
   },
   {
     "title": "UW-Madison GI Tract Image Segmentation",
@@ -30,7 +34,9 @@
     "area": "Medical imaging / gastrointestinal segmentation",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
-    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
+    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image.",
+    "my_role": "Built slice-stacking preprocessing and case-grouped validation folds, trained segmentation models, and ensembled them with post-processing.",
+    "role_source": "Supplied by Barry Wang in the portfolio review on 2026-10-28; describes competition work, not a source-by-source authorship audit."
   },
   {
     "title": "RSNA Screening Mammography Breast Cancer Detection",
@@ -41,7 +47,9 @@
     "area": "Medical imaging / breast cancer detection",
     "result_scope": "Team competition result associated with handudu; not proof that an archived notebook is the selected final submission.",
     "verified_date": "2026-10-24",
-    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image."
+    "evidence": "Kaggle authenticated Your Work > Competitions; displayed rank and medal image.",
+    "my_role": "Built DICOM preprocessing and ROI cropping, trained image classifiers, and ensembled models with decision-threshold selection for the probabilistic F1 metric.",
+    "role_source": "Supplied by Barry Wang in the portfolio review on 2026-10-28; describes competition work, not a source-by-source authorship audit."
   },
   {
     "title": "WSDM Cup - Multilingual Chatbot Arena",

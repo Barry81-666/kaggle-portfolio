@@ -4,7 +4,9 @@ An inference notebook combining YOLO-family detections across tomogram slices, m
 
 ## Source and Contribution
 
-[Original Kaggle notebook](https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e), version ID `243588125`. Fork of parent kernel `84148436`; the parent's author and public URL were unavailable in the source snapshot. Personal modifications and the relationship to the final team submission remain to be confirmed.
+[Original Kaggle notebook](https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e), version ID `243588125`. Fork of parent kernel `84148436`; the parent's author and public URL were unavailable in the source snapshot. 
+
+**My role in the competition:** Prepared slice-level training data and local validation, trained YOLO-family detectors, and built multi-model fusion with 3D non-maximum suppression. The archived inference fork's relationship to the selected final submission remains separate from this contribution statement.
 
 ## Running and Interpreting the Archive
 

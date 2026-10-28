@@ -1,0 +1,20 @@
+{
+  "source": "Kaggle public KernelsService/ListKernels response for handudu (user ID 8812411)",
+  "source_url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
+  "snapshot_date": "2026-10-24",
+  "extracted_date": "2026-10-28",
+  "source_response_sha256": "dcfe46f9453bea7fed2eb605c9c00c1e83e16eee1655d6a9f4ec8999e1897b02",
+  "fields": {
+    "id": 138542102,
+    "scriptVersionId": 358098927,
+    "bestPublicScore": 0.942,
+    "hasLinkedSubmission": true,
+    "scriptVersionDateCreated": "2026-10-13T19:03:54.023Z",
+    "dateEvaluated": "2026-10-13T19:03:55.420Z",
+    "lastRunExecutionTimeSeconds": 2467
+  },
+  "interpretation": "Historical best public score associated with the notebook in the source response. Not a local CV/gold metric, final private score, final team rank, or proof that this source was selected for final scoring.",
+  "checked_date": "2026-10-28",
+  "recheck_response_sha256": "c3e0ddf7e0e20a3494c6523c7647cf1dc88d35c2b545d51a5fe7b4c81482df17",
+  "recheck_fields_match": true
+}

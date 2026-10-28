@@ -4,12 +4,12 @@ These 11 results are the ranks and medals recorded for teams associated with [ha
 
 ## Biomedical Competitions
 
-| Competition | Team rank / teams | Medal | Related code |
-| --- | --- | --- | --- |
-| [BYU - Locating Bacterial Flagellar Motors 2025](https://www.kaggle.com/competitions/byu-locating-bacterial-flagellar-motors-2025) | 15 / 1136 | Silver | [Related code (forked inference notebook)](projects/02-bacterial-motor-detection/) |
-| [Sartorius - Cell Instance Segmentation](https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation) | 26 / 1505 | Silver | [Related code (forked inference notebook)](projects/04-cell-instance-segmentation/) |
-| [UW-Madison GI Tract Image Segmentation](https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation) | 29 / 1548 | Silver | — |
-| [RSNA Screening Mammography Breast Cancer Detection](https://www.kaggle.com/competitions/rsna-breast-cancer-detection) | 46 / 1687 | Silver | — |
+| Competition | Team rank / teams | Medal | My role | Related code |
+| --- | --- | --- | --- | --- |
+| [BYU - Locating Bacterial Flagellar Motors 2025](https://www.kaggle.com/competitions/byu-locating-bacterial-flagellar-motors-2025) | 15 / 1136 | Silver | Prepared slice-level training data and local validation, trained YOLO-family detectors, and built multi-model fusion with 3D non-maximum suppression. | [Related code (forked inference notebook)](projects/02-bacterial-motor-detection/) |
+| [Sartorius - Cell Instance Segmentation](https://www.kaggle.com/competitions/sartorius-cell-instance-segmentation) | 26 / 1505 | Silver | Trained MMDetection instance segmentation models and tuned class-specific score thresholds, minimum mask sizes and overlap removal. | [Related code (forked inference notebook)](projects/04-cell-instance-segmentation/) |
+| [UW-Madison GI Tract Image Segmentation](https://www.kaggle.com/competitions/uw-madison-gi-tract-image-segmentation) | 29 / 1548 | Silver | Built slice-stacking preprocessing and case-grouped validation folds, trained segmentation models, and ensembled them with post-processing. | — |
+| [RSNA Screening Mammography Breast Cancer Detection](https://www.kaggle.com/competitions/rsna-breast-cancer-detection) | 46 / 1687 | Silver | Built DICOM preprocessing and ROI cropping, trained image classifiers, and ensembled models with decision-threshold selection for the probabilistic F1 metric. | — |
 
 ## Other Competitions
 
@@ -25,12 +25,12 @@ These 11 results are the ranks and medals recorded for teams associated with [ha
 
 ## What the Record Establishes
 
-These are team ranks, not individual contribution measures or Notebook medals. The archived motor and cell inference notebooks are related code, not verified final submissions. Responsibility descriptions need confirmation before being attributed to Barry Wang; see the [single evidence checklist](docs/CONTRIBUTIONS_AND_EVIDENCE.md).
+These are team ranks, not individual contribution measures or Notebook medals. The archived motor and cell inference notebooks are related code, not verified final submissions. The four personal-role descriptions were supplied by Barry Wang on 2026-10-28; they describe competition work, while source provenance identifies the specific archived notebooks.
 
 The [account snapshot](meta/account-snapshot.json) records Competitions Expert and raw account rank **807 / 221,860 on 2026-10-24**. The snapshot is historical, not a current rank. The logged-in inventory previously showed 756 notebooks/scripts; the [public inventory](meta/inventory.json) covers 20 and this repository contains 10. It does not represent an inspection of all private work.
 
 ## RSNA Knee Abnormality Detection
 
-The [competition overview](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/overview) lists the final submission deadline as **2026-10-22**. The final public/private team rank and score could not be verified in this revision: no authenticated Kaggle session was available and the public source does not identify the final team submission. The knee MRI project is therefore presented as a source-based case study, without a leaderboard claim.
+The competition closed on **2026-10-22**. Kaggle's public notebook metadata records a **best public score of 0.942** for `rsna-knee-teacher-probs-exp017-v1-infer` in the 2026-10-24 snapshot. This is a historical notebook-associated public score, not a final private result or a verified final-team rank. See the [score record](results/rsna-knee-public-score.json) and [case study](projects/05-rsna-knee-inference/).
 
-[Structured results](meta/competition-results.json) · [Knee MRI case study](projects/05-rsna-knee-inference/)
+[Structured team results](meta/competition-results.json)

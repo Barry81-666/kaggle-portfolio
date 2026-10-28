@@ -240,7 +240,8 @@
         "meta/catalog.json",
         "meta/inventory.json",
         "meta/projects/05-rsna-knee-inference/provenance.json",
-        "projects/05-rsna-knee-inference/README.md"
+        "projects/05-rsna-knee-inference/README.md",
+        "results/rsna-knee-public-score.json"
       ]
     },
     {
@@ -368,16 +369,6 @@
       ]
     },
     {
-      "url": "https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions",
-      "http_status": 200,
-      "page_title": "CIBMTR - Equity in post-HCT Survival Predictions | Kaggle",
-      "final_url": "https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions",
-      "status": "resolved_specific_page",
-      "used_in": [
-        "docs/CIBMTR_ANALYSIS_PLAN.md"
-      ]
-    },
-    {
       "url": "https://www.kaggle.com/competitions/feedback-prize-2021",
       "http_status": 200,
       "page_title": "Feedback Prize - Evaluating Student Writing | Kaggle",
@@ -457,17 +448,6 @@
       "used_in": [
         "meta/catalog.json",
         "meta/projects/05-rsna-knee-inference/provenance.json",
-        "projects/05-rsna-knee-inference/README.md"
-      ]
-    },
-    {
-      "url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/overview",
-      "http_status": 200,
-      "page_title": "RSNA Knee Abnormality Detection | Kaggle",
-      "final_url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/overview",
-      "status": "resolved_specific_page",
-      "used_in": [
-        "COMPETITION_RESULTS.md",
         "projects/05-rsna-knee-inference/README.md"
       ]
     },
@@ -752,16 +732,6 @@
         "README.md",
         "SOURCES.md",
         "meta/account-snapshot.json"
-      ]
-    },
-    {
-      "url": "https://www.kaggle.com/kernels/scriptcontent/358098927/download",
-      "http_status": 200,
-      "page_title": null,
-      "final_url": "https://www.kaggle.com/kernels/scriptcontent/358098927/download",
-      "status": "verified_exact_source_download",
-      "used_in": [
-        "docs/KAGGLE_EVIDENCE.md"
       ]
     },
     {

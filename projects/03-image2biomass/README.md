@@ -15,7 +15,7 @@ These values are printed in the original Kaggle run, not recomputed in this revi
 
 ## Source and Contribution
 
-[Original Kaggle notebook](https://www.kaggle.com/code/handudu/1-train-baseline-demo), version ID `277387301`. Fork of parent kernel `99732107`; the parent's author and public URL were unavailable in the source snapshot. Publication under the handudu account is recorded; task-specific personal contributions have not been independently established.
+[Original Kaggle notebook](https://www.kaggle.com/code/handudu/1-train-baseline-demo), version ID `277387301`. Fork of parent kernel `99732107`; the parent's author and public URL were unavailable in the source snapshot. I contributed to part of the validation-split design, building on this upstream notebook. Some split settings were my own work; others were inherited from the upstream notebook.
 
 ## Running and Interpreting the Archive
 
