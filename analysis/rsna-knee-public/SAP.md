@@ -1,4 +1,4 @@
-# Statistical analysis plan: public leaderboard and label uncertainty
+# Statistical analysis plan: report labels and AUC misclassification
 
 **Version 1.2 · 2026-10-28 · Status: owner-authorized shift to labels and misclassification**
 
@@ -20,7 +20,7 @@ Primary delivery is B4.1, the conditionally independent report-state model in B4
 
 **Exposure at this amendment:** source descriptions/schemas and the A synthetic reference have been seen. No B empirical agreement/latent estimates or C performance outputs have been inspected. The owner's scope instruction authorizes this amendment; no further SAP confirmation is required.
 
-## 1. Objectives and estimands
+## 1. Original objectives and estimands (priority superseded by v1.2)
 
 **A, primary:** characterize public/private score agreement, compare observed score differences with a prespecified sampling-noise model, and quantify selection and rank uncertainty when identifiable from public metadata.
 
@@ -64,7 +64,7 @@ For every retained file check unique study IDs, allowed column names, numeric ra
 
 An overall agreement such as 81.7% does not identify sensitivity and specificity. If B is unavailable or unstable, use explicit Se/Sp scenario grids rather than deriving them from that percentage. Reported 19 sites conflicts with an official announcement describing 16 sites; do not silently resolve different source scopes.
 
-## 3. Analysis A: leaderboard reliability
+## 3. Retired analysis A: leaderboard reliability
 
 ### 3.0 Cohorts and exclusions
 
@@ -144,7 +144,7 @@ Use Bayes' rule to obtain PPV/NPV from prevalence and Se/Sp. Report instability 
 
 Link A and C by comparing the scale of simulated model differences and sampling SDs, not by equating different validation populations. A public/private rank-reversal probability is a simulation conditional on chosen true deltas and cross-model error correlations, not an observed probability for any named team.
 
-## 6. Software, release and checkpoints
+## 6. Software, release and original checkpoints (v1.2 overrides delivery order)
 
 All acquisition, assembly and statistical analysis code is R. Use renv, a Quarto report rendered to GFM, and seeds stored with each aggregate output. Dependencies are locked in phases; a foundation lock is not a claim that Bayesian or full data pipelines have run. Raw inputs, aligned labels, submission-level data, model draws and logs containing IDs remain in an external directory selected by `RSNA_PUBLIC_DATA`. The downloader rejects a data directory inside the checkout.
 

@@ -1,32 +1,18 @@
-# Public-data RSNA methodological study
+# Reproduce the public-label study
 
-Start with the [SAP](SAP.md), [source audit](SOURCE_AUDIT.md) and [project page](../../projects/11-rsna-knee-leaderboard-reliability/). This is the planning/software-foundation checkpoint. Approval of the exact SAP commit is required before empirical analysis.
+Start with the [results report](report.md), [project page](../../projects/11-rsna-knee-leaderboard-reliability/) and [SAP](SAP.md). The primary analyses are **B: report-label agreement and latent-model diagnostics** and **C: AUC misclassification simulation**. SAP v1.2 was frozen at `968c2a9cdb3be5978bbeed5128bad8ba843985f9` before B/C outcomes. No further personal competition materials or Meta Kaggle extract are needed.
 
-## Current implementation
+## Environment and acquisition
 
-| File | Implemented now | Later phase |
-| --- | --- | --- |
-| R/00_download.R | Public metadata, pinned file-only label downloads, optional Meta Kaggle table downloads | Recheck licenses/schema when versions change |
-| R/01_assemble.R | DuckDB external-memory filter and local coverage receipt | Validate competition coverage and field semantics on complete inputs |
-| R/10_leaderboard.R | Paired agreement, tied strata and Deming primitives | Full T1–T4, inference, selection and rank pipelines |
-| R/20_labels.R | Agreement and leave-one-out disagreement primitives | Joint bootstrap, latent models and diagnostics |
-| R/30_simulation.R | Misclassification DGM and analytic AUC correction | Full ADEMP grid, paired models and uncertainty propagation |
-| tests/test-foundation.R | Synthetic known-answer and independent pROC checks | Expanded tests as empirical pipelines are implemented |
-
-The initial `renv.lock` pins the tested foundation only. DuckDB/DBI, latent-model and reporting dependencies will be added to the lock when that phase is implemented and tested; their presence in the SAP is not a claim they have run. No training or model inference is part of this project.
-
-## Setup and synthetic tests
-
-Run from this directory with R 4.5.1:
+Run from this directory using R 4.5.1. Restore and load the project library:
 
 ```r
 install.packages("renv") # Once, if needed.
 renv::restore(project = ".", prompt = FALSE)
 renv::load(project = ".")
-source("tests/test-foundation.R")
 ```
 
-Use `renv::run()` for command-line scripts, or activate the project library before calling Rscript. Keep the data directory outside the checkout:
+Set an **external** data directory. The downloader uses anonymous public Kaggle APIs, pinned versions and a five-file allowlist; it never reads credentials. Do not download whole archives, because other files can include excluded reports or expert panels.
 
 ```sh
 export RSNA_PUBLIC_DATA="/absolute/path/outside-this-repository/rsna-public"
@@ -34,18 +20,49 @@ Rscript -e 'renv::load(); source("R/00_download.R")' --metadata
 Rscript -e 'renv::load(); source("R/00_download.R")' --labels
 ```
 
-No token is read or required. Metadata acquisition does not run statistical analysis. The label downloader checks a strict schema and removes a rejected file. An interrupted download remains `.part` and is never treated as complete. Do not download entire label archives: some include expert-label files or report-related material excluded by this study.
+The selected files are in [datasets.csv](datasets.csv); only `primary_candidate` rows are used. Check downloaded hashes against [source_files.csv](../../results/rsna-knee-public/source_files.csv). A changed file/version requires a new provenance record. The raw schema permits identifiers for local alignment, 12 scores, and allowlisted confidence/verdict columns. It excludes reports and metadata.
 
-For Meta Kaggle, the following is an explicit large download (about 3.7 GB uncompressed). Check available disk space first. Files are pinned to version 2370; a later version requires a documented amendment.
+The already-approved execution record is copied into the external data directory before running; this records the historical approval rather than requesting another one:
 
-```sh
-Rscript -e 'renv::load(); source("R/00_download.R")' --meta-tables
+```r
+dest <- Sys.getenv("RSNA_PUBLIC_DATA")
+jsonlite::write_json(list(approved=TRUE,
+  sap_commit="968c2a9cdb3be5978bbeed5128bad8ba843985f9",
+  approved_on="2026-10-28", basis="Owner-approved v1.2 scope",
+  merge_authorized=FALSE), file.path(dest,"sap-approval.json"), auto_unbox=TRUE)
 ```
 
-The equivalent local public Kaggle CLI commands are `kaggle datasets download -d kaggle/meta-kaggle -f Competitions.csv -p "$RSNA_PUBLIC_DATA"`, and the same command with `Teams.csv` and `Submissions.csv`. These CLI commands retrieve the latest version unless version support is configured; prefer the pinned R downloader and always record the actual version. Do not use competition-download or submission commands.
+## Tests and execution
 
-After SAP approval is actually given, record the approved SHA/date in DECISIONS.md and in an external `sap-approval.json` with fields `approved`, `sap_commit`, `approved_on`. The assembler requires this receipt and the DuckDB/DBI phase dependencies. It stores its database and audit outside the repository. No empirical entry point is enabled in this planning checkpoint.
+In the activated R session, run:
 
-## Release policy
+```r
+source("tests/test-foundation.R")
+source("tests/test-label-patterns.R")
+source("tests/test-latent.R")
+source("tests/test-paired.R")
+source("R/21_label_analysis.R")
+source("R/23_fit_labels.R")
+source("R/32_run_simulation.R")
+source("R/40_figures.R")
+knitr::knit("report.qmd", output="report.md", quiet=TRUE)
+```
 
-Only aggregate result tables, figures and source manifests are publishable. No team lists, study IDs, raw Meta Kaggle tables, label tables, reports, expert labels or participant predictions belong in Git. `report.qmd` renders a status page now; statistical results are added only after their checkpoint review. See [DECISIONS.md](DECISIONS.md) for amendments and approval state.
+The checked Markdown report was generated with **knitr**, not a Quarto CLI installation. `report.qmd` is the source; its GFM frontmatter also permits a Quarto rendering where available. Tables are regenerated from aggregate CSVs. Narrative numbers describe this frozen run and must be reviewed if inputs or scenarios change.
+
+| Stage | Implemented and executed |
+| --- | --- |
+| B descriptive | Joint bootstrap; known/unknown denominators; Cohen/Fleiss kappa, PABAK; majority-disagreement summaries; prespecified threshold/unknown sensitivities |
+| B latent | Native-R constrained Gibbs sampler; 12 findings × 3 accuracy priors × 4 chains; convergence and posterior predictive diagnostics |
+| C | Four baseline scenarios; naive, oracle-corrected and independent expert-n58 estimates; paired bootstrap intervals; bias, RMSE, coverage, ordering, failures and MCSE |
+| Reporting | Aggregate tables, five B/C figures and rendered English report |
+
+The model code is in [R/22_latent_model.R](R/22_latent_model.R); its positive-average-Youden orientation is an assumption, not independent validation. All latent outputs are diagnostic because predictive fit fails. The C script uses a fixed, prespecified parameter grid rather than fitting its simulation inputs to these failed models.
+
+Raw/aligned labels, study IDs, sampler draws and Monte Carlo replicates stay outside the checkout. Per-run JSON receipts record seeds, the SAP commit and elapsed analysis time. Only aggregate CSVs and figures are released. No training, MRI inference, notebook publication or competition submission occurs.
+
+## Supplement and omitted extensions
+
+[R/11_sampling_benchmark.R](R/11_sampling_benchmark.R) produced the earlier A sampling-only reference under SAP v1.1; [R/10_leaderboard.R](R/10_leaderboard.R) retains tested mathematical primitives. Neither is part of the B/C execution sequence. Empirical leaderboard acquisition/assembly was retired and its unused extractor removed. Historical plans remain in SAP/DECISIONS for auditability.
+
+The dependent latent model, secondary derivative-source comparisons, alternate prevalence priors/orientations, uncertain-parameter correction and larger simulation grids were not run. See [CHECKS.md](CHECKS.md) and [DECISIONS.md](DECISIONS.md) for execution evidence and limits.

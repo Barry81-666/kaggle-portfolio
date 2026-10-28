@@ -1,0 +1,2929 @@
+variant,finding,statistic,estimate
+threshold_03,ACL,positive|Dread,0.129914922970798
+threshold_03,ACL,positive|Steven,0.239277652370203
+threshold_03,ACL,positive|Pilkwang,0.298649324662331
+threshold_03,ACL,positive|Yunus,0.191331110541164
+threshold_03,ACL,positive|Lixin,0.208323752586802
+threshold_03,ACL,missing|Dread,0
+threshold_03,ACL,missing|Steven,0.0832375258680156
+threshold_03,ACL,missing|Pilkwang,0.0807082087836284
+threshold_03,ACL,missing|Yunus,0.103472062543113
+threshold_03,ACL,missing|Lixin,0
+threshold_03,ACL,agreement|Dread|Steven,0.896162528216704
+threshold_03,ACL,kappa|Dread|Steven,0.668294429794576
+threshold_03,ACL,pabak|Dread|Steven,0.792325056433409
+threshold_03,ACL,agreement|Dread|Pilkwang,0.839669834917459
+threshold_03,ACL,kappa|Dread|Pilkwang,0.549076217144309
+threshold_03,ACL,pabak|Dread|Pilkwang,0.679339669834917
+threshold_03,ACL,agreement|Dread|Yunus,0.947422416004104
+threshold_03,ACL,kappa|Dread|Yunus,0.812539064378095
+threshold_03,ACL,pabak|Dread|Yunus,0.894844832008207
+threshold_03,ACL,agreement|Dread|Lixin,0.913313405380547
+threshold_03,ACL,kappa|Dread|Lixin,0.694883633855076
+threshold_03,ACL,pabak|Dread|Lixin,0.826626810761095
+threshold_03,ACL,agreement|Steven|Pilkwang,0.941959798994975
+threshold_03,ACL,kappa|Steven|Pilkwang,0.852582287297942
+threshold_03,ACL,pabak|Steven|Pilkwang,0.88391959798995
+threshold_03,ACL,agreement|Steven|Yunus,0.945820433436533
+threshold_03,ACL,kappa|Steven|Yunus,0.837385964800123
+threshold_03,ACL,pabak|Steven|Yunus,0.891640866873065
+threshold_03,ACL,agreement|Steven|Lixin,0.970403812390268
+threshold_03,ACL,kappa|Steven|Lixin,0.917215407176544
+threshold_03,ACL,pabak|Steven|Lixin,0.940807624780537
+threshold_03,ACL,agreement|Pilkwang|Yunus,0.9109853357345
+threshold_03,ACL,kappa|Pilkwang|Yunus,0.755957874352515
+threshold_03,ACL,pabak|Pilkwang|Yunus,0.821970671468999
+threshold_03,ACL,agreement|Pilkwang|Lixin,0.926213106553277
+threshold_03,ACL,kappa|Pilkwang|Lixin,0.810708717629042
+threshold_03,ACL,pabak|Pilkwang|Lixin,0.852426213106553
+threshold_03,ACL,agreement|Yunus|Lixin,0.951013080276994
+threshold_03,ACL,kappa|Yunus|Lixin,0.849912280259783
+threshold_03,ACL,pabak|Yunus|Lixin,0.902026160553988
+threshold_03,ACL,fleiss|all,0.795043965583839
+threshold_03,ACL,joint_disagreement|Dread|Steven,0.00665247472059606
+threshold_03,ACL,disagreement_phi|Dread|Steven,0.296749807017183
+threshold_03,ACL,joint_disagreement|Dread|Pilkwang,0.0061153948417974
+threshold_03,ACL,disagreement_phi|Dread|Pilkwang,0.0522254064025333
+threshold_03,ACL,joint_disagreement|Dread|Yunus,0.0348468848996832
+threshold_03,ACL,disagreement_phi|Dread|Yunus,0.659585933090116
+threshold_03,ACL,joint_disagreement|Dread|Lixin,0.00776887594076232
+threshold_03,ACL,disagreement_phi|Dread|Lixin,0.304282115212712
+threshold_03,ACL,joint_disagreement|Steven|Pilkwang,0.0168820891585334
+threshold_03,ACL,disagreement_phi|Steven|Pilkwang,0.490184041558276
+threshold_03,ACL,joint_disagreement|Steven|Yunus,0
+threshold_03,ACL,disagreement_phi|Steven|Yunus,-0.000550130702857138
+threshold_03,ACL,joint_disagreement|Steven|Lixin,0.00426780474793278
+threshold_03,ACL,disagreement_phi|Steven|Lixin,0.699857688739278
+threshold_03,ACL,joint_disagreement|Pilkwang|Yunus,0.00572831423895254
+threshold_03,ACL,disagreement_phi|Pilkwang|Yunus,0.337660029205228
+threshold_03,ACL,joint_disagreement|Pilkwang|Lixin,0.00927643784786642
+threshold_03,ACL,disagreement_phi|Pilkwang|Lixin,0.339030559856314
+threshold_03,ACL,joint_disagreement|Yunus|Lixin,0.00109289617486339
+threshold_03,ACL,disagreement_phi|Yunus|Lixin,0.477044078051409
+threshold_03,MCL,positive|Dread,0.0492067141871695
+threshold_03,MCL,positive|Steven,0.173568507157464
+threshold_03,MCL,positive|Pilkwang,0.190828025477707
+threshold_03,MCL,positive|Yunus,0.068604947717419
+threshold_03,MCL,positive|Lixin,0.155438031731433
+threshold_03,MCL,missing|Dread,0
+threshold_03,MCL,missing|Steven,0.100482869625201
+threshold_03,MCL,missing|Pilkwang,0.097493676707289
+threshold_03,MCL,missing|Yunus,0.098413428374339
+threshold_03,MCL,missing|Lixin,0
+threshold_03,MCL,agreement|Dread|Steven,0.879601226993865
+threshold_03,MCL,kappa|Dread|Steven,0.424706600841013
+threshold_03,MCL,pabak|Dread|Steven,0.75920245398773
+threshold_03,MCL,agreement|Dread|Pilkwang,0.862675159235669
+threshold_03,MCL,kappa|Dread|Pilkwang,0.388421263510699
+threshold_03,MCL,pabak|Dread|Pilkwang,0.725350318471338
+threshold_03,MCL,agreement|Dread|Yunus,0.977811782708493
+threshold_03,MCL,kappa|Dread|Yunus,0.807484430950171
+threshold_03,MCL,pabak|Dread|Yunus,0.955623565416986
+threshold_03,MCL,agreement|Dread|Lixin,0.892848930788687
+threshold_03,MCL,kappa|Dread|Lixin,0.434103765076305
+threshold_03,MCL,pabak|Dread|Lixin,0.785697861577374
+threshold_03,MCL,agreement|Steven|Pilkwang,0.982005141388175
+threshold_03,MCL,kappa|Steven|Pilkwang,0.939661002527014
+threshold_03,MCL,pabak|Steven|Pilkwang,0.96401028277635
+threshold_03,MCL,agreement|Steven|Yunus,0.895130121102809
+threshold_03,MCL,kappa|Steven|Yunus,0.516260995446401
+threshold_03,MCL,pabak|Steven|Yunus,0.790260242205617
+threshold_03,MCL,agreement|Steven|Lixin,0.985940695296524
+threshold_03,MCL,kappa|Steven|Lixin,0.950850274713978
+threshold_03,MCL,pabak|Steven|Lixin,0.971881390593047
+threshold_03,MCL,agreement|Pilkwang|Yunus,0.879948586118252
+threshold_03,MCL,kappa|Pilkwang|Yunus,0.481111407534186
+threshold_03,MCL,pabak|Pilkwang|Yunus,0.759897172236504
+threshold_03,MCL,agreement|Pilkwang|Lixin,0.978853503184713
+threshold_03,MCL,kappa|Pilkwang|Lixin,0.928802045098558
+threshold_03,MCL,pabak|Pilkwang|Lixin,0.957707006369427
+threshold_03,MCL,agreement|Yunus|Lixin,0.895944912012242
+threshold_03,MCL,kappa|Yunus|Lixin,0.51488047044011
+threshold_03,MCL,pabak|Yunus|Lixin,0.791889824024484
+threshold_03,MCL,fleiss|all,0.661489551129711
+threshold_03,MCL,joint_disagreement|Dread|Steven,0.00085812356979405
+threshold_03,MCL,disagreement_phi|Dread|Steven,0.149037485060714
+threshold_03,MCL,joint_disagreement|Dread|Pilkwang,0.00085494442861214
+threshold_03,MCL,disagreement_phi|Dread|Pilkwang,0.0305722463777284
+threshold_03,MCL,joint_disagreement|Dread|Yunus,0.0948320413436693
+threshold_03,MCL,disagreement_phi|Dread|Yunus,0.895209470817106
+threshold_03,MCL,joint_disagreement|Dread|Lixin,0.00152632917832613
+threshold_03,MCL,disagreement_phi|Dread|Lixin,0.219272110622704
+threshold_03,MCL,joint_disagreement|Steven|Pilkwang,0.0071448985424407
+threshold_03,MCL,disagreement_phi|Steven|Pilkwang,0.57476630088166
+threshold_03,MCL,joint_disagreement|Steven|Yunus,0.000576701268742791
+threshold_03,MCL,disagreement_phi|Steven|Yunus,0.265793475771435
+threshold_03,MCL,joint_disagreement|Steven|Lixin,0.00085812356979405
+threshold_03,MCL,disagreement_phi|Steven|Lixin,0.547016431758339
+threshold_03,MCL,joint_disagreement|Pilkwang|Yunus,0.00114975567691865
+threshold_03,MCL,disagreement_phi|Pilkwang|Yunus,0.134569434124461
+threshold_03,MCL,joint_disagreement|Pilkwang|Lixin,0.00623582766439909
+threshold_03,MCL,disagreement_phi|Pilkwang|Lixin,0.52106943529087
+threshold_03,MCL,joint_disagreement|Yunus|Lixin,0.000855675984027382
+threshold_03,MCL,disagreement_phi|Yunus|Lixin,0.344924200661239
+threshold_03,Medial Meniscus,positive|Dread,0.523568636468154
+threshold_03,Medial Meniscus,positive|Steven,0.567185978578384
+threshold_03,Medial Meniscus,positive|Pilkwang,0.564496464277006
+threshold_03,Medial Meniscus,positive|Yunus,0.46151924037981
+threshold_03,Medial Meniscus,positive|Lixin,0.400091975166705
+threshold_03,Medial Meniscus,missing|Dread,0
+threshold_03,Medial Meniscus,missing|Steven,0.0554150379397562
+threshold_03,Medial Meniscus,missing|Pilkwang,0.0570246033570936
+threshold_03,Medial Meniscus,missing|Yunus,0.0797884571165786
+threshold_03,Medial Meniscus,missing|Lixin,0
+threshold_03,Medial Meniscus,agreement|Dread|Steven,0.937682570593963
+threshold_03,Medial Meniscus,kappa|Dread|Steven,0.873561947009052
+threshold_03,Medial Meniscus,pabak|Dread|Steven,0.875365141187926
+threshold_03,Medial Meniscus,agreement|Dread|Pilkwang,0.938307729821995
+threshold_03,Medial Meniscus,kappa|Dread|Pilkwang,0.874919786992346
+threshold_03,Medial Meniscus,pabak|Dread|Pilkwang,0.876615459643989
+threshold_03,Medial Meniscus,agreement|Dread|Yunus,0.887806096951524
+threshold_03,Medial Meniscus,kappa|Dread|Yunus,0.777095366669784
+threshold_03,Medial Meniscus,pabak|Dread|Yunus,0.775612193903049
+threshold_03,Medial Meniscus,agreement|Dread|Lixin,0.869165325362152
+threshold_03,Medial Meniscus,kappa|Dread|Lixin,0.740772260721877
+threshold_03,Medial Meniscus,pabak|Dread|Lixin,0.738330650724304
+threshold_03,Medial Meniscus,agreement|Steven|Pilkwang,0.967781303392726
+threshold_03,Medial Meniscus,kappa|Steven|Pilkwang,0.934428082033161
+threshold_03,Medial Meniscus,pabak|Steven|Pilkwang,0.935562606785453
+threshold_03,Medial Meniscus,agreement|Steven|Yunus,0.897095643465198
+threshold_03,Medial Meniscus,kappa|Steven|Yunus,0.7960029079702
+threshold_03,Medial Meniscus,pabak|Steven|Yunus,0.794191286930396
+threshold_03,Medial Meniscus,agreement|Steven|Lixin,0.855890944498539
+threshold_03,Medial Meniscus,kappa|Steven|Lixin,0.717583229204892
+threshold_03,Medial Meniscus,pabak|Steven|Lixin,0.711781888997079
+threshold_03,Medial Meniscus,agreement|Pilkwang|Yunus,0.9
+threshold_03,Medial Meniscus,kappa|Pilkwang|Yunus,0.80166322777116
+threshold_03,Medial Meniscus,pabak|Pilkwang|Yunus,0.8
+threshold_03,Medial Meniscus,agreement|Pilkwang|Lixin,0.859058766154596
+threshold_03,Medial Meniscus,kappa|Pilkwang|Lixin,0.723535097978932
+threshold_03,Medial Meniscus,pabak|Pilkwang|Lixin,0.718117532309193
+threshold_03,Medial Meniscus,agreement|Yunus|Lixin,0.949025487256372
+threshold_03,Medial Meniscus,kappa|Yunus|Lixin,0.896708181203755
+threshold_03,Medial Meniscus,pabak|Yunus|Lixin,0.898050974512744
+threshold_03,Medial Meniscus,fleiss|all,0.813751805833322
+threshold_03,Medial Meniscus,joint_disagreement|Dread|Steven,0.0132683455185486
+threshold_03,Medial Meniscus,disagreement_phi|Dread|Steven,0.517700143061068
+threshold_03,Medial Meniscus,joint_disagreement|Dread|Pilkwang,0.011400651465798
+threshold_03,Medial Meniscus,disagreement_phi|Dread|Pilkwang,0.500209958887235
+threshold_03,Medial Meniscus,joint_disagreement|Dread|Yunus,0.00225098480585256
+threshold_03,Medial Meniscus,disagreement_phi|Dread|Yunus,0.194450919742851
+threshold_03,Medial Meniscus,joint_disagreement|Dread|Lixin,0.0129737980157721
+threshold_03,Medial Meniscus,disagreement_phi|Dread|Lixin,0.298732066716002
+threshold_03,Medial Meniscus,joint_disagreement|Steven|Pilkwang,0.0217741935483871
+threshold_03,Medial Meniscus,disagreement_phi|Steven|Pilkwang,0.784390703261095
+threshold_03,Medial Meniscus,joint_disagreement|Steven|Yunus,0.00141083521444695
+threshold_03,Medial Meniscus,disagreement_phi|Steven|Yunus,0.226426603185784
+threshold_03,Medial Meniscus,joint_disagreement|Steven|Lixin,0.0035548263604047
+threshold_03,Medial Meniscus,disagreement_phi|Steven|Lixin,0.152944548131626
+threshold_03,Medial Meniscus,joint_disagreement|Pilkwang|Yunus,0.000565131393048884
+threshold_03,Medial Meniscus,disagreement_phi|Pilkwang|Yunus,0.117621497029696
+threshold_03,Medial Meniscus,joint_disagreement|Pilkwang|Lixin,0.0027382256297919
+threshold_03,Medial Meniscus,disagreement_phi|Pilkwang|Lixin,0.12823291843242
+threshold_03,Medial Meniscus,joint_disagreement|Yunus|Lixin,0.0670876085240726
+threshold_03,Medial Meniscus,disagreement_phi|Yunus|Lixin,0.767173819788658
+threshold_03,Lateral Meniscus,positive|Dread,0.239135433432973
+threshold_03,Lateral Meniscus,positive|Steven,0.284911922389584
+threshold_03,Lateral Meniscus,positive|Pilkwang,0.278742973939704
+threshold_03,Lateral Meniscus,positive|Yunus,0.184887042326668
+threshold_03,Lateral Meniscus,positive|Lixin,0.152218900896758
+threshold_03,Lateral Meniscus,missing|Dread,0
+threshold_03,Lateral Meniscus,missing|Steven,0.0993331800413888
+threshold_03,Lateral Meniscus,missing|Pilkwang,0.100022993791676
+threshold_03,Lateral Meniscus,missing|Yunus,0.114509082547712
+threshold_03,Lateral Meniscus,missing|Lixin,0
+threshold_03,Lateral Meniscus,agreement|Dread|Steven,0.957110033188665
+threshold_03,Lateral Meniscus,kappa|Dread|Steven,0.892481572288879
+threshold_03,Lateral Meniscus,pabak|Dread|Steven,0.91422006637733
+threshold_03,Lateral Meniscus,agreement|Dread|Pilkwang,0.95426673479816
+threshold_03,Lateral Meniscus,kappa|Dread|Pilkwang,0.884474730589002
+threshold_03,Lateral Meniscus,pabak|Dread|Pilkwang,0.908533469596321
+threshold_03,Lateral Meniscus,agreement|Dread|Yunus,0.909374188522462
+threshold_03,Lateral Meniscus,kappa|Dread|Yunus,0.736645476147881
+threshold_03,Lateral Meniscus,pabak|Dread|Yunus,0.818748377044923
+threshold_03,Lateral Meniscus,agreement|Dread|Lixin,0.903885950793286
+threshold_03,Lateral Meniscus,kappa|Dread|Lixin,0.698278749445232
+threshold_03,Lateral Meniscus,pabak|Dread|Lixin,0.807771901586572
+threshold_03,Lateral Meniscus,agreement|Steven|Pilkwang,0.980739599383667
+threshold_03,Lateral Meniscus,kappa|Steven|Pilkwang,0.952448994810338
+threshold_03,Lateral Meniscus,pabak|Steven|Pilkwang,0.961479198767334
+threshold_03,Lateral Meniscus,agreement|Steven|Yunus,0.91156462585034
+threshold_03,Lateral Meniscus,kappa|Steven|Yunus,0.752065297248497
+threshold_03,Lateral Meniscus,pabak|Steven|Yunus,0.82312925170068
+threshold_03,Lateral Meniscus,agreement|Steven|Lixin,0.88256318611182
+threshold_03,Lateral Meniscus,kappa|Steven|Lixin,0.671610737105242
+threshold_03,Lateral Meniscus,pabak|Steven|Lixin,0.765126372223641
+threshold_03,Lateral Meniscus,agreement|Pilkwang|Yunus,0.916688498821064
+threshold_03,Lateral Meniscus,kappa|Pilkwang|Yunus,0.764700796578272
+threshold_03,Lateral Meniscus,pabak|Pilkwang|Yunus,0.833376997642127
+threshold_03,Lateral Meniscus,agreement|Pilkwang|Lixin,0.888605007664793
+threshold_03,Lateral Meniscus,kappa|Pilkwang|Lixin,0.684857653499724
+threshold_03,Lateral Meniscus,pabak|Pilkwang|Lixin,0.777210015329586
+threshold_03,Lateral Meniscus,agreement|Yunus|Lixin,0.964684497533108
+threshold_03,Lateral Meniscus,kappa|Yunus|Lixin,0.875676114505893
+threshold_03,Lateral Meniscus,pabak|Yunus|Lixin,0.929368995066216
+threshold_03,Lateral Meniscus,fleiss|all,0.79281397970023
+threshold_03,Lateral Meniscus,joint_disagreement|Dread|Steven,0.0103064066852368
+threshold_03,Lateral Meniscus,disagreement_phi|Dread|Steven,0.547875729301427
+threshold_03,Lateral Meniscus,joint_disagreement|Dread|Pilkwang,0.00642817216321968
+threshold_03,Lateral Meniscus,disagreement_phi|Dread|Pilkwang,0.468063805440387
+threshold_03,Lateral Meniscus,joint_disagreement|Dread|Yunus,0.00085665334094803
+threshold_03,Lateral Meniscus,disagreement_phi|Dread|Yunus,0.102491090426927
+threshold_03,Lateral Meniscus,joint_disagreement|Dread|Lixin,0.00846192135390742
+threshold_03,Lateral Meniscus,disagreement_phi|Dread|Lixin,0.312226559193453
+threshold_03,Lateral Meniscus,joint_disagreement|Steven|Pilkwang,0.0175048624617949
+threshold_03,Lateral Meniscus,disagreement_phi|Steven|Pilkwang,0.831062044747451
+threshold_03,Lateral Meniscus,joint_disagreement|Steven|Yunus,0.000576036866359447
+threshold_03,Lateral Meniscus,disagreement_phi|Steven|Yunus,0.121204122060815
+threshold_03,Lateral Meniscus,joint_disagreement|Steven|Lixin,0.00308641975308642
+threshold_03,Lateral Meniscus,disagreement_phi|Steven|Lixin,0.186252958768142
+threshold_03,Lateral Meniscus,joint_disagreement|Pilkwang|Yunus,0.000864553314121038
+threshold_03,Lateral Meniscus,disagreement_phi|Pilkwang|Yunus,0.203694654289595
+threshold_03,Lateral Meniscus,joint_disagreement|Pilkwang|Lixin,0.00308468872686484
+threshold_03,Lateral Meniscus,disagreement_phi|Pilkwang|Lixin,0.213784992693875
+threshold_03,Lateral Meniscus,joint_disagreement|Yunus|Lixin,0.0599140247178936
+threshold_03,Lateral Meniscus,disagreement_phi|Yunus|Lixin,0.805621753286684
+threshold_03,Medial OA,positive|Dread,0.246493446769372
+threshold_03,Medial OA,positive|Steven,0.475064860190257
+threshold_03,Medial OA,positive|Pilkwang,0.493205682520074
+threshold_03,Medial OA,positive|Yunus,0.318952692650997
+threshold_03,Medial OA,positive|Lixin,0.373419176822258
+threshold_03,Medial OA,missing|Dread,0
+threshold_03,Medial OA,missing|Steven,0.202345366750977
+threshold_03,Medial OA,missing|Pilkwang,0.255461025523109
+threshold_03,Medial OA,missing|Yunus,0.227178661761324
+threshold_03,Medial OA,missing|Lixin,0
+threshold_03,Medial OA,agreement|Dread|Steven,0.827616027673681
+threshold_03,Medial OA,kappa|Dread|Steven,0.648434287953269
+threshold_03,Medial OA,pabak|Dread|Steven,0.655232055347362
+threshold_03,Medial OA,agreement|Dread|Pilkwang,0.827980234712786
+threshold_03,Medial OA,kappa|Dread|Pilkwang,0.654321200614398
+threshold_03,Medial OA,pabak|Dread|Pilkwang,0.655960469425571
+threshold_03,Medial OA,agreement|Dread|Yunus,0.929485272240405
+threshold_03,Medial OA,kappa|Dread|Yunus,0.837245662187037
+threshold_03,Medial OA,pabak|Dread|Yunus,0.858970544480809
+threshold_03,Medial OA,agreement|Dread|Lixin,0.863876753276615
+threshold_03,Medial OA,kappa|Dread|Lixin,0.687663107141921
+threshold_03,Medial OA,pabak|Dread|Lixin,0.727753506553231
+threshold_03,Medial OA,agreement|Steven|Pilkwang,0.990348692403487
+threshold_03,Medial OA,kappa|Steven|Pilkwang,0.980693297759715
+threshold_03,Medial OA,pabak|Steven|Pilkwang,0.980697384806974
+threshold_03,Medial OA,agreement|Steven|Yunus,0.814455569461827
+threshold_03,Medial OA,kappa|Steven|Yunus,0.631874761572893
+threshold_03,Medial OA,pabak|Steven|Yunus,0.628911138923655
+threshold_03,Medial OA,agreement|Steven|Lixin,0.983280484289421
+threshold_03,Medial OA,kappa|Steven|Lixin,0.966446648700571
+threshold_03,Medial OA,pabak|Steven|Lixin,0.966560968578841
+threshold_03,Medial OA,agreement|Pilkwang|Yunus,0.815217391304348
+threshold_03,Medial OA,kappa|Pilkwang|Yunus,0.635628247520076
+threshold_03,Medial OA,pabak|Pilkwang|Yunus,0.630434782608696
+threshold_03,Medial OA,agreement|Pilkwang|Lixin,0.983014206300185
+threshold_03,Medial OA,kappa|Pilkwang|Lixin,0.9660132939185
+threshold_03,Medial OA,pabak|Pilkwang|Lixin,0.966028412600371
+threshold_03,Medial OA,agreement|Yunus|Lixin,0.822076762868194
+threshold_03,Medial OA,kappa|Yunus|Lixin,0.639296006638792
+threshold_03,Medial OA,pabak|Yunus|Lixin,0.644153525736388
+threshold_03,Medial OA,fleiss|all,0.760754560486594
+threshold_03,Medial OA,joint_disagreement|Dread|Steven,0.00963135171039522
+threshold_03,Medial OA,disagreement_phi|Dread|Steven,0.361464717546145
+threshold_03,Medial OA,joint_disagreement|Dread|Pilkwang,0.001078360891445
+threshold_03,Medial OA,disagreement_phi|Dread|Pilkwang,0.0584295942184966
+threshold_03,Medial OA,joint_disagreement|Dread|Yunus,0.13591060102688
+threshold_03,Medial OA,disagreement_phi|Dread|Yunus,0.769973496576077
+threshold_03,Medial OA,joint_disagreement|Dread|Lixin,0.00981404958677686
+threshold_03,Medial OA,disagreement_phi|Dread|Lixin,0.445072135109446
+threshold_03,Medial OA,joint_disagreement|Steven|Pilkwang,0.00504686373467916
+threshold_03,Medial OA,disagreement_phi|Steven|Pilkwang,0.63958010146332
+threshold_03,Medial OA,joint_disagreement|Steven|Yunus,0.0102040816326531
+threshold_03,Medial OA,disagreement_phi|Steven|Yunus,0.348313243186901
+threshold_03,Medial OA,joint_disagreement|Steven|Lixin,0.0116009280742459
+threshold_03,Medial OA,disagreement_phi|Steven|Lixin,0.733694113728016
+threshold_03,Medial OA,joint_disagreement|Pilkwang|Yunus,0.00154738878143133
+threshold_03,Medial OA,disagreement_phi|Pilkwang|Yunus,0.0781886406290585
+threshold_03,Medial OA,joint_disagreement|Pilkwang|Lixin,0.00322812051649928
+threshold_03,Medial OA,disagreement_phi|Pilkwang|Lixin,0.441568590719733
+threshold_03,Medial OA,joint_disagreement|Yunus|Lixin,0.0110611821638438
+threshold_03,Medial OA,disagreement_phi|Yunus|Lixin,0.402005125070884
+threshold_03,Lateral OA,positive|Dread,0.149229707978846
+threshold_03,Lateral OA,positive|Steven,0.383841463414634
+threshold_03,Lateral OA,positive|Pilkwang,0.367536032944406
+threshold_03,Lateral OA,positive|Yunus,0.203738910012674
+threshold_03,Lateral OA,positive|Lixin,0.274085996780869
+threshold_03,Lateral OA,missing|Dread,0
+threshold_03,Lateral OA,missing|Steven,0.245803633019085
+threshold_03,Lateral OA,missing|Pilkwang,0.32996091055415
+threshold_03,Lateral OA,missing|Yunus,0.274315934697632
+threshold_03,Lateral OA,missing|Lixin,0
+threshold_03,Lateral OA,agreement|Dread|Steven,0.808231707317073
+threshold_03,Lateral OA,kappa|Dread|Steven,0.553313858979233
+threshold_03,Lateral OA,pabak|Dread|Steven,0.616463414634146
+threshold_03,Lateral OA,agreement|Dread|Pilkwang,0.835621139327385
+threshold_03,Lateral OA,kappa|Dread|Pilkwang,0.611559438274728
+threshold_03,Lateral OA,pabak|Dread|Pilkwang,0.67124227865477
+threshold_03,Lateral OA,agreement|Dread|Yunus,0.931558935361217
+threshold_03,Lateral OA,kappa|Dread|Yunus,0.788079799599472
+threshold_03,Lateral OA,pabak|Dread|Yunus,0.863117870722433
+threshold_03,Lateral OA,agreement|Dread|Lixin,0.865026442860428
+threshold_03,Lateral OA,kappa|Dread|Lixin,0.604776714727138
+threshold_03,Lateral OA,pabak|Dread|Lixin,0.730052885720856
+threshold_03,Lateral OA,agreement|Steven|Pilkwang,0.987081005586592
+threshold_03,Lateral OA,kappa|Steven|Pilkwang,0.972435377858612
+threshold_03,Lateral OA,pabak|Steven|Pilkwang,0.974162011173184
+threshold_03,Lateral OA,agreement|Steven|Yunus,0.80413419179939
+threshold_03,Lateral OA,kappa|Steven|Yunus,0.560443021012007
+threshold_03,Lateral OA,pabak|Steven|Yunus,0.60826838359878
+threshold_03,Lateral OA,agreement|Steven|Lixin,0.965548780487805
+threshold_03,Lateral OA,kappa|Steven|Lixin,0.926294773181034
+threshold_03,Lateral OA,pabak|Steven|Lixin,0.93109756097561
+threshold_03,Lateral OA,agreement|Pilkwang|Yunus,0.820817843866171
+threshold_03,Lateral OA,kappa|Pilkwang|Yunus,0.592869613273547
+threshold_03,Lateral OA,pabak|Pilkwang|Yunus,0.641635687732342
+threshold_03,Lateral OA,agreement|Pilkwang|Lixin,0.981125600549073
+threshold_03,Lateral OA,kappa|Pilkwang|Lixin,0.959425542440017
+threshold_03,Lateral OA,pabak|Pilkwang|Lixin,0.962251201098147
+threshold_03,Lateral OA,agreement|Yunus|Lixin,0.82256020278834
+threshold_03,Lateral OA,kappa|Yunus|Lixin,0.578487241998255
+threshold_03,Lateral OA,pabak|Yunus|Lixin,0.645120405576679
+threshold_03,Lateral OA,fleiss|all,0.732132058193379
+threshold_03,Lateral OA,joint_disagreement|Dread|Steven,0.0176740897843761
+threshold_03,Lateral OA,disagreement_phi|Dread|Steven,0.4018504848067
+threshold_03,Lateral OA,joint_disagreement|Dread|Pilkwang,0.00279552715654952
+threshold_03,Lateral OA,disagreement_phi|Dread|Pilkwang,0.216108355829201
+threshold_03,Lateral OA,joint_disagreement|Dread|Yunus,0.135309278350515
+threshold_03,Lateral OA,disagreement_phi|Dread|Yunus,0.779833569474109
+threshold_03,Lateral OA,joint_disagreement|Dread|Lixin,0.0136703636832603
+threshold_03,Lateral OA,disagreement_phi|Dread|Lixin,0.497728965702812
+threshold_03,Lateral OA,joint_disagreement|Steven|Pilkwang,0.00608025942440211
+threshold_03,Lateral OA,disagreement_phi|Steven|Pilkwang,0.712660721368384
+threshold_03,Lateral OA,joint_disagreement|Steven|Yunus,0.0177025963808025
+threshold_03,Lateral OA,disagreement_phi|Steven|Yunus,0.385660286082986
+threshold_03,Lateral OA,joint_disagreement|Steven|Lixin,0.0211342021838676
+threshold_03,Lateral OA,disagreement_phi|Steven|Lixin,0.663401170878849
+threshold_03,Lateral OA,joint_disagreement|Pilkwang|Yunus,0.0017520805957074
+threshold_03,Lateral OA,disagreement_phi|Pilkwang|Yunus,0.141241747621667
+threshold_03,Lateral OA,joint_disagreement|Pilkwang|Lixin,0.00398883127243718
+threshold_03,Lateral OA,disagreement_phi|Pilkwang|Lixin,0.523551148040908
+threshold_03,Lateral OA,joint_disagreement|Yunus|Lixin,0.0175695461200586
+threshold_03,Lateral OA,disagreement_phi|Yunus|Lixin,0.480940360588677
+threshold_03,PF OA,positive|Dread,0.33547942055645
+threshold_03,PF OA,positive|Steven,0.561666666666667
+threshold_03,PF OA,positive|Pilkwang,0.554396843291996
+threshold_03,PF OA,positive|Yunus,0.373829122906614
+threshold_03,PF OA,positive|Lixin,0.459415957691423
+threshold_03,PF OA,missing|Dread,0
+threshold_03,PF OA,missing|Steven,0.172223499655093
+threshold_03,PF OA,missing|Pilkwang,0.184180271326742
+threshold_03,PF OA,missing|Yunus,0.189928719245804
+threshold_03,PF OA,missing|Lixin,0
+threshold_03,PF OA,agreement|Dread|Steven,0.838611111111111
+threshold_03,PF OA,kappa|Dread|Steven,0.684760531946256
+threshold_03,PF OA,pabak|Dread|Steven,0.677222222222222
+threshold_03,PF OA,agreement|Dread|Pilkwang,0.846110484780158
+threshold_03,PF OA,kappa|Dread|Pilkwang,0.698416835033818
+threshold_03,PF OA,pabak|Dread|Pilkwang,0.692220969560316
+threshold_03,PF OA,agreement|Dread|Yunus,0.922793074084587
+threshold_03,PF OA,kappa|Dread|Yunus,0.838203983441107
+threshold_03,PF OA,pabak|Dread|Yunus,0.845586148169174
+threshold_03,PF OA,agreement|Dread|Lixin,0.867785697861577
+threshold_03,PF OA,kappa|Dread|Lixin,0.728315339445168
+threshold_03,PF OA,pabak|Dread|Lixin,0.735571395723155
+threshold_03,PF OA,agreement|Steven|Pilkwang,0.994571428571428
+threshold_03,PF OA,kappa|Steven|Pilkwang,0.988978891843319
+threshold_03,PF OA,pabak|Steven|Pilkwang,0.989142857142857
+threshold_03,PF OA,agreement|Steven|Yunus,0.796884185773075
+threshold_03,PF OA,kappa|Steven|Yunus,0.60950607821699
+threshold_03,PF OA,pabak|Steven|Yunus,0.593768371546149
+threshold_03,PF OA,agreement|Steven|Lixin,0.989166666666667
+threshold_03,PF OA,kappa|Steven|Lixin,0.978042971968194
+threshold_03,PF OA,pabak|Steven|Lixin,0.978333333333333
+threshold_03,PF OA,agreement|Pilkwang|Yunus,0.801310694072088
+threshold_03,PF OA,kappa|Pilkwang|Yunus,0.617172041674225
+threshold_03,PF OA,pabak|Pilkwang|Yunus,0.602621388144176
+threshold_03,PF OA,agreement|Pilkwang|Lixin,0.991826381059752
+threshold_03,PF OA,kappa|Pilkwang|Lixin,0.983457984193028
+threshold_03,PF OA,pabak|Pilkwang|Lixin,0.983652762119504
+threshold_03,PF OA,agreement|Yunus|Lixin,0.802724950326426
+threshold_03,PF OA,kappa|Yunus|Lixin,0.617531130751107
+threshold_03,PF OA,pabak|Yunus|Lixin,0.605449900652853
+threshold_03,PF OA,fleiss|all,0.764007901270082
+threshold_03,PF OA,joint_disagreement|Dread|Steven,0.00450595429674928
+threshold_03,PF OA,disagreement_phi|Dread|Steven,0.291300356829539
+threshold_03,PF OA,joint_disagreement|Dread|Pilkwang,0.00195822454308094
+threshold_03,PF OA,disagreement_phi|Dread|Pilkwang,0.206654347717544
+threshold_03,PF OA,joint_disagreement|Dread|Yunus,0.138452754781616
+threshold_03,PF OA,disagreement_phi|Dread|Yunus,0.753307562125199
+threshold_03,PF OA,joint_disagreement|Dread|Lixin,0.00623862750194957
+threshold_03,PF OA,disagreement_phi|Dread|Lixin,0.455491362559009
+threshold_03,PF OA,joint_disagreement|Steven|Pilkwang,0.00099304865938431
+threshold_03,PF OA,disagreement_phi|Steven|Pilkwang,0.431719721567746
+threshold_03,PF OA,joint_disagreement|Steven|Yunus,0.00445205479452055
+threshold_03,PF OA,disagreement_phi|Steven|Yunus,0.159936314266779
+threshold_03,PF OA,joint_disagreement|Steven|Lixin,0.0064246707356248
+threshold_03,PF OA,disagreement_phi|Steven|Lixin,0.679821977361924
+threshold_03,PF OA,joint_disagreement|Pilkwang|Yunus,0.00208623087621697
+threshold_03,PF OA,disagreement_phi|Pilkwang|Yunus,0.118461543091509
+threshold_03,PF OA,joint_disagreement|Pilkwang|Lixin,0.00195822454308094
+threshold_03,PF OA,disagreement_phi|Pilkwang|Lixin,0.520436596089631
+threshold_03,PF OA,joint_disagreement|Yunus|Lixin,0.00625617385577873
+threshold_03,PF OA,disagreement_phi|Yunus|Lixin,0.248084877948233
+threshold_03,Effusion,positive|Dread,0.255690963439871
+threshold_03,Effusion,positive|Steven,0.665220719571319
+threshold_03,Effusion,positive|Pilkwang,0.667858054633648
+threshold_03,Effusion,positive|Yunus,0.277749096541043
+threshold_03,Effusion,positive|Lixin,0.593929638997471
+threshold_03,Effusion,missing|Dread,0
+threshold_03,Effusion,missing|Steven,0.0988733042078639
+threshold_03,Effusion,missing|Pilkwang,0.0993331800413888
+threshold_03,Effusion,missing|Yunus,0.109220510462175
+threshold_03,Effusion,missing|Lixin,0
+threshold_03,Effusion,agreement|Dread|Steven,0.616738964021434
+threshold_03,Effusion,kappa|Dread|Steven,0.329428230840247
+threshold_03,Effusion,pabak|Dread|Steven,0.233477928042868
+threshold_03,Effusion,agreement|Dread|Pilkwang,0.613479703854991
+threshold_03,Effusion,kappa|Dread|Pilkwang,0.325117995198027
+threshold_03,Effusion,pabak|Dread|Pilkwang,0.226959407709982
+threshold_03,Effusion,agreement|Dread|Yunus,0.957150232318017
+threshold_03,Effusion,kappa|Dread|Yunus,0.893986681323058
+threshold_03,Effusion,pabak|Dread|Yunus,0.914300464636035
+threshold_03,Effusion,agreement|Dread|Lixin,0.657622441940676
+threshold_03,Effusion,kappa|Dread|Lixin,0.372815089022595
+threshold_03,Effusion,pabak|Dread|Lixin,0.315244883881352
+threshold_03,Effusion,agreement|Steven|Pilkwang,0.995144390493228
+threshold_03,Effusion,kappa|Steven|Pilkwang,0.98907985511093
+threshold_03,Effusion,pabak|Steven|Pilkwang,0.990288780986455
+threshold_03,Effusion,agreement|Steven|Yunus,0.604765604765605
+threshold_03,Effusion,kappa|Steven|Yunus,0.314604009806983
+threshold_03,Effusion,pabak|Steven|Yunus,0.20953120953121
+threshold_03,Effusion,agreement|Steven|Lixin,0.991069150293442
+threshold_03,Effusion,kappa|Steven|Lixin,0.980043336796572
+threshold_03,Effusion,pabak|Steven|Lixin,0.982138300586884
+threshold_03,Effusion,agreement|Pilkwang|Yunus,0.601607050285122
+threshold_03,Effusion,kappa|Pilkwang|Yunus,0.310771144134039
+threshold_03,Effusion,pabak|Pilkwang|Yunus,0.203214100570244
+threshold_03,Effusion,agreement|Pilkwang|Lixin,0.989532805718662
+threshold_03,Effusion,kappa|Pilkwang|Lixin,0.976555959386455
+threshold_03,Effusion,pabak|Pilkwang|Lixin,0.979065611437324
+threshold_03,Effusion,agreement|Yunus|Lixin,0.608415074858028
+threshold_03,Effusion,kappa|Yunus|Lixin,0.316575281452891
+threshold_03,Effusion,pabak|Yunus|Lixin,0.216830149716056
+threshold_03,Effusion,fleiss|all,0.51646201799839
+threshold_03,Effusion,joint_disagreement|Dread|Steven,0.000805152979066023
+threshold_03,Effusion,disagreement_phi|Dread|Steven,0.101722614729913
+threshold_03,Effusion,joint_disagreement|Dread|Pilkwang,0
+threshold_03,Effusion,disagreement_phi|Dread|Pilkwang,-0.0117032335917121
+threshold_03,Effusion,joint_disagreement|Dread|Yunus,0.366874674987
+threshold_03,Effusion,disagreement_phi|Dread|Yunus,0.912456867578493
+threshold_03,Effusion,joint_disagreement|Dread|Lixin,0.000687049124012367
+threshold_03,Effusion,disagreement_phi|Dread|Lixin,0.0720410589753497
+threshold_03,Effusion,joint_disagreement|Steven|Pilkwang,0.00800640512409928
+threshold_03,Effusion,disagreement_phi|Steven|Pilkwang,0.751278490104078
+threshold_03,Effusion,joint_disagreement|Steven|Yunus,0.000824402308326463
+threshold_03,Effusion,disagreement_phi|Steven|Yunus,0.0971280820426597
+threshold_03,Effusion,joint_disagreement|Steven|Lixin,0.00120724346076459
+threshold_03,Effusion,disagreement_phi|Steven|Lixin,0.40651815021953
+threshold_03,Effusion,joint_disagreement|Pilkwang|Yunus,0.000412541254125413
+threshold_03,Effusion,disagreement_phi|Pilkwang|Yunus,0.0147398609151915
+threshold_03,Effusion,joint_disagreement|Pilkwang|Lixin,0.00120772946859903
+threshold_03,Effusion,disagreement_phi|Pilkwang|Lixin,0.270704807229551
+threshold_03,Effusion,joint_disagreement|Yunus|Lixin,0.00123051681706317
+threshold_03,Effusion,disagreement_phi|Yunus|Lixin,0.0865680994259659
+threshold_03,Synovitis,positive|Dread,0.984594159576914
+threshold_03,Synovitis,positive|Steven,0.78601997146933
+threshold_03,Synovitis,positive|Pilkwang,0.831858407079646
+threshold_03,Synovitis,positive|Yunus,0.461263408820024
+threshold_03,Synovitis,positive|Lixin,0.124626350885261
+threshold_03,Synovitis,missing|Dread,0
+threshold_03,Synovitis,missing|Steven,0.838813520349506
+threshold_03,Synovitis,missing|Pilkwang,0.844102092435043
+threshold_03,Synovitis,missing|Yunus,0.807082087836284
+threshold_03,Synovitis,missing|Lixin,0
+threshold_03,Synovitis,agreement|Dread|Steven,0.861626248216833
+threshold_03,Synovitis,kappa|Dread|Steven,0.46206181815305
+threshold_03,Synovitis,pabak|Dread|Steven,0.723252496433666
+threshold_03,Synovitis,agreement|Dread|Pilkwang,0.904129793510324
+threshold_03,Synovitis,kappa|Dread|Pilkwang,0.556380986893761
+threshold_03,Synovitis,pabak|Dread|Pilkwang,0.808259587020649
+threshold_03,Synovitis,agreement|Dread|Yunus,0.510131108462455
+threshold_03,Synovitis,kappa|Dread|Yunus,0.0842727511731106
+threshold_03,Synovitis,pabak|Dread|Yunus,0.0202622169249107
+threshold_03,Synovitis,agreement|Dread|Lixin,0.140032191308347
+threshold_03,Synovitis,kappa|Dread|Lixin,0.00444537262098988
+threshold_03,Synovitis,pabak|Dread|Lixin,-0.719935617383307
+threshold_03,Synovitis,agreement|Steven|Pilkwang,1
+threshold_03,Synovitis,kappa|Steven|Pilkwang,1
+threshold_03,Synovitis,pabak|Steven|Pilkwang,1
+threshold_03,Synovitis,agreement|Steven|Yunus,0.697792869269949
+threshold_03,Synovitis,kappa|Steven|Yunus,0.274961618788122
+threshold_03,Synovitis,pabak|Steven|Yunus,0.395585738539898
+threshold_03,Synovitis,agreement|Steven|Lixin,0.977175463623395
+threshold_03,Synovitis,kappa|Steven|Lixin,0.934682848424142
+threshold_03,Synovitis,pabak|Steven|Lixin,0.95435092724679
+threshold_03,Synovitis,agreement|Pilkwang|Yunus,0.684474123539232
+threshold_03,Synovitis,kappa|Pilkwang|Yunus,0.251660794669593
+threshold_03,Synovitis,pabak|Pilkwang|Yunus,0.368948247078464
+threshold_03,Synovitis,agreement|Pilkwang|Lixin,0.958702064896755
+threshold_03,Synovitis,kappa|Pilkwang|Lixin,0.865544790073092
+threshold_03,Synovitis,pabak|Pilkwang|Lixin,0.91740412979351
+threshold_03,Synovitis,agreement|Yunus|Lixin,0.749702026221693
+threshold_03,Synovitis,kappa|Yunus|Lixin,0.509148957509166
+threshold_03,Synovitis,pabak|Yunus|Lixin,0.499404052443385
+threshold_03,Synovitis,fleiss|all,0.479438635851941
+threshold_03,Synovitis,joint_disagreement|Dread|Steven,0.00636942675159236
+threshold_03,Synovitis,disagreement_phi|Dread|Steven,0.35135328590131
+threshold_03,Synovitis,joint_disagreement|Dread|Pilkwang,0.0237341772151899
+threshold_03,Synovitis,disagreement_phi|Dread|Pilkwang,0.599837903549656
+threshold_03,Synovitis,joint_disagreement|Dread|Yunus,0.0308441558441558
+threshold_03,Synovitis,disagreement_phi|Dread|Yunus,0.0974530480138555
+threshold_03,Synovitis,joint_disagreement|Dread|Lixin,0.837284751684552
+threshold_03,Synovitis,disagreement_phi|Dread|Lixin,0.95873669907229
+threshold_03,Synovitis,joint_disagreement|Steven|Pilkwang,0
+threshold_03,Synovitis,disagreement_phi|Steven|Pilkwang,
+threshold_03,Synovitis,joint_disagreement|Steven|Yunus,0.0067911714770798
+threshold_03,Synovitis,disagreement_phi|Steven|Yunus,0.12565013872253
+threshold_03,Synovitis,joint_disagreement|Steven|Lixin,0.00636942675159236
+threshold_03,Synovitis,disagreement_phi|Steven|Lixin,0.550685425510629
+threshold_03,Synovitis,joint_disagreement|Pilkwang|Yunus,0.0250417362270451
+threshold_03,Synovitis,disagreement_phi|Pilkwang|Yunus,0.236047949547879
+threshold_03,Synovitis,joint_disagreement|Pilkwang|Lixin,0.0237341772151899
+threshold_03,Synovitis,disagreement_phi|Pilkwang|Lixin,0.821025459631548
+threshold_03,Synovitis,joint_disagreement|Yunus|Lixin,0.0308441558441558
+threshold_03,Synovitis,disagreement_phi|Yunus|Lixin,0.163817778490532
+threshold_03,Baker's,positive|Dread,0.122326971717636
+threshold_03,Baker's,positive|Steven,0.476507092198582
+threshold_03,Baker's,positive|Pilkwang,0.466242038216561
+threshold_03,Baker's,positive|Yunus,0.320524412296564
+threshold_03,Baker's,positive|Lixin,0.246953322602897
+threshold_03,Baker's,missing|Dread,0
+threshold_03,Baker's,missing|Steven,0.481260059783858
+threshold_03,Baker's,missing|Pilkwang,0.458496206024373
+threshold_03,Baker's,missing|Yunus,0.491377328121407
+threshold_03,Baker's,missing|Lixin,0
+threshold_03,Baker's,agreement|Dread|Steven,0.757978723404255
+threshold_03,Baker's,kappa|Dread|Steven,0.503571149336994
+threshold_03,Baker's,pabak|Dread|Steven,0.515957446808511
+threshold_03,Baker's,agreement|Dread|Pilkwang,0.758811040339703
+threshold_03,Baker's,kappa|Dread|Pilkwang,0.499022493876542
+threshold_03,Baker's,pabak|Dread|Pilkwang,0.517622080679406
+threshold_03,Baker's,agreement|Dread|Yunus,0.909584086799277
+threshold_03,Baker's,kappa|Dread|Yunus,0.777502170158535
+threshold_03,Baker's,pabak|Dread|Yunus,0.819168173598554
+threshold_03,Baker's,agreement|Dread|Lixin,0.873534145780639
+threshold_03,Baker's,kappa|Dread|Lixin,0.590542778389656
+threshold_03,Baker's,pabak|Dread|Lixin,0.747068291561279
+threshold_03,Baker's,agreement|Steven|Pilkwang,0.995923913043478
+threshold_03,Baker's,kappa|Steven|Pilkwang,0.991843944851408
+threshold_03,Baker's,pabak|Steven|Pilkwang,0.991847826086957
+threshold_03,Baker's,agreement|Steven|Yunus,0.812471131639723
+threshold_03,Baker's,kappa|Steven|Yunus,0.62320807466995
+threshold_03,Baker's,pabak|Steven|Yunus,0.624942263279446
+threshold_03,Baker's,agreement|Steven|Lixin,0.996010638297872
+threshold_03,Baker's,kappa|Steven|Lixin,0.992002621678
+threshold_03,Baker's,pabak|Steven|Lixin,0.992021276595745
+threshold_03,Baker's,agreement|Pilkwang|Yunus,0.809111617312073
+threshold_03,Baker's,kappa|Pilkwang|Yunus,0.617138465906276
+threshold_03,Baker's,pabak|Pilkwang|Yunus,0.618223234624146
+threshold_03,Baker's,agreement|Pilkwang|Lixin,0.989384288747346
+threshold_03,Baker's,kappa|Pilkwang|Lixin,0.978640594950582
+threshold_03,Baker's,pabak|Pilkwang|Lixin,0.978768577494692
+threshold_03,Baker's,agreement|Yunus|Lixin,0.80244122965642
+threshold_03,Baker's,kappa|Yunus|Lixin,0.600211424185074
+threshold_03,Baker's,pabak|Yunus|Lixin,0.604882459312839
+threshold_03,Baker's,fleiss|all,0.708429531002084
+threshold_03,Baker's,joint_disagreement|Dread|Steven,0.00160944206008584
+threshold_03,Baker's,disagreement_phi|Dread|Steven,0.131477388826258
+threshold_03,Baker's,joint_disagreement|Dread|Pilkwang,0.00459183673469388
+threshold_03,Baker's,disagreement_phi|Dread|Pilkwang,0.149986610619995
+threshold_03,Baker's,joint_disagreement|Dread|Yunus,0.178913738019169
+threshold_03,Baker's,disagreement_phi|Dread|Yunus,0.776716454612039
+threshold_03,Baker's,joint_disagreement|Dread|Lixin,0.00329698199340604
+threshold_03,Baker's,disagreement_phi|Dread|Lixin,0.251343272443201
+threshold_03,Baker's,joint_disagreement|Steven|Pilkwang,0.00165198237885463
+threshold_03,Baker's,disagreement_phi|Steven|Pilkwang,0.653931094692299
+threshold_03,Baker's,joint_disagreement|Steven|Yunus,0
+threshold_03,Baker's,disagreement_phi|Steven|Yunus,
+threshold_03,Baker's,joint_disagreement|Steven|Lixin,0.00107353730542136
+threshold_03,Baker's,disagreement_phi|Steven|Lixin,0.816277181063244
+threshold_03,Baker's,joint_disagreement|Pilkwang|Yunus,0.00498891352549889
+threshold_03,Baker's,disagreement_phi|Pilkwang|Yunus,0.390402363885385
+threshold_03,Baker's,joint_disagreement|Pilkwang|Lixin,0.00560652395514781
+threshold_03,Baker's,disagreement_phi|Pilkwang|Lixin,0.697592577054371
+threshold_03,Baker's,joint_disagreement|Yunus|Lixin,0.00387596899224806
+threshold_03,Baker's,disagreement_phi|Yunus|Lixin,0.414427485074188
+threshold_03,Contusion,positive|Dread,0.273396183030582
+threshold_03,Contusion,positive|Steven,0.326876513317191
+threshold_03,Contusion,positive|Pilkwang,0.366250363055475
+threshold_03,Contusion,positive|Yunus,0.231921110299489
+threshold_03,Contusion,positive|Lixin,0.172223499655093
+threshold_03,Contusion,missing|Dread,0
+threshold_03,Contusion,missing|Steven,0.240285123016786
+threshold_03,Contusion,missing|Pilkwang,0.208323752586802
+threshold_03,Contusion,missing|Yunus,0.370429983904346
+threshold_03,Contusion,missing|Lixin,0
+threshold_03,Contusion,agreement|Dread|Steven,0.901029055690073
+threshold_03,Contusion,kappa|Dread|Steven,0.774072667595686
+threshold_03,Contusion,pabak|Dread|Steven,0.802058111380145
+threshold_03,Contusion,agreement|Dread|Pilkwang,0.889050246877723
+threshold_03,Contusion,kappa|Dread|Pilkwang,0.756016815807839
+threshold_03,Contusion,pabak|Dread|Pilkwang,0.778100493755446
+threshold_03,Contusion,agreement|Dread|Yunus,0.741782322863404
+threshold_03,Contusion,kappa|Dread|Yunus,0.421230261596079
+threshold_03,Contusion,pabak|Dread|Yunus,0.483564645726808
+threshold_03,Contusion,agreement|Dread|Lixin,0.860657622441941
+threshold_03,Contusion,kappa|Dread|Lixin,0.60352055890866
+threshold_03,Contusion,pabak|Dread|Lixin,0.721315244883881
+threshold_03,Contusion,agreement|Steven|Pilkwang,0.940603700097371
+threshold_03,Contusion,kappa|Steven|Pilkwang,0.869355104431712
+threshold_03,Contusion,pabak|Steven|Pilkwang,0.881207400194742
+threshold_03,Contusion,agreement|Steven|Yunus,0.788300835654596
+threshold_03,Contusion,kappa|Steven|Yunus,0.524993586832862
+threshold_03,Contusion,pabak|Steven|Yunus,0.576601671309192
+threshold_03,Contusion,agreement|Steven|Lixin,0.876513317191283
+threshold_03,Contusion,kappa|Steven|Lixin,0.693390492965435
+threshold_03,Contusion,pabak|Steven|Lixin,0.753026634382567
+threshold_03,Contusion,agreement|Pilkwang|Yunus,0.767185719711356
+threshold_03,Contusion,kappa|Pilkwang|Yunus,0.50638069475516
+threshold_03,Contusion,pabak|Pilkwang|Yunus,0.534371439422712
+threshold_03,Contusion,agreement|Pilkwang|Lixin,0.840546035434214
+threshold_03,Contusion,kappa|Pilkwang|Lixin,0.623701838861291
+threshold_03,Contusion,pabak|Pilkwang|Lixin,0.681092070868429
+threshold_03,Contusion,agreement|Yunus|Lixin,0.807523739956172
+threshold_03,Contusion,kappa|Yunus|Lixin,0.48601555782105
+threshold_03,Contusion,pabak|Yunus|Lixin,0.615047479912345
+threshold_03,Contusion,fleiss|all,0.653605967808957
+threshold_03,Contusion,joint_disagreement|Dread|Steven,0.021900269541779
+threshold_03,Contusion,disagreement_phi|Dread|Steven,0.507853229488103
+threshold_03,Contusion,joint_disagreement|Dread|Pilkwang,0.0437721274541358
+threshold_03,Contusion,disagreement_phi|Dread|Pilkwang,0.600308527346174
+threshold_03,Contusion,joint_disagreement|Dread|Yunus,0.0401170079398245
+threshold_03,Contusion,disagreement_phi|Dread|Yunus,0.277558328406159
+threshold_03,Contusion,joint_disagreement|Dread|Lixin,0.0387909319899244
+threshold_03,Contusion,disagreement_phi|Dread|Lixin,0.542624588993079
+threshold_03,Contusion,joint_disagreement|Steven|Pilkwang,0.0237752161383285
+threshold_03,Contusion,disagreement_phi|Steven|Pilkwang,0.729292156209844
+threshold_03,Contusion,joint_disagreement|Steven|Yunus,0.00734956361966008
+threshold_03,Contusion,disagreement_phi|Steven|Yunus,0.132014667287885
+threshold_03,Contusion,joint_disagreement|Steven|Lixin,0.0195879770347855
+threshold_03,Contusion,disagreement_phi|Steven|Lixin,0.500371664928509
+threshold_03,Contusion,joint_disagreement|Pilkwang|Yunus,0.0334491746307559
+threshold_03,Contusion,disagreement_phi|Pilkwang|Yunus,0.310279199462823
+threshold_03,Contusion,joint_disagreement|Pilkwang|Lixin,0.0350763234816499
+threshold_03,Contusion,disagreement_phi|Pilkwang|Lixin,0.544570805944446
+threshold_03,Contusion,joint_disagreement|Yunus|Lixin,0.0815673730507797
+threshold_03,Contusion,disagreement_phi|Yunus|Lixin,0.456029873076192
+threshold_03,Fracture,positive|Dread,0.0680616233616923
+threshold_03,Fracture,positive|Steven,0.126913779210314
+threshold_03,Fracture,positive|Pilkwang,0.156167284277395
+threshold_03,Fracture,positive|Yunus,0.0949138966760112
+threshold_03,Fracture,positive|Lixin,0.0687514371119798
+threshold_03,Fracture,missing|Dread,0
+threshold_03,Fracture,missing|Steven,0.429294090595539
+threshold_03,Fracture,missing|Pilkwang,0.565647275235686
+threshold_03,Fracture,missing|Yunus,0.425845021844102
+threshold_03,Fracture,missing|Lixin,0
+threshold_03,Fracture,agreement|Dread|Steven,0.987912973408541
+threshold_03,Fracture,kappa|Dread|Steven,0.943781116314046
+threshold_03,Fracture,pabak|Dread|Steven,0.975825946817083
+threshold_03,Fracture,agreement|Dread|Pilkwang,0.988883006881948
+threshold_03,Fracture,kappa|Dread|Pilkwang,0.957407767292592
+threshold_03,Fracture,pabak|Dread|Pilkwang,0.977766013763896
+threshold_03,Fracture,agreement|Dread|Yunus,0.983980776932319
+threshold_03,Fracture,kappa|Dread|Yunus,0.909827437087755
+threshold_03,Fracture,pabak|Dread|Yunus,0.967961553864638
+threshold_03,Fracture,agreement|Dread|Lixin,0.994711427914463
+threshold_03,Fracture,kappa|Dread|Lixin,0.95850616037935
+threshold_03,Fracture,pabak|Dread|Lixin,0.989422855828926
+threshold_03,Fracture,agreement|Steven|Pilkwang,0.994815294880104
+threshold_03,Fracture,kappa|Steven|Pilkwang,0.983279195710892
+threshold_03,Fracture,pabak|Steven|Pilkwang,0.989630589760207
+threshold_03,Fracture,agreement|Steven|Yunus,0.983466666666667
+threshold_03,Fracture,kappa|Steven|Yunus,0.927132342709285
+threshold_03,Fracture,pabak|Steven|Yunus,0.966933333333333
+threshold_03,Fracture,agreement|Steven|Lixin,0.990733279613215
+threshold_03,Fracture,kappa|Steven|Lixin,0.957198105158031
+threshold_03,Fracture,pabak|Steven|Lixin,0.98146655922643
+threshold_03,Fracture,agreement|Pilkwang|Yunus,0.98047138047138
+threshold_03,Fracture,kappa|Pilkwang|Yunus,0.928324270884825
+threshold_03,Fracture,pabak|Pilkwang|Yunus,0.960942760942761
+threshold_03,Fracture,agreement|Pilkwang|Lixin,0.994176813128639
+threshold_03,Fracture,kappa|Pilkwang|Lixin,0.977813558724827
+threshold_03,Fracture,pabak|Pilkwang|Lixin,0.988353626257279
+threshold_03,Fracture,agreement|Yunus|Lixin,0.987184621545855
+threshold_03,Fracture,kappa|Yunus|Lixin,0.927597480264732
+threshold_03,Fracture,pabak|Yunus|Lixin,0.97436924309171
+threshold_03,Fracture,fleiss|all,0.95608999869181
+threshold_03,Fracture,joint_disagreement|Dread|Steven,0.000811688311688312
+threshold_03,Fracture,disagreement_phi|Dread|Steven,0.228352622022009
+threshold_03,Fracture,joint_disagreement|Dread|Pilkwang,0.00053248136315229
+threshold_03,Fracture,disagreement_phi|Dread|Pilkwang,0.266334115397241
+threshold_03,Fracture,joint_disagreement|Dread|Yunus,0
+threshold_03,Fracture,disagreement_phi|Dread|Yunus,-0.00561445674942798
+threshold_03,Fracture,joint_disagreement|Dread|Lixin,0.000462214005084354
+threshold_03,Fracture,disagreement_phi|Dread|Lixin,0.248726207338405
+threshold_03,Fracture,joint_disagreement|Steven|Pilkwang,0.00195439739413681
+threshold_03,Fracture,disagreement_phi|Steven|Pilkwang,0.706414104989743
+threshold_03,Fracture,joint_disagreement|Steven|Yunus,0.000535905680600214
+threshold_03,Fracture,disagreement_phi|Steven|Yunus,0.116749340689201
+threshold_03,Fracture,joint_disagreement|Steven|Lixin,0.000811688311688312
+threshold_03,Fracture,disagreement_phi|Steven|Lixin,0.446213533659263
+threshold_03,Fracture,joint_disagreement|Pilkwang|Yunus,0.000677506775067751
+threshold_03,Fracture,disagreement_phi|Pilkwang|Yunus,0.202526415937631
+threshold_03,Fracture,joint_disagreement|Pilkwang|Lixin,0.00106439595529537
+threshold_03,Fracture,disagreement_phi|Pilkwang|Lixin,0.706729959000881
+threshold_03,Fracture,joint_disagreement|Yunus|Lixin,0.00080450522928399
+threshold_03,Fracture,disagreement_phi|Yunus|Lixin,0.276006990470449
+threshold_07,ACL,positive|Dread,0.129914922970798
+threshold_07,ACL,positive|Steven,0.229997491848508
+threshold_07,ACL,positive|Pilkwang,0.181340670335168
+threshold_07,ACL,positive|Yunus,0.117978968966402
+threshold_07,ACL,positive|Lixin,0.188549091745229
+threshold_07,ACL,missing|Dread,0
+threshold_07,ACL,missing|Steven,0.0832375258680156
+threshold_07,ACL,missing|Pilkwang,0.0807082087836284
+threshold_07,ACL,missing|Yunus,0.103472062543113
+threshold_07,ACL,missing|Lixin,0
+threshold_07,ACL,agreement|Dread|Steven,0.90494105843993
+threshold_07,ACL,kappa|Dread|Steven,0.689741705508677
+threshold_07,ACL,pabak|Dread|Steven,0.80988211687986
+threshold_07,ACL,agreement|Dread|Pilkwang,0.953476738369184
+threshold_07,ACL,kappa|Dread|Pilkwang,0.828584864124735
+threshold_07,ACL,pabak|Dread|Pilkwang,0.906953476738369
+threshold_07,ACL,agreement|Dread|Yunus,0.967940497563478
+threshold_07,ACL,kappa|Dread|Yunus,0.859575125255098
+threshold_07,ACL,pabak|Dread|Yunus,0.935880995126956
+threshold_07,ACL,agreement|Dread|Lixin,0.930788687054495
+threshold_07,ACL,kappa|Dread|Lixin,0.743160808866016
+threshold_07,ACL,pabak|Dread|Lixin,0.861577374108991
+threshold_07,ACL,agreement|Steven|Pilkwang,0.931909547738693
+threshold_07,ACL,kappa|Steven|Pilkwang,0.792356674164502
+threshold_07,ACL,pabak|Steven|Pilkwang,0.863819095477387
+threshold_07,ACL,agreement|Steven|Yunus,0.893188854489164
+threshold_07,ACL,kappa|Steven|Yunus,0.631577714807616
+threshold_07,ACL,pabak|Steven|Yunus,0.786377708978328
+threshold_07,ACL,agreement|Steven|Lixin,0.960120391271633
+threshold_07,ACL,kappa|Steven|Lixin,0.882978450437705
+threshold_07,ACL,pabak|Steven|Lixin,0.920240782543266
+threshold_07,ACL,agreement|Pilkwang|Yunus,0.938770259840494
+threshold_07,ACL,kappa|Pilkwang|Yunus,0.759903058666221
+threshold_07,ACL,pabak|Pilkwang|Yunus,0.877540519680988
+threshold_07,ACL,agreement|Pilkwang|Lixin,0.943721860930465
+threshold_07,ACL,kappa|Pilkwang|Lixin,0.819653923186265
+threshold_07,ACL,pabak|Pilkwang|Lixin,0.887443721860931
+threshold_07,ACL,agreement|Yunus|Lixin,0.911515773275199
+threshold_07,ACL,kappa|Yunus|Lixin,0.676325415007675
+threshold_07,ACL,pabak|Yunus|Lixin,0.823031546550397
+threshold_07,ACL,fleiss|all,0.781238692837631
+threshold_07,ACL,joint_disagreement|Dread|Steven,0.00562851782363978
+threshold_07,ACL,disagreement_phi|Dread|Steven,0.266781629895133
+threshold_07,ACL,joint_disagreement|Dread|Pilkwang,0.00694259012016021
+threshold_07,ACL,disagreement_phi|Dread|Pilkwang,0.488272368034554
+threshold_07,ACL,joint_disagreement|Dread|Yunus,0.0249129386552371
+threshold_07,ACL,disagreement_phi|Dread|Yunus,0.638997438777978
+threshold_07,ACL,joint_disagreement|Dread|Lixin,0.00561935010994381
+threshold_07,ACL,disagreement_phi|Dread|Lixin,0.458314486735445
+threshold_07,ACL,joint_disagreement|Steven|Pilkwang,0.0104222340994121
+threshold_07,ACL,disagreement_phi|Steven|Pilkwang,0.415816834790514
+threshold_07,ACL,joint_disagreement|Steven|Yunus,0.000276243093922652
+threshold_07,ACL,disagreement_phi|Steven|Yunus,-0.0120717195980018
+threshold_07,ACL,joint_disagreement|Steven|Lixin,0.0376134889753567
+threshold_07,ACL,disagreement_phi|Steven|Lixin,0.708397256604541
+threshold_07,ACL,joint_disagreement|Pilkwang|Yunus,0.00165107319757843
+threshold_07,ACL,disagreement_phi|Pilkwang|Yunus,0.112262800802973
+threshold_07,ACL,joint_disagreement|Pilkwang|Lixin,0.00747264478249266
+threshold_07,ACL,disagreement_phi|Pilkwang|Lixin,0.521534155336037
+threshold_07,ACL,joint_disagreement|Yunus|Lixin,0.00191938579654511
+threshold_07,ACL,disagreement_phi|Yunus|Lixin,0.11555149257604
+threshold_07,MCL,positive|Dread,0.0492067141871695
+threshold_07,MCL,positive|Steven,0.169989775051125
+threshold_07,MCL,positive|Pilkwang,0.0662420382165605
+threshold_07,MCL,positive|Yunus,0.0145371078806427
+threshold_07,MCL,positive|Lixin,0.13566337088986
+threshold_07,MCL,missing|Dread,0
+threshold_07,MCL,missing|Steven,0.100482869625201
+threshold_07,MCL,missing|Pilkwang,0.097493676707289
+threshold_07,MCL,missing|Yunus,0.098413428374339
+threshold_07,MCL,missing|Lixin,0
+threshold_07,MCL,agreement|Dread|Steven,0.881646216768916
+threshold_07,MCL,kappa|Dread|Steven,0.425732428500952
+threshold_07,MCL,pabak|Dread|Steven,0.763292433537832
+threshold_07,MCL,agreement|Dread|Pilkwang,0.980127388535032
+threshold_07,MCL,kappa|Dread|Pilkwang,0.824974130587651
+threshold_07,MCL,pabak|Dread|Pilkwang,0.960254777070064
+threshold_07,MCL,agreement|Dread|Yunus,0.958939046161693
+threshold_07,MCL,kappa|Dread|Yunus,0.387451350257767
+threshold_07,MCL,pabak|Dread|Yunus,0.917878092323387
+threshold_07,MCL,agreement|Dread|Lixin,0.910324212462635
+threshold_07,MCL,kappa|Dread|Lixin,0.477166996087638
+threshold_07,MCL,pabak|Dread|Lixin,0.82064842492527
+threshold_07,MCL,agreement|Steven|Pilkwang,0.893316195372751
+threshold_07,MCL,kappa|Steven|Pilkwang,0.500918494225946
+threshold_07,MCL,pabak|Steven|Pilkwang,0.786632390745501
+threshold_07,MCL,agreement|Steven|Yunus,0.846431332130894
+threshold_07,MCL,kappa|Steven|Yunus,0.137255750320394
+threshold_07,MCL,pabak|Steven|Yunus,0.692862664261788
+threshold_07,MCL,agreement|Steven|Lixin,0.969836400817996
+threshold_07,MCL,kappa|Steven|Lixin,0.888019197152642
+threshold_07,MCL,pabak|Steven|Lixin,0.939672801635992
+threshold_07,MCL,agreement|Pilkwang|Yunus,0.948329048843188
+threshold_07,MCL,kappa|Pilkwang|Yunus,0.337849350543769
+threshold_07,MCL,pabak|Pilkwang|Yunus,0.896658097686375
+threshold_07,MCL,agreement|Pilkwang|Lixin,0.910063694267516
+threshold_07,MCL,kappa|Pilkwang|Lixin,0.542133378717104
+threshold_07,MCL,pabak|Pilkwang|Lixin,0.820127388535032
+threshold_07,MCL,agreement|Yunus|Lixin,0.865595511349146
+threshold_07,MCL,kappa|Yunus|Lixin,0.155476676536761
+threshold_07,MCL,pabak|Yunus|Lixin,0.731191022698291
+threshold_07,MCL,fleiss|all,0.491341330063136
+threshold_07,MCL,joint_disagreement|Dread|Steven,0.00169875424688562
+threshold_07,MCL,disagreement_phi|Dread|Steven,0.172725981840655
+threshold_07,MCL,joint_disagreement|Dread|Pilkwang,0.00197294250281849
+threshold_07,MCL,disagreement_phi|Dread|Pilkwang,0.612713060203817
+threshold_07,MCL,joint_disagreement|Dread|Yunus,0.01364522417154
+threshold_07,MCL,disagreement_phi|Dread|Yunus,0.474327771022031
+threshold_07,MCL,joint_disagreement|Dread|Lixin,0.00151209677419355
+threshold_07,MCL,disagreement_phi|Dread|Lixin,0.35086857975224
+threshold_07,MCL,joint_disagreement|Steven|Pilkwang,0.00255972696245734
+threshold_07,MCL,disagreement_phi|Steven|Pilkwang,0.285994280984283
+threshold_07,MCL,joint_disagreement|Steven|Yunus,0.000570776255707763
+threshold_07,MCL,disagreement_phi|Steven|Yunus,-0.0134071243518054
+threshold_07,MCL,joint_disagreement|Steven|Lixin,0.0815316488668924
+threshold_07,MCL,disagreement_phi|Steven|Lixin,0.84600303405558
+threshold_07,MCL,joint_disagreement|Pilkwang|Yunus,0.00340522133938706
+threshold_07,MCL,disagreement_phi|Pilkwang|Yunus,0.244441917033433
+threshold_07,MCL,joint_disagreement|Pilkwang|Lixin,0.00197294250281849
+threshold_07,MCL,disagreement_phi|Pilkwang|Lixin,0.440435824869877
+threshold_07,MCL,joint_disagreement|Yunus|Lixin,0.000846262341325811
+threshold_07,MCL,disagreement_phi|Yunus|Lixin,0.0422324633932229
+threshold_07,Medial Meniscus,positive|Dread,0.38192687974247
+threshold_07,Medial Meniscus,positive|Steven,0.557692307692308
+threshold_07,Medial Meniscus,positive|Pilkwang,0.427212874908559
+threshold_07,Medial Meniscus,positive|Yunus,0.358070964517741
+threshold_07,Medial Meniscus,positive|Lixin,0.382386755575995
+threshold_07,Medial Meniscus,missing|Dread,0
+threshold_07,Medial Meniscus,missing|Steven,0.0554150379397562
+threshold_07,Medial Meniscus,missing|Pilkwang,0.0570246033570936
+threshold_07,Medial Meniscus,missing|Yunus,0.0797884571165786
+threshold_07,Medial Meniscus,missing|Lixin,0
+threshold_07,Medial Meniscus,agreement|Dread|Steven,0.839337877312561
+threshold_07,Medial Meniscus,kappa|Dread|Steven,0.685685502335379
+threshold_07,Medial Meniscus,pabak|Dread|Steven,0.678675754625122
+threshold_07,Medial Meniscus,agreement|Dread|Pilkwang,0.941965374298951
+threshold_07,Medial Meniscus,kappa|Dread|Pilkwang,0.880603730156342
+threshold_07,Medial Meniscus,pabak|Dread|Pilkwang,0.883930748597903
+threshold_07,Medial Meniscus,agreement|Dread|Yunus,0.924287856071964
+threshold_07,Medial Meniscus,kappa|Dread|Yunus,0.84021147957429
+threshold_07,Medial Meniscus,pabak|Dread|Yunus,0.848575712143928
+threshold_07,Medial Meniscus,agreement|Dread|Lixin,0.925959990802483
+threshold_07,Medial Meniscus,kappa|Dread|Lixin,0.843210671336235
+threshold_07,Medial Meniscus,pabak|Dread|Lixin,0.851919981604967
+threshold_07,Medial Meniscus,agreement|Steven|Pilkwang,0.862826458384184
+threshold_07,Medial Meniscus,kappa|Steven|Pilkwang,0.730214566286083
+threshold_07,Medial Meniscus,pabak|Steven|Pilkwang,0.725652916768367
+threshold_07,Medial Meniscus,agreement|Steven|Yunus,0.802453680520781
+threshold_07,Medial Meniscus,kappa|Steven|Yunus,0.616849560672605
+threshold_07,Medial Meniscus,pabak|Steven|Yunus,0.604907361041562
+threshold_07,Medial Meniscus,agreement|Steven|Lixin,0.844693281402142
+threshold_07,Medial Meniscus,kappa|Steven|Lixin,0.696062443886619
+threshold_07,Medial Meniscus,pabak|Steven|Lixin,0.689386562804284
+threshold_07,Medial Meniscus,agreement|Pilkwang|Yunus,0.918295739348371
+threshold_07,Medial Meniscus,kappa|Pilkwang|Yunus,0.829927454332735
+threshold_07,Medial Meniscus,pabak|Pilkwang|Yunus,0.836591478696742
+threshold_07,Medial Meniscus,agreement|Pilkwang|Lixin,0.921726408193124
+threshold_07,Medial Meniscus,kappa|Pilkwang|Lixin,0.8390243150847
+threshold_07,Medial Meniscus,pabak|Pilkwang|Lixin,0.843452816386247
+threshold_07,Medial Meniscus,agreement|Yunus|Lixin,0.929535232383808
+threshold_07,Medial Meniscus,kappa|Yunus|Lixin,0.851219116699032
+threshold_07,Medial Meniscus,pabak|Yunus|Lixin,0.859070464767616
+threshold_07,Medial Meniscus,fleiss|all,0.785915874120467
+threshold_07,Medial Meniscus,joint_disagreement|Dread|Steven,0.0166536559979183
+threshold_07,Medial Meniscus,disagreement_phi|Dread|Steven,0.241278201786207
+threshold_07,Medial Meniscus,joint_disagreement|Dread|Pilkwang,0.0099685204616999
+threshold_07,Medial Meniscus,disagreement_phi|Dread|Pilkwang,0.532780264571458
+threshold_07,Medial Meniscus,joint_disagreement|Dread|Yunus,0.00857449088960343
+threshold_07,Medial Meniscus,disagreement_phi|Dread|Yunus,0.269345514548994
+threshold_07,Medial Meniscus,joint_disagreement|Dread|Lixin,0.00839298938533695
+threshold_07,Medial Meniscus,disagreement_phi|Dread|Lixin,0.413451479205957
+threshold_07,Medial Meniscus,joint_disagreement|Steven|Pilkwang,0.026091449237923
+threshold_07,Medial Meniscus,disagreement_phi|Steven|Pilkwang,0.378346712823802
+threshold_07,Medial Meniscus,joint_disagreement|Steven|Yunus,0.000270782561603033
+threshold_07,Medial Meniscus,disagreement_phi|Steven|Yunus,-0.0597259474672432
+threshold_07,Medial Meniscus,joint_disagreement|Steven|Lixin,0.0237664686127616
+threshold_07,Medial Meniscus,disagreement_phi|Steven|Lixin,0.314729112615179
+threshold_07,Medial Meniscus,joint_disagreement|Pilkwang|Yunus,0.00324236692785734
+threshold_07,Medial Meniscus,disagreement_phi|Pilkwang|Yunus,0.189606707831699
+threshold_07,Medial Meniscus,joint_disagreement|Pilkwang|Lixin,0.00710339384372534
+threshold_07,Medial Meniscus,disagreement_phi|Pilkwang|Lixin,0.455975366422241
+threshold_07,Medial Meniscus,joint_disagreement|Yunus|Lixin,0.0172642762284197
+threshold_07,Medial Meniscus,disagreement_phi|Yunus|Lixin,0.438387229491925
+threshold_07,Lateral Meniscus,positive|Dread,0.134513681306047
+threshold_07,Lateral Meniscus,positive|Steven,0.279040081695175
+threshold_07,Lateral Meniscus,positive|Pilkwang,0.174246295350026
+threshold_07,Lateral Meniscus,positive|Yunus,0.12516229550766
+threshold_07,Lateral Meniscus,positive|Lixin,0.141181880892159
+threshold_07,Lateral Meniscus,missing|Dread,0
+threshold_07,Lateral Meniscus,missing|Steven,0.0993331800413888
+threshold_07,Lateral Meniscus,missing|Pilkwang,0.100022993791676
+threshold_07,Lateral Meniscus,missing|Yunus,0.114509082547712
+threshold_07,Lateral Meniscus,missing|Lixin,0
+threshold_07,Lateral Meniscus,agreement|Dread|Steven,0.864947664028593
+threshold_07,Lateral Meniscus,kappa|Dread|Steven,0.60846172233208
+threshold_07,Lateral Meniscus,pabak|Dread|Steven,0.729895328057187
+threshold_07,Lateral Meniscus,agreement|Dread|Pilkwang,0.956310679611651
+threshold_07,Lateral Meniscus,kappa|Dread|Pilkwang,0.839154473170303
+threshold_07,Lateral Meniscus,pabak|Dread|Pilkwang,0.912621359223301
+threshold_07,Lateral Meniscus,agreement|Dread|Yunus,0.957413658789925
+threshold_07,Lateral Meniscus,kappa|Dread|Yunus,0.819644454293426
+threshold_07,Lateral Meniscus,pabak|Dread|Yunus,0.914827317579849
+threshold_07,Lateral Meniscus,agreement|Dread|Lixin,0.957001609565417
+threshold_07,Lateral Meniscus,kappa|Dread|Lixin,0.819116957895016
+threshold_07,Lateral Meniscus,pabak|Dread|Lixin,0.914003219130835
+threshold_07,Lateral Meniscus,agreement|Steven|Pilkwang,0.892141756548536
+threshold_07,Lateral Meniscus,kappa|Steven|Pilkwang,0.697317633263302
+threshold_07,Lateral Meniscus,pabak|Steven|Pilkwang,0.784283513097073
+threshold_07,Lateral Meniscus,agreement|Steven|Yunus,0.856619570905285
+threshold_07,Lateral Meniscus,kappa|Steven|Yunus,0.561850187898987
+threshold_07,Lateral Meniscus,pabak|Steven|Yunus,0.71323914181057
+threshold_07,Lateral Meniscus,agreement|Steven|Lixin,0.875670155731427
+threshold_07,Lateral Meniscus,kappa|Steven|Lixin,0.643050533156566
+threshold_07,Lateral Meniscus,pabak|Steven|Lixin,0.751340311462854
+threshold_07,Lateral Meniscus,agreement|Pilkwang|Yunus,0.943411055802987
+threshold_07,Lateral Meniscus,kappa|Pilkwang|Yunus,0.778871819079089
+threshold_07,Lateral Meniscus,pabak|Pilkwang|Yunus,0.886822111605973
+threshold_07,Lateral Meniscus,agreement|Pilkwang|Lixin,0.940725600408789
+threshold_07,Lateral Meniscus,kappa|Pilkwang|Lixin,0.785587318018592
+threshold_07,Lateral Meniscus,pabak|Pilkwang|Lixin,0.881451200817578
+threshold_07,Lateral Meniscus,agreement|Yunus|Lixin,0.967021552843417
+threshold_07,Lateral Meniscus,kappa|Yunus|Lixin,0.862264848623612
+threshold_07,Lateral Meniscus,pabak|Yunus|Lixin,0.934043105686835
+threshold_07,Lateral Meniscus,fleiss|all,0.739464474102852
+threshold_07,Lateral Meniscus,joint_disagreement|Dread|Steven,0.00806668459263243
+threshold_07,Lateral Meniscus,disagreement_phi|Dread|Steven,0.154644179124716
+threshold_07,Lateral Meniscus,joint_disagreement|Dread|Pilkwang,0.00806885422270038
+threshold_07,Lateral Meniscus,disagreement_phi|Dread|Pilkwang,0.517722301615327
+threshold_07,Lateral Meniscus,joint_disagreement|Dread|Yunus,0.00273448181569593
+threshold_07,Lateral Meniscus,disagreement_phi|Dread|Yunus,0.173440904500748
+threshold_07,Lateral Meniscus,joint_disagreement|Dread|Lixin,0.00507123883120019
+threshold_07,Lateral Meniscus,disagreement_phi|Dread|Lixin,0.458605785394
+threshold_07,Lateral Meniscus,joint_disagreement|Steven|Pilkwang,0.0260153968675338
+threshold_07,Lateral Meniscus,disagreement_phi|Steven|Pilkwang,0.419330448050849
+threshold_07,Lateral Meniscus,joint_disagreement|Steven|Yunus,0
+threshold_07,Lateral Meniscus,disagreement_phi|Steven|Yunus,-0.037565238121579
+threshold_07,Lateral Meniscus,joint_disagreement|Steven|Lixin,0.0167910447761194
+threshold_07,Lateral Meniscus,disagreement_phi|Steven|Lixin,0.34444986073808
+threshold_07,Lateral Meniscus,joint_disagreement|Pilkwang|Yunus,0.00193370165745856
+threshold_07,Lateral Meniscus,disagreement_phi|Pilkwang|Yunus,0.184546570972654
+threshold_07,Lateral Meniscus,joint_disagreement|Pilkwang|Lixin,0.00592991913746631
+threshold_07,Lateral Meniscus,disagreement_phi|Pilkwang|Lixin,0.608270297092823
+threshold_07,Lateral Meniscus,joint_disagreement|Yunus|Lixin,0.0132575757575758
+threshold_07,Lateral Meniscus,disagreement_phi|Yunus|Lixin,0.60948279670681
+threshold_07,Medial OA,positive|Dread,0.246493446769372
+threshold_07,Medial OA,positive|Steven,0.474200057653502
+threshold_07,Medial OA,positive|Pilkwang,0.335701050030883
+threshold_07,Medial OA,positive|Yunus,0.197857780422493
+threshold_07,Medial OA,positive|Lixin,0.352494826396873
+threshold_07,Medial OA,missing|Dread,0
+threshold_07,Medial OA,missing|Steven,0.202345366750977
+threshold_07,Medial OA,missing|Pilkwang,0.255461025523109
+threshold_07,Medial OA,missing|Yunus,0.227178661761324
+threshold_07,Medial OA,missing|Lixin,0
+threshold_07,Medial OA,agreement|Dread|Steven,0.827904295185933
+threshold_07,Medial OA,kappa|Dread|Steven,0.64878201907098
+threshold_07,Medial OA,pabak|Dread|Steven,0.655808590371865
+threshold_07,Medial OA,agreement|Dread|Pilkwang,0.950895614576899
+threshold_07,Medial OA,kappa|Dread|Pilkwang,0.889070452615099
+threshold_07,Medial OA,pabak|Dread|Pilkwang,0.901791229153799
+threshold_07,Medial OA,agreement|Dread|Yunus,0.857185361499554
+threshold_07,Medial OA,kappa|Dread|Yunus,0.632506567264
+threshold_07,Medial OA,pabak|Dread|Yunus,0.714370722999107
+threshold_07,Medial OA,agreement|Dread|Lixin,0.876523338698551
+threshold_07,Medial OA,kappa|Dread|Lixin,0.709612176375862
+threshold_07,Medial OA,pabak|Dread|Lixin,0.753046677397103
+threshold_07,Medial OA,agreement|Steven|Pilkwang,0.840286425902864
+threshold_07,Medial OA,kappa|Steven|Pilkwang,0.678797495497041
+threshold_07,Medial OA,pabak|Steven|Pilkwang,0.680572851805729
+threshold_07,Medial OA,agreement|Steven|Yunus,0.69180225281602
+threshold_07,Medial OA,kappa|Steven|Yunus,0.391904369319495
+threshold_07,Medial OA,pabak|Steven|Yunus,0.38360450563204
+threshold_07,Medial OA,agreement|Steven|Lixin,0.961660420870568
+threshold_07,Medial OA,kappa|Steven|Lixin,0.922846874850021
+threshold_07,Medial OA,pabak|Steven|Lixin,0.923320841741136
+threshold_07,Medial OA,agreement|Pilkwang|Yunus,0.851449275362319
+threshold_07,Medial OA,kappa|Pilkwang|Yunus,0.644276303688393
+threshold_07,Medial OA,pabak|Pilkwang|Yunus,0.702898550724638
+threshold_07,Medial OA,agreement|Pilkwang|Lixin,0.850833848054355
+threshold_07,Medial OA,kappa|Pilkwang|Lixin,0.694283838828893
+threshold_07,Medial OA,pabak|Pilkwang|Lixin,0.701667696108709
+threshold_07,Medial OA,agreement|Yunus|Lixin,0.72954477833978
+threshold_07,Medial OA,kappa|Yunus|Lixin,0.42770678212127
+threshold_07,Medial OA,pabak|Yunus|Lixin,0.45908955667956
+threshold_07,Medial OA,fleiss|all,0.65411510155585
+threshold_07,Medial OA,joint_disagreement|Dread|Steven,0.00985389058783554
+threshold_07,Medial OA,disagreement_phi|Dread|Steven,0.351692498399459
+threshold_07,Medial OA,joint_disagreement|Dread|Pilkwang,0.00404709345106696
+threshold_07,Medial OA,disagreement_phi|Dread|Pilkwang,0.439755428387325
+threshold_07,Medial OA,joint_disagreement|Dread|Yunus,0.0304920304920305
+threshold_07,Medial OA,disagreement_phi|Dread|Yunus,0.350084730048625
+threshold_07,Medial OA,joint_disagreement|Dread|Lixin,0.00971383565240221
+threshold_07,Medial OA,disagreement_phi|Dread|Lixin,0.65962081616751
+threshold_07,Medial OA,joint_disagreement|Steven|Pilkwang,0.00259836674090572
+threshold_07,Medial OA,disagreement_phi|Steven|Pilkwang,0.239875553910229
+threshold_07,Medial OA,joint_disagreement|Steven|Yunus,0.0100934579439252
+threshold_07,Medial OA,disagreement_phi|Steven|Yunus,0.0534453369306666
+threshold_07,Medial OA,joint_disagreement|Steven|Lixin,0.123081552813723
+threshold_07,Medial OA,disagreement_phi|Steven|Lixin,0.876529683293149
+threshold_07,Medial OA,joint_disagreement|Pilkwang|Yunus,0.0218238503507405
+threshold_07,Medial OA,disagreement_phi|Pilkwang|Yunus,0.316883475756086
+threshold_07,Medial OA,joint_disagreement|Pilkwang|Lixin,0.00221157390342794
+threshold_07,Medial OA,disagreement_phi|Pilkwang|Lixin,0.388815399871733
+threshold_07,Medial OA,joint_disagreement|Yunus|Lixin,0.0130511463844797
+threshold_07,Medial OA,disagreement_phi|Yunus|Lixin,0.230142156806692
+threshold_07,Lateral OA,positive|Dread,0.149229707978846
+threshold_07,Lateral OA,positive|Steven,0.383536585365854
+threshold_07,Lateral OA,positive|Pilkwang,0.216540837336994
+threshold_07,Lateral OA,positive|Yunus,0.120405576679341
+threshold_07,Lateral OA,positive|Lixin,0.24810301218671
+threshold_07,Lateral OA,missing|Dread,0
+threshold_07,Lateral OA,missing|Steven,0.245803633019085
+threshold_07,Lateral OA,missing|Pilkwang,0.32996091055415
+threshold_07,Lateral OA,missing|Yunus,0.274315934697632
+threshold_07,Lateral OA,missing|Lixin,0
+threshold_07,Lateral OA,agreement|Dread|Steven,0.808536585365854
+threshold_07,Lateral OA,kappa|Dread|Steven,0.553831198199244
+threshold_07,Lateral OA,pabak|Dread|Steven,0.617073170731707
+threshold_07,Lateral OA,agreement|Dread|Pilkwang,0.953671928620453
+threshold_07,Lateral OA,kappa|Dread|Pilkwang,0.861956699481149
+threshold_07,Lateral OA,pabak|Dread|Pilkwang,0.907343857240906
+threshold_07,Lateral OA,agreement|Dread|Yunus,0.885614702154626
+threshold_07,Lateral OA,kappa|Dread|Yunus,0.581247748774231
+threshold_07,Lateral OA,pabak|Dread|Yunus,0.771229404309252
+threshold_07,Lateral OA,agreement|Dread|Lixin,0.884571165785238
+threshold_07,Lateral OA,kappa|Dread|Lixin,0.642949171890562
+threshold_07,Lateral OA,pabak|Dread|Lixin,0.769142331570476
+threshold_07,Lateral OA,agreement|Steven|Pilkwang,0.837988826815642
+threshold_07,Lateral OA,kappa|Steven|Pilkwang,0.62429234774309
+threshold_07,Lateral OA,pabak|Steven|Pilkwang,0.675977653631285
+threshold_07,Lateral OA,agreement|Steven|Yunus,0.717722805828533
+threshold_07,Lateral OA,kappa|Steven|Yunus,0.342166327471342
+threshold_07,Lateral OA,pabak|Steven|Yunus,0.435445611657065
+threshold_07,Lateral OA,agreement|Steven|Lixin,0.93780487804878
+threshold_07,Lateral OA,kappa|Steven|Lixin,0.86473614329818
+threshold_07,Lateral OA,pabak|Steven|Lixin,0.875609756097561
+threshold_07,Lateral OA,agreement|Pilkwang|Yunus,0.887732342007435
+threshold_07,Lateral OA,kappa|Pilkwang|Yunus,0.629771413310875
+threshold_07,Lateral OA,pabak|Pilkwang|Yunus,0.77546468401487
+threshold_07,Lateral OA,agreement|Pilkwang|Lixin,0.853122855181881
+threshold_07,Lateral OA,kappa|Pilkwang|Lixin,0.644563861214863
+threshold_07,Lateral OA,pabak|Pilkwang|Lixin,0.706245710363761
+threshold_07,Lateral OA,agreement|Yunus|Lixin,0.767743979721166
+threshold_07,Lateral OA,kappa|Yunus|Lixin,0.380902221351566
+threshold_07,Lateral OA,pabak|Yunus|Lixin,0.535487959442332
+threshold_07,Lateral OA,fleiss|all,0.623852128395452
+threshold_07,Lateral OA,joint_disagreement|Dread|Steven,0.0189964157706093
+threshold_07,Lateral OA,disagreement_phi|Dread|Steven,0.421621998657115
+threshold_07,Lateral OA,joint_disagreement|Dread|Pilkwang,0.00726978998384491
+threshold_07,Lateral OA,disagreement_phi|Dread|Pilkwang,0.549847602495968
+threshold_07,Lateral OA,joint_disagreement|Dread|Yunus,0.0335276967930029
+threshold_07,Lateral OA,disagreement_phi|Dread|Yunus,0.419494928852621
+threshold_07,Lateral OA,joint_disagreement|Dread|Lixin,0.014556797504549
+threshold_07,Lateral OA,disagreement_phi|Dread|Lixin,0.700652868595115
+threshold_07,Lateral OA,joint_disagreement|Steven|Pilkwang,0.00412881915772089
+threshold_07,Lateral OA,disagreement_phi|Steven|Pilkwang,0.278570900127037
+threshold_07,Lateral OA,joint_disagreement|Steven|Yunus,0.0187624750499002
+threshold_07,Lateral OA,disagreement_phi|Steven|Yunus,0.141310335078927
+threshold_07,Lateral OA,joint_disagreement|Steven|Lixin,0.122475152292401
+threshold_07,Lateral OA,disagreement_phi|Steven|Lixin,0.830078465557782
+threshold_07,Lateral OA,joint_disagreement|Pilkwang|Yunus,0.0209698558322412
+threshold_07,Lateral OA,disagreement_phi|Pilkwang|Yunus,0.369616839981449
+threshold_07,Lateral OA,joint_disagreement|Pilkwang|Lixin,0.0032441200324412
+threshold_07,Lateral OA,disagreement_phi|Pilkwang|Lixin,0.436292481161163
+threshold_07,Lateral OA,joint_disagreement|Yunus|Lixin,0.0195933456561922
+threshold_07,Lateral OA,disagreement_phi|Yunus|Lixin,0.339989536144923
+threshold_07,PF OA,positive|Dread,0.33547942055645
+threshold_07,PF OA,positive|Steven,0.559722222222222
+threshold_07,PF OA,positive|Pilkwang,0.40445321307779
+threshold_07,PF OA,positive|Yunus,0.236162361623616
+threshold_07,PF OA,positive|Lixin,0.44515980685215
+threshold_07,PF OA,missing|Dread,0
+threshold_07,PF OA,missing|Steven,0.172223499655093
+threshold_07,PF OA,missing|Pilkwang,0.184180271326742
+threshold_07,PF OA,missing|Yunus,0.189928719245804
+threshold_07,PF OA,missing|Lixin,0
+threshold_07,PF OA,agreement|Dread|Steven,0.84
+threshold_07,PF OA,kappa|Dread|Steven,0.687243121113352
+threshold_07,PF OA,pabak|Dread|Steven,0.68
+threshold_07,PF OA,agreement|Dread|Pilkwang,0.961668545659527
+threshold_07,PF OA,kappa|Dread|Pilkwang,0.920467075939398
+threshold_07,PF OA,pabak|Dread|Pilkwang,0.923337091319053
+threshold_07,PF OA,agreement|Dread|Yunus,0.812943514050525
+threshold_07,PF OA,kappa|Dread|Yunus,0.586428172784557
+threshold_07,PF OA,pabak|Dread|Yunus,0.62588702810105
+threshold_07,PF OA,agreement|Dread|Lixin,0.880202345366751
+threshold_07,PF OA,kappa|Dread|Lixin,0.751434106362857
+threshold_07,PF OA,pabak|Dread|Lixin,0.760404690733502
+threshold_07,PF OA,agreement|Steven|Pilkwang,0.847142857142857
+threshold_07,PF OA,kappa|Steven|Pilkwang,0.700880505555875
+threshold_07,PF OA,pabak|Steven|Pilkwang,0.694285714285714
+threshold_07,PF OA,agreement|Steven|Yunus,0.657554379776602
+threshold_07,PF OA,kappa|Steven|Yunus,0.370679637981173
+threshold_07,PF OA,pabak|Steven|Yunus,0.315108759553204
+threshold_07,PF OA,agreement|Steven|Lixin,0.975833333333333
+threshold_07,PF OA,kappa|Steven|Lixin,0.951226500890755
+threshold_07,PF OA,pabak|Steven|Lixin,0.951666666666667
+threshold_07,PF OA,agreement|Pilkwang|Yunus,0.816502829907656
+threshold_07,PF OA,kappa|Pilkwang|Yunus,0.602677315675162
+threshold_07,PF OA,pabak|Pilkwang|Yunus,0.633005659815311
+threshold_07,PF OA,agreement|Pilkwang|Lixin,0.857102593010147
+threshold_07,PF OA,kappa|Pilkwang|Lixin,0.71863028183334
+threshold_07,PF OA,pabak|Pilkwang|Lixin,0.714205186020293
+threshold_07,PF OA,agreement|Yunus|Lixin,0.683224524552938
+threshold_07,PF OA,kappa|Yunus|Lixin,0.396202759088822
+threshold_07,PF OA,pabak|Yunus|Lixin,0.366449049105876
+threshold_07,PF OA,fleiss|all,0.652600368485061
+threshold_07,PF OA,joint_disagreement|Dread|Steven,0.00459166939980321
+threshold_07,PF OA,disagreement_phi|Dread|Steven,0.275678128734594
+threshold_07,PF OA,joint_disagreement|Dread|Pilkwang,0.000332667997338656
+threshold_07,PF OA,disagreement_phi|Dread|Pilkwang,0.0685078606539711
+threshold_07,PF OA,joint_disagreement|Dread|Yunus,0.0188492063492064
+threshold_07,PF OA,disagreement_phi|Dread|Yunus,0.21163626655816
+threshold_07,PF OA,joint_disagreement|Dread|Lixin,0.00474808757583751
+threshold_07,PF OA,disagreement_phi|Dread|Lixin,0.597993519934036
+threshold_07,PF OA,joint_disagreement|Steven|Pilkwang,0.000675219446320054
+threshold_07,PF OA,disagreement_phi|Steven|Pilkwang,0.113256351091623
+threshold_07,PF OA,joint_disagreement|Steven|Yunus,0.00488997555012225
+threshold_07,PF OA,disagreement_phi|Steven|Yunus,-0.000743875560600212
+threshold_07,PF OA,joint_disagreement|Steven|Lixin,0.127372052903968
+threshold_07,PF OA,disagreement_phi|Steven|Lixin,0.927270697170844
+threshold_07,PF OA,joint_disagreement|Pilkwang|Yunus,0.0201739130434783
+threshold_07,PF OA,disagreement_phi|Pilkwang|Yunus,0.251334774312587
+threshold_07,PF OA,joint_disagreement|Pilkwang|Lixin,0
+threshold_07,PF OA,disagreement_phi|Pilkwang|Lixin,-0.00163326594004632
+threshold_07,PF OA,joint_disagreement|Yunus|Lixin,0.00536372779081462
+threshold_07,PF OA,disagreement_phi|Yunus|Lixin,0.120731922107184
+threshold_07,Effusion,positive|Dread,0.255690963439871
+threshold_07,Effusion,positive|Steven,0.6644552181679
+threshold_07,Effusion,positive|Pilkwang,0.266530508041869
+threshold_07,Effusion,positive|Yunus,0.0998967475477543
+threshold_07,Effusion,positive|Lixin,0.588871004828696
+threshold_07,Effusion,missing|Dread,0
+threshold_07,Effusion,missing|Steven,0.0988733042078639
+threshold_07,Effusion,missing|Pilkwang,0.0993331800413888
+threshold_07,Effusion,missing|Yunus,0.109220510462175
+threshold_07,Effusion,missing|Lixin,0
+threshold_07,Effusion,agreement|Dread|Steven,0.617504465424853
+threshold_07,Effusion,kappa|Dread|Steven,0.330379230723549
+threshold_07,Effusion,pabak|Dread|Steven,0.235008930849707
+threshold_07,Effusion,agreement|Dread|Pilkwang,0.959152412560633
+threshold_07,Effusion,kappa|Dread|Pilkwang,0.897587040067404
+threshold_07,Effusion,pabak|Dread|Pilkwang,0.918304825121266
+threshold_07,Effusion,agreement|Dread|Yunus,0.807692307692308
+threshold_07,Effusion,kappa|Dread|Yunus,0.412843779130161
+threshold_07,Effusion,pabak|Dread|Yunus,0.615384615384615
+threshold_07,Effusion,agreement|Dread|Lixin,0.662681076109451
+threshold_07,Effusion,kappa|Dread|Lixin,0.379271182646244
+threshold_07,Effusion,pabak|Dread|Lixin,0.325362152218901
+threshold_07,Effusion,agreement|Steven|Pilkwang,0.601840020444672
+threshold_07,Effusion,kappa|Steven|Pilkwang,0.309546083007763
+threshold_07,Effusion,pabak|Steven|Pilkwang,0.203680040889343
+threshold_07,Effusion,agreement|Steven|Yunus,0.428645428645429
+threshold_07,Effusion,kappa|Steven|Yunus,0.103321704493558
+threshold_07,Effusion,pabak|Steven|Yunus,-0.142709142709143
+threshold_07,Effusion,agreement|Steven|Lixin,0.986220974738454
+threshold_07,Effusion,kappa|Steven|Lixin,0.96935282154006
+threshold_07,Effusion,pabak|Steven|Lixin,0.972441949476907
+threshold_07,Effusion,agreement|Pilkwang|Yunus,0.825298081907724
+threshold_07,Effusion,kappa|Pilkwang|Yunus,0.444703838288582
+threshold_07,Effusion,pabak|Pilkwang|Yunus,0.650596163815449
+threshold_07,Effusion,agreement|Pilkwang|Lixin,0.610671432218535
+threshold_07,Effusion,kappa|Pilkwang|Lixin,0.319144980798245
+threshold_07,Effusion,pabak|Pilkwang|Lixin,0.221342864437069
+threshold_07,Effusion,agreement|Yunus|Lixin,0.439339184305627
+threshold_07,Effusion,kappa|Yunus|Lixin,0.105556959896625
+threshold_07,Effusion,pabak|Yunus|Lixin,-0.121321631388746
+threshold_07,Effusion,fleiss|all,0.348547235173004
+threshold_07,Effusion,joint_disagreement|Dread|Steven,0.000839630562552477
+threshold_07,Effusion,disagreement_phi|Dread|Steven,0.0591072920857894
+threshold_07,Effusion,joint_disagreement|Dread|Pilkwang,0.000840336134453782
+threshold_07,Effusion,disagreement_phi|Dread|Pilkwang,0.115613604046517
+threshold_07,Effusion,joint_disagreement|Dread|Yunus,0.0147741663149008
+threshold_07,Effusion,disagreement_phi|Dread|Yunus,0.134481477076791
+threshold_07,Effusion,joint_disagreement|Dread|Lixin,0.000711490572749911
+threshold_07,Effusion,disagreement_phi|Dread|Lixin,0.137839155040797
+threshold_07,Effusion,joint_disagreement|Steven|Pilkwang,0
+threshold_07,Effusion,disagreement_phi|Steven|Pilkwang,-0.00983271003367919
+threshold_07,Effusion,joint_disagreement|Steven|Yunus,0.000430477830391735
+threshold_07,Effusion,disagreement_phi|Steven|Yunus,-0.0764005398965884
+threshold_07,Effusion,joint_disagreement|Steven|Lixin,0.371368198626519
+threshold_07,Effusion,disagreement_phi|Steven|Lixin,0.971546490643563
+threshold_07,Effusion,joint_disagreement|Pilkwang|Yunus,0.0405461315680596
+threshold_07,Effusion,disagreement_phi|Pilkwang|Yunus,0.284131569209745
+threshold_07,Effusion,joint_disagreement|Pilkwang|Lixin,0.000420344682639765
+threshold_07,Effusion,disagreement_phi|Pilkwang|Lixin,0.0904609531184209
+threshold_07,Effusion,joint_disagreement|Yunus|Lixin,0.00128369704749679
+threshold_07,Effusion,disagreement_phi|Yunus|Lixin,-0.00316944491062224
+threshold_07,Synovitis,positive|Dread,0.244883881352035
+threshold_07,Synovitis,positive|Steven,0.778887303851641
+threshold_07,Synovitis,positive|Pilkwang,0.523598820058997
+threshold_07,Synovitis,positive|Yunus,0.168057210965435
+threshold_07,Synovitis,positive|Lixin,0.122097033800874
+threshold_07,Synovitis,missing|Dread,0
+threshold_07,Synovitis,missing|Steven,0.838813520349506
+threshold_07,Synovitis,missing|Pilkwang,0.844102092435043
+threshold_07,Synovitis,missing|Yunus,0.807082087836284
+threshold_07,Synovitis,missing|Lixin,0
+threshold_07,Synovitis,agreement|Dread|Steven,0.700427960057061
+threshold_07,Synovitis,kappa|Dread|Steven,0.405115978339934
+threshold_07,Synovitis,pabak|Dread|Steven,0.400855920114123
+threshold_07,Synovitis,agreement|Dread|Pilkwang,0.867256637168142
+threshold_07,Synovitis,kappa|Dread|Pilkwang,0.733920551170802
+threshold_07,Synovitis,pabak|Dread|Pilkwang,0.734513274336283
+threshold_07,Synovitis,agreement|Dread|Yunus,0.687723480333731
+threshold_07,Synovitis,kappa|Dread|Yunus,0.33715888188644
+threshold_07,Synovitis,pabak|Dread|Yunus,0.375446960667461
+threshold_07,Synovitis,agreement|Dread|Lixin,0.786617613244424
+threshold_07,Synovitis,kappa|Dread|Lixin,0.305354550639986
+threshold_07,Synovitis,pabak|Dread|Lixin,0.573235226488848
+threshold_07,Synovitis,agreement|Steven|Pilkwang,0.68099173553719
+threshold_07,Synovitis,kappa|Steven|Pilkwang,0.285119539596535
+threshold_07,Synovitis,pabak|Steven|Pilkwang,0.36198347107438
+threshold_07,Synovitis,agreement|Steven|Yunus,0.3276740237691
+threshold_07,Synovitis,kappa|Steven|Yunus,0.0617246206574734
+threshold_07,Synovitis,pabak|Steven|Yunus,-0.3446519524618
+threshold_07,Synovitis,agreement|Steven|Lixin,0.97432239657632
+threshold_07,Synovitis,kappa|Steven|Lixin,0.92842800258653
+threshold_07,Synovitis,pabak|Steven|Lixin,0.948644793152639
+threshold_07,Synovitis,agreement|Pilkwang|Yunus,0.651085141903172
+threshold_07,Synovitis,kappa|Pilkwang|Yunus,0.353636058548674
+threshold_07,Synovitis,pabak|Pilkwang|Yunus,0.302170283806344
+threshold_07,Synovitis,agreement|Pilkwang|Lixin,0.699115044247788
+threshold_07,Synovitis,kappa|Pilkwang|Lixin,0.381878960681438
+threshold_07,Synovitis,pabak|Pilkwang|Lixin,0.398230088495575
+threshold_07,Synovitis,agreement|Yunus|Lixin,0.532777115613826
+threshold_07,Synovitis,kappa|Yunus|Lixin,0.199248156913158
+threshold_07,Synovitis,pabak|Yunus|Lixin,0.065554231227652
+threshold_07,Synovitis,fleiss|all,0.231015843429636
+threshold_07,Synovitis,joint_disagreement|Dread|Steven,0.0147058823529412
+threshold_07,Synovitis,disagreement_phi|Dread|Steven,0.466822522358303
+threshold_07,Synovitis,joint_disagreement|Dread|Pilkwang,0.0178173719376392
+threshold_07,Synovitis,disagreement_phi|Dread|Pilkwang,0.477800310919312
+threshold_07,Synovitis,joint_disagreement|Dread|Yunus,0.0628099173553719
+threshold_07,Synovitis,disagreement_phi|Dread|Yunus,0.283949660114492
+threshold_07,Synovitis,joint_disagreement|Dread|Lixin,0.165315647261115
+threshold_07,Synovitis,disagreement_phi|Dread|Lixin,0.988564396742457
+threshold_07,Synovitis,joint_disagreement|Steven|Pilkwang,0.00779220779220779
+threshold_07,Synovitis,disagreement_phi|Steven|Pilkwang,0.594736842105263
+threshold_07,Synovitis,joint_disagreement|Steven|Yunus,0.010840108401084
+threshold_07,Synovitis,disagreement_phi|Steven|Yunus,-0.00772789880626627
+threshold_07,Synovitis,joint_disagreement|Steven|Lixin,0.257911392405063
+threshold_07,Synovitis,disagreement_phi|Steven|Lixin,0.967737949008645
+threshold_07,Synovitis,joint_disagreement|Pilkwang|Yunus,0.0853658536585366
+threshold_07,Synovitis,disagreement_phi|Pilkwang|Yunus,0.269145244100996
+threshold_07,Synovitis,joint_disagreement|Pilkwang|Lixin,0.015625
+threshold_07,Synovitis,disagreement_phi|Pilkwang|Lixin,0.708383414148079
+threshold_07,Synovitis,joint_disagreement|Yunus|Lixin,0.015625
+threshold_07,Synovitis,disagreement_phi|Yunus|Lixin,0.187628351623335
+threshold_07,Baker's,positive|Dread,0.122326971717636
+threshold_07,Baker's,positive|Steven,0.473847517730497
+threshold_07,Baker's,positive|Pilkwang,0.236093418259023
+threshold_07,Baker's,positive|Yunus,0.263110307414105
+threshold_07,Baker's,positive|Lixin,0.245573695102322
+threshold_07,Baker's,missing|Dread,0
+threshold_07,Baker's,missing|Steven,0.481260059783858
+threshold_07,Baker's,missing|Pilkwang,0.458496206024373
+threshold_07,Baker's,missing|Yunus,0.491377328121407
+threshold_07,Baker's,missing|Lixin,0
+threshold_07,Baker's,agreement|Dread|Steven,0.76063829787234
+threshold_07,Baker's,kappa|Dread|Steven,0.507599978335434
+threshold_07,Baker's,pabak|Dread|Steven,0.521276595744681
+threshold_07,Baker's,agreement|Dread|Pilkwang,0.971125265392781
+threshold_07,Baker's,kappa|Dread|Pilkwang,0.918635077254505
+threshold_07,Baker's,pabak|Dread|Pilkwang,0.942250530785563
+threshold_07,Baker's,agreement|Dread|Yunus,0.909132007233273
+threshold_07,Baker's,kappa|Dread|Yunus,0.758596050768389
+threshold_07,Baker's,pabak|Dread|Yunus,0.818264014466546
+threshold_07,Baker's,agreement|Dread|Lixin,0.874913773281214
+threshold_07,Baker's,kappa|Dread|Lixin,0.593638527198677
+threshold_07,Baker's,pabak|Dread|Lixin,0.749827546562428
+threshold_07,Baker's,agreement|Steven|Pilkwang,0.76268115942029
+threshold_07,Baker's,kappa|Steven|Pilkwang,0.517675220174238
+threshold_07,Baker's,pabak|Steven|Pilkwang,0.52536231884058
+threshold_07,Baker's,agreement|Steven|Yunus,0.764896073903002
+threshold_07,Baker's,kappa|Steven|Yunus,0.525918867352272
+threshold_07,Baker's,pabak|Steven|Yunus,0.529792147806005
+threshold_07,Baker's,agreement|Steven|Lixin,0.994237588652482
+threshold_07,Baker's,kappa|Steven|Lixin,0.988441948852629
+threshold_07,Baker's,pabak|Steven|Lixin,0.988475177304965
+threshold_07,Baker's,agreement|Pilkwang|Yunus,0.920273348519362
+threshold_07,Baker's,kappa|Pilkwang|Yunus,0.791113919521284
+threshold_07,Baker's,pabak|Pilkwang|Yunus,0.840546697038724
+threshold_07,Baker's,agreement|Pilkwang|Lixin,0.774522292993631
+threshold_07,Baker's,kappa|Pilkwang|Lixin,0.525544066554842
+threshold_07,Baker's,pabak|Pilkwang|Lixin,0.549044585987261
+threshold_07,Baker's,agreement|Yunus|Lixin,0.76130198915009
+threshold_07,Baker's,kappa|Yunus|Lixin,0.514281246569007
+threshold_07,Baker's,pabak|Yunus|Lixin,0.522603978300181
+threshold_07,Baker's,fleiss|all,0.638116383423167
+threshold_07,Baker's,joint_disagreement|Dread|Steven,0
+threshold_07,Baker's,disagreement_phi|Dread|Steven,-0.00840342068674781
+threshold_07,Baker's,joint_disagreement|Dread|Pilkwang,0.0422094841063054
+threshold_07,Baker's,disagreement_phi|Dread|Pilkwang,0.768181297531211
+threshold_07,Baker's,joint_disagreement|Dread|Yunus,0.00764705882352941
+threshold_07,Baker's,disagreement_phi|Dread|Yunus,0.186598645099587
+threshold_07,Baker's,joint_disagreement|Dread|Lixin,0.00156739811912226
+threshold_07,Baker's,disagreement_phi|Dread|Lixin,0.273450143800914
+threshold_07,Baker's,joint_disagreement|Steven|Pilkwang,0
+threshold_07,Baker's,disagreement_phi|Steven|Pilkwang,-0.00587682772652512
+threshold_07,Baker's,joint_disagreement|Steven|Yunus,0
+threshold_07,Baker's,disagreement_phi|Steven|Yunus,-0.0102857385261346
+threshold_07,Baker's,joint_disagreement|Steven|Lixin,0.193055555555556
+threshold_07,Baker's,disagreement_phi|Steven|Lixin,0.982365640334937
+threshold_07,Baker's,joint_disagreement|Pilkwang|Yunus,0.00768775872264932
+threshold_07,Baker's,disagreement_phi|Pilkwang|Yunus,0.244168641256625
+threshold_07,Baker's,joint_disagreement|Pilkwang|Lixin,0.00217155266015201
+threshold_07,Baker's,disagreement_phi|Pilkwang|Lixin,0.263848630882312
+threshold_07,Baker's,joint_disagreement|Yunus|Lixin,0.00295508274231679
+threshold_07,Baker's,disagreement_phi|Yunus|Lixin,0.148210709410737
+threshold_07,Contusion,positive|Dread,0.151988962979995
+threshold_07,Contusion,positive|Steven,0.323849878934625
+threshold_07,Contusion,positive|Pilkwang,0.218123729305838
+threshold_07,Contusion,positive|Yunus,0.176771365960555
+threshold_07,Contusion,positive|Lixin,0.154518280064383
+threshold_07,Contusion,missing|Dread,0
+threshold_07,Contusion,missing|Steven,0.240285123016786
+threshold_07,Contusion,missing|Pilkwang,0.208323752586802
+threshold_07,Contusion,missing|Yunus,0.370429983904346
+threshold_07,Contusion,missing|Lixin,0
+threshold_07,Contusion,agreement|Dread|Steven,0.818401937046005
+threshold_07,Contusion,kappa|Dread|Steven,0.532012215274381
+threshold_07,Contusion,pabak|Dread|Steven,0.63680387409201
+threshold_07,Contusion,agreement|Dread|Pilkwang,0.897763578274761
+threshold_07,Contusion,kappa|Dread|Pilkwang,0.682914411149862
+threshold_07,Contusion,pabak|Dread|Pilkwang,0.795527156549521
+threshold_07,Contusion,agreement|Dread|Yunus,0.855368882395909
+threshold_07,Contusion,kappa|Dread|Yunus,0.548484353814018
+threshold_07,Contusion,pabak|Dread|Yunus,0.710737764791819
+threshold_07,Contusion,agreement|Dread|Lixin,0.882961600367901
+threshold_07,Contusion,kappa|Dread|Lixin,0.549049438023253
+threshold_07,Contusion,pabak|Dread|Lixin,0.765923200735801
+threshold_07,Contusion,agreement|Steven|Pilkwang,0.843557286595261
+threshold_07,Contusion,kappa|Steven|Pilkwang,0.615937347575405
+threshold_07,Contusion,pabak|Steven|Pilkwang,0.687114573190523
+threshold_07,Contusion,agreement|Steven|Yunus,0.758456028651015
+threshold_07,Contusion,kappa|Steven|Yunus,0.444619046249372
+threshold_07,Contusion,pabak|Steven|Yunus,0.516912057302029
+threshold_07,Contusion,agreement|Steven|Lixin,0.859564164648911
+threshold_07,Contusion,kappa|Steven|Lixin,0.64318790765398
+threshold_07,Contusion,pabak|Steven|Lixin,0.719128329297821
+threshold_07,Contusion,agreement|Pilkwang|Yunus,0.872388909988606
+threshold_07,Contusion,kappa|Pilkwang|Yunus,0.637234431663668
+threshold_07,Contusion,pabak|Pilkwang|Yunus,0.744777819977212
+threshold_07,Contusion,agreement|Pilkwang|Lixin,0.857972698228289
+threshold_07,Contusion,kappa|Pilkwang|Lixin,0.566330463972082
+threshold_07,Contusion,pabak|Pilkwang|Lixin,0.715945396456579
+threshold_07,Contusion,agreement|Yunus|Lixin,0.83382030679328
+threshold_07,Contusion,kappa|Yunus|Lixin,0.502130489377127
+threshold_07,Contusion,pabak|Yunus|Lixin,0.66764061358656
+threshold_07,Contusion,fleiss|all,0.584731443188802
+threshold_07,Contusion,joint_disagreement|Dread|Steven,0.0187138482477033
+threshold_07,Contusion,disagreement_phi|Dread|Steven,0.237662480365402
+threshold_07,Contusion,joint_disagreement|Dread|Pilkwang,0.0270799347471452
+threshold_07,Contusion,disagreement_phi|Dread|Pilkwang,0.523659795174759
+threshold_07,Contusion,joint_disagreement|Dread|Yunus,0.0311185870479394
+threshold_07,Contusion,disagreement_phi|Dread|Yunus,0.392196957075624
+threshold_07,Contusion,joint_disagreement|Dread|Lixin,0.0252844500632111
+threshold_07,Contusion,disagreement_phi|Dread|Lixin,0.534987533551617
+threshold_07,Contusion,joint_disagreement|Steven|Pilkwang,0.020825721592985
+threshold_07,Contusion,disagreement_phi|Steven|Pilkwang,0.342669184506979
+threshold_07,Contusion,joint_disagreement|Steven|Yunus,0.00513778608127043
+threshold_07,Contusion,disagreement_phi|Steven|Yunus,-0.000934795084128047
+threshold_07,Contusion,joint_disagreement|Steven|Lixin,0.0547361520812848
+threshold_07,Contusion,disagreement_phi|Steven|Lixin,0.523850996036127
+threshold_07,Contusion,joint_disagreement|Pilkwang|Yunus,0.0277044854881266
+threshold_07,Contusion,disagreement_phi|Pilkwang|Yunus,0.418424221395602
+threshold_07,Contusion,joint_disagreement|Pilkwang|Lixin,0.0226155358898722
+threshold_07,Contusion,disagreement_phi|Pilkwang|Lixin,0.502526566868203
+threshold_07,Contusion,joint_disagreement|Yunus|Lixin,0.0351758793969849
+threshold_07,Contusion,disagreement_phi|Yunus|Lixin,0.450884404020323
+threshold_07,Fracture,positive|Dread,0.0365601287652334
+threshold_07,Fracture,positive|Steven,0.120064464141821
+threshold_07,Fracture,positive|Pilkwang,0.0937003705664373
+threshold_07,Fracture,positive|Yunus,0.0893071686023228
+threshold_07,Fracture,positive|Lixin,0.0607036100252932
+threshold_07,Fracture,missing|Dread,0
+threshold_07,Fracture,missing|Steven,0.429294090595539
+threshold_07,Fracture,missing|Pilkwang,0.565647275235686
+threshold_07,Fracture,missing|Yunus,0.425845021844102
+threshold_07,Fracture,missing|Lixin,0
+threshold_07,Fracture,agreement|Dread|Steven,0.943190975020145
+threshold_07,Fracture,kappa|Dread|Steven,0.663339458013872
+threshold_07,Fracture,pabak|Dread|Steven,0.88638195004029
+threshold_07,Fracture,agreement|Dread|Pilkwang,0.969825304393859
+threshold_07,Fracture,kappa|Dread|Pilkwang,0.813353834313024
+threshold_07,Fracture,pabak|Dread|Pilkwang,0.939650608787718
+threshold_07,Fracture,agreement|Dread|Yunus,0.967961553864638
+threshold_07,Fracture,kappa|Dread|Yunus,0.769471871783154
+threshold_07,Fracture,pabak|Dread|Yunus,0.935923107729275
+threshold_07,Fracture,agreement|Dread|Lixin,0.974476891239365
+threshold_07,Fracture,kappa|Dread|Lixin,0.725040796274936
+threshold_07,Fracture,pabak|Dread|Lixin,0.948953782478731
+threshold_07,Fracture,agreement|Steven|Pilkwang,0.926766040181465
+threshold_07,Fracture,kappa|Steven|Pilkwang,0.715742967304385
+threshold_07,Fracture,pabak|Steven|Pilkwang,0.853532080362929
+threshold_07,Fracture,agreement|Steven|Yunus,0.9792
+threshold_07,Fracture,kappa|Steven|Yunus,0.9057209494819
+threshold_07,Fracture,pabak|Steven|Yunus,0.9584
+threshold_07,Fracture,agreement|Steven|Lixin,0.981869460112812
+threshold_07,Fracture,kappa|Steven|Lixin,0.909610619153906
+threshold_07,Fracture,pabak|Steven|Lixin,0.963738920225625
+threshold_07,Fracture,agreement|Pilkwang|Yunus,0.956902356902357
+threshold_07,Fracture,kappa|Pilkwang|Yunus,0.809944327126128
+threshold_07,Fracture,pabak|Pilkwang|Yunus,0.913804713804714
+threshold_07,Fracture,agreement|Pilkwang|Lixin,0.948650079407094
+threshold_07,Fracture,kappa|Pilkwang|Lixin,0.751218902872008
+threshold_07,Fracture,pabak|Pilkwang|Lixin,0.897300158814187
+threshold_07,Fracture,agreement|Yunus|Lixin,0.983580296355627
+threshold_07,Fracture,kappa|Yunus|Lixin,0.903914577387259
+threshold_07,Fracture,pabak|Yunus|Lixin,0.967160592711253
+threshold_07,Fracture,fleiss|all,0.817729498145692
+threshold_07,Fracture,joint_disagreement|Dread|Steven,0.00625521267723103
+threshold_07,Fracture,disagreement_phi|Dread|Steven,0.371998828512151
+threshold_07,Fracture,joint_disagreement|Dread|Pilkwang,0.0286022665947113
+threshold_07,Fracture,disagreement_phi|Dread|Pilkwang,0.707964095681121
+threshold_07,Fracture,joint_disagreement|Dread|Yunus,0.00165084605860504
+threshold_07,Fracture,disagreement_phi|Dread|Yunus,0.249511738835696
+threshold_07,Fracture,joint_disagreement|Dread|Lixin,0.00328561370570289
+threshold_07,Fracture,disagreement_phi|Dread|Lixin,0.515092452772346
+threshold_07,Fracture,joint_disagreement|Steven|Pilkwang,0.00953029271613342
+threshold_07,Fracture,disagreement_phi|Steven|Pilkwang,0.44206868920385
+threshold_07,Fracture,joint_disagreement|Steven|Yunus,0.00221852468108708
+threshold_07,Fracture,disagreement_phi|Steven|Yunus,0.542512258962294
+threshold_07,Fracture,joint_disagreement|Steven|Lixin,0.0156959933911607
+threshold_07,Fracture,disagreement_phi|Steven|Lixin,0.784928978778556
+threshold_07,Fracture,joint_disagreement|Pilkwang|Yunus,0.00141643059490085
+threshold_07,Fracture,disagreement_phi|Pilkwang|Yunus,0.213238035941949
+threshold_07,Fracture,joint_disagreement|Pilkwang|Lixin,0.00771775082690187
+threshold_07,Fracture,disagreement_phi|Pilkwang|Lixin,0.637572821719988
+threshold_07,Fracture,joint_disagreement|Yunus|Lixin,0.000413223140495868
+threshold_07,Fracture,disagreement_phi|Yunus|Lixin,0.257023337348444
+unknown_negative,ACL,positive|Dread,0.129914922970798
+unknown_negative,ACL,positive|Steven,0.2193607725914
+unknown_negative,ACL,positive|Pilkwang,0.274545872614394
+unknown_negative,ACL,positive|Yunus,0.171533685904806
+unknown_negative,ACL,positive|Lixin,0.202115428834215
+unknown_negative,ACL,missing|Dread,0
+unknown_negative,ACL,missing|Steven,0
+unknown_negative,ACL,missing|Pilkwang,0
+unknown_negative,ACL,missing|Yunus,0
+unknown_negative,ACL,missing|Lixin,0
+unknown_negative,ACL,agreement|Dread|Steven,0.904575764543573
+unknown_negative,ACL,kappa|Dread|Steven,0.673516866792291
+unknown_negative,ACL,pabak|Dread|Steven,0.809151529087147
+unknown_negative,ACL,agreement|Dread|Pilkwang,0.852609795355254
+unknown_negative,ACL,kappa|Dread|Pilkwang,0.55755363198618
+unknown_negative,ACL,pabak|Dread|Pilkwang,0.705219590710508
+unknown_negative,ACL,agreement|Dread|Yunus,0.952402851230168
+unknown_negative,ACL,kappa|Dread|Yunus,0.814709875911767
+unknown_negative,ACL,pabak|Dread|Yunus,0.904805702460336
+unknown_negative,ACL,agreement|Dread|Lixin,0.919521729133134
+unknown_negative,ACL,kappa|Dread|Lixin,0.71207860652212
+unknown_negative,ACL,pabak|Dread|Lixin,0.839043458266268
+unknown_negative,ACL,agreement|Steven|Pilkwang,0.942975396642906
+unknown_negative,ACL,kappa|Steven|Pilkwang,0.847306292914278
+unknown_negative,ACL,pabak|Steven|Pilkwang,0.885950793285813
+unknown_negative,ACL,agreement|Steven|Yunus,0.936077259140032
+unknown_negative,ACL,kappa|Steven|Yunus,0.797481445349796
+unknown_negative,ACL,pabak|Steven|Yunus,0.872154518280064
+unknown_negative,ACL,agreement|Steven|Lixin,0.968958381237066
+unknown_negative,ACL,kappa|Steven|Lixin,0.906726972469194
+unknown_negative,ACL,pabak|Steven|Lixin,0.937916762474132
+unknown_negative,ACL,agreement|Pilkwang|Yunus,0.896527937456887
+unknown_negative,ACL,kappa|Pilkwang|Yunus,0.705954914439123
+unknown_negative,ACL,pabak|Pilkwang|Yunus,0.793055874913773
+unknown_negative,ACL,agreement|Pilkwang|Lixin,0.926649804552771
+unknown_negative,ACL,kappa|Pilkwang|Lixin,0.799415015705368
+unknown_negative,ACL,pabak|Pilkwang|Lixin,0.853299609105542
+unknown_negative,ACL,agreement|Yunus|Lixin,0.947804092894918
+unknown_negative,ACL,kappa|Yunus|Lixin,0.828477791501474
+unknown_negative,ACL,pabak|Yunus|Lixin,0.895608185789837
+unknown_negative,ACL,fleiss|all,0.764585235856451
+unknown_negative,ACL,joint_disagreement|Dread|Steven,0.00246791707798618
+unknown_negative,ACL,disagreement_phi|Dread|Steven,0.195642592139397
+unknown_negative,ACL,joint_disagreement|Dread|Pilkwang,0.000988630746416213
+unknown_negative,ACL,disagreement_phi|Dread|Pilkwang,-0.0205034783341227
+unknown_negative,ACL,joint_disagreement|Dread|Yunus,0.0376190476190476
+unknown_negative,ACL,disagreement_phi|Dread|Yunus,0.691821059357902
+unknown_negative,ACL,joint_disagreement|Dread|Lixin,0.00418822370041882
+unknown_negative,ACL,disagreement_phi|Dread|Lixin,0.2523898607896
+unknown_negative,ACL,joint_disagreement|Steven|Pilkwang,0.0189320388349515
+unknown_negative,ACL,disagreement_phi|Steven|Pilkwang,0.509608404248332
+unknown_negative,ACL,joint_disagreement|Steven|Yunus,0
+unknown_negative,ACL,disagreement_phi|Steven|Yunus,-0.00110764978062963
+unknown_negative,ACL,joint_disagreement|Steven|Lixin,0.000494559841740851
+unknown_negative,ACL,disagreement_phi|Steven|Lixin,0.237475991863931
+unknown_negative,ACL,joint_disagreement|Pilkwang|Yunus,0.00516859463450652
+unknown_negative,ACL,disagreement_phi|Pilkwang|Yunus,0.280171391112246
+unknown_negative,ACL,joint_disagreement|Pilkwang|Lixin,0.00418822370041882
+unknown_negative,ACL,disagreement_phi|Pilkwang|Lixin,0.225688921164013
+unknown_negative,ACL,joint_disagreement|Yunus|Lixin,0
+unknown_negative,ACL,disagreement_phi|Yunus|Lixin,-0.00140159934193289
+unknown_negative,MCL,positive|Dread,0.0492067141871695
+unknown_negative,MCL,positive|Steven,0.15612784548172
+unknown_negative,MCL,positive|Pilkwang,0.172223499655093
+unknown_negative,MCL,positive|Yunus,0.0618532996091055
+unknown_negative,MCL,positive|Lixin,0.147850080478271
+unknown_negative,MCL,missing|Dread,0
+unknown_negative,MCL,missing|Steven,0
+unknown_negative,MCL,missing|Pilkwang,0
+unknown_negative,MCL,missing|Yunus,0
+unknown_negative,MCL,missing|Lixin,0
+unknown_negative,MCL,agreement|Dread|Steven,0.891699241204875
+unknown_negative,MCL,kappa|Dread|Steven,0.429904440384131
+unknown_negative,MCL,pabak|Dread|Steven,0.783398482409749
+unknown_negative,MCL,agreement|Dread|Pilkwang,0.876063462865026
+unknown_negative,MCL,kappa|Dread|Pilkwang,0.393897373377996
+unknown_negative,MCL,pabak|Dread|Pilkwang,0.752126925730053
+unknown_negative,MCL,agreement|Dread|Yunus,0.97953552540814
+unknown_negative,MCL,kappa|Dread|Yunus,0.805049774986338
+unknown_negative,MCL,pabak|Dread|Yunus,0.95907105081628
+unknown_negative,MCL,agreement|Dread|Lixin,0.899977006208324
+unknown_negative,MCL,kappa|Dread|Lixin,0.451947904466221
+unknown_negative,MCL,pabak|Dread|Lixin,0.799954012416648
+unknown_negative,MCL,agreement|Steven|Pilkwang,0.981604966659002
+unknown_negative,MCL,kappa|Steven|Pilkwang,0.933005085467041
+unknown_negative,MCL,pabak|Steven|Pilkwang,0.963209933318004
+unknown_negative,MCL,agreement|Steven|Yunus,0.902966199126236
+unknown_negative,MCL,kappa|Steven|Yunus,0.511575893867014
+unknown_negative,MCL,pabak|Steven|Yunus,0.805932398252472
+unknown_negative,MCL,agreement|Steven|Lixin,0.983444469993102
+unknown_negative,MCL,kappa|Steven|Lixin,0.935784211588406
+unknown_negative,MCL,pabak|Steven|Lixin,0.966888939986204
+unknown_negative,MCL,agreement|Pilkwang|Yunus,0.888710048286963
+unknown_negative,MCL,kappa|Pilkwang|Yunus,0.476951137086514
+unknown_negative,MCL,pabak|Pilkwang|Yunus,0.777420096573925
+unknown_negative,MCL,agreement|Pilkwang|Lixin,0.974706829156128
+unknown_negative,MCL,kappa|Pilkwang|Lixin,0.906024719315663
+unknown_negative,MCL,pabak|Pilkwang|Lixin,0.949413658312256
+unknown_negative,MCL,agreement|Yunus|Lixin,0.910324212462635
+unknown_negative,MCL,kappa|Yunus|Lixin,0.531507139909523
+unknown_negative,MCL,pabak|Yunus|Lixin,0.82064842492527
+unknown_negative,MCL,fleiss|all,0.657058212201157
+unknown_negative,MCL,joint_disagreement|Dread|Steven,0
+unknown_negative,MCL,disagreement_phi|Dread|Steven,-0.0041447143096155
+unknown_negative,MCL,joint_disagreement|Dread|Pilkwang,0.000254712175241977
+unknown_negative,MCL,disagreement_phi|Dread|Pilkwang,0.0015684778724424
+unknown_negative,MCL,joint_disagreement|Dread|Yunus,0.0818713450292398
+unknown_negative,MCL,disagreement_phi|Dread|Yunus,0.889399979595938
+unknown_negative,MCL,joint_disagreement|Dread|Lixin,0.000763747454175153
+unknown_negative,MCL,disagreement_phi|Dread|Lixin,0.208295550464237
+unknown_negative,MCL,joint_disagreement|Steven|Pilkwang,0.0118328298086606
+unknown_negative,MCL,disagreement_phi|Steven|Pilkwang,0.652568934149264
+unknown_negative,MCL,joint_disagreement|Steven|Yunus,0
+unknown_negative,MCL,disagreement_phi|Steven|Yunus,-0.00197828485103862
+unknown_negative,MCL,joint_disagreement|Steven|Lixin,0.000254712175241977
+unknown_negative,MCL,disagreement_phi|Steven|Lixin,0.446985657872766
+unknown_negative,MCL,joint_disagreement|Pilkwang|Yunus,0.00101807075591754
+unknown_negative,MCL,disagreement_phi|Pilkwang|Yunus,0.114278121083518
+unknown_negative,MCL,joint_disagreement|Pilkwang|Lixin,0.00431253170979198
+unknown_negative,MCL,disagreement_phi|Pilkwang|Lixin,0.489466850765382
+unknown_negative,MCL,joint_disagreement|Yunus|Lixin,0.000254712175241977
+unknown_negative,MCL,disagreement_phi|Yunus|Lixin,0.249521835711457
+unknown_negative,Medial Meniscus,positive|Dread,0.38192687974247
+unknown_negative,Medial Meniscus,positive|Steven,0.535755346056565
+unknown_negative,Medial Meniscus,positive|Pilkwang,0.532306277305128
+unknown_negative,Medial Meniscus,positive|Yunus,0.42469533226029
+unknown_negative,Medial Meniscus,positive|Lixin,0.395263278914693
+unknown_negative,Medial Meniscus,missing|Dread,0
+unknown_negative,Medial Meniscus,missing|Steven,0
+unknown_negative,Medial Meniscus,missing|Pilkwang,0
+unknown_negative,Medial Meniscus,missing|Yunus,0
+unknown_negative,Medial Meniscus,missing|Lixin,0
+unknown_negative,Medial Meniscus,agreement|Dread|Steven,0.840193147850081
+unknown_negative,Medial Meniscus,kappa|Dread|Steven,0.685693975593658
+unknown_negative,Medial Meniscus,pabak|Dread|Steven,0.680386295700161
+unknown_negative,Medial Meniscus,agreement|Dread|Pilkwang,0.843642216601518
+unknown_negative,Medial Meniscus,kappa|Dread|Pilkwang,0.691984142805572
+unknown_negative,Medial Meniscus,pabak|Dread|Pilkwang,0.687284433203035
+unknown_negative,Medial Meniscus,agreement|Dread|Yunus,0.925959990802483
+unknown_negative,Medial Meniscus,kappa|Dread|Yunus,0.846459174975917
+unknown_negative,Medial Meniscus,pabak|Dread|Yunus,0.851919981604967
+unknown_negative,Medial Meniscus,agreement|Dread|Lixin,0.923200735801334
+unknown_negative,Medial Meniscus,kappa|Dread|Lixin,0.838408107951161
+unknown_negative,Medial Meniscus,pabak|Dread|Lixin,0.846401471602667
+unknown_negative,Medial Meniscus,agreement|Steven|Pilkwang,0.967578753736491
+unknown_negative,Medial Meniscus,kappa|Steven|Pilkwang,0.934856512739285
+unknown_negative,Medial Meniscus,pabak|Steven|Pilkwang,0.935157507472982
+unknown_negative,Medial Meniscus,agreement|Steven|Yunus,0.882041848700851
+unknown_negative,Medial Meniscus,kappa|Steven|Yunus,0.766597484002359
+unknown_negative,Medial Meniscus,pabak|Steven|Yunus,0.764083697401702
+unknown_negative,Medial Meniscus,agreement|Steven|Lixin,0.859048057024604
+unknown_negative,Medial Meniscus,kappa|Steven|Lixin,0.722256596587759
+unknown_negative,Medial Meniscus,pabak|Steven|Lixin,0.718096114049207
+unknown_negative,Medial Meniscus,agreement|Pilkwang|Yunus,0.885950793285813
+unknown_negative,Medial Meniscus,kappa|Pilkwang|Yunus,0.774099878017721
+unknown_negative,Medial Meniscus,pabak|Pilkwang|Yunus,0.771901586571626
+unknown_negative,Medial Meniscus,agreement|Pilkwang|Lixin,0.862037249942516
+unknown_negative,Medial Meniscus,kappa|Pilkwang|Lixin,0.727759174434444
+unknown_negative,Medial Meniscus,pabak|Pilkwang|Lixin,0.724074499885031
+unknown_negative,Medial Meniscus,agreement|Yunus|Lixin,0.934697631639457
+unknown_negative,Medial Meniscus,kappa|Yunus|Lixin,0.865140631462542
+unknown_negative,Medial Meniscus,pabak|Yunus|Lixin,0.869395263278915
+unknown_negative,Medial Meniscus,fleiss|all,0.783032830335257
+unknown_negative,Medial Meniscus,joint_disagreement|Dread|Steven,0
+unknown_negative,Medial Meniscus,disagreement_phi|Dread|Steven,-0.0279742423869248
+unknown_negative,Medial Meniscus,joint_disagreement|Dread|Pilkwang,0.000520833333333333
+unknown_negative,Medial Meniscus,disagreement_phi|Dread|Pilkwang,-0.00287439088794311
+unknown_negative,Medial Meniscus,joint_disagreement|Dread|Yunus,0.0131139110311134
+unknown_negative,Medial Meniscus,disagreement_phi|Dread|Yunus,0.369670317232431
+unknown_negative,Medial Meniscus,joint_disagreement|Dread|Lixin,0.0239064089521872
+unknown_negative,Medial Meniscus,disagreement_phi|Dread|Lixin,0.406433501991293
+unknown_negative,Medial Meniscus,joint_disagreement|Steven|Pilkwang,0.0767380322347847
+unknown_negative,Medial Meniscus,disagreement_phi|Steven|Pilkwang,0.819874667238091
+unknown_negative,Medial Meniscus,joint_disagreement|Steven|Yunus,0.000781046602447279
+unknown_negative,Medial Meniscus,disagreement_phi|Steven|Yunus,0.0453359218273294
+unknown_negative,Medial Meniscus,joint_disagreement|Steven|Lixin,0.000520833333333333
+unknown_negative,Medial Meniscus,disagreement_phi|Steven|Lixin,0.00262873162639736
+unknown_negative,Medial Meniscus,joint_disagreement|Pilkwang|Yunus,0.00156087408949011
+unknown_negative,Medial Meniscus,disagreement_phi|Pilkwang|Yunus,0.112904892215582
+unknown_negative,Medial Meniscus,joint_disagreement|Pilkwang|Lixin,0.000781046602447279
+unknown_negative,Medial Meniscus,disagreement_phi|Pilkwang|Lixin,0.0220465352717838
+unknown_negative,Medial Meniscus,joint_disagreement|Yunus|Lixin,0.00801240630653916
+unknown_negative,Medial Meniscus,disagreement_phi|Yunus|Lixin,0.334559977581124
+unknown_negative,Lateral Meniscus,positive|Dread,0.134513681306047
+unknown_negative,Lateral Meniscus,positive|Steven,0.256610715106921
+unknown_negative,Lateral Meniscus,positive|Pilkwang,0.250862267187859
+unknown_negative,Lateral Meniscus,positive|Yunus,0.163715796734882
+unknown_negative,Lateral Meniscus,positive|Lixin,0.149689583812371
+unknown_negative,Lateral Meniscus,missing|Dread,0
+unknown_negative,Lateral Meniscus,missing|Steven,0
+unknown_negative,Lateral Meniscus,missing|Pilkwang,0
+unknown_negative,Lateral Meniscus,missing|Yunus,0
+unknown_negative,Lateral Meniscus,missing|Lixin,0
+unknown_negative,Lateral Meniscus,agreement|Dread|Steven,0.874223959530927
+unknown_negative,Lateral Meniscus,kappa|Dread|Steven,0.609499224301531
+unknown_negative,Lateral Meniscus,pabak|Dread|Steven,0.748447919061853
+unknown_negative,Lateral Meniscus,agreement|Dread|Pilkwang,0.879052655782939
+unknown_negative,Lateral Meniscus,kappa|Dread|Pilkwang,0.619527400958078
+unknown_negative,Lateral Meniscus,pabak|Dread|Pilkwang,0.758105311565877
+unknown_negative,Lateral Meniscus,agreement|Dread|Yunus,0.953322602897218
+unknown_negative,Lateral Meniscus,kappa|Dread|Yunus,0.816364794753654
+unknown_negative,Lateral Meniscus,pabak|Dread|Yunus,0.906645205794435
+unknown_negative,Lateral Meniscus,agreement|Dread|Lixin,0.951713037479881
+unknown_negative,Lateral Meniscus,kappa|Dread|Lixin,0.802047990178803
+unknown_negative,Lateral Meniscus,pabak|Dread|Lixin,0.903426074959761
+unknown_negative,Lateral Meniscus,agreement|Steven|Pilkwang,0.98045527707519
+unknown_negative,Lateral Meniscus,kappa|Steven|Pilkwang,0.948393377141923
+unknown_negative,Lateral Meniscus,pabak|Steven|Pilkwang,0.960910554150379
+unknown_negative,Lateral Meniscus,agreement|Steven|Yunus,0.904345826626811
+unknown_negative,Lateral Meniscus,kappa|Steven|Yunus,0.71557234732552
+unknown_negative,Lateral Meniscus,pabak|Steven|Yunus,0.808691653253622
+unknown_negative,Lateral Meniscus,agreement|Steven|Lixin,0.8921591170384
+unknown_negative,Lateral Meniscus,kappa|Steven|Lixin,0.672690110534111
+unknown_negative,Lateral Meniscus,pabak|Steven|Lixin,0.784318234076799
+unknown_negative,Lateral Meniscus,agreement|Pilkwang|Yunus,0.910554150379398
+unknown_negative,Lateral Meniscus,kappa|Pilkwang|Yunus,0.730939619378456
+unknown_negative,Lateral Meniscus,pabak|Pilkwang|Yunus,0.821108300758795
+unknown_negative,Lateral Meniscus,agreement|Pilkwang|Lixin,0.897907564957461
+unknown_negative,Lateral Meniscus,kappa|Pilkwang|Lixin,0.686302732721239
+unknown_negative,Lateral Meniscus,pabak|Pilkwang|Lixin,0.795815129914923
+unknown_negative,Lateral Meniscus,agreement|Yunus|Lixin,0.956081857898367
+unknown_negative,Lateral Meniscus,kappa|Yunus|Lixin,0.833890226156012
+unknown_negative,Lateral Meniscus,pabak|Yunus|Lixin,0.912163715796735
+unknown_negative,Lateral Meniscus,fleiss|all,0.741153798002229
+unknown_negative,Lateral Meniscus,joint_disagreement|Dread|Steven,0
+unknown_negative,Lateral Meniscus,disagreement_phi|Dread|Steven,-0.0183282068753487
+unknown_negative,Lateral Meniscus,joint_disagreement|Dread|Pilkwang,0
+unknown_negative,Lateral Meniscus,disagreement_phi|Dread|Pilkwang,-0.0129167604460754
+unknown_negative,Lateral Meniscus,joint_disagreement|Dread|Yunus,0.0120693990445059
+unknown_negative,Lateral Meniscus,disagreement_phi|Dread|Yunus,0.484569421601144
+unknown_negative,Lateral Meniscus,joint_disagreement|Dread|Lixin,0.0175043760940235
+unknown_negative,Lateral Meniscus,disagreement_phi|Dread|Lixin,0.480014587139757
+unknown_negative,Lateral Meniscus,joint_disagreement|Steven|Pilkwang,0.0665241149916845
+unknown_negative,Lateral Meniscus,disagreement_phi|Steven|Pilkwang,0.868579824877604
+unknown_negative,Lateral Meniscus,joint_disagreement|Steven|Yunus,0.000254452926208651
+unknown_negative,Lateral Meniscus,disagreement_phi|Steven|Yunus,0.0247406676880183
+unknown_negative,Lateral Meniscus,joint_disagreement|Steven|Lixin,0
+unknown_negative,Lateral Meniscus,disagreement_phi|Steven|Lixin,-0.0130147535468772
+unknown_negative,Lateral Meniscus,joint_disagreement|Pilkwang|Yunus,0.00101703534197813
+unknown_negative,Lateral Meniscus,disagreement_phi|Pilkwang|Yunus,0.153980417384167
+unknown_negative,Lateral Meniscus,joint_disagreement|Pilkwang|Lixin,0.000508776392775375
+unknown_negative,Lateral Meniscus,disagreement_phi|Pilkwang|Lixin,0.0437523933054674
+unknown_negative,Lateral Meniscus,joint_disagreement|Yunus|Lixin,0.00380324543610548
+unknown_negative,Lateral Meniscus,disagreement_phi|Yunus|Lixin,0.323926968719722
+unknown_negative,Medial OA,positive|Dread,0.246493446769372
+unknown_negative,Medial OA,positive|Steven,0.378937686824557
+unknown_negative,Medial OA,positive|Pilkwang,0.367210853069671
+unknown_negative,Medial OA,positive|Yunus,0.24626350885261
+unknown_negative,Medial OA,positive|Lixin,0.367440790986434
+unknown_negative,Medial OA,missing|Dread,0
+unknown_negative,Medial OA,missing|Steven,0
+unknown_negative,Medial OA,missing|Pilkwang,0
+unknown_negative,Medial OA,missing|Yunus,0
+unknown_negative,Medial OA,missing|Lixin,0
+unknown_negative,Medial OA,agreement|Dread|Steven,0.860197746608416
+unknown_negative,Medial OA,kappa|Dread|Steven,0.681267815883571
+unknown_negative,Medial OA,pabak|Dread|Steven,0.720395493216832
+unknown_negative,Medial OA,agreement|Dread|Pilkwang,0.867785697861577
+unknown_negative,Medial OA,kappa|Dread|Pilkwang,0.694425242557811
+unknown_negative,Medial OA,pabak|Dread|Pilkwang,0.735571395723155
+unknown_negative,Medial OA,agreement|Dread|Yunus,0.942745458726144
+unknown_negative,Medial OA,kappa|Dread|Yunus,0.845821487102991
+unknown_negative,Medial OA,pabak|Dread|Yunus,0.885490917452288
+unknown_negative,Medial OA,agreement|Dread|Lixin,0.869395263278915
+unknown_negative,Medial OA,kappa|Dread|Lixin,0.698226594172924
+unknown_negative,Medial OA,pabak|Dread|Lixin,0.738790526557829
+unknown_negative,Medial OA,agreement|Steven|Pilkwang,0.974476891239365
+unknown_negative,Medial OA,kappa|Steven|Pilkwang,0.945445780006381
+unknown_negative,Medial OA,pabak|Steven|Pilkwang,0.948953782478731
+unknown_negative,Medial OA,agreement|Steven|Yunus,0.857208553690504
+unknown_negative,Medial OA,kappa|Steven|Yunus,0.674411491859772
+unknown_negative,Medial OA,pabak|Steven|Yunus,0.714417107381007
+unknown_negative,Medial OA,agreement|Steven|Lixin,0.981145090825477
+unknown_negative,Medial OA,kappa|Steven|Lixin,0.959703479585972
+unknown_negative,Medial OA,pabak|Steven|Lixin,0.962290181650954
+unknown_negative,Medial OA,agreement|Pilkwang|Yunus,0.859737870774891
+unknown_negative,Medial OA,kappa|Pilkwang|Yunus,0.675779280251487
+unknown_negative,Medial OA,pabak|Pilkwang|Yunus,0.719475741549782
+unknown_negative,Medial OA,agreement|Pilkwang|Lixin,0.97401701540584
+unknown_negative,Medial OA,kappa|Pilkwang|Lixin,0.944097987007913
+unknown_negative,Medial OA,pabak|Pilkwang|Lixin,0.948034030811681
+unknown_negative,Medial OA,agreement|Yunus|Lixin,0.865486318693953
+unknown_negative,Medial OA,kappa|Yunus|Lixin,0.689150858964404
+unknown_negative,Medial OA,pabak|Yunus|Lixin,0.730972637387905
+unknown_negative,Medial OA,fleiss|all,0.782668892031835
+unknown_negative,Medial OA,joint_disagreement|Dread|Steven,0.000519210799584631
+unknown_negative,Medial OA,disagreement_phi|Dread|Steven,0.0229358798755147
+unknown_negative,Medial OA,joint_disagreement|Dread|Pilkwang,0.00336526016049702
+unknown_negative,Medial OA,disagreement_phi|Dread|Pilkwang,0.182359266641931
+unknown_negative,Medial OA,joint_disagreement|Dread|Yunus,0.0962441314553991
+unknown_negative,Medial OA,disagreement_phi|Dread|Yunus,0.761125694366684
+unknown_negative,Medial OA,joint_disagreement|Dread|Lixin,0.00103788271925272
+unknown_negative,Medial OA,disagreement_phi|Dread|Lixin,0.102510347815709
+unknown_negative,Medial OA,joint_disagreement|Steven|Pilkwang,0.00645161290322581
+unknown_negative,Medial OA,disagreement_phi|Steven|Pilkwang,0.469018752529104
+unknown_negative,Medial OA,joint_disagreement|Steven|Yunus,0.00103788271925272
+unknown_negative,Medial OA,disagreement_phi|Steven|Yunus,0.0478126077700473
+unknown_negative,Medial OA,joint_disagreement|Steven|Lixin,0.00696414753675522
+unknown_negative,Medial OA,disagreement_phi|Steven|Lixin,0.602373870171563
+unknown_negative,Medial OA,joint_disagreement|Pilkwang|Yunus,0.00103788271925272
+unknown_negative,Medial OA,disagreement_phi|Pilkwang|Yunus,0.049103137971812
+unknown_negative,Medial OA,joint_disagreement|Pilkwang|Lixin,0.00155601659751037
+unknown_negative,Medial OA,disagreement_phi|Pilkwang|Lixin,0.265563694968764
+unknown_negative,Medial OA,joint_disagreement|Yunus|Lixin,0.00103788271925272
+unknown_negative,Medial OA,disagreement_phi|Yunus|Lixin,0.0903963157701082
+unknown_negative,Lateral OA,positive|Dread,0.149229707978846
+unknown_negative,Lateral OA,positive|Steven,0.289491837203955
+unknown_negative,Lateral OA,positive|Pilkwang,0.24626350885261
+unknown_negative,Lateral OA,positive|Yunus,0.147850080478271
+unknown_negative,Lateral OA,positive|Lixin,0.265578293860658
+unknown_negative,Lateral OA,missing|Dread,0
+unknown_negative,Lateral OA,missing|Steven,0
+unknown_negative,Lateral OA,missing|Pilkwang,0
+unknown_negative,Lateral OA,missing|Yunus,0
+unknown_negative,Lateral OA,missing|Lixin,0
+unknown_negative,Lateral OA,agreement|Dread|Steven,0.853759484939067
+unknown_negative,Lateral OA,kappa|Dread|Steven,0.584921312602139
+unknown_negative,Lateral OA,pabak|Dread|Steven,0.707518969878133
+unknown_negative,Lateral OA,agreement|Dread|Pilkwang,0.881352034950563
+unknown_negative,Lateral OA,kappa|Dread|Pilkwang,0.631520682180094
+unknown_negative,Lateral OA,pabak|Dread|Pilkwang,0.762704069901127
+unknown_negative,Lateral OA,agreement|Dread|Yunus,0.947114279144631
+unknown_negative,Lateral OA,kappa|Dread|Yunus,0.790926310130607
+unknown_negative,Lateral OA,pabak|Dread|Yunus,0.894228558289262
+unknown_negative,Lateral OA,agreement|Dread|Lixin,0.872154518280065
+unknown_negative,Lateral OA,kappa|Dread|Lixin,0.618990023644879
+unknown_negative,Lateral OA,pabak|Dread|Lixin,0.744309036560129
+unknown_negative,Lateral OA,agreement|Steven|Pilkwang,0.949413658312256
+unknown_negative,Lateral OA,kappa|Steven|Pilkwang,0.871338143551335
+unknown_negative,Lateral OA,pabak|Steven|Pilkwang,0.898827316624511
+unknown_negative,Lateral OA,agreement|Steven|Yunus,0.849160726603817
+unknown_negative,Lateral OA,kappa|Steven|Yunus,0.571161527218024
+unknown_negative,Lateral OA,pabak|Steven|Yunus,0.698321453207634
+unknown_negative,Lateral OA,agreement|Steven|Lixin,0.966429064152679
+unknown_negative,Lateral OA,kappa|Steven|Lixin,0.916345506756347
+unknown_negative,Lateral OA,pabak|Steven|Lixin,0.932858128305358
+unknown_negative,Lateral OA,agreement|Pilkwang|Yunus,0.873994021614164
+unknown_negative,Lateral OA,kappa|Pilkwang|Yunus,0.607816511104383
+unknown_negative,Lateral OA,pabak|Pilkwang|Yunus,0.747988043228328
+unknown_negative,Lateral OA,agreement|Pilkwang|Lixin,0.964129684985054
+unknown_negative,Lateral OA,kappa|Pilkwang|Lixin,0.905861412120445
+unknown_negative,Lateral OA,pabak|Pilkwang|Lixin,0.928259369970108
+unknown_negative,Lateral OA,agreement|Yunus|Lixin,0.870315014945965
+unknown_negative,Lateral OA,kappa|Yunus|Lixin,0.612761383808334
+unknown_negative,Lateral OA,pabak|Yunus|Lixin,0.740630029891929
+unknown_negative,Lateral OA,fleiss|all,0.716437692021243
+unknown_negative,Lateral OA,joint_disagreement|Dread|Steven,0.00234131113423517
+unknown_negative,Lateral OA,disagreement_phi|Dread|Steven,0.0821303826885204
+unknown_negative,Lateral OA,joint_disagreement|Dread|Pilkwang,0.00596163815448419
+unknown_negative,Lateral OA,disagreement_phi|Dread|Pilkwang,0.345669728910074
+unknown_negative,Lateral OA,joint_disagreement|Dread|Yunus,0.0877735490009515
+unknown_negative,Lateral OA,disagreement_phi|Dread|Yunus,0.790415175144762
+unknown_negative,Lateral OA,joint_disagreement|Dread|Lixin,0.000260688216892596
+unknown_negative,Lateral OA,disagreement_phi|Dread|Lixin,0.0226772012622768
+unknown_negative,Lateral OA,joint_disagreement|Steven|Pilkwang,0.00570391495981333
+unknown_negative,Lateral OA,disagreement_phi|Steven|Pilkwang,0.32018108840378
+unknown_negative,Lateral OA,joint_disagreement|Steven|Yunus,0.00182196772514315
+unknown_negative,Lateral OA,disagreement_phi|Steven|Yunus,0.0488714775750548
+unknown_negative,Lateral OA,joint_disagreement|Steven|Lixin,0.0146454265159301
+unknown_negative,Lateral OA,disagreement_phi|Steven|Lixin,0.565634895144146
+unknown_negative,Lateral OA,joint_disagreement|Pilkwang|Yunus,0.0038961038961039
+unknown_negative,Lateral OA,disagreement_phi|Pilkwang|Yunus,0.228815873334623
+unknown_negative,Lateral OA,joint_disagreement|Pilkwang|Lixin,0.00156209320489456
+unknown_negative,Lateral OA,disagreement_phi|Pilkwang|Lixin,0.265722895334294
+unknown_negative,Lateral OA,joint_disagreement|Yunus|Lixin,0.00130208333333333
+unknown_negative,Lateral OA,disagreement_phi|Yunus|Lixin,0.107839963502439
+unknown_negative,PF OA,positive|Dread,0.33547942055645
+unknown_negative,PF OA,positive|Steven,0.464934467693723
+unknown_negative,PF OA,positive|Pilkwang,0.452287882271787
+unknown_negative,PF OA,positive|Yunus,0.302828236376178
+unknown_negative,PF OA,positive|Lixin,0.454357323522649
+unknown_negative,PF OA,missing|Dread,0
+unknown_negative,PF OA,missing|Steven,0
+unknown_negative,PF OA,missing|Pilkwang,0
+unknown_negative,PF OA,missing|Yunus,0
+unknown_negative,PF OA,missing|Lixin,0
+unknown_negative,PF OA,agreement|Dread|Steven,0.864566567026903
+unknown_negative,PF OA,kappa|Dread|Steven,0.722734964209687
+unknown_negative,PF OA,pabak|Dread|Steven,0.729133134053805
+unknown_negative,PF OA,agreement|Dread|Pilkwang,0.86985513911244
+unknown_negative,PF OA,kappa|Dread|Pilkwang,0.731272642000496
+unknown_negative,PF OA,pabak|Dread|Pilkwang,0.739710278224879
+unknown_negative,PF OA,agreement|Dread|Yunus,0.933777879972407
+unknown_negative,PF OA,kappa|Dread|Yunus,0.847808056022624
+unknown_negative,PF OA,pabak|Dread|Yunus,0.867555759944815
+unknown_negative,PF OA,agreement|Dread|Lixin,0.872384456196827
+unknown_negative,PF OA,kappa|Dread|Lixin,0.73686522842908
+unknown_negative,PF OA,pabak|Dread|Lixin,0.744768912393654
+unknown_negative,PF OA,agreement|Steven|Pilkwang,0.98137502874224
+unknown_negative,PF OA,kappa|Steven|Pilkwang,0.962499093799159
+unknown_negative,PF OA,pabak|Steven|Pilkwang,0.962750057484479
+unknown_negative,PF OA,agreement|Steven|Yunus,0.834674637847781
+unknown_negative,PF OA,kappa|Steven|Yunus,0.659944800439091
+unknown_negative,PF OA,pabak|Steven|Yunus,0.669349275695562
+unknown_negative,PF OA,agreement|Steven|Lixin,0.986663600827777
+unknown_negative,PF OA,kappa|Steven|Lixin,0.973155343804483
+unknown_negative,PF OA,pabak|Steven|Lixin,0.973327201655553
+unknown_negative,PF OA,agreement|Pilkwang|Yunus,0.839043458266268
+unknown_negative,PF OA,kappa|Pilkwang|Yunus,0.665499693551439
+unknown_negative,PF OA,pabak|Pilkwang|Yunus,0.678086916532536
+unknown_negative,PF OA,agreement|Pilkwang|Lixin,0.985513911243964
+unknown_negative,PF OA,kappa|Pilkwang|Lixin,0.970773232942092
+unknown_negative,PF OA,pabak|Pilkwang|Lixin,0.971027822487928
+unknown_negative,PF OA,agreement|Yunus|Lixin,0.841572775350655
+unknown_negative,PF OA,kappa|Yunus|Lixin,0.671313566112684
+unknown_negative,PF OA,pabak|Yunus|Lixin,0.683145550701311
+unknown_negative,PF OA,fleiss|all,0.793966882348663
+unknown_negative,PF OA,joint_disagreement|Dread|Steven,0.000520969002344361
+unknown_negative,PF OA,disagreement_phi|Dread|Steven,0.0333534286158787
+unknown_negative,PF OA,joint_disagreement|Dread|Pilkwang,0.00208062418725618
+unknown_negative,PF OA,disagreement_phi|Dread|Pilkwang,0.186918722833467
+unknown_negative,PF OA,joint_disagreement|Dread|Yunus,0.107051431231091
+unknown_negative,PF OA,disagreement_phi|Dread|Yunus,0.751211535062214
+unknown_negative,PF OA,joint_disagreement|Dread|Lixin,0
+unknown_negative,PF OA,disagreement_phi|Dread|Lixin,-0.00519505781945506
+unknown_negative,PF OA,joint_disagreement|Steven|Pilkwang,0.00311769290724864
+unknown_negative,PF OA,disagreement_phi|Steven|Pilkwang,0.359741769326525
+unknown_negative,PF OA,joint_disagreement|Steven|Yunus,0.00156128024980484
+unknown_negative,PF OA,disagreement_phi|Steven|Yunus,0.0526920376371065
+unknown_negative,PF OA,joint_disagreement|Steven|Lixin,0.00259942812581232
+unknown_negative,PF OA,disagreement_phi|Steven|Lixin,0.401966813600723
+unknown_negative,PF OA,joint_disagreement|Pilkwang|Yunus,0.00259942812581232
+unknown_negative,PF OA,disagreement_phi|Pilkwang|Yunus,0.12484422991287
+unknown_negative,PF OA,joint_disagreement|Pilkwang|Lixin,0.000520969002344361
+unknown_negative,PF OA,disagreement_phi|Pilkwang|Lixin,0.169011266635292
+unknown_negative,PF OA,joint_disagreement|Yunus|Lixin,0.000520969002344361
+unknown_negative,PF OA,disagreement_phi|Yunus|Lixin,0.0411498304390033
+unknown_negative,Effusion,positive|Dread,0.255690963439871
+unknown_negative,Effusion,positive|Steven,0.599218211083008
+unknown_negative,Effusion,positive|Pilkwang,0.601517590250632
+unknown_negative,Effusion,positive|Yunus,0.247413198436422
+unknown_negative,Effusion,positive|Lixin,0.590480570246034
+unknown_negative,Effusion,missing|Dread,0
+unknown_negative,Effusion,missing|Steven,0
+unknown_negative,Effusion,missing|Pilkwang,0
+unknown_negative,Effusion,missing|Yunus,0
+unknown_negative,Effusion,missing|Lixin,0
+unknown_negative,Effusion,agreement|Dread|Steven,0.654633249022764
+unknown_negative,Effusion,kappa|Dread|Steven,0.370320030060234
+unknown_negative,Effusion,pabak|Dread|Steven,0.309266498045528
+unknown_negative,Effusion,agreement|Dread|Pilkwang,0.651414118188089
+unknown_negative,Effusion,kappa|Dread|Pilkwang,0.365750054256395
+unknown_negative,Effusion,pabak|Dread|Pilkwang,0.302828236376179
+unknown_negative,Effusion,agreement|Dread|Yunus,0.959530926649805
+unknown_negative,Effusion,kappa|Dread|Yunus,0.892535690678725
+unknown_negative,Effusion,pabak|Dread|Yunus,0.919061853299609
+unknown_negative,Effusion,agreement|Dread|Lixin,0.661071510692113
+unknown_negative,Effusion,kappa|Dread|Lixin,0.377210609682925
+unknown_negative,Effusion,pabak|Dread|Lixin,0.322143021384226
+unknown_negative,Effusion,agreement|Steven|Pilkwang,0.993561738330651
+unknown_negative,Effusion,kappa|Steven|Pilkwang,0.986582907718321
+unknown_negative,Effusion,pabak|Steven|Pilkwang,0.987123476661301
+unknown_negative,Effusion,agreement|Steven|Yunus,0.64589560818579
+unknown_negative,Effusion,kappa|Steven|Yunus,0.356317106564922
+unknown_negative,Effusion,pabak|Steven|Yunus,0.29179121637158
+unknown_negative,Effusion,agreement|Steven|Lixin,0.988962979995401
+unknown_negative,Effusion,kappa|Steven|Lixin,0.977103772933025
+unknown_negative,Effusion,pabak|Steven|Lixin,0.977925959990803
+unknown_negative,Effusion,agreement|Pilkwang|Yunus,0.642676477351115
+unknown_negative,Effusion,kappa|Pilkwang|Yunus,0.351834048856052
+unknown_negative,Effusion,pabak|Pilkwang|Yunus,0.28535295470223
+unknown_negative,Effusion,agreement|Pilkwang|Lixin,0.988043228328351
+unknown_negative,Effusion,kappa|Pilkwang|Lixin,0.97517432465662
+unknown_negative,Effusion,pabak|Pilkwang|Lixin,0.976086456656703
+unknown_negative,Effusion,agreement|Yunus|Lixin,0.652333869855139
+unknown_negative,Effusion,kappa|Yunus|Lixin,0.362908592034817
+unknown_negative,Effusion,pabak|Yunus|Lixin,0.304667739710278
+unknown_negative,Effusion,fleiss|all,0.564678201791541
+unknown_negative,Effusion,joint_disagreement|Dread|Steven,0.000343760742523204
+unknown_negative,Effusion,disagreement_phi|Dread|Steven,0.0556566410492763
+unknown_negative,Effusion,joint_disagreement|Dread|Pilkwang,0
+unknown_negative,Effusion,disagreement_phi|Dread|Pilkwang,-0.0102908009186591
+unknown_negative,Effusion,joint_disagreement|Dread|Yunus,0.324192423890309
+unknown_negative,Effusion,disagreement_phi|Dread|Yunus,0.91212965581812
+unknown_negative,Effusion,joint_disagreement|Dread|Lixin,0
+unknown_negative,Effusion,disagreement_phi|Dread|Lixin,-0.00402873755850547
+unknown_negative,Effusion,joint_disagreement|Steven|Pilkwang,0.0112206732403944
+unknown_negative,Effusion,disagreement_phi|Steven|Pilkwang,0.808364436626498
+unknown_negative,Effusion,joint_disagreement|Steven|Yunus,0.000687285223367698
+unknown_negative,Effusion,disagreement_phi|Steven|Yunus,0.080511082184794
+unknown_negative,Effusion,joint_disagreement|Steven|Lixin,0.000687285223367698
+unknown_negative,Effusion,disagreement_phi|Steven|Lixin,0.446367043935094
+unknown_negative,Effusion,joint_disagreement|Pilkwang|Yunus,0.000343760742523204
+unknown_negative,Effusion,disagreement_phi|Pilkwang|Yunus,0.0131731257586818
+unknown_negative,Effusion,joint_disagreement|Pilkwang|Lixin,0.00205902539464653
+unknown_negative,Effusion,disagreement_phi|Pilkwang|Lixin,0.484679663141127
+unknown_negative,Effusion,joint_disagreement|Yunus|Lixin,0.000343760742523204
+unknown_negative,Effusion,disagreement_phi|Yunus|Lixin,0.0512009342169271
+unknown_negative,Synovitis,positive|Dread,0.244883881352035
+unknown_negative,Synovitis,positive|Steven,0.126695792136123
+unknown_negative,Synovitis,positive|Pilkwang,0.129684985054035
+unknown_negative,Synovitis,positive|Yunus,0.0889859737870775
+unknown_negative,Synovitis,positive|Lixin,0.123936537134974
+unknown_negative,Synovitis,missing|Dread,0
+unknown_negative,Synovitis,missing|Steven,0
+unknown_negative,Synovitis,missing|Pilkwang,0
+unknown_negative,Synovitis,missing|Yunus,0
+unknown_negative,Synovitis,missing|Lixin,0
+unknown_negative,Synovitis,agreement|Dread|Steven,0.785237985743849
+unknown_negative,Synovitis,kappa|Dread|Steven,0.306163241922166
+unknown_negative,Synovitis,pabak|Dread|Steven,0.570475971487698
+unknown_negative,Synovitis,agreement|Dread|Pilkwang,0.784548171993562
+unknown_negative,Synovitis,kappa|Dread|Pilkwang,0.307347649689345
+unknown_negative,Synovitis,pabak|Dread|Pilkwang,0.569096343987124
+unknown_negative,Synovitis,agreement|Dread|Yunus,0.817889169924121
+unknown_negative,Synovitis,kappa|Dread|Yunus,0.372653329297226
+unknown_negative,Synovitis,pabak|Dread|Yunus,0.635778339848241
+unknown_negative,Synovitis,agreement|Dread|Lixin,0.785697861577374
+unknown_negative,Synovitis,kappa|Dread|Lixin,0.304485488851055
+unknown_negative,Synovitis,pabak|Dread|Lixin,0.571395723154748
+unknown_negative,Synovitis,agreement|Steven|Pilkwang,0.990572545412738
+unknown_negative,Synovitis,kappa|Steven|Pilkwang,0.95782271152451
+unknown_negative,Synovitis,pabak|Steven|Pilkwang,0.981145090825477
+unknown_negative,Synovitis,agreement|Steven|Yunus,0.947574154978156
+unknown_negative,Synovitis,kappa|Steven|Yunus,0.728551217557177
+unknown_negative,Synovitis,pabak|Steven|Yunus,0.895148309956312
+unknown_negative,Synovitis,agreement|Steven|Lixin,0.994941365831226
+unknown_negative,Synovitis,kappa|Steven|Lixin,0.976925221491634
+unknown_negative,Synovitis,pabak|Steven|Lixin,0.989882731662451
+unknown_negative,Synovitis,agreement|Pilkwang|Yunus,0.945044837893769
+unknown_negative,Synovitis,kappa|Pilkwang|Yunus,0.719029735659896
+unknown_negative,Synovitis,pabak|Pilkwang|Yunus,0.890089675787537
+unknown_negative,Synovitis,agreement|Pilkwang|Lixin,0.992871924580363
+unknown_negative,Synovitis,kappa|Pilkwang|Lixin,0.967815600788264
+unknown_negative,Synovitis,pabak|Pilkwang|Lixin,0.985743849160727
+unknown_negative,Synovitis,agreement|Yunus|Lixin,0.948493906645206
+unknown_negative,Synovitis,kappa|Yunus|Lixin,0.730144255327165
+unknown_negative,Synovitis,pabak|Yunus|Lixin,0.896987813290412
+unknown_negative,Synovitis,fleiss|all,0.588708748838845
+unknown_negative,Synovitis,joint_disagreement|Dread|Steven,0.000962695547533093
+unknown_negative,Synovitis,disagreement_phi|Dread|Steven,0.0248938098610984
+unknown_negative,Synovitis,joint_disagreement|Dread|Pilkwang,0.00168350168350168
+unknown_negative,Synovitis,disagreement_phi|Dread|Pilkwang,0.0286403707700614
+unknown_negative,Synovitis,joint_disagreement|Dread|Yunus,0.0402312138728324
+unknown_negative,Synovitis,disagreement_phi|Dread|Yunus,0.340753711425051
+unknown_negative,Synovitis,joint_disagreement|Dread|Lixin,0.000481579581025765
+unknown_negative,Synovitis,disagreement_phi|Dread|Lixin,0.0261121864043229
+unknown_negative,Synovitis,joint_disagreement|Steven|Pilkwang,0.000240847784200385
+unknown_negative,Synovitis,disagreement_phi|Steven|Pilkwang,0.0888949861477971
+unknown_negative,Synovitis,joint_disagreement|Steven|Yunus,0.000481579581025765
+unknown_negative,Synovitis,disagreement_phi|Steven|Yunus,0.102835865765705
+unknown_negative,Synovitis,joint_disagreement|Steven|Lixin,0.000722195474241695
+unknown_negative,Synovitis,disagreement_phi|Steven|Lixin,0.423326225167329
+unknown_negative,Synovitis,joint_disagreement|Pilkwang|Yunus,0.000240847784200385
+unknown_negative,Synovitis,disagreement_phi|Pilkwang|Yunus,0.036367483423183
+unknown_negative,Synovitis,joint_disagreement|Pilkwang|Lixin,0.000722195474241695
+unknown_negative,Synovitis,disagreement_phi|Pilkwang|Lixin,0.324034647848811
+unknown_negative,Synovitis,joint_disagreement|Yunus|Lixin,0.000240847784200385
+unknown_negative,Synovitis,disagreement_phi|Yunus|Lixin,0.0915398144631895
+unknown_negative,Baker's,positive|Dread,0.122326971717636
+unknown_negative,Baker's,positive|Steven,0.24718326051966
+unknown_negative,Baker's,positive|Pilkwang,0.252471832605197
+unknown_negative,Baker's,positive|Yunus,0.163025982984594
+unknown_negative,Baker's,positive|Lixin,0.246723384686135
+unknown_negative,Baker's,missing|Dread,0
+unknown_negative,Baker's,missing|Steven,0
+unknown_negative,Baker's,missing|Pilkwang,0
+unknown_negative,Baker's,missing|Yunus,0
+unknown_negative,Baker's,missing|Lixin,0
+unknown_negative,Baker's,agreement|Dread|Steven,0.873764083697402
+unknown_negative,Baker's,kappa|Dread|Steven,0.591516948634937
+unknown_negative,Baker's,pabak|Dread|Steven,0.747528167394803
+unknown_negative,Baker's,agreement|Dread|Pilkwang,0.86893538744539
+unknown_negative,Baker's,kappa|Dread|Pilkwang,0.581304118266432
+unknown_negative,Baker's,pabak|Dread|Pilkwang,0.73787077489078
+unknown_negative,Baker's,agreement|Dread|Yunus,0.953322602897218
+unknown_negative,Baker's,kappa|Dread|Yunus,0.809843253962698
+unknown_negative,Baker's,pabak|Dread|Yunus,0.906645205794435
+unknown_negative,Baker's,agreement|Dread|Lixin,0.873764083697402
+unknown_negative,Baker's,kappa|Dread|Lixin,0.591057285012708
+unknown_negative,Baker's,pabak|Dread|Lixin,0.747528167394803
+unknown_negative,Baker's,agreement|Steven|Pilkwang,0.994711427914463
+unknown_negative,Baker's,kappa|Steven|Pilkwang,0.98589117670664
+unknown_negative,Baker's,pabak|Steven|Pilkwang,0.989422855828926
+unknown_negative,Baker's,agreement|Steven|Yunus,0.899287192458036
+unknown_negative,Baker's,kappa|Steven|Yunus,0.694452883466955
+unknown_negative,Baker's,pabak|Steven|Yunus,0.798574384916073
+unknown_negative,Baker's,agreement|Steven|Lixin,0.99724074499885
+unknown_negative,Baker's,kappa|Steven|Lixin,0.992581348861686
+unknown_negative,Baker's,pabak|Steven|Lixin,0.994481489997701
+unknown_negative,Baker's,agreement|Pilkwang|Yunus,0.898597378707749
+unknown_negative,Baker's,kappa|Pilkwang|Yunus,0.695651111394281
+unknown_negative,Baker's,pabak|Pilkwang|Yunus,0.797194757415498
+unknown_negative,Baker's,agreement|Pilkwang|Lixin,0.993791676247413
+unknown_negative,Baker's,kappa|Pilkwang|Lixin,0.983427402742919
+unknown_negative,Baker's,pabak|Pilkwang|Lixin,0.987583352494826
+unknown_negative,Baker's,agreement|Yunus|Lixin,0.898827316624512
+unknown_negative,Baker's,kappa|Yunus|Lixin,0.692768805620188
+unknown_negative,Baker's,pabak|Yunus|Lixin,0.797654633249023
+unknown_negative,Baker's,fleiss|all,0.771701307931131
+unknown_negative,Baker's,joint_disagreement|Dread|Steven,0.000253549695740365
+unknown_negative,Baker's,disagreement_phi|Dread|Steven,0.0784746337457501
+unknown_negative,Baker's,joint_disagreement|Dread|Pilkwang,0
+unknown_negative,Baker's,disagreement_phi|Dread|Pilkwang,-0.010199969912897
+unknown_negative,Baker's,joint_disagreement|Dread|Yunus,0.0893764434180139
+unknown_negative,Baker's,disagreement_phi|Dread|Yunus,0.784124786400392
+unknown_negative,Baker's,joint_disagreement|Dread|Lixin,0.000506970849176172
+unknown_negative,Baker's,disagreement_phi|Dread|Lixin,0.0750012013922864
+unknown_negative,Baker's,joint_disagreement|Steven|Pilkwang,0.00101342791993919
+unknown_negative,Baker's,disagreement_phi|Steven|Pilkwang,0.533844241597831
+unknown_negative,Baker's,joint_disagreement|Steven|Yunus,0
+unknown_negative,Baker's,disagreement_phi|Steven|Yunus,
+unknown_negative,Baker's,joint_disagreement|Steven|Lixin,0.000253549695740365
+unknown_negative,Baker's,disagreement_phi|Steven|Lixin,0.577203826506436
+unknown_negative,Baker's,joint_disagreement|Pilkwang|Yunus,0.00202480384712731
+unknown_negative,Baker's,disagreement_phi|Pilkwang|Yunus,0.27609078561084
+unknown_negative,Baker's,joint_disagreement|Pilkwang|Lixin,0.000760263558033452
+unknown_negative,Baker's,disagreement_phi|Pilkwang|Lixin,0.37090720955141
+unknown_negative,Baker's,joint_disagreement|Yunus|Lixin,0
+unknown_negative,Baker's,disagreement_phi|Yunus|Lixin,-0.00219253493996762
+unknown_negative,Contusion,positive|Dread,0.151988962979995
+unknown_negative,Contusion,positive|Steven,0.248332950103472
+unknown_negative,Contusion,positive|Pilkwang,0.28995171303748
+unknown_negative,Contusion,positive|Yunus,0.146010577144171
+unknown_negative,Contusion,positive|Lixin,0.167624741319844
+unknown_negative,Contusion,missing|Dread,0
+unknown_negative,Contusion,missing|Steven,0
+unknown_negative,Contusion,missing|Pilkwang,0
+unknown_negative,Contusion,missing|Yunus,0
+unknown_negative,Contusion,missing|Lixin,0
+unknown_negative,Contusion,agreement|Dread|Steven,0.84755116118648
+unknown_negative,Contusion,kappa|Dread|Steven,0.53068719625108
+unknown_negative,Contusion,pabak|Dread|Steven,0.695102322372959
+unknown_negative,Contusion,agreement|Dread|Pilkwang,0.830305817429294
+unknown_negative,Contusion,kappa|Dread|Pilkwang,0.520369303271976
+unknown_negative,Contusion,pabak|Dread|Pilkwang,0.660611634858588
+unknown_negative,Contusion,agreement|Dread|Yunus,0.898827316624512
+unknown_negative,Contusion,kappa|Dread|Yunus,0.601078544723458
+unknown_negative,Contusion,pabak|Dread|Yunus,0.797654633249023
+unknown_negative,Contusion,agreement|Dread|Lixin,0.878132904115889
+unknown_negative,Contusion,kappa|Dread|Lixin,0.546388258919048
+unknown_negative,Contusion,pabak|Dread|Lixin,0.756265808231778
+unknown_negative,Contusion,agreement|Steven|Pilkwang,0.914233157047597
+unknown_negative,Contusion,kappa|Steven|Pilkwang,0.782469782087201
+unknown_negative,Contusion,pabak|Steven|Pilkwang,0.828466314095194
+unknown_negative,Contusion,agreement|Steven|Yunus,0.84571165785238
+unknown_negative,Contusion,kappa|Steven|Yunus,0.520583183490542
+unknown_negative,Contusion,pabak|Steven|Yunus,0.69142331570476
+unknown_negative,Contusion,agreement|Steven|Lixin,0.899057254541274
+unknown_negative,Contusion,kappa|Steven|Lixin,0.696599123333526
+unknown_negative,Contusion,pabak|Steven|Lixin,0.798114509082548
+unknown_negative,Contusion,agreement|Pilkwang|Yunus,0.835364451598069
+unknown_negative,Contusion,kappa|Pilkwang|Yunus,0.531340407336647
+unknown_negative,Contusion,pabak|Pilkwang|Yunus,0.670728903196137
+unknown_negative,Contusion,agreement|Pilkwang|Lixin,0.869395263278915
+unknown_negative,Contusion,kappa|Pilkwang|Lixin,0.637581844526357
+unknown_negative,Contusion,pabak|Pilkwang|Lixin,0.738790526557829
+unknown_negative,Contusion,agreement|Yunus|Lixin,0.876293400781789
+unknown_negative,Contusion,kappa|Yunus|Lixin,0.532627702495662
+unknown_negative,Contusion,pabak|Yunus|Lixin,0.752586801563578
+unknown_negative,Contusion,fleiss|all,0.593338280305603
+unknown_negative,Contusion,joint_disagreement|Dread|Steven,0.00506126798082046
+unknown_negative,Contusion,disagreement_phi|Dread|Steven,0.151276308404441
+unknown_negative,Contusion,joint_disagreement|Dread|Pilkwang,0.00954653937947494
+unknown_negative,Contusion,disagreement_phi|Dread|Pilkwang,0.188505771592872
+unknown_negative,Contusion,joint_disagreement|Dread|Yunus,0.049618320610687
+unknown_negative,Contusion,disagreement_phi|Dread|Yunus,0.600775621263368
+unknown_negative,Contusion,joint_disagreement|Dread|Lixin,0.0163286805372663
+unknown_negative,Contusion,disagreement_phi|Dread|Lixin,0.40615447557714
+unknown_negative,Contusion,joint_disagreement|Steven|Pilkwang,0.0376191703169286
+unknown_negative,Contusion,disagreement_phi|Steven|Pilkwang,0.556918773071682
+unknown_negative,Contusion,joint_disagreement|Steven|Yunus,0.00187065740245858
+unknown_negative,Contusion,disagreement_phi|Steven|Yunus,0.0465410532001439
+unknown_negative,Contusion,joint_disagreement|Steven|Lixin,0.00928381962864722
+unknown_negative,Contusion,disagreement_phi|Steven|Lixin,0.332987282709153
+unknown_negative,Contusion,joint_disagreement|Pilkwang|Yunus,0.0103338632750397
+unknown_negative,Contusion,disagreement_phi|Pilkwang|Yunus,0.198017715637389
+unknown_negative,Contusion,joint_disagreement|Pilkwang|Lixin,0.00664893617021277
+unknown_negative,Contusion,disagreement_phi|Pilkwang|Lixin,0.186519143278833
+unknown_negative,Contusion,joint_disagreement|Yunus|Lixin,0.0132100396301189
+unknown_negative,Contusion,disagreement_phi|Yunus|Lixin,0.348853265284705
+unknown_negative,Fracture,positive|Dread,0.0365601287652334
+unknown_negative,Fracture,positive|Steven,0.0724304437801794
+unknown_negative,Fracture,positive|Pilkwang,0.0678316854449299
+unknown_negative,Fracture,positive|Yunus,0.0544952862727064
+unknown_negative,Fracture,positive|Lixin,0.0673718096114049
+unknown_negative,Fracture,missing|Dread,0
+unknown_negative,Fracture,missing|Steven,0
+unknown_negative,Fracture,missing|Pilkwang,0
+unknown_negative,Fracture,missing|Yunus,0
+unknown_negative,Fracture,missing|Lixin,0
+unknown_negative,Fracture,agreement|Dread|Steven,0.964129684985054
+unknown_negative,Fracture,kappa|Dread|Steven,0.654076775290936
+unknown_negative,Fracture,pabak|Dread|Steven,0.928259369970108
+unknown_negative,Fracture,agreement|Dread|Pilkwang,0.967808691653254
+unknown_negative,Fracture,kappa|Dread|Pilkwang,0.67624782254514
+unknown_negative,Fracture,pabak|Dread|Pilkwang,0.935617383306507
+unknown_negative,Fracture,agreement|Dread|Yunus,0.977466084157277
+unknown_negative,Fracture,kappa|Dread|Yunus,0.741199802287778
+unknown_negative,Fracture,pabak|Dread|Yunus,0.954932168314555
+unknown_negative,Fracture,agreement|Dread|Lixin,0.968268567486779
+unknown_negative,Fracture,kappa|Dread|Lixin,0.679498914328619
+unknown_negative,Fracture,pabak|Dread|Lixin,0.936537134973557
+unknown_negative,Fracture,agreement|Steven|Pilkwang,0.994021614164176
+unknown_negative,Fracture,kappa|Steven|Pilkwang,0.954166126207925
+unknown_negative,Fracture,pabak|Steven|Pilkwang,0.988043228328351
+unknown_negative,Fracture,agreement|Steven|Yunus,0.978385835824328
+unknown_negative,Fracture,kappa|Steven|Yunus,0.818416426143032
+unknown_negative,Fracture,pabak|Steven|Yunus,0.956771671648655
+unknown_negative,Fracture,agreement|Steven|Lixin,0.993101862497126
+unknown_negative,Fracture,kappa|Steven|Lixin,0.946954832529815
+unknown_negative,Fracture,pabak|Steven|Lixin,0.986203724994251
+unknown_negative,Fracture,agreement|Pilkwang|Yunus,0.982064842492527
+unknown_negative,Fracture,kappa|Pilkwang|Yunus,0.843952493240067
+unknown_negative,Fracture,pabak|Pilkwang|Yunus,0.964129684985054
+unknown_negative,Fracture,agreement|Pilkwang|Lixin,0.995861117498275
+unknown_negative,Fracture,kappa|Pilkwang|Lixin,0.967168300520646
+unknown_negative,Fracture,pabak|Pilkwang|Lixin,0.991722234996551
+unknown_negative,Fracture,agreement|Yunus|Lixin,0.983444469993102
+unknown_negative,Fracture,kappa|Yunus|Lixin,0.855440776182685
+unknown_negative,Fracture,pabak|Yunus|Lixin,0.966888939986204
+unknown_negative,Fracture,fleiss|all,0.826019394146408
+unknown_negative,Fracture,joint_disagreement|Dread|Steven,0.00070044361428905
+unknown_negative,Fracture,disagreement_phi|Dread|Steven,0.0735737097510175
+unknown_negative,Fracture,joint_disagreement|Dread|Pilkwang,0.000467071461933676
+unknown_negative,Fracture,disagreement_phi|Dread|Pilkwang,0.127545033854728
+unknown_negative,Fracture,joint_disagreement|Dread|Yunus,0.0113190113190113
+unknown_negative,Fracture,disagreement_phi|Dread|Yunus,0.536706710263147
+unknown_negative,Fracture,joint_disagreement|Dread|Lixin,0
+unknown_negative,Fracture,disagreement_phi|Dread|Lixin,-0.00292657915738223
+unknown_negative,Fracture,joint_disagreement|Steven|Pilkwang,0.00209839123338774
+unknown_negative,Fracture,disagreement_phi|Steven|Pilkwang,0.592185311287722
+unknown_negative,Fracture,joint_disagreement|Steven|Yunus,0.000233590282644242
+unknown_negative,Fracture,disagreement_phi|Steven|Yunus,0.0611523690444574
+unknown_negative,Fracture,joint_disagreement|Steven|Lixin,0.000933706816059757
+unknown_negative,Fracture,disagreement_phi|Steven|Lixin,0.383549082406028
+unknown_negative,Fracture,joint_disagreement|Pilkwang|Yunus,0
+unknown_negative,Fracture,disagreement_phi|Pilkwang|Yunus,-0.000906598442315063
+unknown_negative,Fracture,joint_disagreement|Pilkwang|Lixin,0.000233590282644242
+unknown_negative,Fracture,disagreement_phi|Pilkwang|Lixin,0.407914328304447
+unknown_negative,Fracture,joint_disagreement|Yunus|Lixin,0
+unknown_negative,Fracture,disagreement_phi|Yunus|Lixin,-0.00128227365483525
+unknown_positive,ACL,positive|Dread,0.129914922970798
+unknown_positive,ACL,positive|Steven,0.302598298459416
+unknown_positive,ACL,positive|Pilkwang,0.355254081398023
+unknown_positive,ACL,positive|Yunus,0.275005748447919
+unknown_positive,ACL,positive|Lixin,0.202115428834215
+unknown_positive,ACL,missing|Dread,0
+unknown_positive,ACL,missing|Steven,0
+unknown_positive,ACL,missing|Pilkwang,0
+unknown_positive,ACL,missing|Yunus,0
+unknown_positive,ACL,missing|Lixin,0
+unknown_positive,ACL,agreement|Dread|Steven,0.821798114509083
+unknown_positive,ACL,kappa|Dread|Steven,0.496447166002155
+unknown_positive,ACL,pabak|Dread|Steven,0.643596229018165
+unknown_positive,ACL,agreement|Dread|Pilkwang,0.771901586571626
+unknown_positive,ACL,kappa|Dread|Pilkwang,0.419395091070097
+unknown_positive,ACL,pabak|Dread|Pilkwang,0.543803173143251
+unknown_positive,ACL,agreement|Dread|Yunus,0.849850540354104
+unknown_positive,ACL,kappa|Dread|Yunus,0.549730787909326
+unknown_positive,ACL,pabak|Dread|Yunus,0.699701080708209
+unknown_positive,ACL,agreement|Dread|Lixin,0.919521729133134
+unknown_positive,ACL,kappa|Dread|Lixin,0.71207860652212
+unknown_positive,ACL,pabak|Dread|Lixin,0.839043458266268
+unknown_positive,ACL,agreement|Steven|Pilkwang,0.945044837893769
+unknown_positive,ACL,kappa|Steven|Pilkwang,0.875906767021062
+unknown_positive,ACL,pabak|Steven|Pilkwang,0.890089675787537
+unknown_positive,ACL,agreement|Steven|Yunus,0.936537134973557
+unknown_positive,ACL,kappa|Steven|Yunus,0.845653542529488
+unknown_positive,ACL,pabak|Steven|Yunus,0.873074269947114
+unknown_positive,ACL,agreement|Steven|Lixin,0.8866406070361
+unknown_positive,ACL,kappa|Steven|Lixin,0.703553543595482
+unknown_positive,ACL,pabak|Steven|Lixin,0.773281214072201
+unknown_positive,ACL,agreement|Pilkwang|Yunus,0.916072660381697
+unknown_positive,ACL,kappa|Pilkwang|Yunus,0.807004135821059
+unknown_positive,ACL,pabak|Pilkwang|Yunus,0.832145320763394
+unknown_positive,ACL,agreement|Pilkwang|Lixin,0.845941595769142
+unknown_positive,ACL,kappa|Pilkwang|Lixin,0.627666765569459
+unknown_positive,ACL,pabak|Pilkwang|Lixin,0.691883191538285
+unknown_positive,ACL,agreement|Yunus|Lixin,0.865026442860428
+unknown_positive,ACL,kappa|Yunus|Lixin,0.631174812438788
+unknown_positive,ACL,pabak|Yunus|Lixin,0.730052885720856
+unknown_positive,ACL,fleiss|all,0.671482465568593
+unknown_positive,ACL,joint_disagreement|Dread|Steven,0.00324236692785734
+unknown_positive,ACL,disagreement_phi|Dread|Steven,0.193706010759074
+unknown_positive,ACL,joint_disagreement|Dread|Pilkwang,0.00108313024641213
+unknown_positive,ACL,disagreement_phi|Dread|Pilkwang,-0.0242369459384118
+unknown_positive,ACL,joint_disagreement|Dread|Yunus,0.03125
+unknown_positive,ACL,disagreement_phi|Dread|Yunus,0.580130232135906
+unknown_positive,ACL,joint_disagreement|Dread|Lixin,0.0931661750245821
+unknown_positive,ACL,disagreement_phi|Dread|Lixin,0.781883378729587
+unknown_positive,ACL,joint_disagreement|Steven|Pilkwang,0.0196651607759766
+unknown_positive,ACL,disagreement_phi|Steven|Pilkwang,0.548159137483732
+unknown_positive,ACL,joint_disagreement|Steven|Yunus,0.0002710027100271
+unknown_positive,ACL,disagreement_phi|Steven|Yunus,0.134364417947155
+unknown_positive,ACL,joint_disagreement|Steven|Lixin,0.0002710027100271
+unknown_positive,ACL,disagreement_phi|Steven|Lixin,0.12727622325513
+unknown_positive,ACL,joint_disagreement|Pilkwang|Yunus,0.0152162306460224
+unknown_positive,ACL,disagreement_phi|Pilkwang|Yunus,0.482910118253918
+unknown_positive,ACL,joint_disagreement|Pilkwang|Lixin,0.00351161534305781
+unknown_positive,ACL,disagreement_phi|Pilkwang|Lixin,0.208971969739544
+unknown_positive,ACL,joint_disagreement|Yunus|Lixin,0
+unknown_positive,ACL,disagreement_phi|Yunus|Lixin,-0.00230546976023332
+unknown_positive,MCL,positive|Dread,0.0492067141871695
+unknown_positive,MCL,positive|Steven,0.256610715106921
+unknown_positive,MCL,positive|Pilkwang,0.269717176362382
+unknown_positive,MCL,positive|Yunus,0.160266727983444
+unknown_positive,MCL,positive|Lixin,0.147850080478271
+unknown_positive,MCL,missing|Dread,0
+unknown_positive,MCL,missing|Steven,0
+unknown_positive,MCL,missing|Pilkwang,0
+unknown_positive,MCL,missing|Yunus,0
+unknown_positive,MCL,missing|Lixin,0
+unknown_positive,MCL,agreement|Dread|Steven,0.791216371579674
+unknown_positive,MCL,kappa|Dread|Steven,0.255841773575988
+unknown_positive,MCL,pabak|Dread|Steven,0.582432743159347
+unknown_positive,MCL,agreement|Dread|Pilkwang,0.778569786157737
+unknown_positive,MCL,kappa|Dread|Pilkwang,0.242663180723249
+unknown_positive,MCL,pabak|Dread|Pilkwang,0.557139572315475
+unknown_positive,MCL,agreement|Dread|Yunus,0.882041848700851
+unknown_positive,MCL,kappa|Dread|Yunus,0.391029863061784
+unknown_positive,MCL,pabak|Dread|Yunus,0.764083697401702
+unknown_positive,MCL,agreement|Dread|Lixin,0.899977006208324
+unknown_positive,MCL,kappa|Dread|Lixin,0.451947904466221
+unknown_positive,MCL,pabak|Dread|Lixin,0.799954012416648
+unknown_positive,MCL,agreement|Steven|Pilkwang,0.973097263738791
+unknown_positive,MCL,kappa|Steven|Pilkwang,0.930645758155035
+unknown_positive,MCL,pabak|Steven|Pilkwang,0.946194527477581
+unknown_positive,MCL,agreement|Steven|Yunus,0.893538744538975
+unknown_positive,MCL,kappa|Steven|Yunus,0.681849186123694
+unknown_positive,MCL,pabak|Steven|Yunus,0.787077489077949
+unknown_positive,MCL,agreement|Steven|Lixin,0.883421476201426
+unknown_positive,MCL,kappa|Steven|Lixin,0.645206095532941
+unknown_positive,MCL,pabak|Steven|Lixin,0.766842952402851
+unknown_positive,MCL,agreement|Pilkwang|Yunus,0.881352034950563
+unknown_positive,MCL,kappa|Pilkwang|Yunus,0.654621769587784
+unknown_positive,MCL,pabak|Pilkwang|Yunus,0.762704069901127
+unknown_positive,MCL,agreement|Pilkwang|Lixin,0.877673028282364
+unknown_positive,MCL,kappa|Pilkwang|Lixin,0.637884302301377
+unknown_positive,MCL,pabak|Pilkwang|Lixin,0.755346056564727
+unknown_positive,MCL,agreement|Yunus|Lixin,0.816969418257071
+unknown_positive,MCL,kappa|Yunus|Lixin,0.297996194932064
+unknown_positive,MCL,pabak|Yunus|Lixin,0.633938836514141
+unknown_positive,MCL,fleiss|all,0.54564498279048
+unknown_positive,MCL,joint_disagreement|Dread|Steven,0.000284495021337127
+unknown_positive,MCL,disagreement_phi|Dread|Steven,0.0111705182864234
+unknown_positive,MCL,joint_disagreement|Dread|Pilkwang,0.000284495021337127
+unknown_positive,MCL,disagreement_phi|Dread|Pilkwang,-0.00514866933822923
+unknown_positive,MCL,joint_disagreement|Dread|Yunus,0.0891653706583722
+unknown_positive,MCL,disagreement_phi|Dread|Yunus,0.863231472536895
+unknown_positive,MCL,joint_disagreement|Dread|Lixin,0.101967799642218
+unknown_positive,MCL,disagreement_phi|Dread|Lixin,0.909822989138321
+unknown_positive,MCL,joint_disagreement|Steven|Pilkwang,0.0170629370629371
+unknown_positive,MCL,disagreement_phi|Steven|Pilkwang,0.582486481773594
+unknown_positive,MCL,joint_disagreement|Steven|Yunus,0.00170454545454545
+unknown_positive,MCL,disagreement_phi|Steven|Yunus,0.189728095148386
+unknown_positive,MCL,joint_disagreement|Steven|Lixin,0
+unknown_positive,MCL,disagreement_phi|Steven|Lixin,
+unknown_positive,MCL,joint_disagreement|Pilkwang|Yunus,0.00198807157057654
+unknown_positive,MCL,disagreement_phi|Pilkwang|Yunus,0.136438438574558
+unknown_positive,MCL,joint_disagreement|Pilkwang|Lixin,0.00425049589118731
+unknown_positive,MCL,disagreement_phi|Pilkwang|Lixin,0.43458019379171
+unknown_positive,MCL,joint_disagreement|Yunus|Lixin,0.000284495021337127
+unknown_positive,MCL,disagreement_phi|Yunus|Lixin,0.195417265638991
+unknown_positive,Medial Meniscus,positive|Dread,0.38192687974247
+unknown_positive,Medial Meniscus,positive|Steven,0.591170383996321
+unknown_positive,Medial Meniscus,positive|Pilkwang,0.589330880662221
+unknown_positive,Medial Meniscus,positive|Yunus,0.504483789376868
+unknown_positive,Medial Meniscus,positive|Lixin,0.395263278914693
+unknown_positive,Medial Meniscus,missing|Dread,0
+unknown_positive,Medial Meniscus,missing|Steven,0
+unknown_positive,Medial Meniscus,missing|Pilkwang,0
+unknown_positive,Medial Meniscus,missing|Yunus,0
+unknown_positive,Medial Meniscus,missing|Lixin,0
+unknown_positive,Medial Meniscus,agreement|Dread|Steven,0.786617613244424
+unknown_positive,Medial Meniscus,kappa|Dread|Steven,0.590852734145396
+unknown_positive,Medial Meniscus,pabak|Dread|Steven,0.573235226488848
+unknown_positive,Medial Meniscus,agreement|Dread|Pilkwang,0.787997240744999
+unknown_positive,Medial Meniscus,kappa|Dread|Pilkwang,0.59315921748315
+unknown_positive,Medial Meniscus,pabak|Dread|Pilkwang,0.575994481489998
+unknown_positive,Medial Meniscus,agreement|Dread|Yunus,0.859507932858128
+unknown_positive,Medial Meniscus,kappa|Dread|Yunus,0.719609637174582
+unknown_positive,Medial Meniscus,pabak|Dread|Yunus,0.719015865716257
+unknown_positive,Medial Meniscus,agreement|Dread|Lixin,0.923200735801334
+unknown_positive,Medial Meniscus,kappa|Dread|Lixin,0.838408107951161
+unknown_positive,Medial Meniscus,pabak|Dread|Lixin,0.846401471602667
+unknown_positive,Medial Meniscus,agreement|Steven|Pilkwang,0.968268567486779
+unknown_positive,Medial Meniscus,kappa|Steven|Pilkwang,0.934400064707799
+unknown_positive,Medial Meniscus,pabak|Steven|Pilkwang,0.936537134973557
+unknown_positive,Medial Meniscus,agreement|Steven|Yunus,0.900896757875374
+unknown_positive,Medial Meniscus,kappa|Steven|Yunus,0.801468886568856
+unknown_positive,Medial Meniscus,pabak|Steven|Yunus,0.801793515750747
+unknown_positive,Medial Meniscus,agreement|Steven|Lixin,0.803633019084847
+unknown_positive,Medial Meniscus,kappa|Steven|Lixin,0.621714847009282
+unknown_positive,Medial Meniscus,pabak|Steven|Lixin,0.607266038169694
+unknown_positive,Medial Meniscus,agreement|Pilkwang|Yunus,0.902276385375948
+unknown_positive,Medial Meniscus,kappa|Pilkwang|Yunus,0.804239129847658
+unknown_positive,Medial Meniscus,pabak|Pilkwang|Yunus,0.804552770751897
+unknown_positive,Medial Meniscus,agreement|Pilkwang|Lixin,0.805472522418947
+unknown_positive,Medial Meniscus,kappa|Pilkwang|Lixin,0.624980123993663
+unknown_positive,Medial Meniscus,pabak|Pilkwang|Lixin,0.610945044837894
+unknown_positive,Medial Meniscus,agreement|Yunus|Lixin,0.886180731202575
+unknown_positive,Medial Meniscus,kappa|Yunus|Lixin,0.77278827272521
+unknown_positive,Medial Meniscus,pabak|Yunus|Lixin,0.772361462405151
+unknown_positive,Medial Meniscus,fleiss|all,0.72474729193064
+unknown_positive,Medial Meniscus,joint_disagreement|Dread|Steven,0
+unknown_positive,Medial Meniscus,disagreement_phi|Dread|Steven,-0.0311427598783721
+unknown_positive,Medial Meniscus,joint_disagreement|Dread|Pilkwang,0.000550509221029452
+unknown_positive,Medial Meniscus,disagreement_phi|Dread|Pilkwang,-0.00939444408058509
+unknown_positive,Medial Meniscus,joint_disagreement|Dread|Yunus,0.00274649821477616
+unknown_positive,Medial Meniscus,disagreement_phi|Dread|Yunus,0.121937412625383
+unknown_positive,Medial Meniscus,joint_disagreement|Dread|Lixin,0.0883755962842079
+unknown_positive,Medial Meniscus,disagreement_phi|Dread|Lixin,0.672935287143237
+unknown_positive,Medial Meniscus,joint_disagreement|Steven|Pilkwang,0.0767861683193491
+unknown_positive,Medial Meniscus,disagreement_phi|Steven|Pilkwang,0.824045941812975
+unknown_positive,Medial Meniscus,joint_disagreement|Steven|Yunus,0.00219840615553724
+unknown_positive,Medial Meniscus,disagreement_phi|Steven|Yunus,0.186326834773103
+unknown_positive,Medial Meniscus,joint_disagreement|Steven|Lixin,0
+unknown_positive,Medial Meniscus,disagreement_phi|Steven|Lixin,-0.0217201829105906
+unknown_positive,Medial Meniscus,joint_disagreement|Pilkwang|Yunus,0.00274649821477616
+unknown_positive,Medial Meniscus,disagreement_phi|Pilkwang|Yunus,0.2388902381033
+unknown_positive,Medial Meniscus,joint_disagreement|Pilkwang|Lixin,0.000825536598789213
+unknown_positive,Medial Meniscus,disagreement_phi|Pilkwang|Lixin,0.0202337426184485
+unknown_positive,Medial Meniscus,joint_disagreement|Yunus|Lixin,0.00846531949754233
+unknown_positive,Medial Meniscus,disagreement_phi|Yunus|Lixin,0.389424148925447
+unknown_positive,Lateral Meniscus,positive|Dread,0.134513681306047
+unknown_positive,Lateral Meniscus,positive|Steven,0.35594389514831
+unknown_positive,Lateral Meniscus,positive|Pilkwang,0.350885260979536
+unknown_positive,Lateral Meniscus,positive|Yunus,0.278224879282594
+unknown_positive,Lateral Meniscus,positive|Lixin,0.149689583812371
+unknown_positive,Lateral Meniscus,missing|Dread,0
+unknown_positive,Lateral Meniscus,missing|Steven,0
+unknown_positive,Lateral Meniscus,missing|Pilkwang,0
+unknown_positive,Lateral Meniscus,missing|Yunus,0
+unknown_positive,Lateral Meniscus,missing|Lixin,0
+unknown_positive,Lateral Meniscus,agreement|Dread|Steven,0.775350655323063
+unknown_positive,Lateral Meniscus,kappa|Dread|Steven,0.430833660515639
+unknown_positive,Lateral Meniscus,pabak|Dread|Steven,0.550701310646126
+unknown_positive,Lateral Meniscus,agreement|Dread|Pilkwang,0.779029661991262
+unknown_positive,Lateral Meniscus,kappa|Dread|Pilkwang,0.434860213602686
+unknown_positive,Lateral Meniscus,pabak|Dread|Pilkwang,0.558059323982525
+unknown_positive,Lateral Meniscus,agreement|Dread|Yunus,0.84571165785238
+unknown_positive,Lateral Meniscus,kappa|Dread|Yunus,0.543374922055375
+unknown_positive,Lateral Meniscus,pabak|Dread|Yunus,0.69142331570476
+unknown_positive,Lateral Meniscus,agreement|Dread|Lixin,0.951713037479881
+unknown_positive,Lateral Meniscus,kappa|Dread|Lixin,0.802047990178803
+unknown_positive,Lateral Meniscus,pabak|Dread|Lixin,0.903426074959761
+unknown_positive,Lateral Meniscus,agreement|Steven|Pilkwang,0.975166704989653
+unknown_positive,Lateral Meniscus,kappa|Steven|Pilkwang,0.945664730522782
+unknown_positive,Lateral Meniscus,pabak|Steven|Pilkwang,0.950333409979305
+unknown_positive,Lateral Meniscus,agreement|Steven|Yunus,0.91170383996321
+unknown_positive,Lateral Meniscus,kappa|Steven|Yunus,0.797534110326122
+unknown_positive,Lateral Meniscus,pabak|Steven|Yunus,0.82340767992642
+unknown_positive,Lateral Meniscus,agreement|Steven|Lixin,0.792825936997011
+unknown_positive,Lateral Meniscus,kappa|Steven|Lixin,0.48085951757794
+unknown_positive,Lateral Meniscus,pabak|Steven|Lixin,0.585651873994022
+unknown_positive,Lateral Meniscus,agreement|Pilkwang|Yunus,0.913083467463785
+unknown_positive,Lateral Meniscus,kappa|Pilkwang|Yunus,0.799666924366045
+unknown_positive,Lateral Meniscus,pabak|Pilkwang|Yunus,0.82616693492757
+unknown_positive,Lateral Meniscus,agreement|Pilkwang|Lixin,0.797884571165785
+unknown_positive,Lateral Meniscus,kappa|Pilkwang|Lixin,0.488997277206911
+unknown_positive,Lateral Meniscus,pabak|Pilkwang|Lixin,0.595769142331571
+unknown_positive,Lateral Meniscus,agreement|Yunus|Lixin,0.865946194527478
+unknown_positive,Lateral Meniscus,kappa|Yunus|Lixin,0.61100948762586
+unknown_positive,Lateral Meniscus,pabak|Yunus|Lixin,0.731892389054955
+unknown_positive,Lateral Meniscus,fleiss|all,0.632654641477412
+unknown_positive,Lateral Meniscus,joint_disagreement|Dread|Steven,0
+unknown_positive,Lateral Meniscus,disagreement_phi|Dread|Steven,-0.0233428496981877
+unknown_positive,Lateral Meniscus,joint_disagreement|Dread|Pilkwang,0
+unknown_positive,Lateral Meniscus,disagreement_phi|Dread|Pilkwang,-0.0196065253425658
+unknown_positive,Lateral Meniscus,joint_disagreement|Dread|Yunus,0.00254524886877828
+unknown_positive,Lateral Meniscus,disagreement_phi|Dread|Yunus,0.140395492059079
+unknown_positive,Lateral Meniscus,joint_disagreement|Dread|Lixin,0.120668162552979
+unknown_positive,Lateral Meniscus,disagreement_phi|Dread|Lixin,0.817582557229624
+unknown_positive,Lateral Meniscus,joint_disagreement|Steven|Pilkwang,0.0754914809960682
+unknown_positive,Lateral Meniscus,disagreement_phi|Steven|Pilkwang,0.863858627227149
+unknown_positive,Lateral Meniscus,joint_disagreement|Steven|Yunus,0.00395368539960463
+unknown_positive,Lateral Meniscus,disagreement_phi|Steven|Yunus,0.322337233611735
+unknown_positive,Lateral Meniscus,joint_disagreement|Steven|Lixin,0
+unknown_positive,Lateral Meniscus,disagreement_phi|Steven|Lixin,-0.0139420506289885
+unknown_positive,Lateral Meniscus,joint_disagreement|Pilkwang|Yunus,0.00254524886877828
+unknown_positive,Lateral Meniscus,disagreement_phi|Pilkwang|Yunus,0.273666414991894
+unknown_positive,Lateral Meniscus,joint_disagreement|Pilkwang|Lixin,0.00084985835694051
+unknown_positive,Lateral Meniscus,disagreement_phi|Pilkwang|Lixin,0.056682901012533
+unknown_positive,Lateral Meniscus,joint_disagreement|Yunus|Lixin,0.00423489553924337
+unknown_positive,Lateral Meniscus,disagreement_phi|Yunus|Lixin,0.334396804784025
+unknown_positive,Medial OA,positive|Dread,0.246493446769372
+unknown_positive,Medial OA,positive|Steven,0.581283053575535
+unknown_positive,Medial OA,positive|Pilkwang,0.62267187859278
+unknown_positive,Medial OA,positive|Yunus,0.473442170613934
+unknown_positive,Medial OA,positive|Lixin,0.367440790986434
+unknown_positive,Medial OA,missing|Dread,0
+unknown_positive,Medial OA,missing|Steven,0
+unknown_positive,Medial OA,missing|Pilkwang,0
+unknown_positive,Medial OA,missing|Yunus,0
+unknown_positive,Medial OA,missing|Lixin,0
+unknown_positive,Medial OA,agreement|Dread|Steven,0.662451138192688
+unknown_positive,Medial OA,kappa|Dread|Steven,0.37630886267473
+unknown_positive,Medial OA,pabak|Dread|Steven,0.324902276385376
+unknown_positive,Medial OA,agreement|Dread|Pilkwang,0.620602437341918
+unknown_positive,Medial OA,kappa|Dread|Pilkwang,0.325151026006304
+unknown_positive,Medial OA,pabak|Dread|Pilkwang,0.241204874683835
+unknown_positive,Medial OA,agreement|Dread|Yunus,0.720625431133594
+unknown_positive,Medial OA,kappa|Dread|Yunus,0.425787116873825
+unknown_positive,Medial OA,pabak|Dread|Yunus,0.441250862267188
+unknown_positive,Medial OA,agreement|Dread|Lixin,0.869395263278915
+unknown_positive,Medial OA,kappa|Dread|Lixin,0.698226594172924
+unknown_positive,Medial OA,pabak|Dread|Lixin,0.738790526557829
+unknown_positive,Medial OA,agreement|Steven|Pilkwang,0.946194527477581
+unknown_positive,Medial OA,kappa|Steven|Pilkwang,0.887918741070756
+unknown_positive,Medial OA,pabak|Steven|Pilkwang,0.892389054955162
+unknown_positive,Medial OA,agreement|Steven|Yunus,0.768912393653713
+unknown_positive,Medial OA,kappa|Steven|Yunus,0.541781415830211
+unknown_positive,Medial OA,pabak|Steven|Yunus,0.537824787307427
+unknown_positive,Medial OA,agreement|Steven|Lixin,0.782018854909175
+unknown_positive,Medial OA,kappa|Steven|Lixin,0.582051006002746
+unknown_positive,Medial OA,pabak|Steven|Lixin,0.564037709818349
+unknown_positive,Medial OA,agreement|Pilkwang|Yunus,0.760634628650264
+unknown_positive,Medial OA,kappa|Pilkwang|Yunus,0.527427629181581
+unknown_positive,Medial OA,pabak|Pilkwang|Yunus,0.521269257300529
+unknown_positive,Medial OA,agreement|Pilkwang|Lixin,0.740630029891929
+unknown_positive,Medial OA,kappa|Pilkwang|Lixin,0.512940891931772
+unknown_positive,Medial OA,pabak|Pilkwang|Lixin,0.481260059783858
+unknown_positive,Medial OA,agreement|Yunus|Lixin,0.641066911933778
+unknown_positive,Medial OA,kappa|Yunus|Lixin,0.271880489018932
+unknown_positive,Medial OA,pabak|Yunus|Lixin,0.282133823867556
+unknown_positive,Medial OA,fleiss|all,0.499016059604201
+unknown_positive,Medial OA,joint_disagreement|Dread|Steven,0.000686813186813187
+unknown_positive,Medial OA,disagreement_phi|Dread|Steven,0.0351628163608137
+unknown_positive,Medial OA,joint_disagreement|Dread|Pilkwang,0
+unknown_positive,Medial OA,disagreement_phi|Dread|Pilkwang,-0.0406156233374582
+unknown_positive,Medial OA,joint_disagreement|Dread|Yunus,0.130044843049327
+unknown_positive,Medial OA,disagreement_phi|Dread|Yunus,0.627292057189791
+unknown_positive,Medial OA,joint_disagreement|Dread|Lixin,0.200109950522265
+unknown_positive,Medial OA,disagreement_phi|Dread|Lixin,0.907662925323408
+unknown_positive,Medial OA,joint_disagreement|Steven|Pilkwang,0.0567260940032415
+unknown_positive,Medial OA,disagreement_phi|Steven|Pilkwang,0.715843310427116
+unknown_positive,Medial OA,joint_disagreement|Steven|Yunus,0.00239972574562907
+unknown_positive,Medial OA,disagreement_phi|Steven|Yunus,0.0649993652253511
+unknown_positive,Medial OA,joint_disagreement|Steven|Lixin,0.00171526586620926
+unknown_positive,Medial OA,disagreement_phi|Steven|Lixin,0.265711205633796
+unknown_positive,Medial OA,joint_disagreement|Pilkwang|Yunus,0.0261044176706827
+unknown_positive,Medial OA,disagreement_phi|Pilkwang|Yunus,0.214957859273875
+unknown_positive,Medial OA,joint_disagreement|Pilkwang|Lixin,0.00137268359643102
+unknown_positive,Medial OA,disagreement_phi|Pilkwang|Lixin,0.0715342598862971
+unknown_positive,Medial OA,joint_disagreement|Yunus|Lixin,0.00171526586620926
+unknown_positive,Medial OA,disagreement_phi|Yunus|Lixin,0.0459914130073965
+unknown_positive,Lateral OA,positive|Dread,0.149229707978846
+unknown_positive,Lateral OA,positive|Steven,0.53529547022304
+unknown_positive,Lateral OA,positive|Pilkwang,0.57622441940676
+unknown_positive,Lateral OA,positive|Yunus,0.422166015175903
+unknown_positive,Lateral OA,positive|Lixin,0.265578293860658
+unknown_positive,Lateral OA,missing|Dread,0
+unknown_positive,Lateral OA,missing|Steven,0
+unknown_positive,Lateral OA,missing|Pilkwang,0
+unknown_positive,Lateral OA,missing|Yunus,0
+unknown_positive,Lateral OA,missing|Lixin,0
+unknown_positive,Lateral OA,agreement|Dread|Steven,0.611174982754656
+unknown_positive,Lateral OA,kappa|Dread|Steven,0.25904389712318
+unknown_positive,Lateral OA,pabak|Dread|Steven,0.222349965509312
+unknown_positive,Lateral OA,agreement|Dread|Pilkwang,0.568406530236836
+unknown_positive,Lateral OA,kappa|Dread|Pilkwang,0.220210775247612
+unknown_positive,Lateral OA,pabak|Dread|Pilkwang,0.136813060473672
+unknown_positive,Lateral OA,agreement|Dread|Yunus,0.679236606116349
+unknown_positive,Lateral OA,kappa|Dread|Yunus,0.279824746439903
+unknown_positive,Lateral OA,pabak|Dread|Yunus,0.358473212232697
+unknown_positive,Lateral OA,agreement|Dread|Lixin,0.872154518280065
+unknown_positive,Lateral OA,kappa|Dread|Lixin,0.618990023644879
+unknown_positive,Lateral OA,pabak|Dread|Lixin,0.744309036560129
+unknown_positive,Lateral OA,agreement|Steven|Pilkwang,0.926419866636008
+unknown_positive,Lateral OA,kappa|Steven|Pilkwang,0.851238839011323
+unknown_positive,Lateral OA,pabak|Steven|Pilkwang,0.852839733272017
+unknown_positive,Lateral OA,agreement|Steven|Yunus,0.762244194067602
+unknown_positive,Lateral OA,kappa|Steven|Yunus,0.5296568704358
+unknown_positive,Lateral OA,pabak|Steven|Yunus,0.524488388135204
+unknown_positive,Lateral OA,agreement|Steven|Lixin,0.724304437801794
+unknown_positive,Lateral OA,kappa|Steven|Lixin,0.466273151368076
+unknown_positive,Lateral OA,pabak|Steven|Lixin,0.448608875603587
+unknown_positive,Lateral OA,agreement|Pilkwang|Yunus,0.745688664060704
+unknown_positive,Lateral OA,kappa|Pilkwang|Yunus,0.503167851180717
+unknown_positive,Lateral OA,pabak|Pilkwang|Yunus,0.491377328121407
+unknown_positive,Lateral OA,agreement|Pilkwang|Lixin,0.678776730282824
+unknown_positive,Lateral OA,kappa|Pilkwang|Lixin,0.400409007198286
+unknown_positive,Lateral OA,pabak|Pilkwang|Lixin,0.357553460565647
+unknown_positive,Lateral OA,agreement|Yunus|Lixin,0.607955851919982
+unknown_positive,Lateral OA,kappa|Yunus|Lixin,0.154180495988285
+unknown_positive,Lateral OA,pabak|Yunus|Lixin,0.215911703839963
+unknown_positive,Lateral OA,fleiss|all,0.406383890000835
+unknown_positive,Lateral OA,joint_disagreement|Dread|Steven,0.000741015190811412
+unknown_positive,Lateral OA,disagreement_phi|Dread|Steven,0.0141004364927045
+unknown_positive,Lateral OA,joint_disagreement|Dread|Pilkwang,0.0014809329877823
+unknown_positive,Lateral OA,disagreement_phi|Dread|Pilkwang,-0.022902037395106
+unknown_positive,Lateral OA,joint_disagreement|Dread|Yunus,0.128875968992248
+unknown_positive,Lateral OA,disagreement_phi|Dread|Yunus,0.606953464410702
+unknown_positive,Lateral OA,joint_disagreement|Dread|Lixin,0.247068676716918
+unknown_positive,Lateral OA,disagreement_phi|Dread|Lixin,0.909666404560729
+unknown_positive,Lateral OA,joint_disagreement|Steven|Pilkwang,0.0782638414217362
+unknown_positive,Lateral OA,disagreement_phi|Steven|Pilkwang,0.694579822563591
+unknown_positive,Lateral OA,joint_disagreement|Steven|Yunus,0.00954829232464194
+unknown_positive,Lateral OA,disagreement_phi|Steven|Yunus,0.170342384183437
+unknown_positive,Lateral OA,joint_disagreement|Steven|Lixin,0.0036941263391208
+unknown_positive,Lateral OA,disagreement_phi|Steven|Lixin,0.302425937302254
+unknown_positive,Lateral OA,joint_disagreement|Pilkwang|Yunus,0.0305535585909418
+unknown_positive,Lateral OA,disagreement_phi|Pilkwang|Yunus,0.200835646339722
+unknown_positive,Lateral OA,joint_disagreement|Pilkwang|Lixin,0.00221975582685905
+unknown_positive,Lateral OA,disagreement_phi|Pilkwang|Lixin,0.0743467897816077
+unknown_positive,Lateral OA,joint_disagreement|Yunus|Lixin,0.00221975582685905
+unknown_positive,Lateral OA,disagreement_phi|Yunus|Lixin,0.0451042932317007
+unknown_positive,PF OA,positive|Dread,0.33547942055645
+unknown_positive,PF OA,positive|Steven,0.637157967348816
+unknown_positive,PF OA,positive|Pilkwang,0.636468153598528
+unknown_positive,PF OA,positive|Yunus,0.492756955621982
+unknown_positive,PF OA,positive|Lixin,0.454357323522649
+unknown_positive,PF OA,missing|Dread,0
+unknown_positive,PF OA,missing|Steven,0
+unknown_positive,PF OA,missing|Pilkwang,0
+unknown_positive,PF OA,missing|Yunus,0
+unknown_positive,PF OA,missing|Lixin,0
+unknown_positive,PF OA,agreement|Dread|Steven,0.696022074040009
+unknown_positive,PF OA,kappa|Dread|Steven,0.442375979730162
+unknown_positive,PF OA,pabak|Dread|Steven,0.392044148080018
+unknown_positive,PF OA,agreement|Dread|Pilkwang,0.694872384456197
+unknown_positive,PF OA,kappa|Dread|Pilkwang,0.440033808778581
+unknown_positive,PF OA,pabak|Dread|Pilkwang,0.389744768912394
+unknown_positive,PF OA,agreement|Dread|Yunus,0.751207174063003
+unknown_positive,PF OA,kappa|Dread|Yunus,0.500031237303205
+unknown_positive,PF OA,pabak|Dread|Yunus,0.502414348126006
+unknown_positive,PF OA,agreement|Dread|Lixin,0.872384456196827
+unknown_positive,PF OA,kappa|Dread|Lixin,0.73686522842908
+unknown_positive,PF OA,pabak|Dread|Lixin,0.744768912393654
+unknown_positive,PF OA,agreement|Steven|Pilkwang,0.97585651873994
+unknown_positive,PF OA,kappa|Steven|Pilkwang,0.947805169933666
+unknown_positive,PF OA,pabak|Steven|Pilkwang,0.95171303747988
+unknown_positive,PF OA,agreement|Steven|Yunus,0.77420096573925
+unknown_positive,PF OA,kappa|Steven|Yunus,0.550189373193688
+unknown_positive,PF OA,pabak|Steven|Yunus,0.548401931478501
+unknown_positive,PF OA,agreement|Steven|Lixin,0.815359852839733
+unknown_positive,PF OA,kappa|Steven|Lixin,0.639740961949454
+unknown_positive,PF OA,pabak|Steven|Lixin,0.630719705679466
+unknown_positive,PF OA,agreement|Pilkwang|Yunus,0.772131524488388
+unknown_positive,PF OA,kappa|Pilkwang|Yunus,0.546057836230215
+unknown_positive,PF OA,pabak|Pilkwang|Yunus,0.544263048976776
+unknown_positive,PF OA,agreement|Pilkwang|Lixin,0.812830535755346
+unknown_positive,PF OA,kappa|Pilkwang|Lixin,0.634761032218659
+unknown_positive,PF OA,pabak|Pilkwang|Lixin,0.625661071510692
+unknown_positive,PF OA,agreement|Yunus|Lixin,0.657622441940676
+unknown_positive,PF OA,kappa|Yunus|Lixin,0.314338186829331
+unknown_positive,PF OA,pabak|Yunus|Lixin,0.315244883881352
+unknown_positive,PF OA,fleiss|all,0.564277237636879
+unknown_positive,PF OA,joint_disagreement|Dread|Steven,0.000322268772155978
+unknown_positive,PF OA,disagreement_phi|Dread|Steven,0.00845394522295339
+unknown_positive,PF OA,joint_disagreement|Dread|Pilkwang,0.000322268772155978
+unknown_positive,PF OA,disagreement_phi|Dread|Pilkwang,0.00281715967550994
+unknown_positive,PF OA,joint_disagreement|Dread|Yunus,0.12962962962963
+unknown_positive,PF OA,disagreement_phi|Dread|Yunus,0.6395524101234
+unknown_positive,PF OA,joint_disagreement|Dread|Lixin,0.167471819645733
+unknown_positive,PF OA,disagreement_phi|Dread|Lixin,0.927115616684279
+unknown_positive,PF OA,joint_disagreement|Steven|Pilkwang,0.0363466915191053
+unknown_positive,PF OA,disagreement_phi|Steven|Pilkwang,0.775303775632668
+unknown_positive,PF OA,joint_disagreement|Steven|Yunus,0.00545046489259378
+unknown_positive,PF OA,disagreement_phi|Steven|Yunus,0.0992809545353168
+unknown_positive,PF OA,joint_disagreement|Steven|Lixin,0.00160926939169617
+unknown_positive,PF OA,disagreement_phi|Steven|Lixin,0.208511184085956
+unknown_positive,PF OA,joint_disagreement|Pilkwang|Yunus,0.00481231953801732
+unknown_positive,PF OA,disagreement_phi|Pilkwang|Yunus,0.0689935614897485
+unknown_positive,PF OA,joint_disagreement|Pilkwang|Lixin,0.000644329896907217
+unknown_positive,PF OA,disagreement_phi|Pilkwang|Lixin,0.0787370364502722
+unknown_positive,PF OA,joint_disagreement|Yunus|Lixin,0.000966183574879227
+unknown_positive,PF OA,disagreement_phi|Yunus|Lixin,0.0187571781402544
+unknown_positive,Effusion,positive|Dread,0.255690963439871
+unknown_positive,Effusion,positive|Steven,0.698091515290872
+unknown_positive,Effusion,positive|Pilkwang,0.700850770292021
+unknown_positive,Effusion,positive|Yunus,0.356633708898597
+unknown_positive,Effusion,positive|Lixin,0.590480570246034
+unknown_positive,Effusion,missing|Dread,0
+unknown_positive,Effusion,missing|Steven,0
+unknown_positive,Effusion,missing|Pilkwang,0
+unknown_positive,Effusion,missing|Yunus,0
+unknown_positive,Effusion,missing|Lixin,0
+unknown_positive,Effusion,agreement|Dread|Steven,0.556219820648425
+unknown_positive,Effusion,kappa|Dread|Steven,0.25638940755102
+unknown_positive,Effusion,pabak|Dread|Steven,0.11243964129685
+unknown_positive,Effusion,agreement|Dread|Pilkwang,0.55300068981375
+unknown_positive,Effusion,kappa|Dread|Pilkwang,0.252683617417278
+unknown_positive,Effusion,pabak|Dread|Pilkwang,0.106001379627501
+unknown_positive,Effusion,agreement|Dread|Yunus,0.854909174522879
+unknown_positive,Effusion,kappa|Dread|Yunus,0.662539167972112
+unknown_positive,Effusion,pabak|Dread|Yunus,0.709818349045758
+unknown_positive,Effusion,agreement|Dread|Lixin,0.661071510692113
+unknown_positive,Effusion,kappa|Dread|Lixin,0.377210609682925
+unknown_positive,Effusion,pabak|Dread|Lixin,0.322143021384226
+unknown_positive,Effusion,agreement|Steven|Pilkwang,0.994941365831226
+unknown_positive,Effusion,kappa|Steven|Pilkwang,0.987967846516413
+unknown_positive,Effusion,pabak|Steven|Pilkwang,0.989882731662451
+unknown_positive,Effusion,agreement|Steven|Yunus,0.636468153598528
+unknown_positive,Effusion,kappa|Steven|Yunus,0.347104330364913
+unknown_positive,Effusion,pabak|Steven|Yunus,0.272936307197057
+unknown_positive,Effusion,agreement|Steven|Lixin,0.890549551621062
+unknown_positive,Effusion,kappa|Steven|Lixin,0.764193236054631
+unknown_positive,Effusion,pabak|Steven|Lixin,0.781099103242125
+unknown_positive,Effusion,agreement|Pilkwang|Yunus,0.633249022763854
+unknown_positive,Effusion,kappa|Pilkwang|Yunus,0.342257438848566
+unknown_positive,Effusion,pabak|Pilkwang|Yunus,0.266498045527708
+unknown_positive,Effusion,agreement|Pilkwang|Lixin,0.888710048286963
+unknown_positive,Effusion,kappa|Pilkwang|Lixin,0.759971884230903
+unknown_positive,Effusion,pabak|Pilkwang|Lixin,0.777420096573925
+unknown_positive,Effusion,agreement|Yunus|Lixin,0.547712117728213
+unknown_positive,Effusion,kappa|Yunus|Lixin,0.140045106379984
+unknown_positive,Effusion,pabak|Yunus|Lixin,0.0954242354564268
+unknown_positive,Effusion,fleiss|all,0.442442747962237
+unknown_positive,Effusion,joint_disagreement|Dread|Steven,0
+unknown_positive,Effusion,disagreement_phi|Dread|Steven,-0.00337093171409598
+unknown_positive,Effusion,joint_disagreement|Dread|Pilkwang,0
+unknown_positive,Effusion,disagreement_phi|Dread|Pilkwang,-0.0117032335917121
+unknown_positive,Effusion,joint_disagreement|Dread|Yunus,0.359907120743034
+unknown_positive,Effusion,disagreement_phi|Dread|Yunus,0.888610637354493
+unknown_positive,Effusion,joint_disagreement|Dread|Lixin,0.144777662874871
+unknown_positive,Effusion,disagreement_phi|Dread|Lixin,0.90824159961452
+unknown_positive,Effusion,joint_disagreement|Steven|Pilkwang,0.0170364500792393
+unknown_positive,Effusion,disagreement_phi|Steven|Pilkwang,0.871706795967101
+unknown_positive,Effusion,joint_disagreement|Steven|Yunus,0.000805477245267821
+unknown_positive,Effusion,disagreement_phi|Steven|Yunus,0.0920222401801085
+unknown_positive,Effusion,joint_disagreement|Steven|Lixin,0.00040290088638195
+unknown_positive,Effusion,disagreement_phi|Steven|Lixin,0.287743266621282
+unknown_positive,Effusion,joint_disagreement|Pilkwang|Yunus,0.000805477245267821
+unknown_positive,Effusion,disagreement_phi|Pilkwang|Yunus,0.0282302192630043
+unknown_positive,Effusion,joint_disagreement|Pilkwang|Lixin,0.00160965794768612
+unknown_positive,Effusion,disagreement_phi|Pilkwang|Lixin,0.330165480783052
+unknown_positive,Effusion,joint_disagreement|Yunus|Lixin,0.00040290088638195
+unknown_positive,Effusion,disagreement_phi|Yunus|Lixin,0.0236925997398025
+unknown_positive,Synovitis,positive|Dread,0.244883881352035
+unknown_positive,Synovitis,positive|Steven,0.965509312485629
+unknown_positive,Synovitis,positive|Pilkwang,0.973787077489078
+unknown_positive,Synovitis,positive|Yunus,0.896068061623362
+unknown_positive,Synovitis,positive|Lixin,0.123936537134974
+unknown_positive,Synovitis,missing|Dread,0
+unknown_positive,Synovitis,missing|Steven,0
+unknown_positive,Synovitis,missing|Pilkwang,0
+unknown_positive,Synovitis,missing|Yunus,0
+unknown_positive,Synovitis,missing|Lixin,0
+unknown_positive,Synovitis,agreement|Dread|Steven,0.277075189698781
+unknown_positive,Synovitis,kappa|Dread|Steven,0.01978670418931
+unknown_positive,Synovitis,pabak|Dread|Steven,-0.445849620602437
+unknown_positive,Synovitis,agreement|Dread|Pilkwang,0.266957921361233
+unknown_positive,Synovitis,kappa|Dread|Pilkwang,0.011728294301508
+unknown_positive,Synovitis,pabak|Dread|Pilkwang,-0.466084157277535
+unknown_positive,Synovitis,agreement|Dread|Yunus,0.324442400551851
+unknown_positive,Synovitis,kappa|Dread|Yunus,0.037786065470564
+unknown_positive,Synovitis,pabak|Dread|Yunus,-0.351115198896298
+unknown_positive,Synovitis,agreement|Dread|Lixin,0.785697861577374
+unknown_positive,Synovitis,kappa|Dread|Lixin,0.304485488851055
+unknown_positive,Synovitis,pabak|Dread|Lixin,0.571395723154748
+unknown_positive,Synovitis,agreement|Steven|Pilkwang,0.970567946654403
+unknown_positive,Synovitis,kappa|Steven|Pilkwang,0.500265724422227
+unknown_positive,Synovitis,pabak|Steven|Pilkwang,0.941135893308807
+unknown_positive,Synovitis,agreement|Steven|Yunus,0.887330420786388
+unknown_positive,Synovitis,kappa|Steven|Yunus,0.141586418196509
+unknown_positive,Synovitis,pabak|Steven|Yunus,0.774660841572775
+unknown_positive,Synovitis,agreement|Steven|Lixin,0.158427224649345
+unknown_positive,Synovitis,kappa|Steven|Lixin,0.0100565705415249
+unknown_positive,Synovitis,pabak|Steven|Lixin,-0.683145550701311
+unknown_positive,Synovitis,agreement|Pilkwang|Yunus,0.894688434122787
+unknown_positive,Synovitis,kappa|Pilkwang|Yunus,0.155454492261534
+unknown_positive,Synovitis,pabak|Pilkwang|Yunus,0.789376868245574
+unknown_positive,Synovitis,agreement|Pilkwang|Lixin,0.150149459645896
+unknown_positive,Synovitis,kappa|Pilkwang|Lixin,0.00758742655028814
+unknown_positive,Synovitis,pabak|Pilkwang|Lixin,-0.699701080708209
+unknown_positive,Synovitis,agreement|Yunus|Lixin,0.147390204644746
+unknown_positive,Synovitis,kappa|Yunus|Lixin,-0.0685760003944021
+unknown_positive,Synovitis,pabak|Yunus|Lixin,-0.705219590710508
+unknown_positive,Synovitis,fleiss|all,-0.115998115450048
+unknown_positive,Synovitis,joint_disagreement|Dread|Steven,0
+unknown_positive,Synovitis,disagreement_phi|Dread|Steven,-0.0145640677899719
+unknown_positive,Synovitis,joint_disagreement|Dread|Pilkwang,0
+unknown_positive,Synovitis,disagreement_phi|Dread|Pilkwang,-0.0172474026135484
+unknown_positive,Synovitis,joint_disagreement|Dread|Yunus,0.116030534351145
+unknown_positive,Synovitis,disagreement_phi|Dread|Yunus,0.717252228920535
+unknown_positive,Synovitis,joint_disagreement|Dread|Lixin,0.700388098318241
+unknown_positive,Synovitis,disagreement_phi|Dread|Lixin,0.491369324881893
+unknown_positive,Synovitis,joint_disagreement|Steven|Pilkwang,0.140311804008909
+unknown_positive,Synovitis,disagreement_phi|Steven|Pilkwang,0.964039927151071
+unknown_positive,Synovitis,joint_disagreement|Steven|Yunus,0.0293378038558257
+unknown_positive,Synovitis,disagreement_phi|Steven|Yunus,0.614339179254384
+unknown_positive,Synovitis,joint_disagreement|Steven|Lixin,0.00172413793103448
+unknown_positive,Synovitis,disagreement_phi|Steven|Lixin,-0.0495225972960092
+unknown_positive,Synovitis,joint_disagreement|Pilkwang|Yunus,0.0593013809910642
+unknown_positive,Synovitis,disagreement_phi|Pilkwang|Yunus,0.742011604493482
+unknown_positive,Synovitis,joint_disagreement|Pilkwang|Lixin,0.00515463917525773
+unknown_positive,Synovitis,disagreement_phi|Pilkwang|Lixin,-0.0297613295751668
+unknown_positive,Synovitis,joint_disagreement|Yunus|Lixin,0.0227848101265823
+unknown_positive,Synovitis,disagreement_phi|Yunus|Lixin,-0.109200737392377
+unknown_positive,Baker's,positive|Dread,0.122326971717636
+unknown_positive,Baker's,positive|Steven,0.728443320303518
+unknown_positive,Baker's,positive|Pilkwang,0.71096803862957
+unknown_positive,Baker's,positive|Yunus,0.654403311106001
+unknown_positive,Baker's,positive|Lixin,0.246723384686135
+unknown_positive,Baker's,missing|Dread,0
+unknown_positive,Baker's,missing|Steven,0
+unknown_positive,Baker's,missing|Pilkwang,0
+unknown_positive,Baker's,missing|Yunus,0
+unknown_positive,Baker's,missing|Lixin,0
+unknown_positive,Baker's,agreement|Dread|Steven,0.393883651414118
+unknown_positive,Baker's,kappa|Dread|Steven,0.098783794534638
+unknown_positive,Baker's,pabak|Dread|Steven,-0.212232697171764
+unknown_positive,Baker's,agreement|Dread|Pilkwang,0.411358933088066
+unknown_positive,Baker's,kappa|Dread|Pilkwang,0.107245610737583
+unknown_positive,Baker's,pabak|Dread|Pilkwang,-0.177282133823868
+unknown_positive,Baker's,agreement|Dread|Yunus,0.463324902276385
+unknown_positive,Baker's,kappa|Dread|Yunus,0.129661389421971
+unknown_positive,Baker's,pabak|Dread|Yunus,-0.0733501954472292
+unknown_positive,Baker's,agreement|Dread|Lixin,0.873764083697402
+unknown_positive,Baker's,kappa|Dread|Lixin,0.591057285012708
+unknown_positive,Baker's,pabak|Dread|Lixin,0.747528167394803
+unknown_positive,Baker's,agreement|Steven|Pilkwang,0.95631179581513
+unknown_positive,Baker's,kappa|Steven|Pilkwang,0.891756796197137
+unknown_positive,Baker's,pabak|Steven|Pilkwang,0.91262359163026
+unknown_positive,Baker's,agreement|Steven|Yunus,0.882271786617613
+unknown_positive,Baker's,kappa|Steven|Yunus,0.725866129566409
+unknown_positive,Baker's,pabak|Steven|Yunus,0.764543573235227
+unknown_positive,Baker's,agreement|Steven|Lixin,0.516900436882042
+unknown_positive,Baker's,kappa|Steven|Lixin,0.215389167788194
+unknown_positive,Baker's,pabak|Steven|Lixin,0.0338008737640838
+unknown_positive,Baker's,agreement|Pilkwang|Yunus,0.86801563577834
+unknown_positive,Baker's,kappa|Pilkwang|Yunus,0.696484174859673
+unknown_positive,Baker's,pabak|Pilkwang|Yunus,0.73603127155668
+unknown_positive,Baker's,agreement|Pilkwang|Lixin,0.535755346056565
+unknown_positive,Baker's,kappa|Pilkwang|Lixin,0.235013594957307
+unknown_positive,Baker's,pabak|Pilkwang|Lixin,0.0715106921131294
+unknown_positive,Baker's,agreement|Yunus|Lixin,0.409289491837204
+unknown_positive,Baker's,kappa|Yunus|Lixin,-0.0216131449500581
+unknown_positive,Baker's,pabak|Yunus|Lixin,-0.181421016325592
+unknown_positive,Baker's,fleiss|all,0.262012382365321
+unknown_positive,Baker's,joint_disagreement|Dread|Steven,0.000547045951859956
+unknown_positive,Baker's,disagreement_phi|Dread|Steven,-0.00270726994198318
+unknown_positive,Baker's,joint_disagreement|Dread|Pilkwang,0
+unknown_positive,Baker's,disagreement_phi|Dread|Pilkwang,-0.012391454444439
+unknown_positive,Baker's,joint_disagreement|Dread|Yunus,0.174423859014912
+unknown_positive,Baker's,disagreement_phi|Dread|Yunus,0.733805796137968
+unknown_positive,Baker's,joint_disagreement|Dread|Lixin,0.516538766869542
+unknown_positive,Baker's,disagreement_phi|Dread|Lixin,0.917974960060553
+unknown_positive,Baker's,joint_disagreement|Steven|Pilkwang,0.00490196078431373
+unknown_positive,Baker's,disagreement_phi|Steven|Pilkwang,0.56336509248273
+unknown_positive,Baker's,joint_disagreement|Steven|Yunus,0.0621149897330596
+unknown_positive,Baker's,disagreement_phi|Steven|Yunus,0.778714449112039
+unknown_positive,Baker's,joint_disagreement|Steven|Lixin,0
+unknown_positive,Baker's,disagreement_phi|Steven|Lixin,-0.00380880702666775
+unknown_positive,Baker's,joint_disagreement|Pilkwang|Yunus,0.0271565495207668
+unknown_positive,Baker's,disagreement_phi|Pilkwang|Yunus,0.668837727310105
+unknown_positive,Baker's,joint_disagreement|Pilkwang|Lixin,0.00109349371241115
+unknown_positive,Baker's,disagreement_phi|Pilkwang|Lixin,0.363246049415911
+unknown_positive,Baker's,joint_disagreement|Yunus|Lixin,0
+unknown_positive,Baker's,disagreement_phi|Yunus|Lixin,-0.00809650872813421
+unknown_positive,Contusion,positive|Dread,0.151988962979995
+unknown_positive,Contusion,positive|Steven,0.488618073120258
+unknown_positive,Contusion,positive|Pilkwang,0.498275465624282
+unknown_positive,Contusion,positive|Yunus,0.516440561048517
+unknown_positive,Contusion,positive|Lixin,0.167624741319844
+unknown_positive,Contusion,missing|Dread,0
+unknown_positive,Contusion,missing|Steven,0
+unknown_positive,Contusion,missing|Pilkwang,0
+unknown_positive,Contusion,missing|Yunus,0
+unknown_positive,Contusion,missing|Lixin,0
+unknown_positive,Contusion,agreement|Dread|Steven,0.634398712347666
+unknown_positive,Contusion,kappa|Dread|Steven,0.257025631283936
+unknown_positive,Contusion,pabak|Dread|Steven,0.268797424695332
+unknown_positive,Contusion,agreement|Dread|Pilkwang,0.633019084847091
+unknown_positive,Contusion,kappa|Dread|Pilkwang,0.264271960372254
+unknown_positive,Contusion,pabak|Dread|Pilkwang,0.266038169694183
+unknown_positive,Contusion,agreement|Dread|Yunus,0.552770751896988
+unknown_positive,Contusion,kappa|Dread|Yunus,0.125554061987541
+unknown_positive,Contusion,pabak|Dread|Yunus,0.105541503793976
+unknown_positive,Contusion,agreement|Dread|Lixin,0.878132904115889
+unknown_positive,Contusion,kappa|Dread|Lixin,0.546388258919048
+unknown_positive,Contusion,pabak|Dread|Lixin,0.756265808231778
+unknown_positive,Contusion,agreement|Steven|Pilkwang,0.86709588411129
+unknown_positive,Contusion,kappa|Steven|Pilkwang,0.734170896890682
+unknown_positive,Contusion,pabak|Steven|Pilkwang,0.73419176822258
+unknown_positive,Contusion,agreement|Steven|Yunus,0.676017475281674
+unknown_positive,Contusion,kappa|Steven|Yunus,0.352519590332988
+unknown_positive,Contusion,pabak|Steven|Yunus,0.352034950563348
+unknown_positive,Contusion,agreement|Steven|Lixin,0.668429524028512
+unknown_positive,Contusion,kappa|Steven|Lixin,0.326670027988588
+unknown_positive,Contusion,pabak|Steven|Lixin,0.336859048057025
+unknown_positive,Contusion,agreement|Pilkwang|Yunus,0.672338468613474
+unknown_positive,Contusion,kappa|Pilkwang|Yunus,0.344751248496903
+unknown_positive,Contusion,pabak|Pilkwang|Yunus,0.344676937226949
+unknown_positive,Contusion,agreement|Pilkwang|Lixin,0.663830765693263
+unknown_positive,Contusion,kappa|Pilkwang|Lixin,0.32611647128874
+unknown_positive,Contusion,pabak|Pilkwang|Lixin,0.327661531386526
+unknown_positive,Contusion,agreement|Yunus|Lixin,0.514141181880892
+unknown_positive,Contusion,kappa|Yunus|Lixin,0.0490675997068176
+unknown_positive,Contusion,pabak|Yunus|Lixin,0.0282823637617844
+unknown_positive,Contusion,fleiss|all,0.300749131084735
+unknown_positive,Contusion,joint_disagreement|Dread|Steven,0.00409988818486769
+unknown_positive,Contusion,disagreement_phi|Dread|Steven,0.0808676930064855
+unknown_positive,Contusion,joint_disagreement|Dread|Pilkwang,0.00409988818486769
+unknown_positive,Contusion,disagreement_phi|Dread|Pilkwang,0.0663537564206667
+unknown_positive,Contusion,joint_disagreement|Dread|Yunus,0.0693138279345176
+unknown_positive,Contusion,disagreement_phi|Dread|Yunus,0.278446647829613
+unknown_positive,Contusion,joint_disagreement|Dread|Lixin,0.225731671979137
+unknown_positive,Contusion,disagreement_phi|Dread|Lixin,0.848060694773315
+unknown_positive,Contusion,joint_disagreement|Steven|Pilkwang,0.0779848171152519
+unknown_positive,Contusion,disagreement_phi|Steven|Pilkwang,0.702511766362358
+unknown_positive,Contusion,joint_disagreement|Steven|Yunus,0.0608084358523726
+unknown_positive,Contusion,disagreement_phi|Steven|Yunus,0.282930748106153
+unknown_positive,Contusion,joint_disagreement|Steven|Lixin,0.0107367641614217
+unknown_positive,Contusion,disagreement_phi|Steven|Lixin,0.220904961467231
+unknown_positive,Contusion,joint_disagreement|Pilkwang|Yunus,0.0591549295774648
+unknown_positive,Contusion,disagreement_phi|Pilkwang|Yunus,0.254301829169187
+unknown_positive,Contusion,joint_disagreement|Pilkwang|Lixin,0.00816629547141797
+unknown_positive,Contusion,disagreement_phi|Pilkwang|Lixin,0.151311319237045
+unknown_positive,Contusion,joint_disagreement|Yunus|Lixin,0.0216038081288905
+unknown_positive,Contusion,disagreement_phi|Yunus|Lixin,0.0657487334609162
+unknown_positive,Fracture,positive|Dread,0.0365601287652334
+unknown_positive,Fracture,positive|Steven,0.501724534375719
+unknown_positive,Fracture,positive|Pilkwang,0.633478960680616
+unknown_positive,Fracture,positive|Yunus,0.480340308116808
+unknown_positive,Fracture,positive|Lixin,0.0673718096114049
+unknown_positive,Fracture,missing|Dread,0
+unknown_positive,Fracture,missing|Steven,0
+unknown_positive,Fracture,missing|Pilkwang,0
+unknown_positive,Fracture,missing|Yunus,0
+unknown_positive,Fracture,missing|Lixin,0
+unknown_positive,Fracture,agreement|Dread|Steven,0.534835594389515
+unknown_positive,Fracture,kappa|Dread|Steven,0.072635853212978
+unknown_positive,Fracture,pabak|Dread|Steven,0.0696711887790296
+unknown_positive,Fracture,agreement|Dread|Pilkwang,0.402621292251092
+unknown_positive,Fracture,kappa|Dread|Pilkwang,0.0422309393928708
+unknown_positive,Fracture,pabak|Dread|Pilkwang,-0.194757415497816
+unknown_positive,Fracture,agreement|Dread|Yunus,0.555300068981375
+unknown_positive,Fracture,kappa|Dread|Yunus,0.0769605750500703
+unknown_positive,Fracture,pabak|Dread|Yunus,0.11060013796275
+unknown_positive,Fracture,agreement|Dread|Lixin,0.968268567486779
+unknown_positive,Fracture,kappa|Dread|Lixin,0.679498914328619
+unknown_positive,Fracture,pabak|Dread|Lixin,0.936537134973557
+unknown_positive,Fracture,agreement|Steven|Pilkwang,0.706829156127846
+unknown_positive,Fracture,kappa|Steven|Pilkwang,0.413117936943075
+unknown_positive,Fracture,pabak|Steven|Pilkwang,0.413658312255691
+unknown_positive,Fracture,agreement|Steven|Yunus,0.724764313635319
+unknown_positive,Fracture,kappa|Steven|Yunus,0.449603269465182
+unknown_positive,Fracture,pabak|Steven|Yunus,0.449528627270637
+unknown_positive,Fracture,agreement|Steven|Lixin,0.564267647735112
+unknown_positive,Fracture,kappa|Steven|Lixin,0.131128294277259
+unknown_positive,Fracture,pabak|Steven|Lixin,0.128535295470223
+unknown_positive,Fracture,agreement|Pilkwang|Yunus,0.679006668199586
+unknown_positive,Fracture,kappa|Pilkwang|Yunus,0.364682028336469
+unknown_positive,Fracture,pabak|Pilkwang|Yunus,0.358013336399172
+unknown_positive,Fracture,agreement|Pilkwang|Lixin,0.432053345596689
+unknown_positive,Fracture,kappa|Pilkwang|Lixin,0.0772499893053384
+unknown_positive,Fracture,pabak|Pilkwang|Lixin,-0.135893308806622
+unknown_positive,Fracture,agreement|Yunus|Lixin,0.575994481489998
+unknown_positive,Fracture,kappa|Yunus|Lixin,0.122122383352943
+unknown_positive,Fracture,pabak|Yunus|Lixin,0.151988962979995
+unknown_positive,Fracture,fleiss|all,0.145495486088648
+unknown_positive,Fracture,joint_disagreement|Dread|Steven,0.000443066016836509
+unknown_positive,Fracture,disagreement_phi|Dread|Steven,-0.0598614424718034
+unknown_positive,Fracture,joint_disagreement|Dread|Pilkwang,0
+unknown_positive,Fracture,disagreement_phi|Dread|Pilkwang,-0.132270039765581
+unknown_positive,Fracture,joint_disagreement|Dread|Yunus,0.00835164835164835
+unknown_positive,Fracture,disagreement_phi|Dread|Yunus,0.0431610938672801
+unknown_positive,Fracture,joint_disagreement|Dread|Lixin,0.32737030411449
+unknown_positive,Fracture,disagreement_phi|Dread|Lixin,0.927261157270714
+unknown_positive,Fracture,joint_disagreement|Steven|Pilkwang,0.164444444444444
+unknown_positive,Fracture,disagreement_phi|Steven|Pilkwang,0.3841444309858
+unknown_positive,Fracture,joint_disagreement|Steven|Yunus,0.0700741962077494
+unknown_positive,Fracture,disagreement_phi|Steven|Yunus,0.386951154791019
+unknown_positive,Fracture,joint_disagreement|Steven|Lixin,0.000885739592559787
+unknown_positive,Fracture,disagreement_phi|Steven|Lixin,0.0653672520306159
+unknown_positive,Fracture,joint_disagreement|Pilkwang|Yunus,0.13662456946039
+unknown_positive,Fracture,disagreement_phi|Pilkwang|Yunus,0.317791075833437
+unknown_positive,Fracture,joint_disagreement|Pilkwang|Lixin,0.000443066016836509
+unknown_positive,Fracture,disagreement_phi|Pilkwang|Lixin,0.0069072046966026
+unknown_positive,Fracture,joint_disagreement|Yunus|Lixin,0.000443066016836509
+unknown_positive,Fracture,disagreement_phi|Yunus|Lixin,0.0319338824202522

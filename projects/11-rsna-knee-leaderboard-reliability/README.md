@@ -1,39 +1,32 @@
-# How Much Can We Trust a Medical-Imaging Leaderboard?
+# Knee Diagnostic Labels Without a Gold Standard
 
-**Reliability, Selection and Label Uncertainty in the RSNA 2026 Knee MRI Challenge, Using Public Data Only**
+**Report-source agreement, latent-model diagnostics and AUC misclassification bias**
 
-## Research Question
+How should we evaluate labels extracted from radiology reports when an independent reference standard is unavailable? This study combines an empirical comparison of public knee-diagnosis labels with simulations of their possible effect on model evaluation.
 
-How consistent are public and private leaderboard scores? How do repeated selection and test-set sampling affect ranks? How does disagreement among report-derived labels affect model evaluation when no gold standard is available?
+## Data and contribution
 
-## Data
+Five public extraction sources—Dread, Steven's original full labels, Pilkwang, Yunus and Lixin—cover a common **4,349 studies** and **12 findings**. Source-specific unknown codes and verdicts are harmonized before comparison. Versions, attribution and selected-file hashes are recorded in the [source audit](../../analysis/rsna-knee-public/SOURCE_AUDIT.md).
 
-- Official [Meta Kaggle](https://www.kaggle.com/datasets/kaggle/meta-kaggle), Apache 2.0. The public schema contains both score precisions and selection indicators; competition-specific coverage still needs verification.
-- Publicly released report-derived label tables, with source-specific permissions and versions in the [dataset manifest](../../analysis/rsna-knee-public/datasets.csv). Only approved label columns are processed locally. Derived label sets are distinguished from independent extraction families.
-- Published aggregate findings, recorded with source locations and evidence status in [parameters.csv](../../analysis/rsna-knee-public/parameters.csv).
+This project's contribution is a reproducible R analysis of agreement, missingness, latent-model assumptions and AUC bias, developed with AI-assisted research and coding. Upstream authors created the label datasets. The [analysis plan](../../analysis/rsna-knee-public/SAP.md) was frozen before these outcomes. Original reports, images, expert annotations and personal competition predictions are outside this study.
 
-No personal competition materials, original images or reports, official Gold58 labels, or rule-gated competition files are used. Raw and individual-level records are not redistributed.
+## Methods and results
 
-## My Contribution
+| Question | Result | Interpretation boundary |
+| --- | --- | --- |
+| Do the sources agree? | Fleiss kappa ranges from **0.390 for synovitis** to **0.868 for fracture**; 2,000 joint study-bootstrap resamples provide intervals. | Agreement is not accuracy. Complete-case sample sizes range from 573 to 3,987, with potentially informative missingness. |
+| Can an independent latent-class model estimate report-state accuracy? | **11/12** primary fits pass chain diagnostics, but all 11 fail to reproduce observed response patterns; synovitis does not converge. | No sensitivity/specificity estimate is endorsed. Shared reporting conventions and source dependence cannot be disentangled here. |
+| Does more validation data solve label error? | With independent errors, oracle correction has little bias. With score-dependent errors at n=977, its AUC bias is **+0.1274** and nominal 95% interval coverage is **12.4%**. | These are synthetic results for specified mechanisms, not observed RSNA model performance. The correction knows the true error parameters. |
+| Does correction improve model ordering? | For true AUCs 0.90 versus 0.91 and independent errors, correct ordering is **53.65% at n=58** and **66.05% at n=977**. | A common positive correction factor leaves ordering unchanged. These are two-model probabilities, not actual competition ranks. |
 
-This is a new, independently scoped methodological project in my portfolio, developed with AI-assisted research and coding. The current contribution is the analysis design, source audit and R software foundation. Empirical analyses and findings will be documented as they are completed; this page does not claim completed results or independent authorship of upstream label datasets.
+![AUC bias under two error mechanisms](../../figures/rsna-knee-public/F7_auc_bias.png)
 
-## Methods
+The simulation contains four prespecified scenarios, each with 2,000 repetitions and 399 paired bootstrap resamples. It also shows undercoverage of percentile intervals in an independent, perfectly labeled synthetic sample of 58 studies. The [full report](../../analysis/rsna-knee-public/report.md) includes plots, uncertainty, failures, prior sensitivities and model checks.
 
-The [statistical analysis plan](../../analysis/rsna-knee-public/SAP.md) specifies leaderboard agreement, simulation-based noise benchmarks, conditional selection/rank analyses, label agreement, latent-class sensitivity analyses and an ADEMP simulation of AUC bias. It separates observed data summaries from model-dependent accuracy and uncertainty estimates.
+## What remains uncertain
 
-## Key Results
-
-**Planning stage.** Source feasibility and schema checks are complete to the extent recorded in the [source audit](../../analysis/rsna-knee-public/SOURCE_AUDIT.md). No leaderboard reliability, label accuracy or simulation performance findings are reported yet. The SAP requires approval before empirical analysis, followed by review of the first tables and figures.
-
-## Limitations
-
-Test sizes are public approximations. Meta Kaggle is a filtered snapshot and may lack required records. Same-submission and unmatched team-best comparisons answer different questions. Latent models require untestable identifying assumptions; shared label ancestry can make estimates fragile. Copied expert labels and prior panel tuning cannot be independently excluded. Any eventual conclusions concern this challenge and these public sources.
+Report-derived sources cannot identify the common discrepancy between reports and imaging truth. Repeat examinations may narrow study-bootstrap intervals when patient identifiers are unavailable. Thresholds and mention conventions may define different targets. A dependence-aware latent model is a possible next analysis; the failed independence model is not used to calibrate simulation parameters.
 
 ## Reproduction
 
-Start with the [R execution guide](../../analysis/rsna-knee-public/README.md). Data must reside outside the repository. Only aggregate results and figures may be published. The original archived RSNA project is not used or modified.
-
-## Sources
-
-[Official RSNA challenge overview](https://www.rsna.org/artificial-intelligence/ai-image-challenge/knee-mri-ai-challenge) · [Source audit and attribution](../../analysis/rsna-knee-public/SOURCE_AUDIT.md) · [Methods references](../../analysis/rsna-knee-public/SAP.md#references)
+The [R guide](../../analysis/rsna-knee-public/README.md) provides versioned public-file acquisition, the locked environment, tests and execution order. Individual labels, study IDs and simulation draws remain outside the repository; only aggregate tables and figures are published. An earlier leaderboard sampling simulation is retained as a supplement. Empirical leaderboard analysis was discontinued.

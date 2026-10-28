@@ -1,0 +1,121 @@
+finding,source_a,source_b,pair_known_n,disagreement_pair_n
+ACL,Dread,Steven,3987,3756
+ACL,Dread,Pilkwang,3998,3760
+ACL,Dread,Yunus,3899,3777
+ACL,Dread,Lixin,4349,4122
+ACL,Steven,Pilkwang,3980,3800
+ACL,Steven,Yunus,3876,3637
+ACL,Steven,Lixin,3987,3748
+ACL,Pilkwang,Yunus,3887,3666
+ACL,Pilkwang,Lixin,3998,3769
+ACL,Yunus,Lixin,3899,3659
+MCL,Dread,Steven,3912,3499
+MCL,Dread,Pilkwang,3925,3513
+MCL,Dread,Yunus,3921,3852
+MCL,Dread,Lixin,4349,3936
+MCL,Steven,Pilkwang,3890,3524
+MCL,Steven,Yunus,3881,3470
+MCL,Steven,Lixin,3912,3499
+MCL,Pilkwang,Yunus,3890,3482
+MCL,Pilkwang,Lixin,3925,3527
+MCL,Yunus,Lixin,3921,3510
+Medial Meniscus,Dread,Steven,4108,3662
+Medial Meniscus,Dread,Pilkwang,4101,3661
+Medial Meniscus,Dread,Yunus,4002,3570
+Medial Meniscus,Dread,Lixin,4349,3997
+Medial Meniscus,Steven,Pilkwang,4097,3950
+Medial Meniscus,Steven,Yunus,3994,3554
+Medial Meniscus,Steven,Lixin,4108,3662
+Medial Meniscus,Pilkwang,Yunus,3990,3553
+Medial Meniscus,Pilkwang,Lixin,4101,3662
+Medial Meniscus,Yunus,Lixin,4002,3591
+Lateral Meniscus,Dread,Steven,3917,3551
+Lateral Meniscus,Dread,Pilkwang,3914,3551
+Lateral Meniscus,Dread,Yunus,3851,3497
+Lateral Meniscus,Dread,Lixin,4349,4052
+Lateral Meniscus,Steven,Pilkwang,3894,3794
+Lateral Meniscus,Steven,Yunus,3822,3461
+Lateral Meniscus,Steven,Lixin,3917,3551
+Lateral Meniscus,Pilkwang,Yunus,3817,3459
+Lateral Meniscus,Pilkwang,Lixin,3914,3553
+Lateral Meniscus,Yunus,Lixin,3851,3504
+Medial OA,Dread,Steven,3469,3014
+Medial OA,Dread,Pilkwang,3238,2785
+Medial OA,Dread,Yunus,3361,3305
+Medial OA,Dread,Lixin,4349,3876
+Medial OA,Steven,Pilkwang,3212,2787
+Medial OA,Steven,Yunus,3196,2747
+Medial OA,Steven,Lixin,3469,3018
+Medial OA,Pilkwang,Yunus,3036,2588
+Medial OA,Pilkwang,Lixin,3238,2789
+Medial OA,Yunus,Lixin,3361,2898
+Lateral OA,Dread,Steven,3280,2830
+Lateral OA,Dread,Pilkwang,2914,2507
+Lateral OA,Dread,Yunus,3156,3100
+Lateral OA,Dread,Lixin,4349,3880
+Lateral OA,Steven,Pilkwang,2864,2479
+Lateral OA,Steven,Yunus,2951,2545
+Lateral OA,Steven,Lixin,3280,2838
+Lateral OA,Pilkwang,Yunus,2690,2286
+Lateral OA,Pilkwang,Lixin,2914,2509
+Lateral OA,Yunus,Lixin,3156,2737
+PF OA,Dread,Steven,3600,3108
+PF OA,Dread,Pilkwang,3548,3065
+PF OA,Dread,Yunus,3523,3496
+PF OA,Dread,Lixin,4349,3849
+PF OA,Steven,Pilkwang,3500,3031
+PF OA,Steven,Yunus,3402,2921
+PF OA,Steven,Lixin,3600,3112
+PF OA,Pilkwang,Yunus,3357,2877
+PF OA,Pilkwang,Lixin,3548,3065
+PF OA,Yunus,Lixin,3523,3040
+Effusion,Dread,Steven,3919,2484
+Effusion,Dread,Pilkwang,3917,2481
+Effusion,Dread,Yunus,3874,3832
+Effusion,Dread,Lixin,4349,2911
+Effusion,Steven,Pilkwang,3913,2511
+Effusion,Steven,Yunus,3861,2426
+Effusion,Steven,Lixin,3919,2485
+Effusion,Pilkwang,Yunus,3858,2424
+Effusion,Pilkwang,Lixin,3917,2485
+Effusion,Yunus,Lixin,3874,2438
+Synovitis,Dread,Steven,701,545
+Synovitis,Dread,Pilkwang,678,517
+Synovitis,Dread,Yunus,839,788
+Synovitis,Dread,Lixin,4349,4132
+Synovitis,Steven,Pilkwang,605,456
+Synovitis,Steven,Yunus,589,440
+Synovitis,Steven,Lixin,701,545
+Synovitis,Pilkwang,Yunus,599,450
+Synovitis,Pilkwang,Lixin,678,517
+Synovitis,Yunus,Lixin,839,640
+Baker's,Dread,Steven,2256,1864
+Baker's,Dread,Pilkwang,2355,1960
+Baker's,Dread,Yunus,2212,2190
+Baker's,Dread,Lixin,4349,3943
+Baker's,Steven,Pilkwang,2208,1817
+Baker's,Steven,Yunus,2165,1772
+Baker's,Steven,Lixin,2256,1863
+Baker's,Pilkwang,Yunus,2195,1804
+Baker's,Pilkwang,Lixin,2355,1962
+Baker's,Yunus,Lixin,2212,1806
+Contusion,Dread,Steven,3304,2811
+Contusion,Dread,Pilkwang,3443,2939
+Contusion,Dread,Yunus,2738,2420
+Contusion,Dread,Lixin,4349,3863
+Contusion,Steven,Pilkwang,3081,2729
+Contusion,Steven,Yunus,2513,2035
+Contusion,Steven,Lixin,3304,2821
+Contusion,Pilkwang,Yunus,2633,2164
+Contusion,Pilkwang,Lixin,3443,2945
+Contusion,Yunus,Lixin,2738,2283
+Fracture,Dread,Steven,2482,2441
+Fracture,Dread,Pilkwang,1889,1860
+Fracture,Dread,Yunus,2497,2485
+Fracture,Dread,Lixin,4349,4303
+Fracture,Steven,Pilkwang,1543,1519
+Fracture,Steven,Yunus,1875,1848
+Fracture,Steven,Lixin,2482,2442
+Fracture,Pilkwang,Yunus,1485,1457
+Fracture,Pilkwang,Lixin,1889,1861
+Fracture,Yunus,Lixin,2497,2466

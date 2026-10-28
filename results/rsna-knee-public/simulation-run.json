@@ -1,0 +1,16 @@
+{
+  "sap_commit": "968c2a9cdb3be5978bbeed5128bad8ba843985f9",
+  "seed_base": 2026102807,
+  "bootstrap_replicates": 399,
+  "prevalence": 0.15,
+  "sensitivity": 0.85,
+  "specificity": 0.85,
+  "auc_a": 0.9,
+  "auc_b": 0.91,
+  "score_residual_correlation": 0.8,
+  "scenarios_completed": 4,
+  "scenarios_planned": 4,
+  "elapsed_minutes": 1.7564,
+  "completed_utc": "2026-10-28 15:23:07 UTC",
+  "evidence": "synthetic only; oracle parameters known; no Gold58 observations"
+}

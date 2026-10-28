@@ -32,6 +32,7 @@ Kaggle Competitions **Expert**; **7 silver and 4 bronze team competition medals*
 
 | Project | Method / evidence to inspect |
 | --- | --- |
+| [Knee Diagnostic Labels Without a Gold Standard](projects/11-rsna-knee-leaderboard-reliability/) | Five public label sources across 4,349 studies; agreement and latent-model diagnostics; simulations showing when AUC misclassification correction fails. [Results](analysis/rsna-knee-public/report.md). |
 | [Image2Biomass: Validation Across Split Designs](projects/03-image2biomass/) | Image regression; recovered five-fold logs across four split settings. Mean best-fold weighted R²: 0.6820 for random splits, 0.5774 for sampling-date splits; [settings and selection caveats](results/image2biomass.md). |
 | [RNA Sequence and Structure Exploration](projects/01-rna-folding/) | Descriptive sequence/structure analysis with a recovered EDA figure; mixed Python/R source. |
 | [Time Series Validation for Tactical Allocation](projects/06-time-series-validation/) | Rolling validation and hyperparameter selection. |
@@ -41,8 +42,6 @@ Kaggle Competitions **Expert**; **7 silver and 4 bronze team competition medals*
 | [Tabular Fraud Classification with CatBoost](projects/10-tabular-fraud-catboost/) | Historical tabular baseline with evaluation caveats. |
 
 Notebook recognition is separate from competition ranking: RNA has one **silver Notebook medal**; time series, multilingual preference and reef detection each have a **bronze Notebook medal** (Kaggle snapshot 2026-10-24).
-
-Research in development: [Medical-Imaging Leaderboard Reliability and Label Uncertainty](projects/11-rsna-knee-leaderboard-reliability/) — a new public-data statistical study, currently at the analysis-plan and software-foundation stage.
 
 Code is archived as published on Kaggle; data and weights are not included.
 

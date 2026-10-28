@@ -5,8 +5,8 @@ library(jsonlite)
 library(data.table)
 
 args <- commandArgs(trailingOnly = TRUE)
-if (length(args) != 1L || !args %in% c("--metadata", "--labels", "--meta-tables")) {
-  stop("Usage: Rscript R/00_download.R --metadata | --labels | --meta-tables")
+if (length(args) != 1L || !args %in% c("--metadata", "--labels")) {
+  stop("Usage: Rscript R/00_download.R --metadata | --labels")
 }
 dest <- external_data_dir()
 manifest <- fread("datasets.csv")
@@ -18,7 +18,7 @@ get_file <- function(url, file, timeout = 120) {
   if (!file.rename(part, file)) stop("Could not finalize download.")
 }
 if (args == "--metadata") {
-  refs <- c("kaggle/meta-kaggle", manifest$dataset)
+  refs <- manifest[cohort_role == "primary_candidate", dataset]
   for (ref in refs) {
     for (kind in c("view", "list")) {
       u <- paste0("https://www.kaggle.com/api/v1/datasets/", kind, "/", ref)
@@ -33,7 +33,7 @@ if (args == "--metadata") {
 }
 if (args == "--labels") {
   receipts <- list()
-  for (i in which(manifest$download_allowed)) {
+  for (i in which(manifest$download_allowed & manifest$cohort_role == "primary_candidate")) {
     m <- manifest[i]
     if (!m$license %in% c("CC0: Public Domain")) stop("License requires a new review.")
     dir <- file.path(dest, gsub("/", "__", m$dataset))
@@ -48,13 +48,4 @@ if (args == "--labels") {
       filename=m$filename, sha256=sha256(f), retrieved_at=format(Sys.time(), tz="UTC"))
   }
   fwrite(rbindlist(receipts), file.path(dest, "download-receipts.csv"))
-}
-if (args == "--meta-tables") {
-  # Explicit opt-in: roughly 3.7 GB uncompressed; no whole Meta Kaggle archive.
-  for (nm in c("Competitions.csv", "Teams.csv", "Submissions.csv")) {
-    u <- paste0("https://www.kaggle.com/api/v1/datasets/download/kaggle/meta-kaggle/", nm,
-                "?datasetVersionNumber=2370")
-    get_file(u, file.path(dest, nm), timeout = 3600)
-  }
-  message("Tables downloaded to external storage. Use DuckDB for filtering.")
 }
