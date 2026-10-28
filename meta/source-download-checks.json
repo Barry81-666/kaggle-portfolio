@@ -27,12 +27,6 @@
       "matched_original_record": true
     },
     {
-      "project": "05-rsna-knee-inference",
-      "version_id": 358098927,
-      "download_sha256": "a2c1689549f01c5fa791608edd6d9db5764e66603426495e04c1fe924ce2fb32",
-      "matched_original_record": true
-    },
-    {
       "project": "06-time-series-validation",
       "version_id": 279919839,
       "download_sha256": "27cd18c920504cfcced550bc3ef627ada48b0d9888e8c55f283ff2e704865346",

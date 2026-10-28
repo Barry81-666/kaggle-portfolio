@@ -18,7 +18,7 @@
     {
       "url": "https://www.kaggle.com/code/chrisk321/rna-folding-r-eda-submission",
       "http_status": 200,
-      "page_title": "\ud83e\uddec RNA Folding: R EDA & Submission | Kaggle",
+      "page_title": "🧬 RNA Folding: R EDA & Submission | Kaggle",
       "final_url": "https://www.kaggle.com/code/chrisk321/rna-folding-r-eda-submission",
       "status": "resolved_specific_page",
       "used_in": [
@@ -79,7 +79,7 @@
     {
       "url": "https://www.kaggle.com/code/handudu/aimo1-20th",
       "http_status": 200,
-      "page_title": "AIMO1_20th\u57fa\u7840\u5b66\u4e60\u8d44\u6599\u6ce8\u91ca\u7248 | Kaggle",
+      "page_title": "AIMO1_20th基础学习资料注释版 | Kaggle",
       "final_url": "https://www.kaggle.com/code/handudu/aimo1-20th",
       "status": "resolved_specific_page",
       "used_in": [
@@ -215,7 +215,7 @@
     {
       "url": "https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission",
       "http_status": 200,
-      "page_title": "\ud83e\uddec RNA Folding: PYTHON EDA & Submission | Kaggle",
+      "page_title": "🧬 RNA Folding: PYTHON EDA & Submission | Kaggle",
       "final_url": "https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission",
       "status": "resolved_specific_page",
       "used_in": [
@@ -229,25 +229,9 @@
       ]
     },
     {
-      "url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
-      "http_status": 200,
-      "page_title": "rsna-knee-teacher-probs-exp017-v1-infer | Kaggle",
-      "final_url": "https://www.kaggle.com/code/handudu/rsna-knee-teacher-probs-exp017-v1-infer",
-      "status": "resolved_specific_page",
-      "used_in": [
-        "SOURCES.md",
-        "meta/catalog.csv",
-        "meta/catalog.json",
-        "meta/inventory.json",
-        "meta/projects/05-rsna-knee-inference/provenance.json",
-        "projects/05-rsna-knee-inference/README.md",
-        "results/rsna-knee-public-score.json"
-      ]
-    },
-    {
       "url": "https://www.kaggle.com/code/handudu/tez-swin-ference",
       "http_status": 200,
-      "page_title": "tez swin-ference\u97e9\u561f\u561f  | Kaggle",
+      "page_title": "tez swin-ference韩嘟嘟  | Kaggle",
       "final_url": "https://www.kaggle.com/code/handudu/tez-swin-ference",
       "status": "resolved_specific_page",
       "used_in": [
@@ -446,9 +430,7 @@
       "final_url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection",
       "status": "resolved_specific_page",
       "used_in": [
-        "meta/catalog.json",
-        "meta/projects/05-rsna-knee-inference/provenance.json",
-        "projects/05-rsna-knee-inference/README.md"
+        "COMPETITION_RESULTS.md"
       ]
     },
     {
@@ -778,5 +760,6 @@
         "meta/projects/02-bacterial-motor-detection/provenance.json"
       ]
     }
-  ]
+  ],
+  "reference_reconciliation": "2026-10-28: removed deleted files and unused URLs from the prior successful checks; no new remote availability claim."
 }
