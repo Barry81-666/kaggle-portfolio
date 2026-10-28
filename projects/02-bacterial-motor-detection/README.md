@@ -41,4 +41,4 @@ Kaggle 标记为 fork，父 Notebook ID：`84148436`；其作者和公开链接�
 
 ## 许可
 
-本次公开元数据未提供可核实的 Notebook 许可证；不推断为 MIT、Apache 或其他许可，不为上游代码重新授权。保留原来源及 Notebook 内已有版权说明，详见仓库 [LICENSE_NOTES.md](../../LICENSE_NOTES.md)。
+本次公开元数据未提供可核实的 Notebook 许可证；不推断为 MIT、Apache 或其他许可，不为上游代码重新授权。保留原来源及 Notebook 内已有版权说明。
