@@ -1,6 +1,6 @@
 # Image2Biomass: Validation Across Split Designs
 
-An EVA02/timm image-regression baseline for five biomass targets, trained with log-transformed targets and a weighted loss. The same notebook loops through four predefined fold designs and reports weighted R² on the original target scale.
+My published notebook contains an EVA02/timm image-regression baseline for five biomass targets, trained with log-transformed targets and a weighted loss. The same notebook loops through four predefined fold designs and reports weighted R² on the original target scale.
 
 ## Historical Validation Results
 
@@ -11,7 +11,7 @@ An EVA02/timm image-regression baseline for five biomass targets, trained with l
 | Sampling date | 0.5774 |
 | Species | 0.4881 |
 
-These values are printed in the original Kaggle run, not recomputed in this revision. Each fold selects its best epoch on that same validation fold. Differences motivate a closer look at split design, but do not establish out-of-group performance because the fold CSVs are private. [Per-fold values, epochs and exact log locations](../../results/image2biomass.md).
+These values are printed in the original Kaggle run, not recomputed. Each fold selects its best epoch on that same validation fold. Differences motivate a closer look at split design, but do not establish out-of-group performance because the fold CSVs are private. [Per-fold values, epochs and exact log locations](../../results/image2biomass.md).
 
 ## Source and Contribution
 

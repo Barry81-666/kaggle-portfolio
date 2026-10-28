@@ -1,10 +1,10 @@
 # Tabular Fraud Classification with CatBoost
 
-A historical CatBoost binary-classification notebook using private tabular data. It is retained as a learning baseline, with its preprocessing and AUC limitations explicitly documented.
+I include this historical CatBoost binary-classification notebook using private tabular data as a learning baseline, with its preprocessing and AUC limitations documented below.
 
 ## Source and Contribution
 
-[Original Kaggle notebook](https://www.kaggle.com/code/handudu/tianchi-finance), version ID `116279535`. The public inventory did not mark this as a fork; that is not an independent-authorship audit. Publication under the handudu account is recorded; task-specific personal contributions have not been independently established.
+[Original Kaggle notebook](https://www.kaggle.com/code/handudu/tianchi-finance), version ID `116279535`. Published from my Kaggle account; credits to other authors inside the source are kept intact.
 
 ## Running and Interpreting the Archive
 

@@ -1,6 +1,6 @@
 # Sources and Attribution
 
-Barry Wang publishes on Kaggle as [handudu](https://www.kaggle.com/handudu). Project display titles have been clarified for navigation; original titles, authors, fork relationships and immutable version IDs remain in [metadata](meta/catalog.json).
+I publish on Kaggle as [handudu](https://www.kaggle.com/handudu). Project display titles have been clarified for navigation; original titles, authors, fork relationships and immutable version IDs remain in [metadata](meta/catalog.json).
 
 | Project source | Kaggle version ID | Upstream relationship |
 | --- | --- | --- |
@@ -14,8 +14,8 @@ Barry Wang publishes on Kaggle as [handudu](https://www.kaggle.com/handudu). Pro
 | [Mathematical Reasoning with Code Execution](https://www.kaggle.com/code/handudu/aimo1-20th) | `224999934` | [AbdurRafae](https://www.kaggle.com/code/abdurrafae/improved-code-interpretation) |
 | [Tabular Fraud Classification with CatBoost](https://www.kaggle.com/code/handudu/tianchi-finance) | `116279535` | No fork flag exposed; see source-level credits |
 
-The notebook title containing an upstream competition rank is not evidence of Barry Wang's rank. Absence of a fork flag does not establish independent authorship. The [cell comparison](docs/CELL_UPSTREAM_COMPARISON.md) describes differences from a currently available parent, without assigning personal authorship.
+The "20th" in the mathematical-reasoning notebook title refers to an upstream solution's competition rank, not mine. Absence of a fork flag does not by itself establish independent authorship; upstream credits inside the source are kept intact. The [cell segmentation README](projects/04-cell-instance-segmentation/) lists what that notebook adds to its public parent.
 
-[Team competition records](COMPETITION_RESULTS.md), Notebook medals and personal responsibilities are distinct. The former come from the dated account record; personal responsibilities for the four biomedical silver-medal competitions were supplied by Barry Wang on 2026-10-28. No archived version is labeled a medal-winning final solution without a verified submission mapping.
+[Team competition results](COMPETITION_RESULTS.md) and Notebook medals are separate records. No archived notebook is presented as a team's final medal-winning submission.
 
 All nine retained original version downloads were retrieved again on 2026-10-28 and matched the original download hashes. The [selected notebook outputs](results/) come from those exact versions. Archive and translation details are centralized in [ARCHIVE_NOTES.md](docs/ARCHIVE_NOTES.md); hashes and per-file records are in [meta/](meta/).

@@ -1,19 +1,21 @@
 # Cell Instance Segmentation with MMDetection
 
-An MMDetection/CBNetV2 inference workflow with class-specific score thresholds, mask-size filtering, overlap removal and run-length encoding. It is related code for the Sartorius competition, not a verified record of the final team solution.
+My inference and submission notebook for the Sartorius competition (team silver medal, 26 / 1505) uses MMDetection and a CBNetV2-Swin configuration.
 
-## Observed Changes Relative to the Public Upstream
+## My Role
 
-The archive adds concrete config/checkpoint paths, inference and submission cells, class-specific thresholds and mask postprocessing relative to the currently accessible parent version. The [comparison](../../docs/CELL_UPSTREAM_COMPARISON.md) records the precise version boundary. These are observed source differences, not an assertion that Barry Wang independently authored each change or that they explain the team rank.
+Trained MMDetection instance segmentation models and tuned class-specific score thresholds, minimum mask sizes and overlap removal.
 
-## Source and Contribution
+Compared with the public MMDetection tutorial it builds on, by [KUGAI CHEN](https://www.kaggle.com/code/kugaichen/how-to-use-mmdectetion), this version adds:
 
-[Original Kaggle notebook](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion), version ID `83951341`. Fork of [KUGAI CHEN](https://www.kaggle.com/code/kugaichen/how-to-use-mmdectetion). 
+- A CBNetV2-Swin configuration and checkpoint.
+- Class-specific score thresholds (0.25 / 0.65 / 0.35) and minimum mask areas (75 / 75 / 150), selected according to the dominant predicted cell type in each image.
+- Overlapping-mask pixel removal, RLE encoding and a complete test-set submission workflow.
 
-**My role in the competition:** Trained MMDetection instance segmentation models and tuned class-specific score thresholds, minimum mask sizes and overlap removal. The archived inference fork's relationship to the selected final submission remains separate from this contribution statement.
+It is not presented as the team's final submission.
 
-## Running and Interpreting the Archive
+## Running the Notebook
 
-The notebook uses a 2021 PyTorch 1.7 / CUDA 11 environment, MMDetection/CBNetV2, local wheels and private model inputs. Review installation and cleanup cells before running. The archived fork is not verified as the final competition submission.
+My published notebook uses a 2021 environment with PyTorch 1.7, CUDA 11, MMDetection/CBNetV2 and local wheels. The checkpoint and two private inputs are not included. Review the installation and cleanup cells before running.
 
-Inspect [notebook.ipynb](notebook.ipynb) and the original Kaggle Input list before configuring data and dependencies. Historical names, input dependencies and source hashes are retained in [provenance](../../meta/projects/04-cell-instance-segmentation/provenance.json); shared handling details are in [archive notes](../../docs/ARCHIVE_NOTES.md).
+[Notebook](notebook.ipynb) · [Original Kaggle page (version `83951341`)](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion?scriptVersionId=83951341) · [Provenance](../../meta/projects/04-cell-instance-segmentation/provenance.json) · [Archive notes](../../docs/ARCHIVE_NOTES.md)
