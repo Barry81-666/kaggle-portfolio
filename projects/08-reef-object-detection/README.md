@@ -10,4 +10,4 @@ My published notebook combines YOLOv5 detections with weighted box fusion in the
 
 The notebook requires the historical Great Barrier Reef competition API and model inputs, four of which were private.
 
-Inspect [notebook.ipynb](notebook.ipynb) and the original Kaggle Input list before configuring data and dependencies. Historical names, input dependencies and source hashes are retained in [provenance](../../meta/projects/08-reef-object-detection/provenance.json); shared handling details are in [archive notes](../../docs/ARCHIVE_NOTES.md).
+Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/yolov5-wbf) (version 87726774). Data and model weights are not included.

@@ -18,4 +18,4 @@ It is not presented as the team's final submission.
 
 My published notebook uses a 2021 environment with PyTorch 1.7, CUDA 11, MMDetection/CBNetV2 and local wheels. The checkpoint and two private inputs are not included. Review the installation and cleanup cells before running.
 
-[Notebook](notebook.ipynb) · [Original Kaggle page (version `83951341`)](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion?scriptVersionId=83951341) · [Provenance](../../meta/projects/04-cell-instance-segmentation/provenance.json) · [Archive notes](../../docs/ARCHIVE_NOTES.md)
+Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion?scriptVersionId=83951341) (version 83951341). Data and model weights are not included.

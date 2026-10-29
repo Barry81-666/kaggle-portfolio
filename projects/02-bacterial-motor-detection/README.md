@@ -12,4 +12,4 @@ My published inference notebook combines YOLO-family detections across tomogram 
 
 Inference requires multiple model checkpoints and three inputs marked private in the source snapshot.
 
-Inspect [notebook.ipynb](notebook.ipynb) and the original Kaggle Input list before configuring data and dependencies. Historical names, input dependencies and source hashes are retained in [provenance](../../meta/projects/02-bacterial-motor-detection/provenance.json); shared handling details are in [archive notes](../../docs/ARCHIVE_NOTES.md).
+Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e) (version 243588125). Data and model weights are not included.

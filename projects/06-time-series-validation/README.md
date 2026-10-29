@@ -10,4 +10,4 @@ My published notebook records a historical rolling-window experiment that fits m
 
 The source contains a commented-out pipeline followed by an active version. Window length and allocation multiplier are selected using the same validation grid; the reported maximum is not an independent test estimate or evidence of investment performance.
 
-Inspect [notebook.ipynb](notebook.ipynb) and the original Kaggle Input list before configuring data and dependencies. Historical names, input dependencies and source hashes are retained in [provenance](../../meta/projects/06-time-series-validation/provenance.json); shared handling details are in [archive notes](../../docs/ARCHIVE_NOTES.md).
+Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/base-noleak-val-local) (version 279919839). Data and model weights are not included.

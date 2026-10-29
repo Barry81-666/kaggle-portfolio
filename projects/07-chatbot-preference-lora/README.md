@@ -10,4 +10,4 @@ My published notebook uses Gemma inference with PEFT/LoRA adapters for multiling
 
 The notebook requires specific offline wheels, a base model, two GPUs and LoRA weights; three inputs were private in the source snapshot. Model loading and inference were not rerun.
 
-Inspect [notebook.ipynb](notebook.ipynb) and the original Kaggle Input list before configuring data and dependencies. Historical names, input dependencies and source hashes are retained in [provenance](../../meta/projects/07-chatbot-preference-lora/provenance.json); shared handling details are in [archive notes](../../docs/ARCHIVE_NOTES.md).
+Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/lmsys-peft0-14-0) (version 217218292). Data and model weights are not included.

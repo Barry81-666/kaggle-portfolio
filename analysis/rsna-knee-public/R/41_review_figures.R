@@ -17,7 +17,7 @@ seg<-rbindlist(segments)
 p<-ggplot(seg)+geom_segment(aes(x=x,xend=xend,y=y,yend=yend),linewidth=.8,color="#285f6b")+
  scale_x_continuous(breaks=1:5,labels=hc$labels[hc$order])+expand_limits(y=0)+
  labs(title="Five label sources form two stable similarity groups",subtitle="Post-hoc average-linkage clustering: 1 - mean Cohen kappa across 12 equally weighted findings",
- x=NULL,y="Merge dissimilarity",caption="The k=2 partition is unchanged across 1,000 joint study bootstraps, median kappa and complete-case analysis.\nTwo clusters do not mean two statistically independent sources; k=2 was chosen after viewing F5.")+
+ x=NULL,y="Merge dissimilarity",caption="The k=2 partition is unchanged across 1,000 joint study bootstraps, median kappa and complete-case analysis.\nTwo clusters do not mean two statistically independent sources; k=2 was chosen after viewing the agreement heatmap.")+
  theme(panel.grid.major.x=element_blank(),plot.caption=element_text(hjust=0,size=9))
 f<-fread(file.path(out,"T5_focus.csv"));f<-rbind(f[,.(finding,source_a,source_b,kappa)],f[,.(finding,source_a=source_b,source_b=source_a,kappa)],
  CJ(finding=c("Effusion","Synovitis"),source_a=source_names)[,.(finding,source_a,source_b=source_a,kappa=1)])
@@ -25,7 +25,7 @@ levels<-hc$labels[hc$order];f[,source_a:=factor(source_a,levels=levels)];f[,sour
 q<-ggplot(f,aes(source_a,source_b,fill=kappa))+geom_tile(color="white")+geom_text(aes(label=sprintf("%.2f",kappa)),size=3.4)+
  scale_fill_gradient(low="#faf6dc",high="#278a8a",limits=c(0,1),name="Cohen kappa")+facet_wrap(~finding)+
  labs(title="Effusion separates the groups most clearly",x=NULL,y=NULL,
- caption="Primary paired-known labels; denominators and 95% intervals are in T5_focus. Synovitis Steven/Pilkwang: 605 paired studies.\nThese marginal agreements do not establish copying, conditional dependence or imaging accuracy.")+
+ caption="Primary paired-known labels; denominators and 95% intervals are in the accompanying table. Synovitis Steven/Pilkwang: 605 paired studies.\nThese marginal agreements do not establish copying, conditional dependence or imaging accuracy.")+
  theme(panel.grid=element_blank(),plot.caption=element_text(hjust=0,size=9))
 png(file.path(fig,"F5c_source_clusters.png"),width=2100,height=1700,res=180,bg="white")
 grid::grid.newpage();grid::pushViewport(grid::viewport(layout=grid::grid.layout(2,1,heights=c(.48,.52))))

@@ -15,10 +15,10 @@ These values are printed in the original Kaggle run, not recomputed. Each fold s
 
 ## Source and Contribution
 
-[Original Kaggle notebook](https://www.kaggle.com/code/handudu/1-train-baseline-demo), version ID `277387301`. Fork of parent kernel `99732107`; the parent's author and public URL were unavailable in the source snapshot. I contributed to part of the validation-split design, building on this upstream notebook. Some split settings were my own work; others were inherited from the upstream notebook.
+[Original Kaggle notebook](https://www.kaggle.com/code/handudu/1-train-baseline-demo), version ID `277387301`. Fork of parent kernel `99732107`; the parent's author and public URL were unavailable in the source snapshot. I adapted this notebook from an upstream baseline and designed some of its validation splits.
 
 ## Running and Interpreting the Archive
 
 The four sets of fold assignments come from a private input. Historical logs are available, but split membership, grouped independence and generalization cannot be independently verified. Best epochs were selected on the reported validation folds.
 
-Inspect [notebook.ipynb](notebook.ipynb) and the original Kaggle Input list before configuring data and dependencies. Historical names, input dependencies and source hashes are retained in [provenance](../../meta/projects/03-image2biomass/provenance.json); shared handling details are in [archive notes](../../docs/ARCHIVE_NOTES.md).
+Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/1-train-baseline-demo) (version 277387301). Data and model weights are not included.
