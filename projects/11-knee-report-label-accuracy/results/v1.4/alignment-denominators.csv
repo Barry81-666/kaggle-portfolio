@@ -1,0 +1,37 @@
+finding,source,target,cohort_n,old_known_n,new_known_n,old_positive_n,new_positive_n,common_known_n
+ACL,Pilkwang,any_affirmed,4349,3998,3998,1194,1194,3998
+ACL,Yunus,any_affirmed,4349,3899,3899,746,1079,3899
+ACL,Yunus,moderate_or_greater,4349,3899,3899,746,746,3899
+MCL,Pilkwang,any_affirmed,4349,3925,3925,749,749,3925
+MCL,Yunus,any_affirmed,4349,3921,3921,269,739,3921
+MCL,Yunus,moderate_or_greater,4349,3921,3921,269,269,3921
+Medial Meniscus,Pilkwang,any_affirmed,4349,4101,4101,2315,2315,4101
+Medial Meniscus,Yunus,any_affirmed,4349,4002,4002,1847,2329,4002
+Medial Meniscus,Yunus,moderate_or_greater,4349,4002,4002,1847,1847,4002
+Lateral Meniscus,Pilkwang,any_affirmed,4349,3914,3914,1091,1091,3914
+Lateral Meniscus,Yunus,any_affirmed,4349,3851,3851,712,1087,3851
+Lateral Meniscus,Yunus,moderate_or_greater,4349,3851,3851,712,712,3851
+Medial OA,Pilkwang,any_affirmed,4349,3238,3238,1597,1597,3238
+Medial OA,Yunus,any_affirmed,4349,3361,3360,1071,1726,3360
+Medial OA,Yunus,moderate_or_greater,4349,3361,3360,1071,1071,3360
+Lateral OA,Pilkwang,any_affirmed,4349,2914,2914,1071,1071,2914
+Lateral OA,Yunus,any_affirmed,4349,3156,3155,643,1203,3155
+Lateral OA,Yunus,moderate_or_greater,4349,3156,3155,643,642,3155
+PF OA,Pilkwang,any_affirmed,4349,3548,3548,1967,1967,3548
+PF OA,Yunus,any_affirmed,4349,3523,3522,1317,2048,3522
+PF OA,Yunus,moderate_or_greater,4349,3523,3522,1317,1316,3522
+Effusion,Pilkwang,any_affirmed,4349,3917,3917,2616,2616,3917
+Effusion,Yunus,any_affirmed,4349,3874,3874,1076,2634,3874
+Effusion,Yunus,moderate_or_greater,4349,3874,3874,1076,1076,3874
+Synovitis,Pilkwang,any_affirmed,4349,678,678,564,564,678
+Synovitis,Yunus,any_affirmed,4349,839,839,387,644,839
+Synovitis,Yunus,moderate_or_greater,4349,839,839,387,387,839
+Baker's,Pilkwang,any_affirmed,4349,2355,2355,1098,1098,2355
+Baker's,Yunus,any_affirmed,4349,2212,2212,709,1126,2212
+Baker's,Yunus,moderate_or_greater,4349,2212,2212,709,709,2212
+Contusion,Pilkwang,any_affirmed,4349,3443,3443,1261,1261,3443
+Contusion,Yunus,any_affirmed,4349,2738,2738,635,1424,2738
+Contusion,Yunus,moderate_or_greater,4349,2738,2738,635,635,2738
+Fracture,Pilkwang,any_affirmed,4349,1889,1889,295,295,1889
+Fracture,Yunus,any_affirmed,4349,2497,2497,237,258,2497
+Fracture,Yunus,moderate_or_greater,4349,2497,2497,237,237,2497

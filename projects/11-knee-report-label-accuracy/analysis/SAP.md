@@ -173,3 +173,7 @@ Every amendment records date, old/new choice, reason and whether relevant outcom
 - [Dendukuri & Joseph (2001), Bayesian approaches to modeling conditional dependence](https://doi.org/10.1111/j.0006-341X.2001.00158.x).
 - [Albert & Dodd (2004), A cautionary note on latent class models](https://pubmed.ncbi.nlm.nih.gov/15180668/).
 - [Morris, White & Crowther (2019), Using simulation studies to evaluate statistical methods](https://doi.org/10.1002/sim.8086).
+
+## Exploratory extension v1.4, 2026-10-29
+
+The document-only definition map and group-inherited-error simulation are specified in [SAP v1.4](v1.4/SAP-v1.4.md). They are committed before any new recoding outcome is computed. The original frozen analyses and project page remain unchanged pending review.

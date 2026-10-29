@@ -1,0 +1,16 @@
+{
+  "freeze_commit": "0053954a94baec9545e6f2e0c88fe43438456d3b",
+  "started_utc": "2026-10-29 05:36:31 UTC",
+  "completed_utc": "2026-10-29 05:36:36 UTC",
+  "elapsed_minutes": 0.0864,
+  "r_version": "R version 4.5.1 (2025-06-13)",
+  "seed_label": 20261029041,
+  "seed_R": 933676218,
+  "bootstrap_replicates": 2000,
+  "cohort_n": 4349,
+  "all_frozen_hashes_pass": true,
+  "all_source_hashes_pass": true,
+  "legacy_max_point_error": 6.6613e-16,
+  "legacy_pattern_counts_exact": true,
+  "new_lcm_fits": 0
+}

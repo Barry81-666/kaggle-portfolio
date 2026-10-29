@@ -1,0 +1,21 @@
+check,passed
+verdict positive/negative/unknown,TRUE
+unexpected verdict stops,TRUE
+documented any-affirmed codes,TRUE
+documented moderate codes,TRUE
+undocumented codes stay missing,TRUE
+numeric equality tolerance,TRUE
+fewer than three sources excludes LCM,TRUE
+all 32 patterns partition,TRUE
+common-sample majority identity,TRUE
+filter requires four matching votes,TRUE
+AUC ties and direction,TRUE
+one-class AUC missing,TRUE
+truth prevalence calibration,TRUE
+PIT bounds normalize,TRUE
+specified binormal true AUC recovered,TRUE
+truth-conditional score mean,TRUE
+truth-conditional score variance,TRUE
+identical retained-reference AUC,TRUE
+bias decomposition,TRUE
+zero inheritance equal-AUC selection symmetry,TRUE

@@ -1,0 +1,13 @@
+finding,target,source,common_n,before,after,change,change_lower,change_upper,bootstrap_valid,bootstrap_attempted
+ACL,moderate_or_greater,Yunus,3899,0.191331110541164,0.191331110541164,0,0,0,2000,2000
+MCL,moderate_or_greater,Yunus,3921,0.0686049477174188,0.0686049477174188,0,0,0,2000,2000
+Medial Meniscus,moderate_or_greater,Yunus,4002,0.46151924037981,0.46151924037981,0,0,0,2000,2000
+Lateral Meniscus,moderate_or_greater,Yunus,3851,0.184887042326669,0.184887042326669,0,0,0,2000,2000
+Medial OA,moderate_or_greater,Yunus,3360,0.31875,0.31875,0,0,0,2000,2000
+Lateral OA,moderate_or_greater,Yunus,3155,0.203486529318542,0.203486529318542,0,0,0,2000,2000
+PF OA,moderate_or_greater,Yunus,3522,0.373651334469051,0.373651334469051,0,0,0,2000,2000
+Effusion,moderate_or_greater,Yunus,3874,0.277749096541043,0.277749096541043,0,0,0,2000,2000
+Synovitis,moderate_or_greater,Yunus,839,0.461263408820024,0.461263408820024,0,0,0,2000,2000
+Baker's,moderate_or_greater,Yunus,2212,0.320524412296564,0.320524412296564,0,0,0,2000,2000
+Contusion,moderate_or_greater,Yunus,2738,0.231921110299489,0.231921110299489,0,0,0,2000,2000
+Fracture,moderate_or_greater,Yunus,2497,0.0949138966760111,0.0949138966760111,0,0,0,2000,2000

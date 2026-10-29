@@ -1,0 +1,19 @@
+{
+  "freeze_commit": "0053954a94baec9545e6f2e0c88fe43438456d3b",
+  "started_utc": "2026-10-29 05:37:57 UTC",
+  "completed_utc": "2026-10-29 05:42:20 UTC",
+  "elapsed_minutes": 4.3867,
+  "r_version": "R version 4.5.1 (2025-06-13)",
+  "prior_compute_minutes": 4.6434,
+  "total_cumulative_minutes": 9.0301,
+  "compute_cap_minutes": 120,
+  "stop_buffer_minutes": 5,
+  "stopped_for_budget": false,
+  "planned_cells": 156,
+  "completed_cells": 156,
+  "attempted_replicates": 192000,
+  "planned_replicates": 192000,
+  "seed_rule": "(20261029042 + 10000*finding_index + scenario_index) modulo 2147483647",
+  "common_subset_identity_violations": 0,
+  "scope": "hypothetical truth and score extension of observed joint label patterns"
+}
