@@ -55,4 +55,4 @@ Notebook medals are awarded for public notebooks and are separate from the compe
 
 Code is archived as published on Kaggle; data and weights are not included.
 
-[Results and figures](results/) · [Sources and attribution](SOURCES.md)
+[Archived notebook outputs](results/) · [Sources and attribution](SOURCES.md)

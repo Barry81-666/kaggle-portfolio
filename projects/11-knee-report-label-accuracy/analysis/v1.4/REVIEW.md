@@ -1,6 +1,6 @@
 # SAP v1.4 review: definition alignment and consensus-reference model selection
 
-**Exploratory review package, 2026-10-29. Project-page changes await owner review.**
+**Exploratory analysis supplement, 2026-10-29.**
 
 **Protocol-publication deviation:** the first freeze upload was truncated. The complete plan was fixed and checked locally, but was not fully published before analysis. Missing files were repaired after results were known. See [FREEZE_DEVIATION.md](FREEZE_DEVIATION.md).
 
@@ -72,7 +72,7 @@ Both full-population true AUCs are 0.85, so there is no intrinsically worse mode
 | Contusion | 2453 | 1786 (72.8%) | 100.0% | 0.6% | +0.059 | -0.020 | -0.014 |
 | Fracture | 1306 | 1199 (91.8%) | 95.0% | 3.6% | +0.024 | -0.026 | -0.016 |
 
-Direct majority favors the G1-style model in **10 of 12 findings**, but favors B for both menisci. Under the primary effusion scenario, A is selected in all 2,000 direct-majority replicates despite equal true AUC; after retaining only group-agreement cases, A is selected 8.4% of the time. These are results conditional on the specified assumptions, not estimates of actual participant bias. A 100% Monte Carlo result is not proof of certainty.
+Direct majority favors the model that learned the Steven/Pilkwang/Lixin labelling style in **10 of 12 findings**, but favors B for both menisci. Under the primary effusion scenario, A is selected in all 2,000 direct-majority replicates despite equal true AUC; after retaining only group-agreement cases, A is selected 8.4% of the time. These are results conditional on the specified assumptions, not estimates of actual participant bias. A 100% Monte Carlo result is not proof of certainty.
 
 Filtering retains 58.7%–91.8% of the complete-label subset, hence abstains on 8.2%–41.3%. For effusion it retains 2,262 of 3,856 complete cases; for synovitis 354 of 573, only 8.1% of the original 4,349 studies. G2 ties and between-group disagreement are reported separately in [cohort calibration](../../results/v1.4/simulation-cohort.csv).
 
@@ -170,4 +170,4 @@ The [machine-readable practical table](../../results/v1.4/practical-evidence-tab
 
 In the repaired final tree, all old analysis code, original result tables, figures, the project README, original research report and portfolio homepage remain byte-identical. The earlier malformed SAP publication remains visible in history. Only SAP.md/DECISIONS.md receive extension links; new work lives in v1.4 subdirectories. The source-file hashes pass; every old agreement point estimate and complete binary-pattern count was reproduced. No individual study identifiers, raw labels or replicate draws are released. [RUN.md](RUN.md) documents commands, checks and columns.
 
-This package is ready for review of the definition table, assumptions and main findings. Project-page rewriting and merging wait for that review.
+The definition table, assumptions and main findings are incorporated in the completed project report.

@@ -10,4 +10,4 @@ I include this historical CatBoost binary-classification notebook using private 
 
 The data are private. The code fits an encoder on combined training/test tables and calculates validation AUC from hard class predictions. A new analysis should use fold-specific preprocessing and predicted probabilities; this source is preserved unchanged apart from language edits.
 
-Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/tianchi-finance) (version 116279535). Data and model weights are not included.
+Data and model weights are not included.

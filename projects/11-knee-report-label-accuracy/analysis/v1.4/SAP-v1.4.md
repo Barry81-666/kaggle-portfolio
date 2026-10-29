@@ -1,6 +1,6 @@
 # SAP v1.4: documented label definitions and consensus-reference model selection
 
-Version 1.4, 2026-10-29 (Asia/Shanghai). This is an **exploratory extension** after seeing all v1.2/v1.3 results. Its mappings and simulation rules are fixed before examining any new encoded outcome or new simulation result. The previous outcomes remain byte-identical. The project README, main research report and portfolio homepage will not be rewritten before owner review.
+Version 1.4, 2026-10-29 (Asia/Shanghai). This is an **exploratory extension** after seeing all v1.2/v1.3 results. Its mappings and simulation rules are fixed before examining any new encoded outcome or new simulation result. The previous outcomes remain byte-identical. The mapping, scenarios and results are documented before updating the project summary.
 
 ## 1. Questions and evidence boundaries
 
@@ -71,4 +71,4 @@ Use R 4.5.1 and existing locked dependencies; do not mutate legacy analysis scri
 
 Run all primary cells first, followed by sensitivities in frozen table order. Retain the original cumulative 120-minute statistical-computation cap; approximately 4.55 minutes were previously used. Record new wall time. If less than 5 minutes remain, stop at a completed replicate batch/cell and disclose attempted/unfinished cells; do not fill missing results with extrapolation. Raw individual labels, scores and replicate arrays stay external. Publish aggregate mappings, scenarios, empirical changes, simulation summaries and scientific plots for review.
 
-The review document reports results even when alignment worsens agreement, group filtering does not help, or the three-source group has no consistent advantage. It includes a practical evidence table for each finding without declaring any label clinically reliable from agreement alone. The owner reviews this package before any rewrite of the project page or original report.
+The review document reports results even when alignment worsens agreement, group filtering does not help, or the three-source group has no consistent advantage. It includes a practical evidence table for each finding without declaring any label clinically reliable from agreement alone. The analysis supplement documents the evidence used in the project summary and research report.

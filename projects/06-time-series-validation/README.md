@@ -10,4 +10,4 @@ My published notebook records a historical rolling-window experiment that fits m
 
 The source contains a commented-out pipeline followed by an active version. Window length and allocation multiplier are selected using the same validation grid; the reported maximum is not an independent test estimate or evidence of investment performance.
 
-Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/base-noleak-val-local) (version 279919839). Data and model weights are not included.
+Data and model weights are not included.

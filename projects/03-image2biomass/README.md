@@ -21,4 +21,4 @@ These values are printed in the original Kaggle run, not recomputed. Each fold s
 
 The four sets of fold assignments come from a private input. Historical logs are available, but split membership, grouped independence and generalization cannot be independently verified. Best epochs were selected on the reported validation folds.
 
-Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/1-train-baseline-demo) (version 277387301). Data and model weights are not included.
+Data and model weights are not included.

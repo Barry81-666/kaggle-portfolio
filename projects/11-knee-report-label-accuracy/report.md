@@ -9,10 +9,10 @@ format: gfm
 ## What I found
 
 1. **Definition differences explain most of the disagreement between Pilkwang and Yunus, indicating that the original two-group structure was at least partly shaped by coding.** Yunus's mild code 0.25 had been counted negative under the original 0.5 threshold. Aligning the two documented sources on identical paired cases raises effusion agreement from 60.2% to 99.5% (κ 0.31 to 0.99) and synovitis agreement from 68.4% to 98.7%. They belonged to different original groups; the other three sources lack sufficient documentation for alignment. Original clustering and latent-model misfit motivated this investigation rather than establishing distinct independent extraction families.
-2. **Majority-vote references can favour models sharing the majority's labelling style.** At equal full-population true AUC, the primary scenario favours the G1-style model in 10 of 12 findings; both meniscus findings favour B. No-inheritance controls give selection near 50%, and swapping inherited groups reverses the direction. This demonstrates a possible mechanism conditional on the generator, not the size or occurrence of bias in the real competition. Group filtering changes both evaluated cases and their true model ordering, so it is not a general remedy.
+2. **Majority-vote references can favour models sharing the majority's labelling style.** At equal full-population true AUC, the primary scenario favours the model that learned the Steven/Pilkwang/Lixin labelling style in 10 of 12 findings; both meniscus findings favour B. No-inheritance controls give selection near 50%, and swapping inherited groups reverses the direction. This demonstrates a possible mechanism conditional on the generator, not the size or occurrence of bias in the real competition. Group filtering changes both evaluated cases and their true model ordering, so it is not a general remedy.
 3. **Corrections that assume label errors are independent of model scores can fail badly when errors are shared.** In the original score-dependent simulation, known-parameter correction at n=977 has bias +0.1274 and nominal 95% interval coverage of 12.4%; with score-independent errors it removes most bias. The relevant independence assumption is conditional on the true class. These results concern that correction and mechanism, not all statistical corrections.
 
-The sections below report the exploratory v1.4 alignment and model-selection results, followed by the original agreement, clustering, latent-model diagnostics and correction simulations. All previously obtained numerical results are retained.
+The sections below report the definition-alignment and majority-vote analyses added after the first results, followed by the original agreement, clustering, latent-model diagnostics and correction simulations. All previously obtained numerical results are retained.
 
 ## Design and provenance
 
@@ -22,7 +22,7 @@ I used Dread v3, Steven v6's original full/v1 file, Pilkwang v1, Yunus v3 and Li
 
 I analyzed public extraction tables and excluded known later blends from the primary cohort. I used no original reports, MRI images, official Gold58 annotations, personal model predictions, submission histories or rule-gated files.
 
-## Definition alignment and evaluation: exploratory v1.4
+## Definition alignment and majority-vote analyses added after the first results
 
 I mapped only rules supported by public publisher documentation: Pilkwang YES/NO/UNK becomes positive/negative/missing; Yunus's documented 0.25, 0.55 and 0.90–1 codes count positive for any affirmed abnormality, while 0 is negative and unmentioned/uncertain codes remain missing. Three undocumented Yunus values remain missing. This common report-assertion target includes mild findings; it is not imaging-confirmed disease.
 
@@ -100,7 +100,7 @@ Both full-population true AUCs are 0.85, so there is no intrinsically worse mode
 | Contusion | 2453 | 1786 (72.8%) | 100.0% | 0.6% | +0.059 | -0.020 | -0.014 |
 | Fracture | 1306 | 1199 (91.8%) | 95.0% | 3.6% | +0.024 | -0.026 | -0.016 |
 
-Direct majority favors the G1-style model in **10 of 12 findings**, but favors B for both menisci. Under the primary effusion scenario, A is selected in all 2,000 direct-majority replicates despite equal true AUC; after retaining only group-agreement cases, A is selected 8.4% of the time. These are results conditional on the specified assumptions, not estimates of actual participant bias. A 100% Monte Carlo result is not proof of certainty.
+Direct majority favors the model that learned the Steven/Pilkwang/Lixin labelling style in **10 of 12 findings**, but favors B for both menisci. Under the primary effusion scenario, A is selected in all 2,000 direct-majority replicates despite equal true AUC; after retaining only group-agreement cases, A is selected 8.4% of the time. These are results conditional on the specified assumptions, not estimates of actual participant bias. A 100% Monte Carlo result is not proof of certainty.
 
 Filtering retains 58.7%–91.8% of the complete-label subset, hence abstains on 8.2%–41.3%. For effusion it retains 2,262 of 3,856 complete cases; for synovitis 354 of 573, only 8.1% of the original 4,349 studies. G2 ties and between-group disagreement are reported separately in [cohort calibration](results/v1.4/simulation-cohort.csv).
 
@@ -331,7 +331,7 @@ Missing labels create different comparison populations, and repeated examination
 
 I completed the public-source agreement analysis, independent latent-model checks and four baseline misclassification scenarios. Secondary derivative-source analyses, alternate prevalence priors/orientations, a dependent latent model, extraction-error-only simulations informed by the latent model, uncertain-parameter correction, and the large stress grid were not run. I retained the prespecified simulation parameters because the latent model could not provide a credible calibration.
 
-Only two sources support documented alignment, and their agreement is not diagnostic accuracy. The simulations use assumed latent truth and score-style inheritance; their magnitudes do not estimate actual participant bias. The v1.4 extension is exploratory, and its plan files were not fully uploaded before execution ([publication record](analysis/v1.4/FREEZE_DEVIATION.md)).
+Only two sources support documented alignment, and their agreement is not diagnostic accuracy. The simulations use assumed latent truth and score-style inheritance; their magnitudes do not estimate actual participant bias. The definition-alignment and majority-vote analyses were added after the first results, and their plan files were not fully uploaded before execution ([publication record](analysis/v1.4/FREEZE_DEVIATION.md)).
 
 This completes the project: the analysis includes documented two-source alignment and all 156 specified consensus-selection cells; no additional analysis is planned.
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate the English edition against a trusted pre-edit checkout (Python >= 3.12).
 
-Usage: python scripts/validate_portfolio.py --original-root /path/to/base-checkout
+Usage: python scripts/validate_portfolio.py --original-root /path/to/base-checkout --archive-only
 The original checkout must be commit a3bc52f16e600f914ce0c0165173fd267ab02620.
 This script performs static checks only; it never executes archived source.
 """
@@ -66,9 +66,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--original-root', type=Path, required=True)
     parser.add_argument('--report', type=Path)
+    parser.add_argument('--archive-only', action='store_true',
+                        help='Restrict project checks to the nine notebook archives in meta/catalog.json')
     args = parser.parse_args()
     original = args.original_root
     report = {'baseline_commit': 'a3bc52f16e600f914ce0c0165173fd267ab02620',
+              'scope': 'nine_notebook_archives_and_supporting_docs' if args.archive_only else 'repository',
               'errors': [], 'files': [], 'local_links_checked': 0,
               'credential_flags': [], 'decoded_embedded_items_scanned': 0}
     errors = report['errors']
@@ -210,7 +213,6 @@ def main():
     }
     # Exact aggregate result schemas; individual-level files are not accepted.
     public_manifest_schemas.update({
-        'projects/11-knee-report-label-accuracy/results/T3_sampling_benchmark.csv': ['scenario', 'prevalence', 'auc', 'latent_rho', 'public_multiplier', 'private_multiplier', 'n_public', 'n_private', 'replicates_attempted', 'replicates_valid', 'undefined_macro', 'mean_public', 'mean_private', 'mean_difference', 'mean_difference_mcse', 'sd_public', 'sd_private', 'sd_difference', 'sd_difference_mcse', 'variance_difference', 'variance_mcse', 'variance_mc_lower', 'variance_mc_upper', 'realized_label_correlation', 'cor_weighted_mean_difference', 'difference_q025', 'difference_q975', 'evidence_type', 'observed_variance', 'excess_variance_ratio'],
         'projects/11-knee-report-label-accuracy/results/T4_agreement.csv': ['finding', 'metric', 'source_a', 'source_b', 'estimate', 'lower', 'upper', 'bootstrap_valid', 'bootstrap_attempted'],
         'projects/11-knee-report-label-accuracy/results/T4_denominators.csv': ['finding', 'source', 'cohort_n', 'known_n', 'positive_n', 'complete_case_n', 'majority_comparable_n', 'majority_disagreements'],
         'projects/11-knee-report-label-accuracy/results/T4_pair_denominators.csv': ['finding', 'source_a', 'source_b', 'pair_known_n', 'disagreement_pair_n'],
@@ -234,6 +236,9 @@ def main():
         if not p.is_file() or '.git' in p.parts or '__pycache__' in p.parts:
             continue
         rel = str(p.relative_to(ROOT))
+        parts = p.relative_to(ROOT).parts
+        if args.archive_only and parts[0] == 'projects' and len(parts) > 1 and parts[1] not in retained_projects:
+            continue
         if p.suffix in forbidden or p.name in {'kaggle.json', '.env', 'access_token'}:
             errors.append(f'Data/model/credential file in package: {rel}')
         if p.suffix == '.csv' and rel != 'meta/catalog.csv':

@@ -1,6 +1,6 @@
 # Knee Diagnostic Labels Without a Gold Standard
 
-How much does disagreement between report-derived labels reflect different definitions, and how can those labels distort model evaluation? I compare five public label sets covering **4,349 knee MRI studies and 12 findings**, then examine specified evaluation mechanisms in simulation.
+Medical AI models are often trained and evaluated using labels extracted from radiology reports. How much does disagreement between report-derived labels reflect different definitions, and how can those labels distort model evaluation? I compare five public label sets covering **4,349 knee MRI studies and 12 findings**, then examine specified evaluation mechanisms in simulation.
 
 ## Three findings
 
@@ -8,7 +8,7 @@ How much does disagreement between report-derived labels reflect different defin
 
 ![Documented definition alignment](figures/v1.4/definition-alignment.png)
 
-**2. Majority-vote references can favour models sharing the majority's labelling style.** With equal true AUCs, direct majority favours the G1-style model in **10/12 findings**, while both meniscus findings favour the other model. Without inherited style, selection is near **50%**; swapping the inherited groups reverses the direction. These controls demonstrate a possible mechanism; its magnitude depends on assumed truth and error inheritance, rather than estimating actual competition bias. Group-agreement filtering discards **8%–41%** of complete cases and can change which model is truly better among retained cases, so it offers no general solution.
+**2. Majority-vote references can favour models sharing the majority's labelling style.** With equal true AUCs, direct majority favours the model that learned the Steven/Pilkwang/Lixin labelling style in **10/12 findings**, while both meniscus findings favour the other model. Without inherited style, selection is near **50%**; swapping the inherited groups reverses the direction. These controls demonstrate a possible mechanism; its magnitude depends on assumed truth and error inheritance, rather than estimating actual competition bias. Group-agreement filtering discards **8%–41%** of complete cases and can change which model is truly better among retained cases, so it offers no general solution.
 
 ![Direct-majority selection controls across all findings](figures/v1.4/majority-style-controls.png)
 
@@ -35,8 +35,10 @@ Agreement concerns report assertions. The table describes Pilkwang/Yunus after a
 
 ## Limitations
 
-Unknown labels and patient clustering affect coverage and uncertainty; neither agreement nor clustering establishes independent errors or imaging accuracy. Truth and inherited score errors in the simulations are assumptions. The v1.4 extension is exploratory, and its plan files were not fully uploaded before execution ([publication record](analysis/v1.4/FREEZE_DEVIATION.md)).
+Unknown labels and patient clustering affect coverage and uncertainty; neither agreement nor clustering establishes independent errors or imaging accuracy. Truth and inherited score errors in the simulations are assumptions. The definition-alignment and majority-vote analyses were added after the first results, and their plan files were not fully uploaded before execution ([publication record](analysis/v1.4/FREEZE_DEVIATION.md)).
 
 ## Report and reproduction
 
 The [full report](report.md) contains all scenarios, filtering results, denominators and Monte Carlo uncertainty. [R guide](analysis/README.md) · [v1.4 reproduction](analysis/v1.4/RUN.md) · [source audit](analysis/SOURCE_AUDIT.md) · [aggregate results](results/). Original frozen analyses and outputs are retained.
+
+I thank Dread, Steven, Pilkwang, Yunus and Lixin for publishing the label datasets used in this study; the [source audit](analysis/SOURCE_AUDIT.md) records their dataset versions and attribution.

@@ -1,0 +1,91 @@
+{
+  "baseline_commit": "a3bc52f16e600f914ce0c0165173fd267ab02620",
+  "scope": "nine_notebook_archives_and_supporting_docs",
+  "errors": [],
+  "files": [
+    {
+      "path": "projects/01-rna-folding/notebook.ipynb",
+      "code_cells": 34,
+      "strict_noncomment_token_equality_cells": 34,
+      "token_equality_with_exact_literal_exceptions_cells": 34,
+      "translated_markdown_cells": 4,
+      "non_python_lexable_cells_source_identical": 0
+    },
+    {
+      "path": "projects/02-bacterial-motor-detection/notebook.ipynb",
+      "code_cells": 11,
+      "strict_noncomment_token_equality_cells": 9,
+      "token_equality_with_exact_literal_exceptions_cells": 11,
+      "translated_markdown_cells": 0,
+      "non_python_lexable_cells_source_identical": 0
+    },
+    {
+      "path": "projects/03-image2biomass/notebook.ipynb",
+      "code_cells": 6,
+      "strict_noncomment_token_equality_cells": 2,
+      "token_equality_with_exact_literal_exceptions_cells": 6,
+      "translated_markdown_cells": 0,
+      "non_python_lexable_cells_source_identical": 0
+    },
+    {
+      "path": "projects/04-cell-instance-segmentation/notebook.ipynb",
+      "code_cells": 14,
+      "strict_noncomment_token_equality_cells": 12,
+      "token_equality_with_exact_literal_exceptions_cells": 12,
+      "translated_markdown_cells": 0,
+      "non_python_lexable_cells_source_identical": 2
+    },
+    {
+      "path": "projects/06-time-series-validation/notebook.ipynb",
+      "code_cells": 4,
+      "strict_noncomment_token_equality_cells": 3,
+      "token_equality_with_exact_literal_exceptions_cells": 4,
+      "translated_markdown_cells": 2,
+      "non_python_lexable_cells_source_identical": 0
+    },
+    {
+      "path": "projects/07-chatbot-preference-lora/notebook.ipynb",
+      "code_cells": 23,
+      "strict_noncomment_token_equality_cells": 23,
+      "token_equality_with_exact_literal_exceptions_cells": 23,
+      "translated_markdown_cells": 2,
+      "non_python_lexable_cells_source_identical": 0
+    },
+    {
+      "path": "projects/08-reef-object-detection/notebook.ipynb",
+      "code_cells": 16,
+      "strict_noncomment_token_equality_cells": 16,
+      "token_equality_with_exact_literal_exceptions_cells": 16,
+      "translated_markdown_cells": 0,
+      "non_python_lexable_cells_source_identical": 0
+    },
+    {
+      "path": "projects/09-llm-code-reasoning/notebook.ipynb",
+      "code_cells": 36,
+      "strict_noncomment_token_equality_cells": 34,
+      "token_equality_with_exact_literal_exceptions_cells": 36,
+      "translated_markdown_cells": 4,
+      "non_python_lexable_cells_source_identical": 0
+    },
+    {
+      "path": "projects/10-tabular-fraud-catboost/notebook.ipynb",
+      "code_cells": 4,
+      "strict_noncomment_token_equality_cells": 3,
+      "token_equality_with_exact_literal_exceptions_cells": 4,
+      "translated_markdown_cells": 0,
+      "non_python_lexable_cells_source_identical": 0
+    }
+  ],
+  "local_links_checked": 48,
+  "credential_flags": [],
+  "decoded_embedded_items_scanned": 0,
+  "verified_literal_exceptions": 88,
+  "notebooks": 9,
+  "archived_python_files": 0,
+  "code_cells": 148,
+  "strict_noncomment_token_equality_cells": 136,
+  "token_equality_with_exact_literal_exceptions_cells": 146,
+  "non_python_lexable_cells_source_identical": 2,
+  "translated_markdown_cells": 12,
+  "passed": true
+}
