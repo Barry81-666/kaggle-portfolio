@@ -1,0 +1,14 @@
+scenario,priority,auc_a,auc_b,inheritance,orientation,truth_group1_weight,truth_slope,prevalence_multiplier,replicates
+equal_true_auc,primary,0.85,0.85,0.5,original,0.5,4,1,2000
+A_better,primary,0.86,0.85,0.5,original,0.5,4,1,2000
+B_better,primary,0.85,0.86,0.5,original,0.5,4,1,2000
+no_inheritance,sensitivity,0.85,0.85,0,original,0.5,4,1,1000
+weak_inheritance,sensitivity,0.85,0.85,0.25,original,0.5,4,1,1000
+strong_inheritance,sensitivity,0.85,0.85,0.75,original,0.5,4,1,1000
+swap_training_groups,sensitivity,0.85,0.85,0.5,swapped,0.5,4,1,1000
+truth_favors_group1,sensitivity,0.85,0.85,0.5,original,0.75,4,1,1000
+truth_favors_group2,sensitivity,0.85,0.85,0.5,original,0.25,4,1,1000
+weak_truth_alignment,sensitivity,0.85,0.85,0.5,original,0.5,2,1,1000
+strong_truth_alignment,sensitivity,0.85,0.85,0.5,original,0.5,8,1,1000
+lower_prevalence,sensitivity,0.85,0.85,0.5,original,0.5,4,0.5,1000
+higher_prevalence,sensitivity,0.85,0.85,0.5,original,0.5,4,1.5,1000

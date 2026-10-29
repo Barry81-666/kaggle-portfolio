@@ -63,3 +63,7 @@ The prespecified post-hoc scripts completed on 2026-10-29: source clustering too
 I replaced procedural language and shorthand with descriptive research terms, consolidated limitations in the project page and report, and removed the retired sampling-reference appendix and navigation links. I retained the historical designs here and in the plan to preserve the record. No analysis code, input data or numerical result changed.
 
 2026-10-29: files moved into a single project folder for readability; analysis content and results unchanged.
+
+## v1.4: definition alignment and consensus-reference selection, 2026-10-29
+
+The owner approved the extension and required a document-only mapping freeze before new encoded outcomes. All prior study outcomes were known. I used only publisher documentation to define the mapping; two sources qualify for any-affirmed and one for moderate-or-greater, so no new latent model is planned. The [v1.4 specification](v1.4/SAP-v1.4.md) fixes the simulated group-inherited-error mechanism, null/effect scenarios, abstention rules and selection estimands before execution. AUC on the two-group-agreement subset must be identical for both reference rules because their labels coincide there. This is a mathematical control, not an observed result. The owner will review mapping, scenarios and results before project-page changes.
