@@ -1,0 +1,121 @@
+finding,source_a,source_b,common_n,before_agreement,after_agreement,change_agreement,before_kappa,after_kappa,change_kappa,interpretation
+ACL,Dread,Steven,3987,0.896162528216704,0.896162528216704,0,0.668294429794576,0.668294429794576,0,non-harmonized sensitivity; other three sources retain operational codes
+ACL,Dread,Pilkwang,3998,0.839669834917459,0.839669834917459,0,0.549076217144309,0.549076217144309,0,non-harmonized sensitivity; other three sources retain operational codes
+ACL,Dread,Yunus,3899,0.947422416004104,0.864067709669146,-0.0833547063349577,0.812539064378095,0.601621605782229,-0.210917458595866,non-harmonized sensitivity; other three sources retain operational codes
+ACL,Dread,Lixin,4349,0.919521729133134,0.919521729133134,0,0.71207860652212,0.71207860652212,0,non-harmonized sensitivity; other three sources retain operational codes
+ACL,Steven,Pilkwang,3980,0.941959798994975,0.941959798994975,0,0.852582287297942,0.852582287297942,0,non-harmonized sensitivity; other three sources retain operational codes
+ACL,Steven,Yunus,3876,0.945820433436533,0.954076367389061,0.00825593395252833,0.837385964800123,0.87869321018999,0.0413072453898669,non-harmonized sensitivity; other three sources retain operational codes
+ACL,Steven,Lixin,3987,0.966641585151743,0.966641585151743,0,0.905761113483651,0.905761113483651,0,non-harmonized sensitivity; other three sources retain operational codes
+ACL,Pilkwang,Yunus,3887,0.9109853357345,0.992024697710317,0.0810393619758169,0.755957874352515,0.980166072539334,0.224208198186819,non-harmonized sensitivity; other three sources retain operational codes
+ACL,Pilkwang,Lixin,3998,0.920210105052526,0.920210105052526,0,0.793924252221997,0.793924252221997,0,non-harmonized sensitivity; other three sources retain operational codes
+ACL,Yunus,Lixin,3899,0.953321364452424,0.936650423185432,-0.0166709412669915,0.855654043903165,0.829819677099283,-0.0258343668038821,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Dread,Steven,3912,0.879601226993865,0.879601226993865,0,0.424706600841013,0.424706600841013,0,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Dread,Pilkwang,3925,0.862675159235669,0.862675159235669,0,0.388421263510699,0.388421263510699,0,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Dread,Yunus,3921,0.977811782708493,0.864575363427697,-0.113236419280796,0.807484430950171,0.39041731383224,-0.417067117117931,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Dread,Lixin,4349,0.899977006208324,0.899977006208324,0,0.45194790446622,0.45194790446622,0,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Steven,Pilkwang,3890,0.982005141388175,0.982005141388175,0,0.939661002527014,0.939661002527014,0,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Steven,Yunus,3881,0.895130121102809,0.97964442154084,0.0845143004380314,0.516260995446401,0.931150285763175,0.414889290316775,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Steven,Lixin,3912,0.981850715746421,0.981850715746421,0,0.935345104513217,0.935345104513217,0,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Pilkwang,Yunus,3890,0.879948586118252,0.993573264781491,0.113624678663239,0.481111407534186,0.979020303169024,0.497908895634838,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Pilkwang,Lixin,3925,0.972229299363057,0.972229299363057,0,0.904884637676778,0.904884637676778,0,non-harmonized sensitivity; other three sources retain operational codes
+MCL,Yunus,Lixin,3921,0.903340984442744,0.972200969140525,0.0688599846977811,0.534560049862112,0.903775783249035,0.369215733386923,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Dread,Steven,4108,0.831791626095424,0.831791626095424,0,0.672099356634465,0.672099356634465,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Dread,Pilkwang,4101,0.834918312606681,0.834918312606681,0,0.677792383725943,0.677792383725943,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Dread,Yunus,4002,0.926786606696652,0.822838580709645,-0.103948025987006,0.851465161792928,0.656073296868171,-0.195391864924757,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Dread,Lixin,4349,0.923200735801334,0.923200735801334,0,0.838408107951161,0.838408107951161,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Steven,Pilkwang,4097,0.967781303392726,0.967781303392726,0,0.934428082033161,0.934428082033161,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Steven,Yunus,3994,0.897095643465198,0.969704556835253,0.0726089133700552,0.7960029079702,0.938217937117229,0.14221502914703,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Steven,Lixin,4108,0.850778967867576,0.850778967867576,0,0.707958201743481,0.707958201743481,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Pilkwang,Yunus,3990,0.9,0.969924812030075,0.0699248120300752,0.80166322777116,0.938718353494756,0.137055125723596,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Pilkwang,Lixin,4101,0.853938063886857,0.853938063886857,0,0.713861269310295,0.713861269310295,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial Meniscus,Yunus,Lixin,4002,0.946026986506747,0.830084957521239,-0.115942028985507,0.890581025649724,0.669641723404457,-0.220939302245267,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Dread,Steven,3917,0.860607607863161,0.860607607863161,0,0.600650332784854,0.600650332784854,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Dread,Pilkwang,3914,0.86561062851303,0.86561062851303,0,0.610333054850727,0.610333054850727,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Dread,Yunus,3851,0.951181511295767,0.862113736691768,-0.0890677746039989,0.824500606258645,0.602312323765001,-0.222188282493644,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Dread,Lixin,4349,0.951713037479881,0.951713037479881,0,0.802047990178802,0.802047990178802,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Steven,Pilkwang,3894,0.980739599383667,0.980739599383667,0,0.952448994810338,0.952448994810338,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Steven,Yunus,3822,0.91156462585034,0.980900052328624,0.0693354264782836,0.752065297248497,0.952401424446307,0.200336127197811,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Steven,Lixin,3917,0.880265509318356,0.880265509318356,0,0.664050866200453,0.664050866200453,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Pilkwang,Yunus,3817,0.916688498821064,0.98008907518994,0.0634005763688761,0.764700796578273,0.95006116428006,0.185360367701788,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Pilkwang,Lixin,3914,0.886561062851303,0.886561062851303,0,0.678045451160178,0.678045451160178,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral Meniscus,Yunus,Lixin,3851,0.964165151908595,0.871461957933004,-0.0927031939755908,0.873263700921813,0.632629026324163,-0.240634674597651,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Dread,Steven,3469,0.827616027673681,0.827616027673681,0,0.648434287953269,0.648434287953269,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Dread,Pilkwang,3238,0.827980234712786,0.827980234712786,0,0.654321200614398,0.654321200614398,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Dread,Yunus,3360,0.929464285714286,0.799404761904762,-0.130059523809524,0.837141384641814,0.602822948381575,-0.234318436260239,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Dread,Lixin,4349,0.869395263278915,0.869395263278915,0,0.698226594172924,0.698226594172924,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Steven,Pilkwang,3212,0.990348692403487,0.990348692403487,0,0.980693297759715,0.980693297759715,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Steven,Yunus,3195,0.814397496087637,0.984350547730829,0.169953051643193,0.631725344412858,0.968668176870348,0.33694283245749,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Steven,Lixin,3469,0.978379936581147,0.978379936581147,0,0.956580729303564,0.956580729303564,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Pilkwang,Yunus,3035,0.815156507413509,0.983525535420099,0.16836902800659,0.635479143674058,0.96695469254254,0.331475548868482,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Pilkwang,Lixin,3238,0.979925880172946,0.979925880172946,0,0.959828495714874,0.959828495714874,0,non-harmonized sensitivity; other three sources retain operational codes
+Medial OA,Yunus,Lixin,3360,0.827976190476191,0.956845238095238,0.128869047619048,0.649215970383632,0.913815490144327,0.264599519760695,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Dread,Steven,3280,0.808231707317073,0.808231707317073,0,0.553313858979233,0.553313858979233,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Dread,Pilkwang,2914,0.835621139327385,0.835621139327385,0,0.611559438274728,0.611559438274728,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Dread,Yunus,3155,0.931854199683043,0.808557844690967,-0.123296354992076,0.78892019685119,0.553831817713552,-0.235088379137638,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Dread,Lixin,4349,0.872154518280065,0.872154518280065,0,0.618990023644879,0.618990023644879,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Steven,Pilkwang,2864,0.987081005586592,0.987081005586592,0,0.972435377858612,0.972435377858612,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Steven,Yunus,2951,0.80413419179939,0.966790918332769,0.162656726533378,0.560443021012007,0.930833566520536,0.370390545508529,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Steven,Lixin,3280,0.957926829268293,0.957926829268293,0,0.90953593999761,0.90953593999761,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Pilkwang,Yunus,2690,0.820817843866171,0.975836431226766,0.155018587360595,0.592869613273547,0.949510116746124,0.356640503472577,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Pilkwang,Lixin,2914,0.979752916952642,0.979752916952642,0,0.956338139051774,0.956338139051774,0,non-harmonized sensitivity; other three sources retain operational codes
+Lateral OA,Yunus,Lixin,3155,0.829793977812995,0.949920760697306,0.120126782884311,0.590553736718103,0.892591949384261,0.302038212666158,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Dread,Steven,3600,0.838611111111111,0.838611111111111,0,0.684760531946256,0.684760531946256,0,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Dread,Pilkwang,3548,0.846110484780158,0.846110484780158,0,0.698416835033818,0.698416835033818,0,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Dread,Yunus,3522,0.922771152754117,0.82282793867121,-0.0999432140829075,0.838132771192965,0.655817036127083,-0.182315735065881,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Dread,Lixin,4349,0.872384456196827,0.872384456196827,0,0.73686522842908,0.73686522842908,0,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Steven,Pilkwang,3500,0.994571428571428,0.994571428571428,0,0.988978891843319,0.988978891843319,0,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Steven,Yunus,3401,0.79682446339312,0.984122316965598,0.187297853572479,0.609394220488258,0.967137039051764,0.357742818563505,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Steven,Lixin,3600,0.984444444444444,0.984444444444444,0,0.968513499836945,0.968513499836945,0,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Pilkwang,Yunus,3356,0.801251489868892,0.982717520858164,0.181466030989273,0.617059349631883,0.96432190204983,0.347262552417947,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Pilkwang,Lixin,3548,0.989289740698985,0.989289740698985,0,0.978344413515949,0.978344413515949,0,non-harmonized sensitivity; other three sources retain operational codes
+PF OA,Yunus,Lixin,3522,0.808063600227144,0.971039182282794,0.16297558205565,0.626888771459359,0.940980484544761,0.314091713085402,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Dread,Steven,3919,0.616994131155907,0.616994131155907,0,0.329745108211336,0.329745108211336,0,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Dread,Pilkwang,3917,0.613479703854991,0.613479703854991,0,0.325117995198027,0.325117995198027,0,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Dread,Yunus,3874,0.957150232318017,0.602994321115127,-0.354155911202891,0.893986681323058,0.312614041094942,-0.581372640228116,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Dread,Lixin,4349,0.661071510692113,0.661071510692113,0,0.377210609682925,0.377210609682925,0,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Steven,Pilkwang,3913,0.994888832098134,0.994888832098134,0,0.988507327056272,0.988507327056272,0,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Steven,Yunus,3861,0.605024605024605,0.992488992488992,0.387464387464388,0.314916319035879,0.982858386842986,0.667942067807107,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Steven,Lixin,3919,0.988007144679765,0.988007144679765,0,0.973281288372436,0.973281288372436,0,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Pilkwang,Yunus,3858,0.601607050285122,0.995334370139969,0.393727319854847,0.310771144134039,0.98932697743087,0.67855583329683,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Pilkwang,Lixin,3917,0.986724534082206,0.986724534082206,0,0.970351466793363,0.970351466793363,0,non-harmonized sensitivity; other three sources retain operational codes
+Effusion,Yunus,Lixin,3874,0.612287041817243,0.980382034073309,0.368094992256066,0.321294250755252,0.955647440354888,0.634353189599636,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Dread,Steven,701,0.693295292439372,0.693295292439372,0,0.391062806811984,0.391062806811984,0,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Dread,Pilkwang,678,0.665191740412979,0.665191740412979,0,0.308728811275501,0.308728811275501,0,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Dread,Yunus,839,0.868891537544696,0.67222884386174,-0.196662693682956,0.736003524148426,0.373623927308069,-0.362379596840357,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Dread,Lixin,4349,0.785697861577374,0.785697861577374,0,0.304485488851055,0.304485488851055,0,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Steven,Pilkwang,605,1,1,0,1,1,0,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Steven,Yunus,589,0.697792869269949,0.99490662139219,0.297113752122241,0.274961618788122,0.970161603539404,0.695199984751283,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Steven,Lixin,701,0.975748930099857,0.975748930099857,0,0.930762214075309,0.930762214075309,0,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Pilkwang,Yunus,599,0.684474123539232,0.986644407345576,0.302170283806344,0.251660794669593,0.915790953502267,0.664130158832674,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Pilkwang,Lixin,678,0.958702064896755,0.958702064896755,0,0.865544790073092,0.865544790073092,0,non-harmonized sensitivity; other three sources retain operational codes
+Synovitis,Yunus,Lixin,839,0.748510131108462,0.859356376638856,0.110846245530393,0.506722246526027,0.674487574882785,0.167765328356758,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Dread,Steven,2256,0.757978723404255,0.757978723404255,0,0.503571149336994,0.503571149336994,0,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Dread,Pilkwang,2355,0.758811040339703,0.758811040339703,0,0.499022493876542,0.499022493876542,0,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Dread,Yunus,2212,0.909584086799277,0.730108499095841,-0.179475587703436,0.777502170158535,0.465261715485238,-0.312240454673297,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Dread,Lixin,4349,0.873764083697402,0.873764083697402,0,0.591057285012708,0.591057285012708,0,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Steven,Pilkwang,2208,0.995923913043478,0.995923913043478,0,0.991843944851408,0.991843944851408,0,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Steven,Yunus,2165,0.812471131639723,0.992609699769053,0.18013856812933,0.62320807466995,0.985219484678869,0.36201141000892,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Steven,Lixin,2256,0.995567375886525,0.995567375886525,0,0.991113653068508,0.991113653068508,0,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Pilkwang,Yunus,2195,0.809111617312073,0.988154897494305,0.179043280182232,0.617138465906276,0.976312051674344,0.359173585768068,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Pilkwang,Lixin,2355,0.98895966029724,0.98895966029724,0,0.977784937294965,0.977784937294965,0,non-harmonized sensitivity; other three sources retain operational codes
+Baker's,Yunus,Lixin,2212,0.802893309222423,0.973327305605787,0.170433996383363,0.600995244702937,0.946686863141107,0.345691618438171,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Dread,Steven,3304,0.817191283292978,0.817191283292978,0,0.531216290878476,0.531216290878476,0,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Dread,Pilkwang,3443,0.792622712750508,0.792622712750508,0,0.501186616074509,0.501186616074509,0,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Dread,Yunus,2738,0.858655953250548,0.685171658144631,-0.173484295105917,0.597287750639069,0.38409804511027,-0.213189705528798,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Dread,Lixin,4349,0.878132904115889,0.878132904115889,0,0.546388258919048,0.546388258919048,0,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Steven,Pilkwang,3081,0.940603700097371,0.940603700097371,0,0.869355104431712,0.869355104431712,0,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Steven,Yunus,2513,0.788300835654596,0.898527656187823,0.110226820533227,0.524993586832862,0.795877900381955,0.270884313549094,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Steven,Lixin,3304,0.873486682808717,0.873486682808717,0,0.684562311341095,0.684562311341095,0,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Pilkwang,Yunus,2633,0.767185719711356,0.909608811241929,0.142423091530574,0.50638069475516,0.81967808434402,0.31329738958886,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Pilkwang,Lixin,3443,0.836770258495498,0.836770258495498,0,0.613586883370684,0.613586883370684,0,non-harmonized sensitivity; other three sources retain operational codes
+Contusion,Yunus,Lixin,2738,0.810080350620891,0.738130021913806,-0.0719503287070854,0.488293826360042,0.486181858726485,-0.00211196763355614,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Dread,Steven,2482,0.937147461724416,0.937147461724416,0,0.640255765596517,0.640255765596517,0,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Dread,Pilkwang,1889,0.92641609317099,0.92641609317099,0,0.655643235317647,0.655643235317647,0,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Dread,Yunus,2497,0.963956748097717,0.956347617140569,-0.00760913095714855,0.749538039056596,0.711484623530646,-0.0380534155259502,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Dread,Lixin,4349,0.968268567486779,0.968268567486779,0,0.679498914328619,0.679498914328619,0,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Steven,Pilkwang,1543,0.994815294880104,0.994815294880104,0,0.983279195710892,0.983279195710892,0,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Steven,Yunus,1875,0.983466666666667,0.993066666666667,0.00959999999999994,0.927132342709285,0.970449495004601,0.0433171522953153,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Steven,Lixin,2482,0.988315874294923,0.988315874294923,0,0.945578982227619,0.945578982227619,0,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Pilkwang,Yunus,1485,0.98047138047138,0.993939393939394,0.0134680134680134,0.928324270884825,0.978459217569155,0.0501349466843306,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Pilkwang,Lixin,1889,0.992588671254632,0.992588671254632,0,0.971644725979075,0.971644725979075,0,non-harmonized sensitivity; other three sources retain operational codes
+Fracture,Yunus,Lixin,2497,0.987184621545855,0.993191830196236,0.0060072086503804,0.927597480264732,0.962940199176022,0.03534271891129,non-harmonized sensitivity; other three sources retain operational codes

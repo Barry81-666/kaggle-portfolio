@@ -1,0 +1,13 @@
+{
+  "freeze_commit": "0053954a94baec9545e6f2e0c88fe43438456d3b",
+  "started_utc": "2026-10-29 05:36:23 UTC",
+  "completed_utc": "2026-10-29 05:36:24 UTC",
+  "elapsed_minutes": 0.007,
+  "r_version": "R version 4.5.1 (2025-06-13)",
+  "synthetic_seed": 814,
+  "checks": 20,
+  "passed": true,
+  "synthetic_auc_a": 0.8504,
+  "synthetic_auc_b": 0.8481,
+  "zero_inheritance_preference": -0.0867
+}

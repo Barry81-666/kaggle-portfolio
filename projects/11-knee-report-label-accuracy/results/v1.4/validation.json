@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-10-29T05:46:32.080300+00:00",
+  "freeze_commit": "0053954a94baec9545e6f2e0c88fe43438456d3b",
+  "frozen_files_verified": 8,
+  "baseline_files_checked": 117,
+  "changed_existing_files": [
+    "projects/11-knee-report-label-accuracy/analysis/SAP.md",
+    "projects/11-knee-report-label-accuracy/analysis/DECISIONS.md"
+  ],
+  "legacy_results_code_pages_preserved": true,
+  "new_text_files_scanned": 33,
+  "individual_identifier_matches": 0,
+  "local_markdown_links_verified": 30,
+  "source_hashes_verified": 5,
+  "simulation_cells": 156,
+  "attempted_replicates": 192000,
+  "reference_auc_failures": 0,
+  "truth_auc_failures": 0,
+  "maximum_full_truth_auc_target_deviation_in_mcse": 3.57234147847423,
+  "all_summary_identities_pass": true,
+  "new_lcm_fits": 0,
+  "status": "passed"
+}

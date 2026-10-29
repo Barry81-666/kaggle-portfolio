@@ -1,0 +1,15 @@
+{
+  "freeze_commit": "0053954a94baec9545e6f2e0c88fe43438456d3b",
+  "published_utc": "2026-10-29T05:32:34Z",
+  "branch": "analysis/rsna-v14-consensus",
+  "files": {
+    "projects/11-knee-report-label-accuracy/analysis/DECISIONS.md": "b930de192017100501a08ca1aaecf92561c29c5fce7d8b8ebb3e3dfa50546d68",
+    "projects/11-knee-report-label-accuracy/analysis/SAP.md": "90787f9dda5973bcfbe051e296b6022febd8820cee0c1e707aba0747538b0e81",
+    "projects/11-knee-report-label-accuracy/analysis/v1.4/DEFINITION_MAPPING.md": "178363046a2ecd324ed4a58b3a8f78ca8122a55b3858813b8d8a4de612bb9588",
+    "projects/11-knee-report-label-accuracy/analysis/v1.4/SAP-v1.4.md": "ab91114774fdf156e9b67ea8401d0486fad24f911657343dede7c6f8db18d7c1",
+    "projects/11-knee-report-label-accuracy/analysis/v1.4/SIMULATION_SCENARIOS.md": "6255df5a68bbe307507213a451051911be2daf2366afdf7333080142e0c4d2fe",
+    "projects/11-knee-report-label-accuracy/analysis/v1.4/definition-map.csv": "32303572c8c96ea3b54e56930b3334f8f23952a7100cf21126def19cafd05b3f",
+    "projects/11-knee-report-label-accuracy/analysis/v1.4/simulation-scenarios.csv": "97fb125412edbfbb81a0bd848f430865430787c2f60056534643b34bcfa08b33",
+    "projects/11-knee-report-label-accuracy/analysis/v1.4/source-documents.csv": "266732d96ae06607e7a885503cd351d9bf24f301522b4a7297e9e99178010818"
+  }
+}

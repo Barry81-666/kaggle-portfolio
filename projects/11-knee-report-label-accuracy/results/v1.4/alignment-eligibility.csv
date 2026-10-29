@@ -1,0 +1,25 @@
+target,finding,alignable_sources,lcm_permitted
+any_affirmed,ACL,2,FALSE
+any_affirmed,MCL,2,FALSE
+any_affirmed,Medial Meniscus,2,FALSE
+any_affirmed,Lateral Meniscus,2,FALSE
+any_affirmed,Medial OA,2,FALSE
+any_affirmed,Lateral OA,2,FALSE
+any_affirmed,PF OA,2,FALSE
+any_affirmed,Effusion,2,FALSE
+any_affirmed,Synovitis,2,FALSE
+any_affirmed,Baker's,2,FALSE
+any_affirmed,Contusion,2,FALSE
+any_affirmed,Fracture,2,FALSE
+moderate_or_greater,ACL,1,FALSE
+moderate_or_greater,MCL,1,FALSE
+moderate_or_greater,Medial Meniscus,1,FALSE
+moderate_or_greater,Lateral Meniscus,1,FALSE
+moderate_or_greater,Medial OA,1,FALSE
+moderate_or_greater,Lateral OA,1,FALSE
+moderate_or_greater,PF OA,1,FALSE
+moderate_or_greater,Effusion,1,FALSE
+moderate_or_greater,Synovitis,1,FALSE
+moderate_or_greater,Baker's,1,FALSE
+moderate_or_greater,Contusion,1,FALSE
+moderate_or_greater,Fracture,1,FALSE

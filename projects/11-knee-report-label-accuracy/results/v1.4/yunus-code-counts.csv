@@ -1,0 +1,99 @@
+finding,value,status,N
+ACL,0.05,unknown,350
+ACL,0,documented_known,2820
+ACL,0.25,documented_known,333
+ACL,1,documented_known,254
+ACL,0.55,documented_known,286
+ACL,0.9,documented_known,182
+ACL,0.5,unknown,100
+ACL,0.95,documented_known,24
+MCL,0.05,unknown,413
+MCL,0,documented_known,3182
+MCL,0.25,documented_known,470
+MCL,0.9,documented_known,36
+MCL,0.55,documented_known,212
+MCL,1,documented_known,19
+MCL,0.5,unknown,15
+MCL,0.95,documented_known,2
+Medial Meniscus,0.9,documented_known,1213
+Medial Meniscus,0.05,unknown,241
+Medial Meniscus,0.25,documented_known,482
+Medial Meniscus,0,documented_known,1673
+Medial Meniscus,0.55,documented_known,414
+Medial Meniscus,0.5,unknown,106
+Medial Meniscus,1,documented_known,198
+Medial Meniscus,0.95,documented_known,22
+Lateral Meniscus,0.05,unknown,423
+Lateral Meniscus,0,documented_known,2764
+Lateral Meniscus,0.5,unknown,75
+Lateral Meniscus,1,documented_known,75
+Lateral Meniscus,0.9,documented_known,400
+Lateral Meniscus,0.25,documented_known,375
+Lateral Meniscus,0.55,documented_known,230
+Lateral Meniscus,0.95,documented_known,7
+Medial OA,0.55,documented_known,406
+Medial OA,0.05,unknown,986
+Medial OA,0,documented_known,1634
+Medial OA,0.25,documented_known,655
+Medial OA,0.9,documented_known,584
+Medial OA,1,documented_known,75
+Medial OA,0.95,documented_known,6
+Medial OA,0.5,unknown,2
+Medial OA,0.4,undocumented,1
+Lateral OA,0.05,unknown,1188
+Lateral OA,0,documented_known,1952
+Lateral OA,0.25,documented_known,561
+Lateral OA,0.55,documented_known,263
+Lateral OA,0.9,documented_known,351
+Lateral OA,1,documented_known,25
+Lateral OA,0.5,unknown,5
+Lateral OA,0.95,documented_known,3
+Lateral OA,0.75,undocumented,1
+PF OA,0.05,unknown,821
+PF OA,0.55,documented_known,485
+PF OA,0,documented_known,1474
+PF OA,0.9,documented_known,714
+PF OA,0.25,documented_known,732
+PF OA,1,documented_known,106
+PF OA,0.95,documented_known,11
+PF OA,0.5,unknown,5
+PF OA,0.75,undocumented,1
+Effusion,0.25,documented_known,1558
+Effusion,0.05,unknown,462
+Effusion,0,documented_known,1240
+Effusion,0.55,documented_known,689
+Effusion,0.9,documented_known,339
+Effusion,0.5,unknown,13
+Effusion,1,documented_known,46
+Effusion,0.95,documented_known,2
+Synovitis,0.05,unknown,3487
+Synovitis,0,documented_known,195
+Synovitis,0.9,documented_known,129
+Synovitis,0.25,documented_known,257
+Synovitis,0.55,documented_known,246
+Synovitis,0.5,unknown,23
+Synovitis,1,documented_known,12
+Baker's,0.05,unknown,2127
+Baker's,0,documented_known,1086
+Baker's,0.9,documented_known,488
+Baker's,0.25,documented_known,417
+Baker's,0.55,documented_known,127
+Baker's,0.5,unknown,10
+Baker's,0.95,documented_known,1
+Baker's,1,documented_known,93
+Contusion,0.05,unknown,1588
+Contusion,0,documented_known,1314
+Contusion,0.25,documented_known,789
+Contusion,0.9,documented_known,466
+Contusion,0.55,documented_known,151
+Contusion,0.5,unknown,23
+Contusion,1,documented_known,16
+Contusion,0.95,documented_known,2
+Fracture,0.05,unknown,1809
+Fracture,0,documented_known,2239
+Fracture,1,documented_known,61
+Fracture,0.9,documented_known,157
+Fracture,0.5,unknown,43
+Fracture,0.55,documented_known,14
+Fracture,0.25,documented_known,21
+Fracture,0.95,documented_known,5
