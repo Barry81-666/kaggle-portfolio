@@ -1,4 +1,4 @@
-# Run from analysis/rsna-knee-public. All observations below are synthetic.
+# Run from projects/11-knee-report-label-accuracy/analysis. All observations below are synthetic.
 source("R/common.R")
 source("R/10_leaderboard.R")
 source("R/20_labels.R")

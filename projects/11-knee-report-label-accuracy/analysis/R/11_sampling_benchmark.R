@@ -8,8 +8,8 @@ approval<-require_sap_approval(dest)
 if(approval$sap_commit!="074d903aebfcef77bb7418e270380a9b693cc70d") stop("Expected the v1.1 freeze.")
 started<-Sys.time()
 set.seed(2026102901)
-outdir<-"../../results/rsna-knee-public"
-figdir<-"../../figures/rsna-knee-public"
+outdir<-"../results"
+figdir<-"../figures"
 dir.create(outdir,showWarnings=FALSE,recursive=TRUE)
 dir.create(figdir,showWarnings=FALSE,recursive=TRUE)
 

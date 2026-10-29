@@ -4,7 +4,7 @@ library(data.table)
 library(jsonlite)
 dest<-external_data_dir();approval<-require_sap_approval(dest)
 stopifnot(approval$sap_commit=="968c2a9cdb3be5978bbeed5128bad8ba843985f9")
-started<-Sys.time();out<-"../../results/rsna-knee-public"
+started<-Sys.time();out<-"../results"
 grid<-CJ(n=c(58L,977L),rho=c(0,.2));results<-ordering<-dgm<-list()
 methods<-c("naive","oracle_correction","independent_expert_n58")
 estimands<-c("AUC_A","AUC_B","delta");truth<-c(.90,.91,.01)

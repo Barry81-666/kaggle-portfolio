@@ -1,6 +1,6 @@
 # Reproduce the public-label study
 
-I compare agreement between public report-label sources, test a no-gold-standard model, and simulate how label errors bias AUC. Start with the [results report](report.md), [project page](../../projects/11-knee-report-label-accuracy/) and [analysis plan](SAP.md). The [research decisions](DECISIONS.md) distinguish the primary design from the clustering and interval-method comparisons I added after seeing the results.
+I compare agreement between public report-label sources, test a no-gold-standard model, and simulate how label errors bias AUC. Start with the [results report](../report.md), [project page](../) and [analysis plan](SAP.md). The [research decisions](DECISIONS.md) distinguish the primary design from the clustering and interval-method comparisons I added after seeing the results.
 
 ## Environment and acquisition
 
@@ -20,9 +20,9 @@ Rscript -e 'renv::load(); source("R/00_download.R")' --metadata
 Rscript -e 'renv::load(); source("R/00_download.R")' --labels
 ```
 
-The selected files are in [datasets.csv](datasets.csv); only `primary_candidate` rows are used. Check downloaded hashes against [source_files.csv](../../results/rsna-knee-public/source_files.csv). A changed file/version requires a new provenance record. The raw schema permits identifiers for local alignment, 12 scores, and allowlisted confidence/verdict columns. It excludes reports and metadata.
+The selected files are in [datasets.csv](datasets.csv); only `primary_candidate` rows are used. Check downloaded hashes against [source_files.csv](../results/source_files.csv). A changed file/version requires a new provenance record. The raw schema permits identifiers for local alignment, 12 scores, and allowlisted confidence/verdict columns. It excludes reports and metadata.
 
-The scripts also read a local record of the frozen plan. Keep that record when reusing an existing environment. For a fresh environment, use the [record setup saved with the completed analysis](https://github.com/Barry81-666/kaggle-portfolio/blob/11279e1c1ed7a3c422d619c96ffce2847a35a5a4/analysis/rsna-knee-public/README.md#environment-and-acquisition). I have retained this compatibility step so the statistical scripts can run unchanged.
+The scripts also read a local record of the frozen plan. Keep that record when reusing an existing environment. For a fresh environment, use the [record setup saved with the completed analysis](https://github.com/Barry81-666/kaggle-portfolio/tree/11279e1c1ed7a3c422d619c96ffce2847a35a5a4). I have retained this compatibility step so the statistical scripts can run unchanged.
 
 ## Tests and execution
 
@@ -42,7 +42,7 @@ source("R/40_figures.R")
 source("R/24_source_clusters.R")
 source("R/34_interval_sensitivity.R")
 source("R/41_review_figures.R")
-knitr::knit("report.qmd", output="report.md", quiet=TRUE)
+knitr::knit("../report.qmd", output="../report.md", quiet=TRUE)
 ```
 
 The checked Markdown report was generated with **knitr**, not a Quarto CLI installation. `report.qmd` is the source; its GFM frontmatter also permits a Quarto rendering where available. Tables are regenerated from aggregate CSVs. Narrative numbers describe this frozen run and must be reviewed if inputs or scenarios change.

@@ -8,7 +8,7 @@ approval <- require_sap_approval(dest)
 stopifnot(approval$sap_commit == "968c2a9cdb3be5978bbeed5128bad8ba843985f9")
 started <- Sys.time()
 set.seed(2026102802)
-out <- "../../results/rsna-knee-public"
+out <- "../results"
 dir.create(out, recursive=TRUE, showWarnings=FALSE)
 manifest <- fread("datasets.csv")[cohort_role == "primary_candidate"]
 source_names <- c("Dread", "Steven", "Pilkwang", "Yunus", "Lixin")

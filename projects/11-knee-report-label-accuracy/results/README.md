@@ -1,6 +1,6 @@
 # Aggregate results: public report labels and misclassification
 
-Read the [English report](../../analysis/rsna-knee-public/report.md) for interpretation.
+Read the [English report](../report.md) for interpretation.
 
 | Outputs | Content |
 | --- | --- |

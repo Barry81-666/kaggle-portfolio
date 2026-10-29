@@ -6,7 +6,7 @@ started <- proc.time()[3]
 raw <- external_data_dir(); approval <- require_sap_approval(raw)
 a <- readRDS(file.path(raw,"aligned-primary-labels.rds"))$labels
 stopifnot(identical(dim(a),c(4349L,5L,12L)))
-out <- "../../results/rsna-knee-public"
+out <- "../results"
 
 pair_kappas <- function(y,w=rep(1,nrow(y))) {
   vapply(seq_len(ncol(pairs)),function(k) {

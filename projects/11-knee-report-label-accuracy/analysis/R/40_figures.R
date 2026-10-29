@@ -1,7 +1,7 @@
 library(data.table)
 library(ggplot2)
 source("R/common.R")
-out<-"../../results/rsna-knee-public";fig<-"../../figures/rsna-knee-public"
+out<-"../results";fig<-"../figures"
 dir.create(fig,recursive=TRUE,showWarnings=FALSE)
 theme_set(theme_minimal(base_size=11)+theme(panel.grid.minor=element_blank(),plot.title.position="plot"))
 a<-fread(file.path(out,"T4_agreement.csv"))[metric=="kappa"]

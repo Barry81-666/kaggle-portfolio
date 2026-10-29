@@ -1,7 +1,7 @@
 # Post-hoc figures: aggregate similarity and synthetic interval sensitivity.
 library(data.table);library(ggplot2)
 source("R/common.R");source("R/20_labels.R")
-out<-"../../results/rsna-knee-public";fig<-"../../figures/rsna-knee-public"
+out<-"../results";fig<-"../figures"
 theme_set(theme_minimal(base_size=11)+theme(panel.grid.minor=element_blank(),plot.title.position="plot"))
 k<-fread(file.path(out,"T5_clusters.csv"))[variant=="mean_paired"]
 m<-matrix(1,5,5,dimnames=list(source_names,source_names))

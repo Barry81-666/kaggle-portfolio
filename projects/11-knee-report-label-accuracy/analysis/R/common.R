@@ -1,9 +1,9 @@
-# Shared controls. Run entry scripts from analysis/rsna-knee-public.
+# Shared controls. Run entry scripts from projects/11-knee-report-label-accuracy/analysis.
 findings <- c("ACL", "MCL", "Medial Meniscus", "Lateral Meniscus", "Medial OA",
               "Lateral OA", "PF OA", "Effusion", "Synovitis", "Baker's",
               "Contusion", "Fracture")
 
-external_data_dir <- function(repo_root = "../..") {
+external_data_dir <- function(repo_root = "../../..") {
   path <- Sys.getenv("RSNA_PUBLIC_DATA")
   if (!nzchar(path)) stop("Set RSNA_PUBLIC_DATA to a directory outside the repository.")
   dir.create(path, recursive = TRUE, showWarnings = FALSE)

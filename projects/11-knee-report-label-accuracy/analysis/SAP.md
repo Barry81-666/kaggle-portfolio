@@ -2,7 +2,7 @@
 
 Wording edited for readability on 2026-10-29; the analysis plan itself is unchanged. The original frozen version is preserved at commit 968c2a9.
 
-[Read the original frozen plan](https://github.com/Barry81-666/kaggle-portfolio/blob/968c2a9cdb3be5978bbeed5128bad8ba843985f9/analysis/rsna-knee-public/SAP.md). Version numbers below identify when I fixed the primary design or documented a later exploratory addition.
+[Read the original frozen plan](https://github.com/Barry81-666/kaggle-portfolio/tree/968c2a9cdb3be5978bbeed5128bad8ba843985f9). Version numbers below identify when I fixed the primary design or documented a later exploratory addition.
 
 **Version 1.2 · 2026-10-28 · Scope: agreement between label sources and AUC misclassification**
 
@@ -154,7 +154,7 @@ Relate the historical score-comparison design to the misclassification simulatio
 
 All acquisition, assembly and statistical analysis code is R. Use renv, a Quarto report rendered to GFM, and seeds stored with each aggregate output. Dependencies are locked in phases; a foundation lock is not a claim that Bayesian or full data pipelines have run. Raw inputs, aligned labels, submission-level data, model draws and logs containing IDs remain in an external directory selected by `RSNA_PUBLIC_DATA`. The downloader rejects a data directory inside the checkout.
 
-Only aggregate CSVs and figures enter `results/rsna-knee-public/` and `figures/rsna-knee-public/`. Datasets/parameter manifests may name source authors for attribution; statistical reports do not name or rank teams. Pre-publication scans check forbidden schemas, identifiers, credentials, original reports and binary assets. Data audit results and statistical results are kept separate.
+Only aggregate CSVs and figures enter `projects/11-knee-report-label-accuracy/results/` and `projects/11-knee-report-label-accuracy/figures/`. Datasets/parameter manifests may name source authors for attribution; statistical reports do not name or rank teams. Pre-publication scans check forbidden schemas, identifiers, credentials, original reports and binary assets. Data audit results and statistical results are kept separate.
 
 1. I record the analysis plan, parameters and source audit before examining empirical outcomes. I revised v1.0 through four amendments documented in v1.1 and retained the freeze commit in `DECISIONS.md`.
 2. Under the original design, I first check public-metadata coverage, compare paired scores and run the sampling reference, then review their summaries and plots.

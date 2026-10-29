@@ -6,4 +6,4 @@
 - [AUC bias](F7_auc_bias.png) and [model ordering](F7b_model_ordering.png) are synthetic experiments under explicit assumptions. Error bars show Monte Carlo uncertainty.
 - [Interval sensitivity](F8_interval_sensitivity.png) compares coverage and failures on the same synthetic expert samples; post-hoc.
 
-I generated these figures in R from aggregate results or synthetic data. No individual records, source screenshots or actual model predictions appear. See the [report](../../analysis/rsna-knee-public/report.md) for denominators and interpretation.
+I generated these figures in R from aggregate results or synthetic data. No individual records, source screenshots or actual model predictions appear. See the [report](../report.md) for denominators and interpretation.

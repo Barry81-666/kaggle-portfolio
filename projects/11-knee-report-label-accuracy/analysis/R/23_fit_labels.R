@@ -5,7 +5,7 @@ library(jsonlite)
 stopifnot(requireNamespace("posterior",quietly=TRUE))
 dest<-external_data_dir();approval<-require_sap_approval(dest)
 stopifnot(approval$sap_commit=="968c2a9cdb3be5978bbeed5128bad8ba843985f9")
-started<-Sys.time();out<-"../../results/rsna-knee-public"
+started<-Sys.time();out<-"../results"
 x<-readRDS(file.path(dest,"aligned-primary-labels.rds"));patterns<-binary_patterns(5)
 summaries<-eligibility<-ppc<-pattern_ppc<-list();counter<-0L
 prior_settings<-list(primary_beta22=c(2,2),uniform_beta11=c(1,1),optimistic_beta42=c(4,2))

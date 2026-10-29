@@ -1,6 +1,6 @@
 # Public-source feasibility audit
 
-Checked 2026-10-28. I recorded the pre-analysis metadata and schema audit here; empirical findings are in [the report](report.md). [datasets.csv](datasets.csv) pins the selected file/version for 11 screened sources; [discovery.csv](discovery.csv) contains 35 unique search hits, including weights and other ineligible assets. Thirty-five hits do not mean 35 independent label sets.
+Checked 2026-10-28. I recorded the pre-analysis metadata and schema audit here; empirical findings are in [the report](../report.md). [datasets.csv](datasets.csv) pins the selected file/version for 11 screened sources; [discovery.csv](discovery.csv) contains 35 unique search hits, including weights and other ineligible assets. Thirty-five hits do not mean 35 independent label sets.
 
 ## Requested label sources
 
@@ -33,7 +33,7 @@ No third-party code is vendored. The R foundation in this project is newly writt
 
 ## Inputs used in the analysis
 
-I used only the five original extraction files listed in [source_files.csv](../../results/rsna-knee-public/source_files.csv) for the label comparison. The manifest preserves public dataset version numbers and SHA-256 of the selected files. The five-source intersection contains 4,349 studies. Dread and Lixin are thresholded at 0.5; Pilkwang uses YES/NO/UNK verdicts; Steven 0.5 and Yunus 0.05/0.5 are documented unknowns. The old boolean `half_is_unknown` column is a screening field, not the complete harmonization specification; the analysis plan and R/21_label_analysis.R define the harmonization rules. Known derivative releases were screened but not analyzed in the final main study. The current downloader fetches only the five primary files and their public metadata.
+I used only the five original extraction files listed in [source_files.csv](../results/source_files.csv) for the label comparison. The manifest preserves public dataset version numbers and SHA-256 of the selected files. The five-source intersection contains 4,349 studies. Dread and Lixin are thresholded at 0.5; Pilkwang uses YES/NO/UNK verdicts; Steven 0.5 and Yunus 0.05/0.5 are documented unknowns. The old boolean `half_is_unknown` column is a screening field, not the complete harmonization specification; the analysis plan and R/21_label_analysis.R define the harmonization rules. Known derivative releases were screened but not analyzed in the final main study. The current downloader fetches only the five primary files and their public metadata.
 
 ## Post-hoc provenance review, 2026-10-29
 

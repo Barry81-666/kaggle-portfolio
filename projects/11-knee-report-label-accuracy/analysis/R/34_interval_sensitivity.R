@@ -2,7 +2,7 @@
 library(data.table)
 source("R/common.R");source("R/31_paired_simulation.R");source("R/33_interval_methods.R")
 started<-proc.time()[3];raw<-external_data_dir();approval<-require_sap_approval(raw)
-out<-"../../results/rsna-knee-public";set.seed(2026102902)
+out<-"../results";set.seed(2026102902)
 R<-4000L;n<-58L;truth<-.90;B<-1999L
 methods<-c("bootstrap_399","bootstrap_1999","delong_normal","delong_logit")
 intervals<-array(NA_real_,c(R,4,2),dimnames=list(NULL,methods,c("lower","upper")))
