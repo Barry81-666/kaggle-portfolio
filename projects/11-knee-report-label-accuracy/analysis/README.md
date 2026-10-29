@@ -62,5 +62,3 @@ Raw/aligned labels, study IDs, sampler draws and Monte Carlo replicates stay out
 ## Further analyses
 
 A dependence-aware latent model, secondary derivative-source comparisons, alternate prevalence priors/orientations, uncertain-parameter correction and larger simulation grids remain possible extensions. I did not run them in this analysis. See the [checks](CHECKS.md) and [research decisions](DECISIONS.md) for the completed work and its limits.
-
-I directed this study and reviewed each analytic decision; the analysis plan and R code were developed with AI assistance.

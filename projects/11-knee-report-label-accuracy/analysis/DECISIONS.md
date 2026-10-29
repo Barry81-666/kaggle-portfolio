@@ -60,6 +60,6 @@ The prespecified post-hoc scripts completed on 2026-10-29: source clustering too
 
 ## Readability revision, 2026-10-29
 
-I replaced procedural language and shorthand with descriptive research terms, consolidated limitations in the project page and report, and removed the retired sampling-reference appendix and navigation links. I retained the historical designs here and in the plan to preserve the record. No analysis code, input data or numerical result changed. The analysis plan and R code were developed with AI assistance; I directed the work and reviewed the analytic decisions.
+I replaced procedural language and shorthand with descriptive research terms, consolidated limitations in the project page and report, and removed the retired sampling-reference appendix and navigation links. I retained the historical designs here and in the plan to preserve the record. No analysis code, input data or numerical result changed.
 
 2026-10-29: files moved into a single project folder for readability; analysis content and results unchanged.

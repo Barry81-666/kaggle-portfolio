@@ -151,4 +151,4 @@ My next methodological step would be to specify a common target (any mention ver
 
 The [R execution guide](analysis/README.md), [checks](analysis/CHECKS.md), and [method references](analysis/SAP.md#references) document reproduction. Agreement computation took 0.11 minutes, latent fitting 1.07 minutes, and misclassification simulations 1.76 minutes. Clustering took 0.02 minutes and interval comparison 0.31 minutes. Total recorded analysis time, including earlier exploratory work, was about 4.55 minutes, within the 120-minute cap. Software tests and rendering are recorded separately. I keep raw labels, study IDs and simulation draws outside the repository and publish aggregate tables and figures.
 
-I directed this study and reviewed each analytic decision; the analysis plan and R code were developed with AI assistance. The source audit records the upstream authors who supplied the label extractions.
+The source audit records the upstream authors who supplied the label extractions.

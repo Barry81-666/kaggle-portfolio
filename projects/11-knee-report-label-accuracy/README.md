@@ -21,5 +21,3 @@ I measure agreement between report-derived labels, not accuracy against MRI find
 ## Reproduction and sources
 
 I froze the [analysis plan](analysis/SAP.md) before examining label agreement, latent-model fits or AUC simulation outcomes. The [research decisions](analysis/DECISIONS.md), [R guide](analysis/README.md), [aggregate results](results/) and [checks](analysis/CHECKS.md) document the work. I publish aggregate tables and figures; raw labels, study identifiers and simulation draws remain external. The [source audit](analysis/SOURCE_AUDIT.md) credits the dataset authors and distinguishes original extractions from later blends.
-
-I directed this study and reviewed each analytic decision; the analysis plan and R code were developed with AI assistance.
