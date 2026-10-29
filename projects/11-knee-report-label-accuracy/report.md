@@ -1,6 +1,6 @@
 ---
 title: "Knee Diagnostic Labels Without a Gold Standard"
-subtitle: "Report-source agreement, latent-model checks and AUC misclassification bias"
+subtitle: "Definition alignment, consensus-reference selection and shared label errors"
 format: gfm
 ---
 
@@ -8,19 +8,176 @@ format: gfm
 
 ## What I found
 
-1. **Five sources form two stable similarity groups.** I found that Steven/Pilkwang/Lixin cluster together and Dread/Yunus form the other group across 4,349 studies. Effusion separates them especially clearly: within-group kappa 0.894–0.989, between-group 0.311–0.377. Published severity and mention conventions offer possible explanations for this post-hoc finding.
-2. **Model checking changes how I interpret accuracy estimates.** All 11 converged primary latent fits fail to reproduce the observed response patterns; synovitis also fails convergence. I interpret this as a challenge to the combined common-binary-target and conditional-independence assumptions.
-3. **More data can make a misspecified correction more precisely wrong.** In the prespecified score-dependent simulation, known-parameter AUC correction at n=977 has bias +0.1274 and 95% interval coverage of 12.4%. With score-independent errors, it removes most bias.
+1. **Definition differences explain most of the disagreement between Pilkwang and Yunus, indicating that the original two-group structure was at least partly shaped by coding.** Yunus's mild code 0.25 had been counted negative under the original 0.5 threshold. Aligning the two documented sources on identical paired cases raises effusion agreement from 60.2% to 99.5% (κ 0.31 to 0.99) and synovitis agreement from 68.4% to 98.7%. They belonged to different original groups; the other three sources lack sufficient documentation for alignment. Original clustering and latent-model misfit motivated this investigation rather than establishing distinct independent extraction families.
+2. **Majority-vote references can favour models sharing the majority's labelling style.** At equal full-population true AUC, the primary scenario favours the G1-style model in 10 of 12 findings; both meniscus findings favour B. No-inheritance controls give selection near 50%, and swapping inherited groups reverses the direction. This demonstrates a possible mechanism conditional on the generator, not the size or occurrence of bias in the real competition. Group filtering changes both evaluated cases and their true model ordering, so it is not a general remedy.
+3. **Corrections that assume label errors are independent of model scores can fail badly when errors are shared.** In the original score-dependent simulation, known-parameter correction at n=977 has bias +0.1274 and nominal 95% interval coverage of 12.4%; with score-independent errors it removes most bias. The relevant independence assumption is conditional on the true class. These results concern that correction and mechanism, not all statistical corrections.
 
-I also compared interval methods in a post-hoc simulation. Increasing bootstrap repetitions from 399 to 1,999 gives 86.1% versus 86.5% coverage, while a logit interval reaches 92.6% among valid intervals. The detailed results below include failures and Monte Carlo uncertainty.
+The sections below report the exploratory v1.4 alignment and model-selection results, followed by the original agreement, clustering, latent-model diagnostics and correction simulations. All previously obtained numerical results are retained.
 
 ## Design and provenance
 
-I froze the [analysis plan](analysis/SAP.md) before examining label agreement, latent-model fits or AUC simulation outcomes. I added clustering and interval-method comparisons after seeing the primary results; the [research decisions](analysis/DECISIONS.md) record this sequence and the reasons for each change.
+I froze the original [analysis plan](analysis/SAP.md) before the primary agreement, latent-model and correction outcomes. Clustering, interval-method comparisons and v1.4 were exploratory additions after earlier results; the [research decisions](analysis/DECISIONS.md) record their sequence. The new alignment and consensus-selection simulations use the existing five public label files and do not alter the original outputs.
 
 I used Dread v3, Steven v6's original full/v1 file, Pilkwang v1, Yunus v3 and Lixin v1. Each publisher lists CC0. See the [source audit](analysis/SOURCE_AUDIT.md) and [file hashes](results/source_files.csv). All five primary files cover the Dread-anchored intersection. This is a cohort of study identifiers, not a confirmed count of unique patients.
 
 I analyzed public extraction tables and excluded known later blends from the primary cohort. I used no original reports, MRI images, official Gold58 annotations, personal model predictions, submission histories or rule-gated files.
+
+## Definition alignment and evaluation: exploratory v1.4
+
+I mapped only rules supported by public publisher documentation: Pilkwang YES/NO/UNK becomes positive/negative/missing; Yunus's documented 0.25, 0.55 and 0.90–1 codes count positive for any affirmed abnormality, while 0 is negative and unmentioned/uncertain codes remain missing. Three undocumented Yunus values remain missing. This common report-assertion target includes mild findings; it is not imaging-confirmed disease.
+
+Only Pilkwang and Yunus support this documented alignment, so no new latent-class model is fitted. For moderate-or-greater, only Yunus qualifies; its positive fraction is unchanged from the original coding on identical known cases. Steven, Dread and Lixin retain their original operational codes only in explicitly non-harmonized context. See the [complete mapping](analysis/v1.4/DEFINITION_MAPPING.md), [120-row specification](analysis/v1.4/definition-map.csv), [source-document evidence](analysis/v1.4/source-documents.csv) and [run guide](analysis/v1.4/RUN.md).
+
+### Documented alignment on identical paired samples
+
+| Finding | Same paired n | Before | After | Change, pp (95% bootstrap interval) | Kappa before → after |
+| --- | --- | --- | --- | --- | --- |
+| ACL | 3887 | 91.1% | 99.2% | +8.1 (+7.3, +9.0) | 0.756 → 0.980 |
+| MCL | 3890 | 88.0% | 99.4% | +11.4 (+10.3, +12.4) | 0.481 → 0.979 |
+| Medial Meniscus | 3990 | 90.0% | 97.0% | +7.0 (+5.9, +8.0) | 0.802 → 0.939 |
+| Lateral Meniscus | 3817 | 91.7% | 98.0% | +6.3 (+5.4, +7.3) | 0.765 → 0.950 |
+| Medial OA | 3035 | 81.5% | 98.4% | +16.8 (+15.4, +18.3) | 0.635 → 0.967 |
+| Lateral OA | 2690 | 82.1% | 97.6% | +15.5 (+14.0, +17.0) | 0.593 → 0.950 |
+| PF OA | 3356 | 80.1% | 98.3% | +18.1 (+16.7, +19.6) | 0.617 → 0.964 |
+| Effusion | 3858 | 60.2% | 99.5% | +39.4 (+37.8, +40.9) | 0.311 → 0.989 |
+| Synovitis | 599 | 68.4% | 98.7% | +30.2 (+26.4, +34.0) | 0.252 → 0.916 |
+| Baker's | 2195 | 80.9% | 98.8% | +17.9 (+16.3, +19.6) | 0.617 → 0.976 |
+| Contusion | 2633 | 76.7% | 91.0% | +14.2 (+12.3, +16.1) | 0.506 → 0.820 |
+| Fracture | 1485 | 98.0% | 99.4% | +1.3 (+0.8, +2.0) | 0.928 → 0.978 |
+
+Intervals use 2,000 joint study-bootstrap draws; all change estimates have 2,000 valid draws. Pilkwang's verdict coding is unchanged. The principal change is that Yunus's documented mild code 0.25 becomes positive. For effusion, disagreement falls from 39.8% to 0.5%; for synovitis from 31.6% to 1.3%. This is evidence that these sources were answering different operational questions under the original threshold. High post-alignment agreement does not establish correct diagnosis, independent errors, or generalizability beyond the observed known pairs. Contusion retains the largest residual disagreement, about 9%.
+
+![Paired definition alignment](figures/v1.4/definition-alignment.png)
+
+Full positive-fraction changes and known/excluded counts are in [paired changes](results/v1.4/alignment-paired-changes.csv) and [denominators](results/v1.4/alignment-denominators.csv). [Five-source context](results/v1.4/nonharmonized-five-source-context.csv) remains explicitly non-harmonized.
+
+### Simulation design and all 13 scenarios
+
+G1 = Steven/Pilkwang/Lixin; G2 = Dread/Yunus. A inherits G1 style and B G2 style, except in the swap control. No participant model is trained or evaluated. The generator preserves each finding's original five-source-complete **joint label-pattern distribution** in expectation. Hypothetical truth and score-error relationships are added as assumptions; the score construction sets each model's full-population true AUC exactly. Parameters are not taken from the rejected latent fits.
+
+The three primary scenarios are A/B true AUC = **0.85/0.85**, **0.86/0.85**, and **0.85/0.86**, with inheritance variance 0.5, equal group weight in the truth mechanism, truth slope 4, and prevalence multiplier 1. Each has 2,000 replicates per finding. Ten prespecified sensitivities (1,000 replicates each) vary inheritance, swap the inherited group, and vary the assumed truth mechanism/prevalence. See [all 13 scenario rows](analysis/v1.4/SIMULATION_SCENARIOS.md) and [exact generator](analysis/v1.4/SAP-v1.4.md#5-empirically-constrained-simulation-generator).
+
+The population is the original complete-label subset (573–3,987 studies per finding), not all 4,349 reports. The prevalence anchor is a scenario proxy, not an estimate of disease prevalence. Clusters were discovered under the original operational coding; the large alignment effect warns that some apparent cluster structure may reflect definitions. The simulation therefore describes risks of using those **original** labels as a reference, not an inevitable property of a fully harmonized dataset.
+
+| Scenario | AUC A | AUC B | Inheritance variance | A inherits | Truth weight G1 | Truth slope | Prevalence multiplier | Replicates |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| equal_true_auc | 0.85 | 0.85 | 0.5 | G1 | 0.5 | 4 | 1 | 2000 |
+| A_better | 0.86 | 0.85 | 0.5 | G1 | 0.5 | 4 | 1 | 2000 |
+| B_better | 0.85 | 0.86 | 0.5 | G1 | 0.5 | 4 | 1 | 2000 |
+| no_inheritance | 0.85 | 0.85 | 0 | G1 | 0.5 | 4 | 1 | 1000 |
+| weak_inheritance | 0.85 | 0.85 | 0.25 | G1 | 0.5 | 4 | 1 | 1000 |
+| strong_inheritance | 0.85 | 0.85 | 0.75 | G1 | 0.5 | 4 | 1 | 1000 |
+| swap_training_groups | 0.85 | 0.85 | 0.5 | G2 | 0.5 | 4 | 1 | 1000 |
+| truth_favors_group1 | 0.85 | 0.85 | 0.5 | G1 | 0.75 | 4 | 1 | 1000 |
+| truth_favors_group2 | 0.85 | 0.85 | 0.5 | G1 | 0.25 | 4 | 1 | 1000 |
+| weak_truth_alignment | 0.85 | 0.85 | 0.5 | G1 | 0.5 | 2 | 1 | 1000 |
+| strong_truth_alignment | 0.85 | 0.85 | 0.5 | G1 | 0.5 | 8 | 1 | 1000 |
+| lower_prevalence | 0.85 | 0.85 | 0.5 | G1 | 0.5 | 4 | 0.5 | 1000 |
+| higher_prevalence | 0.85 | 0.85 | 0.5 | G1 | 0.5 | 4 | 1.5 | 1000 |
+
+### Direct-majority mechanism controls
+
+![Direct-majority controls across all twelve findings](figures/v1.4/majority-style-controls.png)
+
+All points use unchanged simulation outputs. The no-inheritance control spans P(A)=47.1%–51.7%; the primary inherited-style scenario favours A in ten findings, with medial and lateral meniscus favouring B (P(A)=28.75% and 36.15%). Swapping the inherited groups reverses these directions, including the meniscus exceptions. The assumed inheritance variance is 0 for the no-inheritance control and 0.5 for the other two scenarios. These controls illustrate the mechanism; they do not establish actual competition bias or estimate its magnitude.
+
+### Equal underlying quality: full and retained results
+
+Both full-population true AUCs are 0.85, so there is no intrinsically worse model. P(A) measures selection preference. Ref ΔAUC is A minus B against the reference; truth ΔAUC is against simulated truth on the same retained cases. Retained n in the table is the observed calibration count; simulated mean n and MCSE are separately reported in [DGM summaries](results/v1.4/simulation-dgm.csv).
+
+| Finding | Complete n | Observed retained n (%) | P(A), full | P(A), retained | Ref ΔAUC, full | Ref ΔAUC, retained | Truth ΔAUC, retained |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ACL | 3873 | 3482 (89.9%) | 100.0% | 2.1% | +0.043 | -0.015 | -0.010 |
+| MCL | 3863 | 3375 (87.4%) | 100.0% | 0.8% | +0.170 | -0.026 | -0.021 |
+| Medial Meniscus | 3987 | 3388 (85.0%) | 28.7% | 75.8% | -0.003 | +0.004 | +0.002 |
+| Lateral Meniscus | 3808 | 3348 (87.9%) | 36.1% | 45.6% | -0.003 | -0.001 | -0.001 |
+| Medial OA | 3020 | 2377 (78.7%) | 100.0% | 1.2% | +0.077 | -0.015 | -0.013 |
+| Lateral OA | 2665 | 2107 (79.1%) | 100.0% | 0.3% | +0.101 | -0.021 | -0.018 |
+| PF OA | 3329 | 2603 (78.2%) | 100.0% | 1.6% | +0.070 | -0.015 | -0.012 |
+| Effusion | 3856 | 2262 (58.7%) | 100.0% | 8.4% | +0.149 | -0.009 | -0.008 |
+| Synovitis | 573 | 354 (61.8%) | 100.0% | 58.5% | +0.097 | +0.005 | +0.018 |
+| Baker's | 2164 | 1602 (74.0%) | 100.0% | 0.2% | +0.101 | -0.023 | -0.020 |
+| Contusion | 2453 | 1786 (72.8%) | 100.0% | 0.6% | +0.059 | -0.020 | -0.014 |
+| Fracture | 1306 | 1199 (91.8%) | 95.0% | 3.6% | +0.024 | -0.026 | -0.016 |
+
+Direct majority favors the G1-style model in **10 of 12 findings**, but favors B for both menisci. Under the primary effusion scenario, A is selected in all 2,000 direct-majority replicates despite equal true AUC; after retaining only group-agreement cases, A is selected 8.4% of the time. These are results conditional on the specified assumptions, not estimates of actual participant bias. A 100% Monte Carlo result is not proof of certainty.
+
+Filtering retains 58.7%–91.8% of the complete-label subset, hence abstains on 8.2%–41.3%. For effusion it retains 2,262 of 3,856 complete cases; for synovitis 354 of 573, only 8.1% of the original 4,349 studies. G2 ties and between-group disagreement are reported separately in [cohort calibration](results/v1.4/simulation-cohort.csv).
+
+![Equal true AUC selection](figures/v1.4/equal-auc-selection.png)
+
+On the common retained cases, direct-majority and group-agreement reference labels are identical, so their AUCs and selected models coincide.
+
+### AUC distortion and filtering's selection effect
+
+The following is mean(reference AUC − synthetic-truth AUC) on identical evaluated cases, in the equal-true-AUC scenario. It isolates label-reference distortion from population selection. Exact MCSEs and valid denominators are in [the complete summary](results/v1.4/simulation-summary.csv).
+
+| Finding | Full bias A | Full bias B | Retained bias A | Retained bias B |
+| --- | --- | --- | --- | --- |
+| ACL | +0.060 | +0.017 | +0.065 | +0.069 |
+| MCL | +0.051 | -0.119 | +0.079 | +0.085 |
+| Medial Meniscus | +0.052 | +0.055 | +0.055 | +0.053 |
+| Lateral Meniscus | +0.058 | +0.061 | +0.068 | +0.067 |
+| Medial OA | +0.054 | -0.023 | +0.042 | +0.044 |
+| Lateral OA | +0.050 | -0.051 | +0.048 | +0.051 |
+| PF OA | +0.057 | -0.013 | +0.040 | +0.043 |
+| Effusion | +0.050 | -0.099 | +0.030 | +0.031 |
+| Synovitis | +0.085 | -0.012 | +0.051 | +0.064 |
+| Baker's | +0.050 | -0.051 | +0.042 | +0.045 |
+| Contusion | +0.043 | -0.015 | +0.056 | +0.062 |
+| Fracture | +0.061 | +0.036 | +0.068 | +0.079 |
+
+For example, effusion's full-sample reference AUC is biased by about +0.050 for A and −0.099 for B. Filtering reduces this differential but leaves about +0.030/+0.031 label-reference bias. It also changes conditional true AUCs: equal full-population AUC does not require equal performance in the retained subset. The files separately report `selection_effect = truth AUC on evaluated cases − full-population target` and `total_bias = label_bias + selection_effect`; this decomposition was checked per replicate.
+
+![AUC label-reference bias](figures/v1.4/auc-label-bias.png)
+
+### Unequal true AUC: model selection
+
+Error here means choosing the lower **full-population** true-AUC model. The retained subset can have a different true ordering, so this is distinct from disagreement with the synthetic-truth ranking on the same realized test sample. Both endpoints, ties, failures and paired contrasts are supplied.
+
+| Finding | A better: full error | A better: retained error | B better: full error | B better: retained error |
+| --- | --- | --- | --- | --- |
+| ACL | 0.0% | 93.5% | 100.0% | 0.5% |
+| MCL | 0.0% | 99.0% | 100.0% | 0.3% |
+| Medial Meniscus | 41.5% | 8.1% | 10.8% | 49.4% |
+| Lateral Meniscus | 46.0% | 35.1% | 21.3% | 27.8% |
+| Medial OA | 0.0% | 94.8% | 100.0% | 0.3% |
+| Lateral OA | 0.0% | 98.4% | 100.0% | 0.1% |
+| PF OA | 0.0% | 94.0% | 100.0% | 0.3% |
+| Effusion | 0.0% | 80.5% | 100.0% | 3.8% |
+| Synovitis | 0.0% | 34.4% | 100.0% | 55.1% |
+| Baker's | 0.0% | 98.9% | 100.0% | 0.2% |
+| Contusion | 0.0% | 98.2% | 100.0% | 0.2% |
+| Fracture | 2.6% | 95.2% | 91.5% | 1.7% |
+
+Filtering is not a universal improvement. For effusion, when B's true AUC is 0.86 versus A's 0.85, error falls from 100.0% to 3.8%; when A is better by the same amount, error rises from 0.0% to 80.5%. Some of this reversal reflects a different conditional true ordering after selection. Those counterexamples are part of the result. The [paired contrasts](results/v1.4/simulation-paired-contrasts.csv) give paired MCSEs and valid denominators rather than treating the methods' simulations as independent.
+
+![Unequal AUC misselection](figures/v1.4/unequal-auc-misselection.png)
+
+### Specified sensitivities and Monte Carlo precision
+
+| Equal-AUC sensitivity | P(A) range, full | P(A) range, retained | Findings P(A)>50%, full /12 | Retained /12 |
+| --- | --- | --- | --- | --- |
+| no_inheritance | 47.1%–51.7% | 46.9%–51.5% | 5 | 4 |
+| weak_inheritance | 38.9%–100.0% | 3.2%–67.9% | 10 | 2 |
+| strong_inheritance | 16.4%–100.0% | 0.0%–80.1% | 10 | 2 |
+| swap_training_groups | 0.0%–70.7% | 23.7%–99.7% | 2 | 10 |
+| truth_favors_group1 | 26.6%–100.0% | 0.0%–67.6% | 10 | 1 |
+| truth_favors_group2 | 34.2%–100.0% | 2.5%–82.0% | 10 | 4 |
+| weak_truth_alignment | 35.9%–100.0% | 0.5%–76.0% | 10 | 3 |
+| strong_truth_alignment | 23.5%–100.0% | 0.0%–78.1% | 10 | 2 |
+| lower_prevalence | 32.5%–100.0% | 0.4%–70.0% | 10 | 2 |
+| higher_prevalence | 32.5%–100.0% | 0.6%–81.0% | 10 | 3 |
+
+Ranges summarize twelve heterogeneous findings; they do not pool them as independent clinical replications. Without inherited group errors, P(A) stays near 50% (47.1%–51.7% full; 46.9%–51.5% retained), providing a useful control. Swapping model-group inheritance reverses the broad direction. Changing truth assumptions changes magnitudes and sometimes directions. These controls show why the data alone cannot identify real evaluation bias.
+
+All **156 cells and 192,000 attempted replicates** completed. No reference AUC or synthetic-truth AUC failed; ranking ties are separately counted. Primary probability MCSE is at most about 1.12 percentage points (2,000 draws), sensitivity MCSE at most 1.58 points (1,000 draws). The run used 4.39 minutes; recorded cumulative statistical compute including original runs is about 9.03 minutes, below the 120-minute cap. See [run record](results/v1.4/simulation-run.json) and [software checks](results/v1.4/software-checks.csv).
+
+The [practical evidence table](results/v1.4/practical-evidence-table.csv) records aligned agreement, paired coverage, complete/retained population coverage and a use-before-validation recommendation for each finding. The [project overview](README.md#practical-use) presents a concise version.
+
+## Original analyses under the original operational coding
+
+The following original tables and diagnostics retain their original numerical results. Their two-group pattern is conditional on that coding; the documented alignment above supersedes an interpretation of the groups as stable across target definitions. Alignment of one cross-group pair does not show that all five definitions can be reconciled, or that the original latent model would fit after full harmonization.
 
 ## Agreement between label sources
 
@@ -106,7 +263,7 @@ For each of the 11 converged primary fits, **none of 2,000 posterior predictive 
 
 The data challenge the combined assumptions of a common binary construct and conditional independence. They do not identify which mechanism explains the mismatch. Shared text, shared extraction conventions and residual source dependence are plausible explanations, not separately estimated causes.
 
-The [parameter-draw summaries](results/T6_latent_parameters.csv), [predictive checks](results/T6_predictive_checks.csv), and [response-pattern summaries](results/T6_pattern_checks.csv) are diagnostic outputs. I retain these estimates as model diagnostics and use the prespecified parameter grid for the misclassification simulations. A dependent latent model remains an optional extension; it was not fitted. Even a better-fitting report model could not identify the shared discrepancy between reports and imaging truth without additional evidence.
+The [parameter-draw summaries](results/T6_latent_parameters.csv), [predictive checks](results/T6_predictive_checks.csv), and [response-pattern summaries](results/T6_pattern_checks.csv) are diagnostic outputs. I retain these estimates as model diagnostics and use the prespecified parameter grid for the misclassification simulations. A dependent latent model was not fitted. Even a better-fitting report model could not identify the shared discrepancy between reports and imaging truth without additional evidence.
 
 ## How label errors bias AUC
 
@@ -164,7 +321,7 @@ The samples average 8.74 positives (central 95% range 4–14). There are 4 sampl
 
 The [interval-method results](results/T8_interval_sensitivity.csv) include paired MCSEs and width; [sample diagnostics](results/T8_sample_diagnostics.csv) record class counts and boundary cases.
 
-## Limitations and next analysis
+## Limitations
 
 I can describe agreement within this cohort but cannot establish imaging accuracy without an independent reference standard. Shared report-to-image errors are unidentifiable here. Several publishers describe expert-panel benchmarking, and incomplete provenance prevents me from excluding undisclosed tuning or label reuse.
 
@@ -174,10 +331,12 @@ Missing labels create different comparison populations, and repeated examination
 
 I completed the public-source agreement analysis, independent latent-model checks and four baseline misclassification scenarios. Secondary derivative-source analyses, alternate prevalence priors/orientations, a dependent latent model, extraction-error-only simulations informed by the latent model, uncertain-parameter correction, and the large stress grid were not run. I retained the prespecified simulation parameters because the latent model could not provide a credible calibration.
 
-My next methodological step would be to specify a common target (any mention versus severity threshold), reconcile source conventions, and then prespecify a dependence-aware report-state model with explicit anchors and prior-predictive checks, followed by comparison of predictive fit and parameter stability. It still requires an externally justified target definition before any diagnostic-accuracy interpretation. A broader misclassification grid can examine differential score dependence and uncertain calibration parameters.
+Only two sources support documented alignment, and their agreement is not diagnostic accuracy. The simulations use assumed latent truth and score-style inheritance; their magnitudes do not estimate actual participant bias. The v1.4 extension is exploratory, and its plan files were not fully uploaded before execution ([publication record](analysis/v1.4/FREEZE_DEVIATION.md)).
+
+This completes the project: the analysis includes documented two-source alignment and all 156 specified consensus-selection cells; no additional analysis is planned.
 
 ## Reproduction and references
 
-The [R execution guide](analysis/README.md), [checks](analysis/CHECKS.md), and [method references](analysis/SAP.md#references) document reproduction. Agreement computation took 0.11 minutes, latent fitting 1.07 minutes, and misclassification simulations 1.76 minutes. Clustering took 0.02 minutes and interval comparison 0.31 minutes. Total recorded analysis time, including earlier exploratory work, was about 4.55 minutes, within the 120-minute cap. Software tests and rendering are recorded separately. I keep raw labels, study IDs and simulation draws outside the repository and publish aggregate tables and figures.
+The [R execution guide](analysis/README.md), [checks](analysis/CHECKS.md), and [method references](analysis/SAP.md#references) document reproduction. Agreement computation took 0.11 minutes, latent fitting 1.07 minutes, and misclassification simulations 1.76 minutes. Clustering took 0.02 minutes and interval comparison 0.31 minutes. Those earlier analyses used about 4.55 minutes; with v1.4 alignment and all 192,000 consensus-selection replicates, recorded cumulative statistical computation is about 9.03 minutes, within the 120-minute cap ([v1.4 run record](results/v1.4/simulation-run.json)). Software tests and rendering are recorded separately. I keep raw labels, study IDs and simulation draws outside the repository and publish aggregate tables and figures.
 
 The source audit records the upstream authors who supplied the label extractions.
