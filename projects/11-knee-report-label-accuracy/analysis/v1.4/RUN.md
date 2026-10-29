@@ -1,5 +1,7 @@
 # Reproducing the exploratory v1.4 extension
 
+Read [FREEZE_DEVIATION.md](FREEZE_DEVIATION.md) first: the initial remote upload was incomplete. The hash gate verifies the intended local pre-execution snapshot, not a complete public freeze. The final repaired tree contains the unchanged intended rules; repair occurred after outcomes.
+
 Start in `projects/11-knee-report-label-accuracy/analysis/v1.4`. Use R 4.5.1 and the existing parent `renv.lock`; new analysis needs data.table and jsonlite, figures additionally use ggplot2. No new packages were introduced.
 
 Set `RSNA_PUBLIC_DATA` to the existing external directory holding the five approved, versioned public label files listed in `../../results/source_files.csv`. Set `RSNA_V14_WORK` to a different directory outside the checkout for bootstrap and simulation replicate arrays. Do not put raw labels, reports or study identifiers in this repository.
@@ -13,7 +15,7 @@ python3 04_review.py
 python3 05_validate.py --baseline /path/to/pre-extension-checkout --raw "$RSNA_PUBLIC_DATA"
 ```
 
-The freeze manifest verifies eight files against the published SAP v1.4 commit. The alignment entry point checks the five source-file hashes and schema before use, aligns the original 4,349 IDs in memory, and reconstructs all previous agreement point estimates and complete binary pattern counts. An altered source or frozen rule stops the run. Seeds are documented in IMPLEMENTATION.md. The simulation consumes only the resulting aggregate pattern counts; it does not need individual reports, images, expert annotations or actual model predictions. Existing v1.2/v1.3 scripts and results are not overwritten.
+The freeze manifest verifies eight files against the intended local SAP v1.4 snapshot. The alignment entry point checks the five source-file hashes and schema before use, aligns the original 4,349 IDs in memory, and reconstructs all previous agreement point estimates and complete binary pattern counts. An altered source or frozen rule stops the run. Seeds are documented in IMPLEMENTATION.md. The simulation consumes only the resulting aggregate pattern counts; it does not need individual reports, images, expert annotations or actual model predictions. Existing v1.2/v1.3 scripts and results are not overwritten.
 
 ## Aggregate outputs in `../../results/v1.4`
 

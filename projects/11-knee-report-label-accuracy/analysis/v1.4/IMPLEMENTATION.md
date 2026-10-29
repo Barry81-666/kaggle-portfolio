@@ -1,4 +1,6 @@
-# Execution details fixed before new outcomes
+# Execution details fixed locally before new outcomes
+
+**Publication correction:** the attempted remote freeze was incomplete. See [FREEZE_DEVIATION.md](FREEZE_DEVIATION.md). Statements below about the complete published freeze describe the intended procedure and are superseded by that notice; the eight-file hash record is a local snapshot, not proof of a complete public freeze.
 
 The published definition/scenario freeze is commit `0053954a94baec9545e6f2e0c88fe43438456d3b` (2026-10-29 05:32:34 UTC). No label file was read for this extension before that commit was published. `freeze-manifest.json` records its eight file hashes.
 

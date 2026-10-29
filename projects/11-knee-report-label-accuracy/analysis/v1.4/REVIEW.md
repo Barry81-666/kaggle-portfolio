@@ -2,11 +2,13 @@
 
 **Exploratory review package, 2026-10-29. Project-page changes await owner review.**
 
+**Protocol-publication deviation:** the first freeze upload was truncated. The complete plan was fixed and checked locally, but was not fully published before analysis. Missing files were repaired after results were known. See [FREEZE_DEVIATION.md](FREEZE_DEVIATION.md).
+
 The useful research question is whether report-extraction labels with different definitions can be pooled and then used to select medical AI models. Five public label sources share 4,349 studies. The new analysis finds a large, directly documented definition effect in the two alignable sources, and shows in calibrated hypothetical simulations why consensus-reference model selection can be misleading. This is a matched comparison of public extraction outputs; it is not a causal natural experiment or an independent clinical validation.
 
-## 1. Frozen definitions and what could actually be aligned
+## 1. Intended definitions and what could actually be aligned
 
-The [mapping and SAP freeze](https://github.com/Barry81-666/kaggle-portfolio/commit/0053954a94baec9545e6f2e0c88fe43438456d3b) was published at **05:32:34 UTC**, before the alignment run started at **05:36:31 UTC**. Rules came only from the cached public descriptions. See [the readable mapping](DEFINITION_MAPPING.md), [120-row map](definition-map.csv), [versioned source-document evidence](source-documents.csv), and [frozen SAP](SAP-v1.4.md). All original outcomes had already been seen, so this extension is exploratory even though its new rules were frozen before execution.
+The [attempted freeze](https://github.com/Barry81-666/kaggle-portfolio/commit/0053954a94baec9545e6f2e0c88fe43438456d3b) was published at **05:32:34 UTC**, before alignment began at **05:36:31 UTC**, but final remote checks found the transfer incomplete. The scenario and source-document CSVs were present; the full new SAP and standalone map were missing, with 113 mapping rows embedded in a malformed old SAP file. The complete intended files were fixed locally and checked before execution. Their restoration to GitHub occurred after results. Rules came only from cached public descriptions and were not changed in response to outcomes. See [readable mapping](DEFINITION_MAPPING.md), [120-row map](definition-map.csv), [source evidence](source-documents.csv), and [intended SAP](SAP-v1.4.md). All original outcomes had already been seen. This is exploratory work with a documented publication deviation, not a successful complete pre-outcome public freeze.
 
 | Source | Any affirmed abnormality | Moderate or greater | Permitted use |
 | --- | --- | --- | --- |
@@ -166,6 +168,6 @@ The [machine-readable practical table](../../results/v1.4/practical-evidence-tab
 
 ## 9. Review boundary and reproducibility
 
-All old analysis code, original result tables, figures, the project README, original research report and portfolio homepage remain byte-identical. Only SAP.md/DECISIONS.md received the frozen extension links; new work lives in v1.4 subdirectories. The source-file hashes pass; every old agreement point estimate and complete binary-pattern count was reproduced. No individual study identifiers, raw labels or replicate draws are released. [RUN.md](RUN.md) documents commands, checks and columns.
+In the repaired final tree, all old analysis code, original result tables, figures, the project README, original research report and portfolio homepage remain byte-identical. The earlier malformed SAP publication remains visible in history. Only SAP.md/DECISIONS.md receive extension links; new work lives in v1.4 subdirectories. The source-file hashes pass; every old agreement point estimate and complete binary-pattern count was reproduced. No individual study identifiers, raw labels or replicate draws are released. [RUN.md](RUN.md) documents commands, checks and columns.
 
 This package is ready for review of the definition table, assumptions and main findings. Project-page rewriting and merging wait for that review.

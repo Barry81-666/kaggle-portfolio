@@ -68,7 +68,7 @@ for r in readcsv(results/'alignment-paired-changes.csv'):
     assert abs(n(r,'after')-n(r,'before')-n(r,'change'))<1e-10
     assert n(r,'bootstrap_valid')==2000
 record={'checked_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
- 'freeze_commit':manifest['freeze_commit'],'frozen_files_verified':len(manifest['files']),
+ 'freeze_commit':manifest['freeze_commit'],'local_snapshot_files_verified':len(manifest['files']),'remote_pre_outcome_freeze_complete':False,'publication_deviation':'FREEZE_DEVIATION.md',
  'baseline_files_checked':sum(p.is_file() for p in baseline.rglob('*')),'changed_existing_files':changed,
  'legacy_results_code_pages_preserved':True,'new_text_files_scanned':sum(p.suffix!='.png' for p in new_files),
  'individual_identifier_matches':0,'local_markdown_links_verified':len(links),'source_hashes_verified':5,

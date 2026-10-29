@@ -11,5 +11,7 @@
     "projects/11-knee-report-label-accuracy/analysis/v1.4/definition-map.csv": "32303572c8c96ea3b54e56930b3334f8f23952a7100cf21126def19cafd05b3f",
     "projects/11-knee-report-label-accuracy/analysis/v1.4/simulation-scenarios.csv": "97fb125412edbfbb81a0bd848f430865430787c2f60056534643b34bcfa08b33",
     "projects/11-knee-report-label-accuracy/analysis/v1.4/source-documents.csv": "266732d96ae06607e7a885503cd351d9bf24f301522b4a7297e9e99178010818"
-  }
+  },
+  "scope": "local_pre_execution_snapshot",
+  "remote_freeze_status": "incomplete; post-result repair documented in FREEZE_DEVIATION.md"
 }
