@@ -17,3 +17,5 @@ The mapping and scenarios were followed as prepared locally. Original code/resul
 `alignment-run.json`'s `all_frozen_hashes_pass` and the original run's freeze-commit fields refer to the **local intended snapshot and attempted publication**, not successful full remote verification. The current validation distinguishes these scopes. Planned files' original wording is retained as a record of intent; this deviation notice governs their actual publication status.
 
 Subsequent upload transfers are bounded below truncation limits, reject truncation markers, and are compared against local Git blob hashes. Remote verification must occur before claiming publication completeness. No outcomes or encoding rules are changed to conceal the failure.
+
+After analysis completion, DECISIONS.md and SAP-v1.4.md received wording-only edits. The original execution hashes remain in `freeze-manifest.json`; `editorial_updates` records the current document hashes, and `original_snapshot_commit` identifies the intact earlier copies. No definition, encoding rule or simulation parameter changed.

@@ -1,32 +1,31 @@
-# Validation of the English Portfolio Edition
+# Validation of the Nine Archived Kaggle Notebooks
 
-Checks performed on **2026-10-28**, against repository commit `a3bc52f16e600f914ce0c0165173fd267ab02620`. This is a static source and evidence review; archived training/inference was not executed.
+This page covers the **nine archived notebooks in [the project catalog](meta/catalog.json)**, their English annotations, provenance and supporting portfolio navigation. Static checks were repeated on **2026-10-29** against the original notebook baseline at commit `a3bc52f16e600f914ce0c0165173fd267ab02620`; results are in the [archive validation report](meta/archive-validation.json). Archived training and inference were not executed.
+
+The later knee report-label study is outside this notebook-validation scope. Its aggregate CSV tables are documented in the [research results](projects/11-knee-report-label-accuracy/results/) and its own [checks](projects/11-knee-report-label-accuracy/analysis/CHECKS.md).
 
 | Check | Result and scope |
 | --- | --- |
-| Original public versions | All 9 retained downloads matched their previously recorded original SHA-256 values; [download checks](meta/source-download-checks.json) |
-| Notebook translation | 456 comment occurrences and 12 Markdown cells translated in 7 notebooks; original English comments and Markdown retained |
-| Code consistency | All 148 code cells accounted for: 136 have strict non-comment token equality; 10 more match after only the 88 exact documentation/display-text substitutions in the ledger; 2 non-Python-lexable installation cells are source-identical |
-| Literal changes | All 88 occurrences individually matched to the [before/after ledger](meta/translation-exceptions.json); no extra token changes accepted |
-| Metadata | Original hashes and Kaggle version identities preserved; current hashes, project catalog and provenance agree |
-| Local navigation | All local Markdown file/directory links and section anchors resolved; exact count in the [machine-readable report](meta/validation.json) |
-| Kaggle links | The 64 retained Kaggle URLs have successful checks recorded on 2026-10-28: 63 specific pages and 1 image; [per-URL results](meta/link-checks.json) |
-| Credentials | No flags from private-key, common token-prefix, AWS key-ID or long literal credential patterns |
-| Package contents | No dataset, model-weight or credential files added; the only CSV is the project index. New results are aggregate historical metrics and an original EDA image. |
-| Syntax and structure | JSON parses; all Python files parse statically. Notebook shell/R cells were not represented as executable Python. |
+| Original public versions | The nine original-version downloads matched their recorded SHA-256 values on 2026-10-28; [download record](meta/source-download-checks.json) |
+| English annotations | The translation record covers 456 comment occurrences and 12 Markdown cells in seven notebooks; existing English comments and Markdown were retained |
+| Code consistency | All 148 code cells accounted for: 136 have strict non-comment token equality; 10 more match after the 88 exact documentation/display-text substitutions in the ledger; two non-Python-lexable installation cells are source-identical |
+| Literal changes | All 88 occurrences match the [before/after ledger](meta/translation-exceptions.json); no additional token changes accepted |
+| Metadata and provenance | Current archived hashes agree with the catalog and per-project provenance; original download hashes and Kaggle version identities are preserved |
+| Supporting navigation | Local Markdown links and section anchors in the checked archives and supporting portfolio documents resolve; current counts are in the archive validation report |
+| Kaggle URL observations | The 64 URL checks recorded on 2026-10-28 cover 63 pages and one image; [per-URL results](meta/link-checks.json). These are dated observations, not a fresh reachability check |
+| Credentials and structure | No credential-pattern flags in the checked scope; JSON parses and Python source passes static syntax checks. Notebook shell/R cells are not treated as executable Python |
+| Archive inputs | Dataset and model-weight inputs are not included in the notebook archives. The separate research project publishes aggregate CSV tables |
 
-The token check deliberately distinguishes **comment-only equality** from the requested translation of display strings/docstrings. Claiming every token is literally unchanged would be incorrect. The preserved Chinese output filename is a documented exception to full language conversion because changing it would alter a file path.
+The token comparison distinguishes comment edits from the documented display-string and docstring substitutions. A Chinese output filename remains unchanged to preserve the original file path. Pattern scans are a static check, not a comprehensive security audit.
 
-A resolved Kaggle page verifies the URL's routing, not authorization to private inputs, the continued availability of every dependency, or a leaderboard claim. The 11 historical team results retain the prior authenticated verification date; they were not newly verified while logged in during this revision. Pattern scans reduce accidental credential exposure but are not a comprehensive security audit.
+## Re-run the Archive Checks
 
-## Re-run the Static Checks
-
-Use Python 3.12 or later (this run used 3.14), with a clean checkout of the baseline commit available locally:
+Use Python 3.12 or later with the original baseline checkout available locally:
 
 ```bash
-python scripts/validate_portfolio.py --original-root /path/to/baseline-checkout
+python scripts/validate_portfolio.py --original-root /path/to/baseline-checkout --archive-only --report meta/archive-validation.json
 ```
 
-The [validator](scripts/validate_portfolio.py) does not run archived code. It checks token sequences, the exact literal whitelist, provenance hashes, local links, file types and credential patterns. External-link reachability and original public-download checks are separately recorded observations, not network actions performed by this script.
+The [validator](scripts/validate_portfolio.py) checks notebook token sequences, the literal-change ledger, provenance hashes, supporting local links and credential patterns without executing archived code. External-link reachability and original-download checks remain separately dated records.
 
 [Archive notes](docs/ARCHIVE_NOTES.md)

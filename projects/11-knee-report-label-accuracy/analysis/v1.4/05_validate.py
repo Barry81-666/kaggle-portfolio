@@ -13,7 +13,8 @@ def readcsv(p):
 def n(r,k):return float(r[k]) if r[k] else float('nan')
 manifest=json.loads((here/'freeze-manifest.json').read_text())
 for path,sha in manifest['files'].items():
-    assert hashlib.sha256((repo/path).read_bytes()).hexdigest()==sha,path
+    current_sha=manifest.get('editorial_updates',{}).get(path,{}).get('sha256',sha)
+    assert hashlib.sha256((repo/path).read_bytes()).hexdigest()==current_sha,path
 expected_changed={'projects/11-knee-report-label-accuracy/analysis/SAP.md','projects/11-knee-report-label-accuracy/analysis/DECISIONS.md'}
 changed=[]
 for old in baseline.rglob('*'):

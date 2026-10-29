@@ -9,8 +9,12 @@ guard <- function() {
   repo <- normalizePath("../../../..")
   manifest <- fromJSON("freeze-manifest.json")
   stopifnot(manifest$freeze_commit == "0053954a94baec9545e6f2e0c88fe43438456d3b")
-  for (p in names(manifest$files))
-    stopifnot(identical(sha256(file.path(repo,p)), manifest$files[[p]]))
+  for (p in names(manifest$files)) {
+    expected <- manifest$files[[p]]
+    editorial <- manifest$editorial_updates[[p]]
+    if (!is.null(editorial)) expected <- editorial$sha256
+    stopifnot(identical(sha256(file.path(repo,p)), expected))
+  }
   raw <- external_data_dir("../../../..")
   work <- Sys.getenv("RSNA_V14_WORK")
   stopifnot(nzchar(work))

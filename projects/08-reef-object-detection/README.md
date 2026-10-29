@@ -10,4 +10,4 @@ My published notebook combines YOLOv5 detections with weighted box fusion in the
 
 The notebook requires the historical Great Barrier Reef competition API and model inputs, four of which were private.
 
-Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/yolov5-wbf) (version 87726774). Data and model weights are not included.
+Data and model weights are not included.

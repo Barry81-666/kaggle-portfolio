@@ -12,4 +12,4 @@ My published inference notebook combines YOLO-family detections across tomogram 
 
 Inference requires multiple model checkpoints and three inputs marked private in the source snapshot.
 
-Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/p1-1-0-65-74d43e) (version 243588125). Data and model weights are not included.
+Data and model weights are not included.

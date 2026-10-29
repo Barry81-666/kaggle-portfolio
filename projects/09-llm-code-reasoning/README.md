@@ -10,4 +10,4 @@ My published notebook is an annotated learning and debugging study of DeepSeekMa
 
 This annotated fork executes model-generated Python in subprocesses and includes debugging code. The "20th" in its original title refers to an upstream solution, not my rank. It requires the historical model and GPU environment.
 
-Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/aimo1-20th) (version 224999934). Data and model weights are not included.
+Data and model weights are not included.

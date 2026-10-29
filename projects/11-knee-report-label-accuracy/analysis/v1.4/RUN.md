@@ -1,4 +1,4 @@
-# Reproducing the exploratory v1.4 extension
+# Reproducing the definition-alignment and majority-vote analyses
 
 Read [FREEZE_DEVIATION.md](FREEZE_DEVIATION.md) first: the initial remote upload was incomplete. The hash gate verifies the intended local pre-execution snapshot, not a complete public freeze. The final repaired tree contains the unchanged intended rules; repair occurred after outcomes.
 
@@ -12,7 +12,6 @@ Rscript 01_alignment.R
 Rscript 02_simulation.R
 Rscript 03_figures.R
 python3 04_review.py
-python3 05_validate.py --baseline /path/to/pre-extension-checkout --raw "$RSNA_PUBLIC_DATA"
 ```
 
 The freeze manifest verifies eight files against the intended local SAP v1.4 snapshot. The alignment entry point checks the five source-file hashes and schema before use, aligns the original 4,349 IDs in memory, and reconstructs all previous agreement point estimates and complete binary pattern counts. An altered source or frozen rule stops the run. Seeds are documented in IMPLEMENTATION.md. The simulation consumes only the resulting aggregate pattern counts; it does not need individual reports, images, expert annotations or actual model predictions. Existing v1.2/v1.3 scripts and results are not overwritten.
@@ -32,4 +31,6 @@ The freeze manifest verifies eight files against the intended local SAP v1.4 sna
 
 `label_bias` compares reference AUC with synthetic-truth AUC on identical evaluated cases. `selection_effect` compares that subset's synthetic-truth AUC with specified full-population AUC; `total_bias = label_bias + selection_effect` is checked in every replicate. For unequal AUCs, `misselection_global` uses the full-population target ordering. `oracle_disagreement` compares non-tied reference and truth orderings on the same realized sample; it is a distinct finite-sample endpoint and can differ from global misselection. Monte Carlo SE describes simulation precision conditional on assumptions, not uncertainty about actual clinical accuracy.
 
-The project page and original report await owner review. See [REVIEW.md](REVIEW.md) for the findings, figures and source-definition review package.
+The [analysis supplement](REVIEW.md) contains the detailed findings, figures and source definitions; the completed [project report](../../report.md) presents their interpretation.
+
+The historical `05_validate.py` release check compares against the pre-extension tree and expects the original document layout; reproduce that full check at [the recorded release snapshot](https://github.com/Barry81-666/kaggle-portfolio/tree/481df0cc613fe1949fa268f25a7e9c9cab7f6bc6). The original hashes are retained in `freeze-manifest.json`; its `editorial_updates` field records later wording-only changes to two research documents.

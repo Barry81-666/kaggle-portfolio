@@ -19,3 +19,5 @@ The "20th" in the mathematical-reasoning notebook title refers to an upstream so
 [Team competition results](COMPETITION_RESULTS.md) and Notebook medals are separate records. No archived notebook is presented as a team's final medal-winning submission.
 
 All nine retained original version downloads were retrieved again on 2026-10-28 and matched the original download hashes. The [selected notebook outputs](results/) come from those exact versions. Archive and translation details are centralized in [ARCHIVE_NOTES.md](docs/ARCHIVE_NOTES.md); hashes and per-file records are in [meta/](meta/).
+
+The knee report-label study uses five public label datasets published by Dread, Steven, Pilkwang, Yunus and Lixin; versions, file selections and dataset links are documented in its [source audit](projects/11-knee-report-label-accuracy/analysis/SOURCE_AUDIT.md).

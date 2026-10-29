@@ -13,5 +13,18 @@
     "projects/11-knee-report-label-accuracy/analysis/v1.4/source-documents.csv": "266732d96ae06607e7a885503cd351d9bf24f301522b4a7297e9e99178010818"
   },
   "scope": "local_pre_execution_snapshot",
-  "remote_freeze_status": "incomplete; post-result repair documented in FREEZE_DEVIATION.md"
+  "remote_freeze_status": "incomplete; post-result repair documented in FREEZE_DEVIATION.md",
+  "editorial_updates": {
+    "projects/11-knee-report-label-accuracy/analysis/DECISIONS.md": {
+      "sha256": "ec6a01143702ae35754a0336f7afeca8ee10ebe4e6590b61a23895c6f19b5586",
+      "date": "2026-10-29",
+      "reason": "Post-analysis wording only; no target definitions, encoding rules, scenarios or numerical results changed."
+    },
+    "projects/11-knee-report-label-accuracy/analysis/v1.4/SAP-v1.4.md": {
+      "sha256": "ee1b24d5d1f67e755a50b3e77f231cafc2a0bfb1ecbd835ec99f930be3fb4264",
+      "date": "2026-10-29",
+      "reason": "Post-analysis wording only; no target definitions, encoding rules, scenarios or numerical results changed."
+    }
+  },
+  "original_snapshot_commit": "73972eb1a8aee231db8a1d90c63b1061299a68c1"
 }

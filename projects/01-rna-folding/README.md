@@ -6,7 +6,7 @@ My published notebook explores RNA sequence lengths, temporal cutoffs, nucleotid
 
 ![Sequence-length distribution in the training sequences](../../figures/rna-sequence-length.png)
 
-From the notebook's original output (version 226091843). The long upper tail is a descriptive property of these training sequences. This is an EDA figure, not a validation result. See [output provenance](../../results/README.md).
+Notebook version 226091843. The long upper tail is a descriptive property of these training sequences. This is an EDA figure, not a validation result. See [output provenance](../../results/README.md).
 
 ## Source and Contribution
 
@@ -14,6 +14,6 @@ From the notebook's original output (version 226091843). The long upper tail is 
 
 ## Running and Interpreting the Archive
 
-The Python notebook contains later R/H2O cells and cannot be run end to end in a Python kernel. Some first-person narrative in the notebook comes from the upstream author, ChrisK321. The recovered EDA figure is descriptive, not model validation.
+The Python notebook contains later R/H2O cells and cannot be run end to end in a Python kernel. Some first-person narrative in the notebook comes from the upstream author, ChrisK321.
 
-Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/rna-folding-python-eda-submission) (version 226091843). Data and model weights are not included.
+Data and model weights are not included.

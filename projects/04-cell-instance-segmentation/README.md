@@ -2,6 +2,10 @@
 
 My inference and submission notebook for the Sartorius competition (team silver medal, 26 / 1505) uses MMDetection and a CBNetV2-Swin configuration.
 
+## Source and Contribution
+
+[Original Kaggle notebook](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion?scriptVersionId=83951341), version ID `83951341`.
+
 ## My Role
 
 Trained MMDetection instance segmentation models and tuned class-specific score thresholds, minimum mask sizes and overlap removal.
@@ -18,4 +22,4 @@ It is not presented as the team's final submission.
 
 My published notebook uses a 2021 environment with PyTorch 1.7, CUDA 11, MMDetection/CBNetV2 and local wheels. The checkpoint and two private inputs are not included. Review the installation and cleanup cells before running.
 
-Source: [Kaggle notebook](https://www.kaggle.com/code/handudu/how-to-use-mmdectetion?scriptVersionId=83951341) (version 83951341). Data and model weights are not included.
+Data and model weights are not included.
